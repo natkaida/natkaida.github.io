@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /theme/*
+Sitemap: https://natkaida.github.io/sitemap.xml
