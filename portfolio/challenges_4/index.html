@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title></title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <link href="/static/img/favicon.png" rel="icon">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="/static/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/static/assets/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/static/assets/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="/static/assets/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/static/assets/remixicon/remixicon.css" rel="stylesheet">
+  <link href="/static/assets/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/69e2443572.js" crossorigin="anonymous"></script>
+  <link href="/static/css/style.css" rel="stylesheet">
+  <link href="/pygments.css" rel="stylesheet">
+  <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(89602269, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/89602269" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</head>
+<body>
+  <main id="main">
+
+<style>
+body::before {
+	background: #040404 url("/static/img/portfolio/post.jpg");
+}
+</style>
+    <!-- ======= шаблон для поста ======= -->
+    <div id="portfolio-details" class="portfolio-details">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <h2 class="portfolio-title">Подборка задач с решениями - 4</h2>
+          </div>
+          <div class="col-lg-8 portfolio-info">
+            <h3></h3>
+            <ul>
+              <li><strong>Категория</strong>: Python</li>
+              <li><strong>Дата публикации</strong>: 2021-12-06</li>
+              <li><strong>Посмотреть на сайте</strong>: <a href="https://stepik.org">Stepik</a></li>
+            </ul>
+            <p>
+              <p><strong>Python задачи с решениями</strong> на тему словарей и кортежей.</p>
+<p><em>Задача 1:</em></p>
+<p>Вводятся данные в формате:</p>
+<div class="codehilite"><pre><span></span><span class="o">&lt;</span><span class="err">день</span> <span class="err">рождения</span> <span class="mi">1</span><span class="o">&gt;</span> <span class="err">имя</span><span class="n">_1</span>
+
+<span class="o">&lt;</span><span class="err">день</span> <span class="err">рождения</span> <span class="mi">2</span><span class="o">&gt;</span> <span class="err">имя</span><span class="n">_2</span>
+
+<span class="p">...</span>
+<span class="o">&lt;</span><span class="err">день</span> <span class="err">рождения</span> <span class="n">N</span><span class="o">&gt;</span> <span class="err">имя</span><span class="n">_N</span>
+</pre></div>
+
+
+<p>Дни рождений и имена могут повторяться. На их основе сформировать словарь и вывести его в формате (см. пример ниже):</p>
+<div class="codehilite"><pre><span></span><span class="err">день</span> <span class="err">рождения</span> <span class="mi">1</span><span class="p">:</span> <span class="err">имя</span><span class="mi">1</span><span class="p">,</span> <span class="p">...,</span> <span class="err">имя</span><span class="n">N1</span>
+
+<span class="err">день</span> <span class="err">рождения</span> <span class="mi">2</span><span class="p">:</span> <span class="err">имя</span><span class="mi">1</span><span class="p">,</span> <span class="p">...,</span> <span class="err">имя</span><span class="n">N2</span>
+
+<span class="p">...</span>
+<span class="err">день</span> <span class="err">рождения</span> <span class="n">M</span><span class="p">:</span> <span class="err">имя</span><span class="mi">1</span><span class="p">,</span> <span class="p">...,</span> <span class="err">имя</span><span class="n">NM</span>
+</pre></div>
+
+
+<p>P. S. Для считывания списка целиком в программе уже записаны начальные строчки.</p>
+<div class="codehilite"><pre><span></span><span class="o">**</span><span class="n">Sample</span> <span class="k">Input</span><span class="p">:</span><span class="o">**</span>
+
+<span class="mi">3</span> <span class="err">Сергей</span>
+
+<span class="mi">5</span> <span class="err">Николай</span>
+
+<span class="mi">4</span> <span class="err">Елена</span>
+
+<span class="mi">7</span> <span class="err">Владимир</span>
+
+<span class="mi">5</span> <span class="err">Юлия</span>
+
+<span class="mi">4</span> <span class="err">Светлана</span>
+
+
+<span class="o">**</span><span class="n">Sample</span> <span class="k">Output</span><span class="p">:</span><span class="o">**</span>
+
+<span class="mi">3</span><span class="p">:</span> <span class="err">Сергей</span>
+
+<span class="mi">5</span><span class="p">:</span> <span class="err">Николай</span><span class="p">,</span> <span class="err">Юлия</span>
+
+<span class="mi">4</span><span class="p">:</span> <span class="err">Елена</span><span class="p">,</span> <span class="err">Светлана</span>
+
+<span class="mi">7</span><span class="p">:</span> <span class="err">Владимир</span>
+</pre></div>
+
+
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">defaultdict</span>
+<span class="n">lst_in</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">str</span><span class="o">.</span><span class="n">strip</span><span class="p">,</span> <span class="n">sys</span><span class="o">.</span><span class="n">stdin</span><span class="o">.</span><span class="n">readlines</span><span class="p">()))</span>
+
+<span class="n">dates_dict</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">lst_in</span><span class="p">:</span>
+    <span class="n">dates_dict</span><span class="p">[</span><span class="n">i</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">0</span><span class="p">]]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">1</span><span class="p">])</span>   
+<span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">dates_dict</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;{k}:&#39;</span><span class="p">,</span><span class="s1">&#39;, &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">v</span><span class="p">))</span>
+</pre></div>
+
+
+<p><em>Задача 2:</em></p>
+<p>Имеется словарь с наименованиями предметов и их весом (в граммах):</p>
+<p>things = {'карандаш': 20, 'зеркальце': 100, 'зонт': 500, 'рубашка': 300, 
+          'брюки': 1000, 'бумага': 200, 'молоток': 600, 'пила': 400, 'удочка': 1200,
+          'расческа': 40, 'котелок': 820, 'палатка': 5240, 'брезент': 2130, 'спички': 10}</p>
+<p>Сергей собирается в поход и готов взвалить на свои хрупкие плечи максимальный вес в N кг (вводится с клавиатуры). Он решил класть в рюкзак предметы в порядке убывания их веса (сначала самые тяжелые, затем, все более легкие) так, чтобы их суммарный вес не превысил значения N кг. Все предметы даны в единственном экземпляре. Выведите список предметов (в строчку через пробел), которые берет с собой Сергей в порядке убывания их веса.</p>
+<p>P. S. 1 кг = 1000 грамм</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">things</span> <span class="o">=</span> {<span class="s1">&#39;</span><span class="s">карандаш</span><span class="s1">&#39;</span>: <span class="mi">20</span>, <span class="s1">&#39;</span><span class="s">зеркальце</span><span class="s1">&#39;</span>: <span class="mi">100</span>, <span class="s1">&#39;</span><span class="s">зонт</span><span class="s1">&#39;</span>: <span class="mi">500</span>, <span class="s1">&#39;</span><span class="s">рубашка</span><span class="s1">&#39;</span>: <span class="mi">300</span>, 
+          <span class="s1">&#39;</span><span class="s">брюки</span><span class="s1">&#39;</span>: <span class="mi">1000</span>, <span class="s1">&#39;</span><span class="s">бумага</span><span class="s1">&#39;</span>: <span class="mi">200</span>, <span class="s1">&#39;</span><span class="s">молоток</span><span class="s1">&#39;</span>: <span class="mi">600</span>, <span class="s1">&#39;</span><span class="s">пила</span><span class="s1">&#39;</span>: <span class="mi">400</span>, <span class="s1">&#39;</span><span class="s">удочка</span><span class="s1">&#39;</span>: <span class="mi">1200</span>,
+          <span class="s1">&#39;</span><span class="s">расческа</span><span class="s1">&#39;</span>: <span class="mi">40</span>, <span class="s1">&#39;</span><span class="s">котелок</span><span class="s1">&#39;</span>: <span class="mi">820</span>, <span class="s1">&#39;</span><span class="s">палатка</span><span class="s1">&#39;</span>: <span class="mi">5240</span>, <span class="s1">&#39;</span><span class="s">брезент</span><span class="s1">&#39;</span>: <span class="mi">2130</span>, <span class="s1">&#39;</span><span class="s">спички</span><span class="s1">&#39;</span>: <span class="mi">10</span>}
+<span class="nv">ves</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span> <span class="o">*</span> <span class="mi">1000</span>
+<span class="nv">sorted_things</span> <span class="o">=</span> <span class="nv">dict</span><span class="ss">(</span><span class="nv">sorted</span><span class="ss">(</span><span class="nv">things</span>.<span class="nv">items</span><span class="ss">()</span>, <span class="nv">key</span><span class="o">=</span><span class="nv">lambda</span> <span class="nv">x</span>: <span class="o">-</span><span class="nv">x</span>[<span class="mi">1</span>]<span class="ss">))</span>
+<span class="k">for</span> <span class="nv">k</span>, <span class="nv">v</span> <span class="nv">in</span> <span class="nv">sorted_things</span>.<span class="nv">items</span><span class="ss">()</span>:
+    <span class="k">if</span> <span class="nv">v</span> <span class="o">&lt;=</span> <span class="nv">ves</span>:
+        <span class="nv">print</span><span class="ss">(</span><span class="nv">k</span>, <span class="k">end</span><span class="o">=</span><span class="s1">&#39;</span><span class="s"> </span><span class="s1">&#39;</span><span class="ss">)</span>
+        <span class="nv">ves</span> <span class="o">-=</span> <span class="nv">v</span>
+</pre></div>
+
+
+<p><em>Задача 3:</em></p>
+<p>Вводятся названия городов в одну строку через пробел. На их основе формируется кортеж. Если в этом кортеже нет города "Москва", то следует его добавить в конец кортежа. Результат вывести на экран в виде строки с названиями городов через пробел.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">g</span> <span class="o">=</span> <span class="nv">tuple</span><span class="ss">(</span><span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">())</span>
+<span class="k">if</span> <span class="s1">&#39;</span><span class="s">Москва</span><span class="s1">&#39;</span> <span class="nv">not</span> <span class="nv">in</span> <span class="nv">g</span>:
+    <span class="nv">g</span> <span class="o">=</span> <span class="nv">g</span> <span class="o">+</span> <span class="ss">(</span><span class="s1">&#39;</span><span class="s">Москва</span><span class="s1">&#39;</span>,<span class="ss">)</span>
+<span class="nv">print</span><span class="ss">(</span><span class="o">*</span><span class="nv">g</span><span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Задача 4:</em></p>
+<p>Вводятся названия городов в одну строку через пробел. На их основе формируется кортеж. Если в этом кортеже присутствует город "Ульяновск", то этот элемент следует удалить (создав новый кортеж). Результат вывести на экран в виде строки с названиями городов через пробел.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">g</span> <span class="o">=</span> <span class="nv">tuple</span><span class="ss">(</span><span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">())</span>
+<span class="nv">print</span><span class="ss">(</span><span class="o">*</span><span class="ss">(</span><span class="nv">i</span> <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">g</span> <span class="k">if</span> <span class="nv">i</span> <span class="o">!=</span> <span class="s2">&quot;</span><span class="s">Ульяновск</span><span class="s2">&quot;</span><span class="ss">))</span>
+</pre></div>
+
+
+<p><em>Задача 5:</em></p>
+<p>Вводятся имена студентов в одну строчку через пробел. На их основе формируется кортеж. Отобразите на экране все имена из этого кортежа, которые содержат фрагмент "ва" (без учета регистра). Имена выводятся в одну строчку через пробел в нижнем регистре (малыми буквами).</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">n</span> <span class="o">=</span> <span class="nv">tuple</span><span class="ss">(</span><span class="nv">input</span><span class="ss">()</span>.<span class="nv">lower</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">())</span>
+<span class="nv">print</span><span class="ss">(</span><span class="o">*</span><span class="ss">(</span><span class="nv">i</span> <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">n</span> <span class="k">if</span> <span class="s1">&#39;</span><span class="s">ва</span><span class="s1">&#39;</span> <span class="nv">in</span> <span class="nv">i</span><span class="ss">))</span>
+</pre></div>
+
+
+<p><em>Задача 6:</em></p>
+<p>Вводятся целые числа в одну строку через пробел. На их основе формируется кортеж. Необходимо создать еще один кортеж с уникальными (не повторяющимися) значениями из первого кортежа. Результат отобразите в виде списка чисел через пробел.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">t</span> <span class="o">=</span> <span class="nv">tuple</span><span class="ss">(</span><span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">())</span>
+<span class="nv">new</span> <span class="o">=</span> <span class="nv">tuple</span><span class="ss">()</span>
+<span class="k">for</span> <span class="nv">item</span> <span class="nv">in</span> <span class="nv">t</span>:
+    <span class="k">if</span> <span class="nv">item</span> <span class="nv">not</span> <span class="nv">in</span> <span class="nv">new</span>:
+        <span class="nv">new</span> <span class="o">+=</span> <span class="ss">(</span><span class="nv">item</span>, <span class="ss">)</span>
+<span class="nv">print</span><span class="ss">(</span><span class="o">*</span><span class="nv">new</span><span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Задача 7:</em></p>
+<p>Вводятся целые числа в одну строку через пробел. На их основе формируется кортеж. Необходимо найти и вывести все индексы неуникальных (повторяющихся) значений в этом кортеже. Результат отобразите в виде строки чисел, записанных через пробел.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">t</span> <span class="o">=</span> <span class="nv">tuple</span><span class="ss">(</span><span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">())</span>
+<span class="k">for</span> <span class="nv">i</span>, <span class="nv">j</span> <span class="nv">in</span> <span class="nv">enumerate</span><span class="ss">(</span><span class="nv">t</span><span class="ss">)</span>:
+    <span class="k">if</span> <span class="nv">t</span>.<span class="nv">count</span><span class="ss">(</span><span class="nv">j</span><span class="ss">)</span> <span class="o">&gt;</span> <span class="mi">1</span>:
+        <span class="nv">print</span><span class="ss">(</span><span class="nv">i</span>, <span class="k">end</span><span class="o">=</span><span class="s1">&#39;</span><span class="s"> </span><span class="s1">&#39;</span><span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Задача 8:</em></p>
+<p>Имеется двумерный кортеж, размером 5 x 5 элементов:</p>
+<p>t = ((1, 0, 0, 0, 0),
+     (0, 1, 0, 0, 0),
+     (0, 0, 1, 0, 0),
+     (0, 0, 0, 1, 0),
+     (0, 0, 0, 0, 1))</p>
+<p>Вводится натуральное число N (N &lt; 5). Необходимо на основе кортежа t сформировать новый аналогичный кортеж t2 размером N x N элементов. Результат вывести на экран в виде таблицы чисел.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">t</span> <span class="o">=</span> <span class="ss">((</span><span class="mi">1</span>, <span class="mi">0</span>, <span class="mi">0</span>, <span class="mi">0</span>, <span class="mi">0</span><span class="ss">)</span>,
+     <span class="ss">(</span><span class="mi">0</span>, <span class="mi">1</span>, <span class="mi">0</span>, <span class="mi">0</span>, <span class="mi">0</span><span class="ss">)</span>,
+     <span class="ss">(</span><span class="mi">0</span>, <span class="mi">0</span>, <span class="mi">1</span>, <span class="mi">0</span>, <span class="mi">0</span><span class="ss">)</span>,
+     <span class="ss">(</span><span class="mi">0</span>, <span class="mi">0</span>, <span class="mi">0</span>, <span class="mi">1</span>, <span class="mi">0</span><span class="ss">)</span>,
+     <span class="ss">(</span><span class="mi">0</span>, <span class="mi">0</span>, <span class="mi">0</span>, <span class="mi">0</span>, <span class="mi">1</span><span class="ss">))</span>
+<span class="nv">n</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
+<span class="nv">t2</span> <span class="o">=</span> <span class="ss">(</span><span class="nv">t</span>[<span class="nv">i</span>][<span class="mi">0</span>:<span class="nv">n</span>] <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="mi">0</span>,<span class="nv">n</span><span class="ss">))</span>
+<span class="k">for</span> <span class="nv">line</span> <span class="nv">in</span> <span class="nv">t2</span>:
+    <span class="nv">print</span><span class="ss">(</span><span class="o">*</span><span class="nv">line</span><span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Задача 9:</em></p>
+<p>Вводятся пункты меню (каждый пункт с новой строки) в формате:</p>
+<div class="codehilite"><pre><span></span><span class="err">название</span><span class="n">_1</span> <span class="n">URL</span><span class="o">-</span><span class="err">адрес</span><span class="n">_1</span>
+
+<span class="err">название</span><span class="n">_2</span> <span class="n">URL</span><span class="o">-</span><span class="err">адрес</span><span class="n">_2</span>
+
+<span class="p">...</span>
+<span class="err">название</span><span class="n">_N</span> <span class="n">URL</span><span class="o">-</span><span class="err">адрес</span><span class="n">_N</span>
+</pre></div>
+
+
+<p>Необходимо эту информацию представить в виде вложенного кортежа menu в формате:</p>
+<p>((название_1, URL-адрес_1), (название_2, URL-адрес_2), ... (название_N, URL-адрес_N))</p>
+<p>Результат вывести на экран в виде кортежа командой print(menu)</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">sys</span>
+<span class="n">lst_in</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">str</span><span class="o">.</span><span class="n">strip</span><span class="p">,</span> <span class="n">sys</span><span class="o">.</span><span class="n">stdin</span><span class="o">.</span><span class="n">readlines</span><span class="p">()))</span>
+<span class="n">menu</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="nb">tuple</span><span class="p">(</span><span class="n">i</span><span class="o">.</span><span class="n">split</span><span class="p">())</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">lst_in</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">menu</span><span class="p">)</span>
+</pre></div>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div><!-- конец карточки -->
+  <!-- конец поста -->
+
+  </main>
+  <!-- Скрипты -->
+  <script src="/static/assets/purecounter/purecounter.js"></script>
+  <script src="/static/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/static/assets/glightbox/js/glightbox.min.js"></script>
+  <script src="/static/assets/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/static/assets/swiper/swiper-bundle.min.js"></script>
+  <script src="/static/assets/waypoints/noframework.waypoints.js"></script>
+  <script src="/static/js/main.js"></script>
+</body>
+</html>

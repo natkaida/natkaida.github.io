@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title></title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <link href="/static/img/favicon.png" rel="icon">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="/static/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/static/assets/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/static/assets/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="/static/assets/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/static/assets/remixicon/remixicon.css" rel="stylesheet">
+  <link href="/static/assets/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/69e2443572.js" crossorigin="anonymous"></script>
+  <link href="/static/css/style.css" rel="stylesheet">
+  <link href="/pygments.css" rel="stylesheet">
+  <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(89602269, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/89602269" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</head>
+<body>
+  <main id="main">
+
+<style>
+body::before {
+	background: #040404 url("/static/img/portfolio/post.jpg");
+}
+</style>
+    <!-- ======= шаблон для поста ======= -->
+    <div id="portfolio-details" class="portfolio-details">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <h2 class="portfolio-title">Подборка задач с решениями - 13</h2>
+          </div>
+          <div class="col-lg-8 portfolio-info">
+            <h3></h3>
+            <ul>
+              <li><strong>Категория</strong>: Python</li>
+              <li><strong>Дата публикации</strong>: 2022-01-07</li>
+              <li><strong>Посмотреть на сайте</strong>: <a href="https://stepik.org">Stepik</a></li>
+            </ul>
+            <p>
+              <p><em>Задача 1:</em></p>
+<p>В какой-то момент в Институте биоинформатики биологи перестали понимать, что говорят информатики: они говорили каким-то странным набором звуков.</p>
+<p>В какой-то момент один из биологов раскрыл секрет информатиков: они использовали при общении подстановочный шифр, т.е. заменяли каждый символ исходного сообщения на соответствующий ему другой символ. Биологи раздобыли ключ к шифру и теперь нуждаются в помощи:</p>
+<p>Напишите программу, которая умеет шифровать и расшифровывать шифр подстановки. Программа принимает на вход две строки одинаковой длины, на первой строке записаны символы исходного алфавита, на второй строке — символы конечного алфавита, после чего идёт строка, которую нужно зашифровать переданным ключом, и ещё одна строка, которую нужно расшифровать.</p>
+<p>Пусть, например, на вход программе передано:</p>
+<div class="codehilite"><pre><span></span><span class="n">abcd</span>
+<span class="o">*</span><span class="n">d</span><span class="o">%#</span>
+<span class="n">abacabadaba</span>
+<span class="o">#*%*</span><span class="n">d</span><span class="o">*%</span>
+</pre></div>
+
+
+<p>Это значит, что символ a исходного сообщения заменяется на символ * в шифре, b заменяется на d, c — на % и d — на #.
+Нужно зашифровать строку abacabadaba и расшифровать строку #<em>%</em>d*% с помощью этого шифра. Получаем следующие строки, которые и передаём на вывод программы:</p>
+<div class="codehilite"><pre><span></span><span class="o">*</span><span class="n">d</span><span class="o">*%*</span><span class="n">d</span><span class="o">*#*</span><span class="n">d</span><span class="o">*</span>
+<span class="n">dacabac</span>
+</pre></div>
+
+
+<p><em>Решение 1:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">a</span>, <span class="nv">b</span> <span class="o">=</span> <span class="nv">list</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>, <span class="nv">list</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
+<span class="nv">slovar</span> <span class="o">=</span> <span class="nv">dict</span><span class="ss">(</span><span class="nv">zip</span><span class="ss">(</span><span class="nv">a</span>, <span class="nv">b</span><span class="ss">))</span>
+<span class="nv">dict_cypher</span> <span class="o">=</span> <span class="nv">dict</span><span class="ss">(</span><span class="nv">zip</span><span class="ss">(</span><span class="nv">b</span>, <span class="nv">a</span><span class="ss">))</span>
+<span class="nv">stroka</span>, <span class="nv">cypher</span> <span class="o">=</span> <span class="nv">input</span><span class="ss">()</span>, <span class="nv">input</span><span class="ss">()</span>
+<span class="nv">res1</span> <span class="o">=</span> [<span class="nv">slovar</span>[<span class="nv">i</span>] <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">stroka</span>]
+<span class="nv">res2</span> <span class="o">=</span> [<span class="nv">dict_cypher</span>[<span class="nv">i</span>] <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">cypher</span>]
+<span class="nv">print</span><span class="ss">(</span><span class="s1">&#39;&#39;</span>.<span class="nv">join</span><span class="ss">(</span><span class="nv">res1</span><span class="ss">)</span>, <span class="s1">&#39;&#39;</span>.<span class="nv">join</span><span class="ss">(</span><span class="nv">res2</span><span class="ss">)</span>, <span class="nv">sep</span><span class="o">=</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Решение 2:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">stroka</span>, <span class="nv">shifr</span>, <span class="nv">stroka1</span>, <span class="nv">shifr2</span> <span class="o">=</span> <span class="nv">input</span><span class="ss">()</span>, <span class="nv">input</span><span class="ss">()</span>, <span class="nv">input</span><span class="ss">()</span>, <span class="nv">input</span><span class="ss">()</span>
+<span class="nv">print</span><span class="ss">(</span><span class="s1">&#39;&#39;</span>.<span class="nv">join</span><span class="ss">(</span><span class="nv">shifr</span>[<span class="nv">stroka</span>.<span class="nv">index</span><span class="ss">(</span><span class="nv">i</span><span class="ss">)</span>] <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">stroka1</span><span class="ss">))</span>
+<span class="nv">print</span><span class="ss">(</span><span class="s1">&#39;&#39;</span>.<span class="nv">join</span><span class="ss">(</span><span class="nv">stroka</span>[<span class="nv">shifr</span>.<span class="nv">index</span><span class="ss">(</span><span class="nv">i</span><span class="ss">)</span>] <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">shifr2</span><span class="ss">))</span>
+</pre></div>
+
+
+<p><em>Решение 3:</em></p>
+<div class="codehilite"><pre><span></span><span class="n">stroka</span><span class="p">,</span> <span class="n">shifr</span> <span class="o">=</span> <span class="k">input</span><span class="p">(),</span> <span class="k">input</span><span class="p">()</span>
+<span class="n">to_encode</span> <span class="o">=</span> <span class="k">input</span><span class="p">()</span>
+<span class="n">to_decode</span> <span class="o">=</span> <span class="k">input</span><span class="p">()</span>
+
+<span class="n">print</span><span class="p">(</span><span class="n">to_encode</span><span class="p">.</span><span class="k">translate</span><span class="p">(</span><span class="n">str</span><span class="p">.</span><span class="n">maketrans</span><span class="p">(</span><span class="n">stroka</span><span class="p">,</span> <span class="n">shifr</span><span class="p">)))</span>
+<span class="n">print</span><span class="p">(</span><span class="n">to_decode</span><span class="p">.</span><span class="k">translate</span><span class="p">(</span><span class="n">str</span><span class="p">.</span><span class="n">maketrans</span><span class="p">(</span><span class="n">shifr</span><span class="p">,</span> <span class="n">stroka</span><span class="p">)))</span>
+</pre></div>
+
+
+<p><em>Решение 4:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">a</span>, <span class="nv">b</span>, <span class="nv">c</span>, <span class="nv">d</span> <span class="o">=</span> <span class="nv">input</span><span class="ss">()</span>, <span class="nv">input</span><span class="ss">()</span>, <span class="nv">input</span><span class="ss">()</span>, <span class="nv">input</span><span class="ss">()</span>
+<span class="nv">shifr</span>, <span class="nv">deshifr</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>, <span class="s2">&quot;&quot;</span>
+<span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">c</span>:
+    <span class="k">if</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">a</span>:
+    <span class="nv">shifr</span> <span class="o">+=</span> <span class="nv">b</span>[<span class="nv">a</span>.<span class="nv">find</span><span class="ss">(</span><span class="nv">i</span><span class="ss">)</span>]
+<span class="nv">print</span><span class="ss">(</span><span class="nv">shifr</span><span class="ss">)</span>
+<span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">d</span>:
+    <span class="k">if</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">b</span>:
+    <span class="nv">deshifr</span> <span class="o">+=</span> <span class="nv">a</span>[<span class="nv">b</span>.<span class="nv">find</span><span class="ss">(</span><span class="nv">i</span><span class="ss">)</span>]
+<span class="nv">print</span><span class="ss">(</span><span class="nv">deshifr</span><span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Задача 2:</em></p>
+<p>Рассчитать ежемесячную сумму платежа по кредиту при использовании дифференцированных выплат (в этом случае ежемесячный платеж по погашению кредита постепенно уменьшается к концу периода кредитования). Сумма кредита составляет <strong>s</strong> рублей, срок кредита <strong>n</strong> месяцев, процент - <strong>k%</strong>.</p>
+<p>Для расчета платежа в месяц <strong>t</strong> используется формула:<img alt="Расчет платежей по кредиту" src="/images/formula.png" title="Расчет платежей по кредиту" />{:style="float:left; margin-right:25px; margin-bottom:10px; margin-top:25px"}</p>
+<p><strong>Входные данные:</strong></p>
+<ul>
+<li>сумма кредита s руб (целое число);</li>
+<li>срок кредита n месяцев (целое число);</li>
+<li>процент k (целое число).</li>
+</ul>
+<p><strong>Выходные данные:</strong></p>
+<ul>
+<li>
+<p>n строк, на каждой из которых выведены платежи за каждый месяц, для вывода использовать формат: "%2d месяц - %8.2f руб";</p>
+</li>
+<li>
+<p>доход банка, для вывода использовать формат: "Доход банка - %6.2f руб".</p>
+</li>
+</ul>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">def</span> <span class="nv">compute_payment</span><span class="ss">(</span><span class="nv">t</span>, <span class="nv">s</span>, <span class="nv">n</span>, <span class="nv">k</span><span class="ss">)</span>:
+    <span class="nv">y</span> <span class="o">=</span> <span class="nv">s</span> <span class="o">/</span> <span class="nv">n</span> <span class="o">+</span> <span class="ss">(</span><span class="nv">s</span> <span class="o">-</span> <span class="ss">(</span><span class="nv">t</span> <span class="o">-</span> <span class="mi">1</span><span class="ss">)</span> <span class="o">*</span> <span class="ss">(</span><span class="nv">s</span> <span class="o">/</span> <span class="nv">n</span><span class="ss">))</span> <span class="o">*</span> <span class="nv">k</span> <span class="o">/</span> <span class="mi">1200</span>
+    <span class="k">return</span> <span class="nv">y</span>
+<span class="nv">s</span>, <span class="nv">n</span>, <span class="nv">k</span> <span class="o">=</span> <span class="ss">(</span><span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span> <span class="k">for</span> <span class="nv">_</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="mi">3</span><span class="ss">))</span>
+
+<span class="nv">t_list</span> <span class="o">=</span> [<span class="nv">t</span> <span class="k">for</span> <span class="nv">t</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="mi">1</span>, <span class="nv">n</span><span class="o">+</span><span class="mi">1</span><span class="ss">)</span>]
+
+<span class="nv">lambda_list</span> <span class="o">=</span> [<span class="nv">compute_payment</span><span class="ss">(</span><span class="nv">t</span>, <span class="nv">s</span>, <span class="nv">n</span>, <span class="nv">k</span><span class="ss">)</span> <span class="k">for</span> <span class="nv">t</span> <span class="nv">in</span> <span class="nv">t_list</span>] 
+<span class="nv">m</span> <span class="o">=</span> <span class="nv">sum</span><span class="ss">(</span><span class="nv">lambda_list</span><span class="ss">)</span>
+<span class="nv">f</span> <span class="o">=</span> <span class="nv">m</span> <span class="o">-</span> <span class="nv">s</span>
+<span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">len</span><span class="ss">(</span><span class="nv">t_list</span><span class="ss">))</span>:
+    <span class="nv">print</span><span class="ss">(</span><span class="s2">&quot;</span><span class="s">%2d месяц - %8.2f руб</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="ss">(</span><span class="nv">t_list</span>[<span class="nv">i</span>], <span class="nv">lambda_list</span>[<span class="nv">i</span>]<span class="ss">))</span>
+<span class="nv">print</span><span class="ss">(</span><span class="s2">&quot;</span><span class="s">Доход банка - %6.2f руб</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="ss">(</span><span class="nv">f</span><span class="ss">))</span>
+</pre></div>
+
+
+<p><em>Результат:</em></p>
+<div class="codehilite"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="o">%</span><span class="n">Run</span> <span class="n">diff_payments</span><span class="p">.</span><span class="n">py</span>
+<span class="mi">900000</span>
+<span class="mi">24</span>
+<span class="mi">20</span>
+ <span class="mi">1</span> <span class="err">месяц</span> <span class="o">-</span> <span class="mi">52500</span><span class="p">.</span><span class="mi">00</span> <span class="err">руб</span>
+ <span class="mi">2</span> <span class="err">месяц</span> <span class="o">-</span> <span class="mi">51875</span><span class="p">.</span><span class="mi">00</span> <span class="err">руб</span>
+ <span class="mi">3</span> <span class="err">месяц</span> <span class="o">-</span> <span class="mi">51250</span><span class="p">.</span><span class="mi">00</span> <span class="err">руб</span>
+ <span class="mi">4</span> <span class="err">месяц</span> <span class="o">-</span> <span class="mi">50625</span><span class="p">.</span><span class="mi">00</span> <span class="err">руб</span>
+ <span class="mi">5</span> <span class="err">месяц</span> <span class="o">-</span> <span class="mi">50000</span><span class="p">.</span><span class="mi">00</span> <span class="err">руб</span>
+ <span class="mi">6</span> <span class="err">месяц</span> <span class="o">-</span> <span class="mi">49375</span><span class="p">.</span><span class="mi">00</span> <span class="err">руб</span>
+ <span class="mi">7</span> <span class="err">месяц</span> <span class="o">-</span> <span class="mi">48750</span><span class="p">.</span><span class="mi">00</span> <span class="err">руб</span>
+ <span class="mi">8</span> <span class="err">месяц</span> <span class="o">-</span> <span class="mi">48125</span><span class="p">.</span><span class="mi">00</span> <span class="err">руб</span>
+ <span class="mi">9</span> <span class="err">месяц</span> <span class="o">-</span> <span class="mi">47500</span><span class="p">.</span><span class="mi">00</span> <span class="err">руб</span>
+<span class="mi">10</span> <span class="err">месяц</span> <span class="o">-</span> <span class="mi">46875</span><span class="p">.</span><span class="mi">00</span> <span class="err">руб</span>
+<span class="mi">11</span> <span class="err">месяц</span> <span class="o">-</span> <span class="mi">46250</span><span class="p">.</span><span class="mi">00</span> <span class="err">руб</span>
+<span class="mi">12</span> <span class="err">месяц</span> <span class="o">-</span> <span class="mi">45625</span><span class="p">.</span><span class="mi">00</span> <span class="err">руб</span>
+<span class="mi">13</span> <span class="err">месяц</span> <span class="o">-</span> <span class="mi">45000</span><span class="p">.</span><span class="mi">00</span> <span class="err">руб</span>
+<span class="mi">14</span> <span class="err">месяц</span> <span class="o">-</span> <span class="mi">44375</span><span class="p">.</span><span class="mi">00</span> <span class="err">руб</span>
+<span class="mi">15</span> <span class="err">месяц</span> <span class="o">-</span> <span class="mi">43750</span><span class="p">.</span><span class="mi">00</span> <span class="err">руб</span>
+<span class="mi">16</span> <span class="err">месяц</span> <span class="o">-</span> <span class="mi">43125</span><span class="p">.</span><span class="mi">00</span> <span class="err">руб</span>
+<span class="mi">17</span> <span class="err">месяц</span> <span class="o">-</span> <span class="mi">42500</span><span class="p">.</span><span class="mi">00</span> <span class="err">руб</span>
+<span class="mi">18</span> <span class="err">месяц</span> <span class="o">-</span> <span class="mi">41875</span><span class="p">.</span><span class="mi">00</span> <span class="err">руб</span>
+<span class="mi">19</span> <span class="err">месяц</span> <span class="o">-</span> <span class="mi">41250</span><span class="p">.</span><span class="mi">00</span> <span class="err">руб</span>
+<span class="mi">20</span> <span class="err">месяц</span> <span class="o">-</span> <span class="mi">40625</span><span class="p">.</span><span class="mi">00</span> <span class="err">руб</span>
+<span class="mi">21</span> <span class="err">месяц</span> <span class="o">-</span> <span class="mi">40000</span><span class="p">.</span><span class="mi">00</span> <span class="err">руб</span>
+<span class="mi">22</span> <span class="err">месяц</span> <span class="o">-</span> <span class="mi">39375</span><span class="p">.</span><span class="mi">00</span> <span class="err">руб</span>
+<span class="mi">23</span> <span class="err">месяц</span> <span class="o">-</span> <span class="mi">38750</span><span class="p">.</span><span class="mi">00</span> <span class="err">руб</span>
+<span class="mi">24</span> <span class="err">месяц</span> <span class="o">-</span> <span class="mi">38125</span><span class="p">.</span><span class="mi">00</span> <span class="err">руб</span>
+<span class="err">Доход</span> <span class="err">банка</span> <span class="o">-</span> <span class="mi">187500</span><span class="p">.</span><span class="mi">00</span> <span class="err">руб</span>
+<span class="o">&gt;&gt;&gt;</span>
+</pre></div>
+
+
+<p><em>Задача 3:</em></p>
+<p>Вам дано описание пирамиды из кубиков в формате XML.
+Кубики могут быть трех цветов: красный (red), зеленый (green) и синий (blue﻿).
+Для каждого кубика известны его цвет, и известны кубики, расположенные прямо под ним.</p>
+<p>Пример:
+XML
+<cube color="blue">
+  <cube color="red">
+    <cube color="green">
+    </cube>
+  </cube>
+  <cube color="red">
+  </cube>
+</cube></p>
+<p>Введем понятие ценности для кубиков. Самый верхний кубик, соответствующий корню XML документа имеет ценность 1. Кубики, расположенные прямо под ним, имеют ценность 2. Кубики, расположенные прямо под нижележащими кубиками, имеют ценность 3. И т. д.</p>
+<p>Ценность цвета равна сумме ценностей всех кубиков этого цвета.</p>
+<p>Выведите через пробел три числа: ценности красного, зеленого и синего цветов.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">xml.etree.ElementTree</span> <span class="kn">as</span> <span class="nn">ET</span>
+
+<span class="n">tree</span> <span class="o">=</span> <span class="n">ET</span><span class="o">.</span><span class="n">fromstring</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+<span class="n">answer</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;red&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;green&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;blue&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">}</span>
+
+<span class="k">def</span> <span class="nf">dfs</span><span class="p">(</span><span class="n">cube</span><span class="p">,</span> <span class="n">res</span><span class="p">,</span> <span class="n">depth</span><span class="p">):</span>
+    <span class="n">res</span><span class="p">[</span><span class="n">cube</span><span class="o">.</span><span class="n">attrib</span><span class="p">[</span><span class="s2">&quot;color&quot;</span><span class="p">]]</span> <span class="o">+=</span> <span class="n">depth</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">cube</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="s2">&quot;cube&quot;</span><span class="p">):</span>
+        <span class="n">dfs</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">res</span><span class="p">,</span> <span class="n">depth</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+
+<span class="n">dfs</span><span class="p">(</span><span class="n">tree</span><span class="p">,</span> <span class="n">answer</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">answer</span><span class="p">[</span><span class="s2">&quot;red&quot;</span><span class="p">],</span> <span class="n">answer</span><span class="p">[</span><span class="s2">&quot;green&quot;</span><span class="p">],</span> <span class="n">answer</span><span class="p">[</span><span class="s2">&quot;blue&quot;</span><span class="p">])</span>
+</pre></div>
+
+
+<p><em>Задача 4:</em></p>
+<p>Класс Elevator – это чертёж лифта. Объект класса Elevator – это созданный по чертежу лифт. Создавая объект класса, вы устанавливаете лифт в доме, указывая количество этажей в доме и текущий этаж, на котором остановился лифт:</p>
+<p>Если вы не указываете количество этажей и текущий этаж, то по умолчанию лифт устанавливается в доме из 5 этажей и останавливается на 3 этаже.</p>
+<p>В лифте есть две кнопки:</p>
+<ul>
+<li>кнопка "up", которая поднимает лифт на один этаж выше: </li>
+</ul>
+<p>Лифт поднимается на 4 этаж</p>
+<ul>
+<li>кнопка "down", которая опускает лифт на один этаж ниже: </li>
+</ul>
+<p>Лифт опускается на 2 этаж</p>
+<p>Однако если житель дома нажал на кнопку "up", когда лифт находится на максимальном этаже, то: </p>
+<p>Лифт не может подняться выше</p>
+<p>Если житель дома нажал на кнопку "down", когда лифт находится на первом этаже, то: </p>
+<p>Лифт не может опуститься ниже</p>
+<p>От Вас требуется написать только класс Elevator.</p>
+<p>Для упрощения задачи предполагаем, что минимальный этаж всегда первый. Точно так же не нужно проверять при создании лифта, что текущий этаж больше, чем количество этажей в доме.</p>
+<div class="codehilite"><pre><span></span><span class="n">Sample</span> <span class="k">Input</span><span class="p">:</span>
+
+<span class="mi">7</span> <span class="mi">6</span>
+
+<span class="n">Sample</span> <span class="k">Output</span><span class="p">:</span>
+
+<span class="err">Лифт</span> <span class="err">поднимается</span> <span class="err">на</span> <span class="mi">7</span> <span class="err">этаж</span>
+<span class="err">Лифт</span> <span class="err">не</span> <span class="err">может</span> <span class="err">подняться</span> <span class="err">выше</span>
+<span class="err">Лифт</span> <span class="err">опускается</span> <span class="err">на</span> <span class="mi">6</span> <span class="err">этаж</span>
+<span class="err">Лифт</span> <span class="err">опускается</span> <span class="err">на</span> <span class="mi">5</span> <span class="err">этаж</span>
+<span class="err">Лифт</span> <span class="err">опускается</span> <span class="err">на</span> <span class="mi">4</span> <span class="err">этаж</span>
+</pre></div>
+
+
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">class</span> <span class="nv">Elevator</span>:
+    <span class="nv">def</span> <span class="nv">__init__</span><span class="ss">(</span><span class="nv">self</span>, <span class="nv">top</span><span class="o">=</span><span class="mi">5</span>, <span class="nv">current</span><span class="o">=</span><span class="mi">3</span>, <span class="nv">bottom</span><span class="o">=</span><span class="mi">1</span><span class="ss">)</span>:
+        <span class="nv">self</span>.<span class="nv">current</span> <span class="o">=</span> <span class="nv">current</span>
+        <span class="nv">self</span>.<span class="nv">bottom</span> <span class="o">=</span> <span class="nv">bottom</span>
+        <span class="nv">self</span>.<span class="nv">top</span> <span class="o">=</span> <span class="nv">top</span>
+    <span class="nv">def</span> <span class="nv">up</span><span class="ss">(</span><span class="nv">self</span><span class="ss">)</span>:
+        <span class="k">if</span><span class="ss">(</span><span class="nv">self</span>.<span class="nv">current</span> <span class="o">&lt;</span> <span class="nv">self</span>.<span class="nv">top</span><span class="ss">)</span>:
+            <span class="nv">self</span>.<span class="nv">current</span> <span class="o">=</span> <span class="nv">self</span>.<span class="nv">current</span> <span class="o">+</span> <span class="mi">1</span>
+            <span class="nv">print</span><span class="ss">(</span><span class="nv">f</span><span class="s1">&#39;</span><span class="s">Лифт поднимается на {self.current_floor} этаж</span><span class="s1">&#39;</span><span class="ss">)</span>
+        <span class="k">else</span>:
+            <span class="nv">print</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">Лифт не может подняться выше</span><span class="s1">&#39;</span><span class="ss">)</span>
+    <span class="nv">def</span> <span class="nv">down</span><span class="ss">(</span><span class="nv">self</span><span class="ss">)</span>:
+        <span class="k">if</span><span class="ss">(</span><span class="nv">self</span>.<span class="nv">current</span> <span class="o">&lt;=</span> <span class="nv">self</span>.<span class="nv">bottom</span><span class="ss">)</span>:
+            <span class="nv">print</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">Лифт не может опуститься ниже</span><span class="s1">&#39;</span><span class="ss">)</span>
+        <span class="k">else</span>:
+            <span class="nv">self</span>.<span class="nv">current</span> <span class="o">=</span> <span class="nv">self</span>.<span class="nv">current</span> <span class="o">-</span> <span class="mi">1</span>
+            <span class="nv">print</span><span class="ss">(</span><span class="nv">f</span><span class="s1">&#39;</span><span class="s">Лифт опускается на {self.current_floor} этаж</span><span class="s1">&#39;</span><span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Задача 5:</em></p>
+<p>В институте биоинформатики по офису передвигается робот. Недавно студенты из группы программистов написали для него программу, по которой робот, когда заходит в комнату, считает количество программистов в ней и произносит его вслух: "n программистов".</p>
+<p>Для того, чтобы это звучало правильно, для каждого n нужно использовать верное окончание слова.</p>
+<p>Напишите программу, считывающую с пользовательского ввода целое число n (неотрицательное), выводящее это число в консоль вместе с правильным образом изменённым словом "программист", для того, чтобы робот мог нормально общаться с людьми, например: 1 программист, 2 программиста, 5 программистов.</p>
+<p>В комнате может быть очень много программистов. Проверьте, что ваша программа правильно обработает все случаи, как минимум до 1000 человек.</p>
+<p><strong>Дополнительный комментарий к условию:</strong></p>
+<p>Обратите внимание, что задача не так проста, как кажется на первый взгляд. Если ваше решение не проходит какой-то тест, это значит, что вы не рассмотрели какой-то из случаев входных данных (число программистов 0≤n≤1000). Обязательно проверяйте свои решения на дополнительных значениях, а не только на тех, что приведены в условии задания.</p>
+<p>Так как задание повышенной сложности, вручную код решений проверяться не будет. Если вы столкнулись с ошибкой в первых четырёх тестах, проверьте, что вы используете только русские символы для ответа. В остальных случаях ищите ошибку в логике работы программы.</p>
+<p><em>Решение 1:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">n</span> <span class="o">=</span> <span class="nv">input</span><span class="ss">()</span>
+<span class="nv">ov</span> <span class="o">=</span> <span class="ss">(</span><span class="s1">&#39;</span><span class="s">0</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">11</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">12</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">13</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">14</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">5</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">6</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">7</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">8</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">9</span><span class="s1">&#39;</span><span class="ss">)</span>
+<span class="nv">ta</span> <span class="o">=</span> <span class="ss">(</span><span class="s1">&#39;</span><span class="s">2</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">3</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">4</span><span class="s1">&#39;</span><span class="ss">)</span>
+<span class="k">if</span> <span class="nv">n</span>.<span class="nv">endswith</span><span class="ss">(</span><span class="nv">ov</span><span class="ss">)</span>:
+    <span class="nv">print</span><span class="ss">(</span><span class="nv">n</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="s"> программистов</span><span class="s2">&quot;</span><span class="ss">)</span>
+<span class="nv">elif</span> <span class="nv">n</span>.<span class="nv">endswith</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">1</span><span class="s1">&#39;</span><span class="ss">)</span>:
+    <span class="nv">print</span><span class="ss">(</span><span class="nv">n</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="s"> программист</span><span class="s2">&quot;</span><span class="ss">)</span>
+<span class="nv">elif</span> <span class="nv">n</span>.<span class="nv">endswith</span><span class="ss">(</span><span class="nv">ta</span><span class="ss">)</span>:
+    <span class="nv">print</span><span class="ss">(</span><span class="nv">n</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="s"> программиста</span><span class="s2">&quot;</span><span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Решение 2:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">n</span> <span class="o">=</span> <span class="nv">input</span><span class="ss">()</span>
+<span class="nv">pred</span> <span class="o">=</span> <span class="nv">n</span>[<span class="o">-</span><span class="mi">1</span>]
+<span class="nv">posl</span> <span class="o">=</span> <span class="nv">n</span>[<span class="o">-</span><span class="mi">2</span>:]
+<span class="k">if</span> <span class="nv">pred</span> <span class="o">==</span> <span class="s2">&quot;</span><span class="s">1</span><span class="s2">&quot;</span> <span class="nv">and</span> <span class="nv">posl</span> <span class="o">!=</span> <span class="s2">&quot;</span><span class="s">11</span><span class="s2">&quot;</span>:
+    <span class="nv">print</span><span class="ss">(</span><span class="nv">n</span>, <span class="s2">&quot;</span><span class="s">программист</span><span class="s2">&quot;</span><span class="ss">)</span>
+<span class="nv">elif</span> <span class="ss">(</span><span class="nv">pred</span> <span class="o">==</span> <span class="s2">&quot;</span><span class="s">2</span><span class="s2">&quot;</span> <span class="nv">and</span> <span class="nv">posl</span> <span class="o">!=</span> <span class="s2">&quot;</span><span class="s">12</span><span class="s2">&quot;</span><span class="ss">)</span> <span class="nv">or</span> <span class="ss">(</span><span class="nv">pred</span> <span class="o">==</span> <span class="s2">&quot;</span><span class="s">3</span><span class="s2">&quot;</span> <span class="nv">and</span> <span class="nv">posl</span> <span class="o">!=</span> <span class="s2">&quot;</span><span class="s">13</span><span class="s2">&quot;</span><span class="ss">)</span> <span class="nv">or</span> <span class="ss">(</span><span class="nv">pred</span> <span class="o">==</span> <span class="s2">&quot;</span><span class="s">4</span><span class="s2">&quot;</span> <span class="nv">and</span> <span class="nv">posl</span> <span class="o">!=</span> <span class="s2">&quot;</span><span class="s">14</span><span class="s2">&quot;</span><span class="ss">)</span>:
+    <span class="nv">print</span><span class="ss">(</span><span class="nv">n</span>, <span class="s2">&quot;</span><span class="s">программиста</span><span class="s2">&quot;</span><span class="ss">)</span>
+<span class="k">else</span>:
+    <span class="nv">print</span><span class="ss">(</span><span class="nv">n</span>, <span class="s2">&quot;</span><span class="s">программистов</span><span class="s2">&quot;</span><span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Решение 3:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">n</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
+<span class="nv">print</span><span class="ss">(</span><span class="nv">n</span>, <span class="s1">&#39;</span><span class="s">программист</span><span class="s1">&#39;</span><span class="o">+</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">ов</span><span class="s1">&#39;</span> <span class="k">if</span> <span class="nv">n</span> <span class="o">%</span> <span class="mi">10</span> <span class="o">==</span> <span class="mi">0</span> <span class="nv">or</span> <span class="mi">4</span> <span class="o">&lt;</span> <span class="nv">n</span> <span class="o">%</span> <span class="mi">10</span> <span class="o">&lt;</span> <span class="mi">10</span> <span class="nv">or</span> <span class="mi">10</span> <span class="o">&lt;</span> <span class="nv">n</span> <span class="o">%</span> <span class="mi">100</span> <span class="o">&lt;</span> <span class="mi">15</span> <span class="k">else</span> <span class="s1">&#39;</span><span class="s">а</span><span class="s1">&#39;</span> <span class="k">if</span> <span class="mi">1</span> <span class="o">&lt;</span> <span class="nv">n</span> <span class="o">%</span> <span class="mi">10</span> <span class="o">&lt;</span> <span class="mi">5</span> <span class="k">else</span> <span class="s1">&#39;&#39;</span><span class="ss">))</span>
+</pre></div>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div><!-- конец карточки -->
+  <!-- конец поста -->
+
+  </main>
+  <!-- Скрипты -->
+  <script src="/static/assets/purecounter/purecounter.js"></script>
+  <script src="/static/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/static/assets/glightbox/js/glightbox.min.js"></script>
+  <script src="/static/assets/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/static/assets/swiper/swiper-bundle.min.js"></script>
+  <script src="/static/assets/waypoints/noframework.waypoints.js"></script>
+  <script src="/static/js/main.js"></script>
+</body>
+</html>

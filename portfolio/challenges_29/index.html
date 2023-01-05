@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title></title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <link href="/static/img/favicon.png" rel="icon">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="/static/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/static/assets/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/static/assets/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="/static/assets/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/static/assets/remixicon/remixicon.css" rel="stylesheet">
+  <link href="/static/assets/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/69e2443572.js" crossorigin="anonymous"></script>
+  <link href="/static/css/style.css" rel="stylesheet">
+  <link href="/pygments.css" rel="stylesheet">
+  <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(89602269, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/89602269" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</head>
+<body>
+  <main id="main">
+
+<style>
+body::before {
+	background: #040404 url("/static/img/portfolio/post.jpg");
+}
+</style>
+    <!-- ======= шаблон для поста ======= -->
+    <div id="portfolio-details" class="portfolio-details">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <h2 class="portfolio-title">Подборка задач с решениями - 29</h2>
+          </div>
+          <div class="col-lg-8 portfolio-info">
+            <h3></h3>
+            <ul>
+              <li><strong>Категория</strong>: Python</li>
+              <li><strong>Дата публикации</strong>: 2022-01-23</li>
+              <li><strong>Посмотреть на сайте</strong>: <a href="https://stepik.org">Stepik</a></li>
+            </ul>
+            <p>
+              <p><em>Задача 1:</em></p>
+<p>На вход программе подается натуральное число n, а затем n строк. Напишите программу, которая выводит только уникальные строки, в том же порядке, в котором они были введены.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">n</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
+<span class="nv">spisok</span> <span class="o">=</span> []
+<span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">n</span><span class="ss">)</span>:
+    <span class="nv">x</span> <span class="o">=</span> <span class="nv">input</span><span class="ss">()</span>
+    <span class="k">if</span> <span class="nv">x</span> <span class="nv">not</span> <span class="nv">in</span> <span class="nv">spisok</span>:
+        <span class="nv">spisok</span>.<span class="nv">append</span><span class="ss">(</span><span class="nv">x</span><span class="ss">)</span>
+<span class="nv">print</span><span class="ss">(</span><span class="o">*</span><span class="nv">spisok</span>, <span class="nv">sep</span><span class="o">=</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Задача 2:</em></p>
+<p>На вход программе подается натуральное число n, затем n строк, затем еще одна строка — поисковый запрос. Напишите программу, которая выводит все введенные строки, в которых встречается поисковый запрос.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">n</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
+<span class="nv">spisok</span> <span class="o">=</span> []
+
+<span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">n</span><span class="ss">)</span>:
+    <span class="nv">x</span> <span class="o">=</span> <span class="nv">input</span><span class="ss">()</span>
+    <span class="nv">spisok</span>.<span class="nv">append</span><span class="ss">(</span><span class="nv">x</span><span class="ss">)</span>
+<span class="nv">zapros</span> <span class="o">=</span> <span class="nv">input</span><span class="ss">()</span>
+<span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">spisok</span>:
+    <span class="k">if</span> <span class="nv">zapros</span>.<span class="nv">lower</span><span class="ss">()</span> <span class="nv">in</span> <span class="nv">i</span>.<span class="nv">lower</span><span class="ss">()</span>:
+        <span class="nv">print</span><span class="ss">(</span><span class="nv">i</span>, <span class="nv">sep</span><span class="o">=</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Задача 3:</em></p>
+<p>На вход программе подается натуральное число n, затем n строк, затем число k — количество поисковых запросов, затем k строк — поисковые запросы. Напишите программу, которая выводит все введенные строки, в которых встречаются все поисковые запросы.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">s</span> <span class="o">=</span> [<span class="nv">input</span><span class="ss">()</span> <span class="k">for</span> <span class="nv">_</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">()))</span>]
+<span class="nv">h</span> <span class="o">=</span> [<span class="nv">input</span><span class="ss">()</span> <span class="k">for</span> <span class="nv">_</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">()))</span>]
+<span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">s</span>:
+    <span class="k">for</span> <span class="nv">j</span> <span class="nv">in</span> <span class="nv">h</span>:
+        <span class="k">if</span> <span class="nv">j</span>.<span class="nv">lower</span><span class="ss">()</span> <span class="nv">not</span> <span class="nv">in</span> <span class="nv">i</span>.<span class="nv">lower</span><span class="ss">()</span>:
+            <span class="k">break</span>
+    <span class="k">else</span>:
+        <span class="nv">print</span><span class="ss">(</span><span class="nv">i</span><span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Задача 4:</em></p>
+<p>На вход программе подается натуральное число n, а затем n целых чисел. Напишите программу, которая сначала выводит все отрицательные числа, затем нули, а затем все положительные числа, каждое на отдельной строке. Числа должны быть выведены в том же порядке, в котором они были введены.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">neg</span> <span class="o">=</span> []
+<span class="nv">zer</span> <span class="o">=</span> []
+<span class="nv">pos</span> <span class="o">=</span> []
+<span class="nv">n</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
+<span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">n</span><span class="ss">)</span>:
+    <span class="nv">x</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
+    <span class="k">if</span> <span class="nv">x</span> <span class="o">&lt;</span> <span class="mi">0</span>:
+        <span class="nv">neg</span>.<span class="nv">append</span><span class="ss">(</span><span class="nv">x</span><span class="ss">)</span>
+    <span class="k">if</span> <span class="nv">x</span> <span class="o">==</span> <span class="mi">0</span>:
+        <span class="nv">zer</span>.<span class="nv">append</span><span class="ss">(</span><span class="nv">x</span><span class="ss">)</span>
+    <span class="k">if</span> <span class="nv">x</span> <span class="o">&gt;</span> <span class="mi">0</span>:
+        <span class="nv">pos</span>.<span class="nv">append</span><span class="ss">(</span><span class="nv">x</span><span class="ss">)</span>
+<span class="nv">print</span><span class="ss">(</span><span class="o">*</span><span class="nv">neg</span>, <span class="nv">sep</span><span class="o">=</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="ss">)</span>
+<span class="nv">print</span><span class="ss">(</span><span class="o">*</span><span class="nv">zer</span>, <span class="nv">sep</span><span class="o">=</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="ss">)</span>
+<span class="nv">print</span><span class="ss">(</span><span class="o">*</span><span class="nv">pos</span>, <span class="nv">sep</span><span class="o">=</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Задача 5:</em></p>
+<p>На вход программе подается строка текста. Напишите программу, которая выводит слова введенной строки в столбик.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="k">input</span><span class="p">().</span><span class="n">split</span><span class="p">()</span>
+<span class="n">print</span><span class="p">(</span><span class="o">*</span><span class="n">s</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;\n&#39;</span><span class="p">)</span>
+</pre></div>
+
+
+<p><em>Задача 6:</em></p>
+<p>На вход программе подается строка текста, содержащая имя, отчество и фамилию человека. Напишите программу, которая выводит инициалы человека.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="k">input</span><span class="p">().</span><span class="n">split</span><span class="p">()</span>
+<span class="n">init</span> <span class="o">=</span> <span class="p">[</span><span class="n">s</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="n">s</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="n">s</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">0</span><span class="p">]]</span>
+<span class="n">print</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">.</span><span class="k">join</span><span class="p">(</span><span class="n">init</span><span class="p">),</span><span class="s1">&#39;.&#39;</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+</pre></div>
+
+
+<p><em>Задача 7:</em></p>
+<p>В операционной системе Windows полное имя файла состоит из буквы диска, после которого ставится двоеточие и символ  "\",  затем через такой же символ перечисляются подкаталоги (папки), в которых находится файл, в конце пишется имя файла (C:\Windows\System32\calc.exe).</p>
+<p>На вход программе подается одна строка с корректным именем файла в операционной системе Windows. Напишите программу, которая разбирает строку на части, разделенные символом "\". Каждую часть вывести в отдельной строке.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="k">input</span><span class="p">().</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;\\&#39;</span><span class="p">)</span>
+<span class="n">print</span><span class="p">(</span><span class="o">*</span><span class="n">s</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;\n&#39;</span><span class="p">)</span>
+</pre></div>
+
+
+<p><em>Задача 8:</em></p>
+<p>На вход программе подается строка текста, содержащая целые числа. Напишите программу, которая по заданным числам строит столбчатую диаграмму.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">s</span> <span class="o">=</span> <span class="nv">list</span><span class="ss">(</span><span class="nv">map</span><span class="ss">(</span><span class="nv">int</span>, <span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">()))</span>
+<span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">s</span>:
+     <span class="nv">print</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">+</span><span class="s1">&#39;</span><span class="o">*</span><span class="nv">i</span>, <span class="nv">sep</span><span class="o">=</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Задача 9:</em></p>
+<p>На вход программе подается строка текста, содержащая 4 целых числа разделенных точкой. Напишите программу, которая определяет является ли введенная строка текста корректным ip-адресом.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">s</span> <span class="o">=</span> <span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">.</span><span class="s1">&#39;</span><span class="ss">)</span>
+<span class="nv">count</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">len</span><span class="ss">(</span><span class="nv">s</span><span class="ss">))</span>:
+    <span class="k">if</span> <span class="mi">0</span> <span class="o">&lt;=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">s</span>[<span class="nv">i</span>]<span class="ss">)</span> <span class="o">&lt;=</span> <span class="mi">255</span>:
+        <span class="nv">count</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="k">if</span> <span class="nv">count</span> <span class="o">==</span> <span class="mi">4</span>:
+    <span class="nv">print</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">ДА</span><span class="s1">&#39;</span><span class="ss">)</span>
+<span class="k">else</span>:
+    <span class="nv">print</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">НЕТ</span><span class="s1">&#39;</span><span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Задача 10:</em></p>
+<p>На вход программе подается строка текста и строка разделитель. Напишите программу, которая вставляет указанный разделитель между каждым символом введенной строки текста.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="n">print</span><span class="p">(</span><span class="o">*</span><span class="n">list</span><span class="p">(</span><span class="k">input</span><span class="p">()),</span> <span class="n">sep</span><span class="o">=</span><span class="k">input</span><span class="p">())</span>
+</pre></div>
+
+
+<p><em>Задача 11:</em></p>
+<p>На вход программе подается строка текста, содержащая натуральные числа. Из данной строки формируется список чисел. Напишите программу, которая подсчитывает, сколько в полученном списке пар элементов, равных друг другу. Считается, что любые два элемента, равные друг другу образуют одну пару, которую необходимо посчитать.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">a</span> <span class="o">=</span> <span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">()</span>
+<span class="nv">s</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">len</span><span class="ss">(</span><span class="nv">a</span><span class="ss">)</span> <span class="o">-</span> <span class="mi">1</span><span class="ss">)</span>:
+    <span class="nv">s</span> <span class="o">+=</span> <span class="nv">a</span>[<span class="nv">i</span> <span class="o">+</span> <span class="mi">1</span>:].<span class="nv">count</span><span class="ss">(</span><span class="nv">a</span>[<span class="nv">i</span>]<span class="ss">)</span>
+<span class="nv">print</span><span class="ss">(</span><span class="nv">s</span><span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Задача 12:</em></p>
+<p>Дополните приведенный код, чтобы он:</p>
+<ul>
+<li>Заменил второй элемент списка на 17;</li>
+<li>Удалил первый элемент списка;</li>
+<li>Удвоил список;</li>
+<li>Вставил число 25 по индексу 3;</li>
+<li>Вывел список, с помощью функции print()</li>
+</ul>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="n">l</span> <span class="o">=</span> <span class="p">[</span><span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">]</span>
+<span class="n">l</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">17</span>
+<span class="n">l</span> <span class="o">+=</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]</span>
+<span class="n">del</span> <span class="n">l</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">l</span> <span class="o">*=</span> <span class="mi">2</span>
+<span class="n">l</span><span class="p">.</span><span class="k">insert</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">25</span><span class="p">)</span>
+<span class="n">print</span><span class="p">(</span><span class="n">l</span><span class="p">)</span>
+</pre></div>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div><!-- конец карточки -->
+  <!-- конец поста -->
+
+  </main>
+  <!-- Скрипты -->
+  <script src="/static/assets/purecounter/purecounter.js"></script>
+  <script src="/static/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/static/assets/glightbox/js/glightbox.min.js"></script>
+  <script src="/static/assets/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/static/assets/swiper/swiper-bundle.min.js"></script>
+  <script src="/static/assets/waypoints/noframework.waypoints.js"></script>
+  <script src="/static/js/main.js"></script>
+</body>
+</html>

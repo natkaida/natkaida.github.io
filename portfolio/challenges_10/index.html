@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title></title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <link href="/static/img/favicon.png" rel="icon">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="/static/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/static/assets/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/static/assets/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="/static/assets/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/static/assets/remixicon/remixicon.css" rel="stylesheet">
+  <link href="/static/assets/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/69e2443572.js" crossorigin="anonymous"></script>
+  <link href="/static/css/style.css" rel="stylesheet">
+  <link href="/pygments.css" rel="stylesheet">
+  <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(89602269, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/89602269" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</head>
+<body>
+  <main id="main">
+
+<style>
+body::before {
+	background: #040404 url("/static/img/portfolio/post.jpg");
+}
+</style>
+    <!-- ======= шаблон для поста ======= -->
+    <div id="portfolio-details" class="portfolio-details">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <h2 class="portfolio-title">Подборка задач с решениями - 10</h2>
+          </div>
+          <div class="col-lg-8 portfolio-info">
+            <h3></h3>
+            <ul>
+              <li><strong>Категория</strong>: Python</li>
+              <li><strong>Дата публикации</strong>: 2022-01-04</li>
+              <li><strong>Посмотреть на сайте</strong>: <a href="https://stepik.org">Stepik</a></li>
+            </ul>
+            <p>
+              <p><em>Задача 1:</em></p>
+<p>Напишите программу, которая получает на вход три целых числа, по одному числу в строке, и выводит на консоль в три строки сначала максимальное, потом минимальное, после чего оставшееся число.</p>
+<p>На ввод могут подаваться и повторяющиеся числа.</p>
+<p><em>Решение 1 - без встроенных функций min и max:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">a</span>, <span class="nv">b</span>, <span class="nv">c</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>, <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>, <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
+<span class="nv">maxim</span> <span class="o">=</span> <span class="nv">a</span>
+<span class="nv">minim</span> <span class="o">=</span> <span class="nv">b</span>
+<span class="k">if</span> <span class="nv">b</span> <span class="o">&gt;</span> <span class="nv">a</span>:
+    <span class="nv">maxim</span> <span class="o">=</span> <span class="nv">b</span>
+    <span class="nv">minim</span> <span class="o">=</span> <span class="nv">a</span>
+<span class="k">if</span> <span class="nv">c</span> <span class="o">&gt;</span> <span class="nv">maxim</span>:
+    <span class="nv">maxim</span> <span class="o">=</span> <span class="nv">c</span>
+<span class="k">if</span> <span class="nv">c</span> <span class="o">&lt;</span> <span class="nv">minim</span>:
+    <span class="nv">minim</span> <span class="o">=</span> <span class="nv">c</span>
+<span class="nv">ost</span> <span class="o">=</span> <span class="nv">a</span> <span class="o">+</span> <span class="nv">b</span> <span class="o">+</span> <span class="nv">c</span> <span class="o">-</span> <span class="nv">minim</span> <span class="o">-</span> <span class="nv">maxim</span>
+<span class="nv">print</span><span class="ss">(</span><span class="nv">maxim</span><span class="ss">)</span>
+<span class="nv">print</span><span class="ss">(</span><span class="nv">minim</span><span class="ss">)</span>
+<span class="nv">print</span><span class="ss">(</span><span class="nv">ost</span><span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Решение 2 - с использованием функций min и max:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">num</span> <span class="o">=</span> []
+<span class="k">for</span> <span class="nv">_</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="mi">3</span><span class="ss">)</span>:
+    <span class="nv">num</span>.<span class="nv">append</span><span class="ss">(</span><span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">()))</span>
+<span class="nv">print</span><span class="ss">(</span><span class="nv">max</span><span class="ss">(</span><span class="nv">num</span><span class="ss">))</span>
+<span class="nv">print</span><span class="ss">(</span><span class="nv">min</span><span class="ss">(</span><span class="nv">num</span><span class="ss">))</span>
+<span class="nv">num</span>.<span class="nv">remove</span><span class="ss">(</span><span class="nv">max</span><span class="ss">(</span><span class="nv">num</span><span class="ss">))</span>
+<span class="nv">num</span>.<span class="nv">remove</span><span class="ss">(</span><span class="nv">min</span><span class="ss">(</span><span class="nv">num</span><span class="ss">))</span>
+<span class="nv">print</span><span class="ss">(</span><span class="o">*</span><span class="nv">num</span><span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Задача 2:</em></p>
+<p>Напишите программу, которая считывает с консоли числа (по одному в строке) до тех пор, пока сумма введённых чисел не будет равна 0 и сразу после этого выводит сумму квадратов всех считанных чисел.</p>
+<p>Гарантируется, что в какой-то момент сумма введённых чисел окажется равной 0, после этого считывание продолжать не нужно.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">m</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
+<span class="nv">t2</span> <span class="o">=</span> <span class="nv">m</span><span class="o">**</span><span class="mi">2</span>
+<span class="k">while</span> <span class="nv">m</span> <span class="o">!=</span> <span class="mi">0</span>:
+    <span class="nv">t</span> <span class="o">=</span> <span class="ss">(</span><span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">()))</span>
+    <span class="nv">m</span> <span class="o">+=</span> <span class="nv">t</span>
+    <span class="nv">t2</span> <span class="o">+=</span> <span class="nv">t</span><span class="o">**</span><span class="mi">2</span>
+<span class="nv">print</span><span class="ss">(</span><span class="nv">t2</span><span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Задача 3:</em></p>
+<p>Напишите программу, которая считывает список чисел lst из первой строки и число x из второй строки, которая выводит все позиции, на которых встречается число x в переданном списке lst.</p>
+<p>Позиции нумеруются с нуля, если число x не встречается в списке, вывести строку "Отсутствует" (без кавычек, с большой буквы).</p>
+<p>Позиции должны быть выведены в одну строку, по возрастанию абсолютного значения.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">my_dict</span> <span class="o">=</span> {<span class="nv">k</span>:<span class="nv">v</span> <span class="k">for</span> <span class="nv">k</span>, <span class="nv">v</span> <span class="nv">in</span> <span class="nv">enumerate</span><span class="ss">(</span><span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">())</span>}
+<span class="nv">n</span> <span class="o">=</span> <span class="nv">input</span><span class="ss">()</span>
+<span class="nv">res</span> <span class="o">=</span> [<span class="nv">k</span> <span class="k">for</span> <span class="nv">k</span>, <span class="nv">v</span> <span class="nv">in</span> <span class="nv">my_dict</span>.<span class="nv">items</span><span class="ss">()</span> <span class="k">if</span> <span class="nv">v</span> <span class="o">==</span> <span class="nv">n</span>]
+<span class="nv">print</span><span class="ss">(</span><span class="o">*</span><span class="nv">res</span> <span class="k">if</span> <span class="nv">len</span><span class="ss">(</span><span class="nv">res</span><span class="ss">)</span> <span class="o">&gt;</span> <span class="mi">0</span>  <span class="k">else</span> [<span class="s1">&#39;</span><span class="s">Отсутствует</span><span class="s1">&#39;</span>]<span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Задача 4:</em></p>
+<p>Из передачи “Здоровье” Аня узнала, что рекомендуется спать хотя бы A часов в сутки, но пересыпать тоже вредно и не стоит спать более B часов. Сейчас Аня спит H часов в сутки. Если режим сна Ани удовлетворяет рекомендациям передачи “Здоровье”, выведите “Это нормально”. Если Аня спит менее A часов, выведите “Недосып”, если же более B часов, то выведите “Пересып”.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">a</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
+<span class="nv">b</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
+<span class="nv">h</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
+<span class="k">if</span> <span class="nv">h</span> <span class="o">&gt;</span> <span class="nv">b</span>:
+    <span class="nv">print</span><span class="ss">(</span><span class="s2">&quot;</span><span class="s">Пересып</span><span class="s2">&quot;</span><span class="ss">)</span>
+<span class="nv">elif</span> <span class="nv">h</span> <span class="o">&lt;</span> <span class="nv">a</span>:
+    <span class="nv">print</span><span class="ss">(</span><span class="s2">&quot;</span><span class="s">Недосып</span><span class="s2">&quot;</span><span class="ss">)</span>
+<span class="nv">elif</span> <span class="nv">h</span> <span class="o">&lt;=</span> <span class="nv">b</span> <span class="nv">and</span> <span class="nv">h</span> <span class="o">&gt;=</span> <span class="nv">a</span>:
+    <span class="nv">print</span><span class="ss">(</span><span class="s2">&quot;</span><span class="s">Это нормально</span><span class="s2">&quot;</span><span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Задача 5:</em></p>
+<p>Требуется определить, является ли данный год високосным.</p>
+<p>Напомним, что високосными годами считаются те годы, порядковый номер которых либо кратен 4, но при этом не кратен 100, либо кратен 400 (например, 2000-й год являлся високосным, а 2100-й будет невисокосным годом).</p>
+<p>Программа должна корректно работать на числах 1900 ≤ n ≤ 3000.</p>
+<p>Выведите "Високосный" в случае, если считанный год является високосным и "Обычный" в обратном случае (не забывайте проверять регистр выводимых программой символов).</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">y</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
+<span class="k">if</span> <span class="nv">y</span> <span class="o">%</span> <span class="mi">4</span> <span class="o">==</span> <span class="mi">0</span> <span class="nv">and</span> <span class="nv">y</span> <span class="o">%</span> <span class="mi">100</span> <span class="o">!=</span> <span class="mi">0</span> <span class="nv">or</span> <span class="nv">y</span> <span class="o">%</span> <span class="mi">400</span> <span class="o">==</span> <span class="mi">0</span>:
+    <span class="nv">print</span><span class="ss">(</span><span class="s2">&quot;</span><span class="s">Високосный</span><span class="s2">&quot;</span><span class="ss">)</span>
+<span class="k">else</span>:
+    <span class="nv">print</span><span class="ss">(</span><span class="s2">&quot;</span><span class="s">Обычный</span><span class="s2">&quot;</span><span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Задача 6:</em></p>
+<p>Напишите программу, которая считывает со стандартного ввода целые числа, по одному числу в строке, и после первого введенного нуля выводит сумму полученных на вход чисел.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">s</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="nv">i</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="k">while</span> <span class="nv">i</span>:
+    <span class="nv">i</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
+    <span class="nv">s</span> <span class="o">+=</span> <span class="nv">i</span>
+<span class="nv">print</span><span class="ss">(</span><span class="nv">s</span><span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Задача 7:</em></p>
+<p>В Институте биоинформатики между информатиками и биологами устраивается соревнование. Победителям соревнования достанется большой и вкусный пирог. В команде биологов a человек, а в команде информатиков — b человек.</p>
+<p>Нужно заранее разрезать пирог таким образом, чтобы можно было раздать кусочки пирога любой команде, выигравшей соревнование, при этом каждому участнику этой команды должно достаться одинаковое число кусочков пирога. И так как не хочется резать пирог на слишком мелкие кусочки, нужно найти минимальное подходящее число.</p>
+<p>Напишите программу, которая помогает найти это число.
+Программа должна считывать размеры команд (два положительных целых числа a и b, каждое число вводится на отдельной строке) и выводить наименьшее число d, которое делится на оба этих числа без остатка.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">a</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
+<span class="nv">b</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
+<span class="nv">d</span> <span class="o">=</span> <span class="nv">a</span>
+<span class="k">while</span> <span class="nv">d</span> <span class="o">%</span> <span class="nv">b</span>:
+    <span class="nv">d</span> <span class="o">+=</span> <span class="nv">a</span>
+<span class="nv">print</span><span class="ss">(</span><span class="nv">d</span><span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Задача 8:</em></p>
+<p>Напишите программу, которая считывает целые числа с консоли по одному числу в строке.</p>
+<p>Для каждого введённого числа проверить:
+- если число меньше 10, то пропускаем это число;
+- если число больше 100, то прекращаем считывать числа;
+- в остальных случаях вывести это число обратно на консоль в отдельной строке.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">i</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="nv">n</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">while</span> <span class="nv">n</span> <span class="o">&lt;=</span> <span class="mi">100</span>:
+    <span class="nv">n</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
+    <span class="k">if</span> <span class="nv">n</span> <span class="o">&gt;=</span> <span class="mi">10</span> <span class="nv">and</span> <span class="nv">n</span> <span class="o">&lt;=</span> <span class="mi">100</span>:
+        <span class="nv">print</span><span class="ss">(</span><span class="nv">n</span><span class="ss">)</span>
+    <span class="k">if</span> <span class="nv">n</span> <span class="o">&gt;</span> <span class="mi">100</span>:
+        <span class="k">break</span>
+    <span class="nv">i</span> <span class="o">+=</span> <span class="mi">1</span>
+</pre></div>
+
+
+<p><em>Задача 9:</em></p>
+<p>Когда Павел учился в школе, он запоминал таблицу умножения прямоугольными блоками. Для тренировок ему бы очень пригодилась программа, которая показывала бы блок таблицы умножения.</p>
+<p>Напишите программу, на вход которой даются четыре числа a, b, c и d, каждое в своей строке. Программа должна вывести фрагмент таблицы умножения для всех чисел отрезка [a; b] на все числа отрезка [c; d].</p>
+<p>Числа a, b, c и d являются натуральными и не превосходят 10, a ≤ b, c ≤ d.</p>
+<p>Следуйте формату вывода из примера, для разделения элементов внутри строки используйте '\t' — символ табуляции. Заметьте, что левым столбцом и верхней строкой выводятся сами числа из заданных отрезков — заголовочные столбец и строка таблицы.﻿</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">a</span>, <span class="nv">b</span>, <span class="nv">c</span>, <span class="nv">d</span> <span class="o">=</span> <span class="ss">(</span><span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span> <span class="k">for</span> <span class="nv">_</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="mi">4</span><span class="ss">))</span>
+<span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">c</span>, <span class="nv">d</span> <span class="o">+</span> <span class="mi">1</span><span class="ss">)</span>:
+    <span class="nv">print</span><span class="ss">(</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span> <span class="o">+</span> <span class="nv">str</span><span class="ss">(</span><span class="nv">i</span><span class="ss">)</span>, <span class="k">end</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="ss">)</span>
+
+<span class="nv">print</span><span class="ss">()</span>
+
+<span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">a</span>, <span class="nv">b</span> <span class="o">+</span> <span class="mi">1</span><span class="ss">)</span>:
+    <span class="nv">print</span><span class="ss">(</span><span class="nv">i</span>, <span class="k">end</span><span class="o">=</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="ss">)</span>
+    <span class="k">for</span> <span class="nv">n</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">c</span>, <span class="nv">d</span> <span class="o">+</span> <span class="mi">1</span><span class="ss">)</span>:
+        <span class="nv">print</span><span class="ss">(</span><span class="nv">i</span> <span class="o">*</span> <span class="nv">n</span>, <span class="k">end</span><span class="o">=</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="ss">)</span>
+    <span class="nv">print</span><span class="ss">()</span>
+</pre></div>
+
+
+<p><em>Задача 10:</em></p>
+<p>Напишите программу, которая считывает с клавиатуры два числа a и b, считает и выводит на консоль среднее арифметическое всех чисел из отрезка [a; b], которые кратны числу 3.</p>
+<p>На вход программе подаются интервалы, внутри которых всегда есть хотя бы одно число, которое делится на 3.﻿</p>
+<p><em>Решение 1:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">s</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="nv">k</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="nv">a</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
+<span class="nv">b</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
+<span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">a</span>, <span class="nv">b</span><span class="o">+</span><span class="mi">1</span><span class="ss">)</span>:
+    <span class="k">if</span> <span class="nv">i</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">==</span> <span class="mi">0</span>:
+        <span class="nv">s</span> <span class="o">=</span> <span class="nv">s</span> <span class="o">+</span> <span class="nv">i</span>
+        <span class="nv">k</span> <span class="o">=</span> <span class="nv">k</span> <span class="o">+</span> <span class="mi">1</span>
+<span class="nv">print</span> <span class="ss">(</span><span class="nv">s</span> <span class="o">/</span> <span class="nv">k</span><span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Решение 2:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">a</span>, <span class="nv">b</span> <span class="o">=</span> <span class="ss">(</span><span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span> <span class="k">for</span> <span class="nv">_</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="mi">2</span><span class="ss">))</span>
+<span class="nb">result</span> <span class="o">=</span> [<span class="nv">i</span> <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">a</span>, <span class="nv">b</span> <span class="o">+</span> <span class="mi">1</span><span class="ss">)</span> <span class="k">if</span> <span class="nv">i</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">==</span> <span class="mi">0</span>]
+<span class="nv">print</span><span class="ss">(</span><span class="nv">sum</span><span class="ss">(</span><span class="nb">result</span><span class="ss">)</span> <span class="o">/</span> <span class="nv">len</span><span class="ss">(</span><span class="nb">result</span><span class="ss">))</span>
+</pre></div>
+
+
+<p><em>Задача 11:</em></p>
+<p>GC-состав является важной характеристикой геномных последовательностей и определяется как процентное соотношение суммы всех гуанинов и цитозинов к общему числу нуклеиновых оснований в геномной последовательности.</p>
+<p>Напишите программу, которая вычисляет процентное содержание символов G (гуанин) и C (цитозин) в введенной строке (программа не должна зависеть от регистра вводимых символов).</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="k">input</span><span class="p">().</span><span class="k">upper</span><span class="p">()</span>
+<span class="n">print</span><span class="p">((</span><span class="n">s</span><span class="p">.</span><span class="k">count</span><span class="p">(</span><span class="s1">&#39;G&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="n">s</span><span class="p">.</span><span class="k">count</span><span class="p">(</span><span class="s1">&#39;C&#39;</span><span class="p">))</span><span class="o">/</span><span class="n">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="o">*</span> <span class="mi">100</span><span class="p">)</span>
+</pre></div>
+
+
+<p><em>Задача 12:</em></p>
+<p>Узнав, что ДНК не является случайной строкой, только что поступившие в Институт биоинформатики студенты группы информатиков предложили использовать алгоритм сжатия, который сжимает повторяющиеся символы в строке.</p>
+<p>Кодирование осуществляется следующим образом:
+s = 'aaaabbсaa' преобразуется в 'a4b2с1a2', то есть группы одинаковых символов исходной строки заменяются на этот символ и количество его повторений в этой позиции строки.</p>
+<p>Напишите программу, которая считывает строку, кодирует её предложенным алгоритмом и выводит закодированную последовательность на стандартный вывод. Кодирование должно учитывать регистр символов.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">s</span> <span class="o">=</span> <span class="nv">input</span><span class="ss">()</span>
+<span class="nv">res</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+<span class="nv">counter</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="k">for</span> <span class="nv">c</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">len</span><span class="ss">(</span><span class="nv">s</span><span class="ss">)</span> <span class="o">-</span> <span class="mi">1</span><span class="ss">)</span>:
+    <span class="k">if</span> <span class="nv">s</span>[<span class="nv">c</span>] <span class="o">==</span> <span class="nv">s</span>[<span class="nv">c</span> <span class="o">+</span> <span class="mi">1</span>]:
+        <span class="nv">counter</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">else</span>:
+        <span class="nv">res</span> <span class="o">+=</span> <span class="nv">s</span>[<span class="nv">c</span>] <span class="o">+</span> <span class="nv">str</span><span class="ss">(</span><span class="nv">counter</span><span class="ss">)</span>
+        <span class="nv">counter</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="nv">res</span> <span class="o">+=</span> <span class="nv">s</span>[<span class="o">-</span><span class="mi">1</span>] <span class="o">+</span> <span class="nv">str</span><span class="ss">(</span><span class="nv">counter</span><span class="ss">)</span>
+<span class="nv">print</span><span class="ss">(</span><span class="nv">res</span><span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Задача 13:</em></p>
+<p>Группа биологов в институте биоинформатики завела себе черепашку.</p>
+<p>После дрессировки черепашка научилась понимать и запоминать указания биологов следующего вида:</p>
+<div class="codehilite"><pre><span></span><span class="err">север</span> <span class="mi">10</span>
+<span class="err">запад</span> <span class="mi">20</span>
+<span class="err">юг</span> <span class="mi">30</span>
+<span class="err">восток</span> <span class="mi">40</span>
+</pre></div>
+
+
+<p>где первое слово — это направление, в котором должна двигаться черепашка, а число после слова — это положительное расстояние в сантиметрах, которое должна пройти черепашка.</p>
+<p>Но команды даются быстро, а черепашка ползёт медленно, и программисты догадались, что можно написать программу, которая определит, куда в итоге биологи приведут черепашку. Для этого программисты просят вас написать программу, которая выведет точку, в которой окажется черепашка после всех команд. Для простоты они решили считать, что движение начинается в точке (0, 0), и движение на восток увеличивает первую координату, а на север — вторую.</p>
+<p>Программе подаётся на вход число команд n, которые нужно выполнить черепашке, после чего n строк с самими командами. Вывести нужно два числа в одну строку: первую и вторую координату конечной точки черепашки. Все координаты целочисленные.</p>
+<p><em>Решение 1:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">koord</span> <span class="o">=</span> {<span class="s1">&#39;</span><span class="s">север</span><span class="s1">&#39;</span>:<span class="mi">0</span>, <span class="s1">&#39;</span><span class="s">юг</span><span class="s1">&#39;</span>:<span class="mi">0</span>, <span class="s1">&#39;</span><span class="s">запад</span><span class="s1">&#39;</span>:<span class="mi">0</span>, <span class="s1">&#39;</span><span class="s">восток</span><span class="s1">&#39;</span>:<span class="mi">0</span>}
+<span class="k">for</span> <span class="nv">_</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">()))</span>:
+    <span class="nv">temp</span> <span class="o">=</span> <span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">()</span>
+    <span class="nv">koord</span>[<span class="nv">temp</span>[<span class="mi">0</span>]] <span class="o">+=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">temp</span>[<span class="mi">1</span>]<span class="ss">)</span>
+
+<span class="nv">print</span><span class="ss">(</span><span class="nv">koord</span>[<span class="s1">&#39;</span><span class="s">восток</span><span class="s1">&#39;</span>] <span class="o">-</span> <span class="nv">koord</span>[<span class="s1">&#39;</span><span class="s">запад</span><span class="s1">&#39;</span>], <span class="nv">koord</span>[<span class="s1">&#39;</span><span class="s">север</span><span class="s1">&#39;</span>] <span class="o">-</span> <span class="nv">koord</span>[<span class="s1">&#39;</span><span class="s">юг</span><span class="s1">&#39;</span>]<span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Решение 2:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">koord</span> <span class="o">=</span> {<span class="s1">&#39;</span><span class="s">север</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">y += </span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">юг</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">y -= </span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">восток</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">x += </span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">запад</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">x -= </span><span class="s1">&#39;</span>}
+
+<span class="nv">x</span>, <span class="nv">y</span> <span class="o">=</span> <span class="mi">0</span>, <span class="mi">0</span>
+<span class="k">for</span> <span class="nv">_</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">()))</span>:
+    <span class="nv">move</span> <span class="o">=</span> <span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">()</span>
+    <span class="k">exec</span><span class="ss">(</span><span class="nv">koord</span>[<span class="nv">move</span>[<span class="mi">0</span>]] <span class="o">+</span> <span class="nv">move</span>[<span class="mi">1</span>]<span class="ss">)</span>
+<span class="nv">print</span><span class="ss">(</span><span class="nv">x</span>, <span class="nv">y</span><span class="ss">)</span>
+</pre></div>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div><!-- конец карточки -->
+  <!-- конец поста -->
+
+  </main>
+  <!-- Скрипты -->
+  <script src="/static/assets/purecounter/purecounter.js"></script>
+  <script src="/static/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/static/assets/glightbox/js/glightbox.min.js"></script>
+  <script src="/static/assets/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/static/assets/swiper/swiper-bundle.min.js"></script>
+  <script src="/static/assets/waypoints/noframework.waypoints.js"></script>
+  <script src="/static/js/main.js"></script>
+</body>
+</html>

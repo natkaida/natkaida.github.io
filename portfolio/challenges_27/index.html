@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title></title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <link href="/static/img/favicon.png" rel="icon">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="/static/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/static/assets/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/static/assets/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="/static/assets/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/static/assets/remixicon/remixicon.css" rel="stylesheet">
+  <link href="/static/assets/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/69e2443572.js" crossorigin="anonymous"></script>
+  <link href="/static/css/style.css" rel="stylesheet">
+  <link href="/pygments.css" rel="stylesheet">
+  <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(89602269, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/89602269" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</head>
+<body>
+  <main id="main">
+
+<style>
+body::before {
+	background: #040404 url("/static/img/portfolio/post.jpg");
+}
+</style>
+    <!-- ======= шаблон для поста ======= -->
+    <div id="portfolio-details" class="portfolio-details">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <h2 class="portfolio-title">Подборка задач с решениями - 27</h2>
+          </div>
+          <div class="col-lg-8 portfolio-info">
+            <h3></h3>
+            <ul>
+              <li><strong>Категория</strong>: Python</li>
+              <li><strong>Дата публикации</strong>: 2022-01-21</li>
+              <li><strong>Посмотреть на сайте</strong>: <a href="https://stepik.org">Stepik</a></li>
+            </ul>
+            <p>
+              <p><em>Задача 1:</em></p>
+<p>Создайте функцию представления с корневым маршрутом, которая будет принимать одно вещественное число. Эта функция должна вернуть шаблон с названием index.html. Передайте в шаблон это число, умноженное на 2, под названием number. А также передайте переменную с названием text, в которой должно находиться сообщение: "Ваше число {...}, умноженное на 2: {...}".</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span>@<span class="nv">app</span>.<span class="nv">route</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">/&lt;float:n&gt;/</span><span class="s1">&#39;</span><span class="ss">)</span>
+<span class="nv">def</span> <span class="nv">multy</span><span class="ss">(</span><span class="nv">n</span><span class="ss">)</span>:
+    <span class="k">return</span> <span class="nv">render_template</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">index.html</span><span class="s1">&#39;</span>, <span class="nv">number</span><span class="o">=</span><span class="nv">n</span> <span class="o">*</span> <span class="mi">2</span>, <span class="nv">text</span><span class="o">=</span><span class="nv">f</span><span class="s1">&#39;</span><span class="s">Ваше число {n}, умноженное на 2:</span><span class="s1">&#39;</span><span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Задача 2:</em></p>
+<p>Меняем ситуацию из прошлого задания на противоположную. На этот раз уже есть функция представления (из прошлого задания), теперь вам нужно написать шаблон. Html-теги не используйте. Напишите код одной строчкой, сначала одна переменная выводиться, а через пробел – вторая. Предполагается использование названий number и text, как было на прошлом шаге.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="cp">{{</span> <span class="nv">text</span> <span class="cp">}}</span><span class="x"> </span><span class="cp">{{</span> <span class="nv">number</span> <span class="cp">}}</span><span class="x"></span>
+</pre></div>
+
+
+<p><em>Задача 3:</em></p>
+<p>На этот раз нужно написать и функцию представления, и шаблон. Создайте функцию представления, принимающую одно вещественное число. Передайте это число в шаблон под именем r и передайте еще одну переменную под именем pi со значением равным 3.14. В качестве названия шаблона необходимо использовать index.html. При желании переменные pi и r можно назвать иначе.</p>
+<p>В шаблоне необходимо вычислить значение формулы x = pi ∗ r<sup>2</sup>.</p>
+<p>Содержимое шаблона пропишите в переменную template в виде строки.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">template</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="s">Площадь круга с радиусом {{ r }} равна {{ pi * r * r }}</span><span class="s1">&#39;</span>
+@<span class="nv">app</span>.<span class="nv">route</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">/&lt;float:r&gt;/</span><span class="s1">&#39;</span><span class="ss">)</span>
+<span class="nv">def</span> <span class="nv">index</span><span class="ss">(</span><span class="nv">r</span><span class="ss">)</span>:
+    <span class="nv">pi</span> <span class="o">=</span> <span class="mi">3</span>.<span class="mi">14</span>
+    <span class="k">return</span> <span class="nv">render_template</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">index.html</span><span class="s1">&#39;</span>, <span class="nv">r</span><span class="o">=</span><span class="nv">r</span>, <span class="nv">pi</span><span class="o">=</span><span class="nv">pi</span><span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Задача 4:</em></p>
+<p>На вход подается кортеж из чисел. Ваша задача достать из этой структуры первый элемент и сложить с последним, затем отнять от полученного результата сумму минимального и максимального значений. Т.е., если входные данные выглядят так:</p>
+<div class="codehilite"><pre><span></span><span class="n">numbers</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">19</span><span class="p">)</span>
+</pre></div>
+
+
+<p>Нужно будет достать первый элемент – 15, затем последний – 19 и найти их сумму: 15+19=34. Затем получить минимальное значение – 2 и максимальное – 25. Эти два числа нужно сложить. Получаем следующее: 2+25=27. После этого от первой суммы  34, будет вычтено 27. Значит ответ равен 34-27=7. В таком случае страница должна вывести число 7.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="cp">{{</span> <span class="o">(</span><span class="nv">numbers</span><span class="o">|</span><span class="nf">first</span> <span class="o">+</span> <span class="nv">numbers</span><span class="o">|</span><span class="nf">last</span><span class="o">)</span> <span class="o">-</span> <span class="o">(</span><span class="nv">numbers</span><span class="o">|</span><span class="nf">max</span> <span class="o">+</span> <span class="nv">numbers</span><span class="o">|</span><span class="nf">min</span><span class="o">)</span> <span class="cp">}}</span><span class="x"></span>
+</pre></div>
+
+
+<p><em>Задача 5:</em></p>
+<p>Функция представления присутствует и передает в шаблон строку под переменной val. Это значение нужно преобразовать к вещественному числу и округлить до 1 знака после запятой.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="cp">{{</span> <span class="nv">val</span> <span class="o">|</span> <span class="nf">float</span> <span class="o">|</span> <span class="nf">round</span><span class="o">(</span><span class="m">1</span><span class="o">)</span> <span class="cp">}}</span><span class="x"></span>
+</pre></div>
+
+
+<p><em>Задача 6:</em></p>
+<p>Функция представления присутствует и передает в шаблон 3 числа под названиями a, b и c. Выведите среднее число из предоставленных.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="cp">{{</span><span class="o">([</span><span class="nv">a</span><span class="o">,</span> <span class="nv">b</span><span class="o">,</span> <span class="nv">c</span><span class="o">]</span> <span class="o">|</span> <span class="nf">sort</span><span class="o">)[</span><span class="m">1</span><span class="o">]</span><span class="cp">}}</span><span class="x"></span>
+</pre></div>
+
+
+<p><em>Задача 7:</em></p>
+<p>Создайте функцию представления, где маршрут принимает вещественное число, знак слэш /, знак операции, знак слэш / и второе вещественное число. Исходя из этих данных функция должна вывести ответ выражения. Т.е. если путь выглядит как /7/<em>/2/, тогда программа должна решить задачу 7</em>2и вывести 14. Воспользуемся только сложением, вычитанием, делением, умножением и возведением в степень. Знак деления принимаем как в математике: через двоеточие. В случае, если происходит деление на 0 или указан другой знак операции, программа должна вывести "Ошибка".</p>
+<p>Результат должен быть посчитан в шаблоне. В качестве названия шаблона используйте index.html.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span>@<span class="nv">app</span>.<span class="nv">route</span><span class="ss">(</span><span class="s2">&quot;</span><span class="s">/&lt;float:a&gt;/&lt;op&gt;/&lt;float:b&gt;/</span><span class="s2">&quot;</span><span class="ss">)</span>
+<span class="nv">def</span> <span class="nv">index</span><span class="ss">(</span><span class="nv">a</span>, <span class="nv">op</span>, <span class="nv">b</span><span class="ss">)</span>:
+    <span class="k">return</span> <span class="nv">render_template</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">index.html</span><span class="s1">&#39;</span>, <span class="nv">a</span><span class="o">=</span><span class="nv">a</span>, <span class="nv">op</span><span class="o">=</span><span class="nv">op</span>, <span class="nv">b</span><span class="o">=</span><span class="nv">b</span><span class="ss">)</span>
+
+
+<span class="nv">template</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;</span>
+{<span class="o">%</span> <span class="k">if</span> <span class="nv">b</span> <span class="o">==</span> <span class="mi">0</span>.<span class="mi">0</span> <span class="nv">and</span> <span class="nv">op</span> <span class="o">==</span> <span class="s1">&#39;</span><span class="s">:</span><span class="s1">&#39;</span> <span class="nv">or</span> <span class="nv">op</span> <span class="nv">not</span> <span class="nv">in</span> <span class="s2">&quot;</span><span class="s">+-*:**</span><span class="s2">&quot;</span> <span class="o">%</span>}
+    {{<span class="s1">&#39;</span><span class="s">Ошибка</span><span class="s1">&#39;</span>}}
+{<span class="o">%</span> <span class="nv">elif</span> <span class="nv">op</span> <span class="o">==</span> <span class="s1">&#39;</span><span class="s">+</span><span class="s1">&#39;</span> <span class="o">%</span>}
+    {{<span class="nv">a</span> <span class="o">+</span> <span class="nv">b</span>}}
+{<span class="o">%</span> <span class="nv">elif</span> <span class="nv">op</span> <span class="o">==</span> <span class="s1">&#39;</span><span class="s">-</span><span class="s1">&#39;</span> <span class="o">%</span>}
+    {{<span class="nv">a</span> <span class="o">-</span> <span class="nv">b</span>}}
+{<span class="o">%</span> <span class="nv">elif</span> <span class="nv">op</span> <span class="o">==</span> <span class="s1">&#39;</span><span class="s">*</span><span class="s1">&#39;</span> <span class="o">%</span>}
+    {{<span class="nv">a</span> <span class="o">*</span> <span class="nv">b</span>}}
+{<span class="o">%</span> <span class="nv">elif</span> <span class="nv">op</span> <span class="o">==</span> <span class="s1">&#39;</span><span class="s">**</span><span class="s1">&#39;</span> <span class="o">%</span>}
+    {{<span class="nv">a</span> <span class="o">**</span> <span class="nv">b</span>}}   
+{<span class="o">%</span> <span class="nv">elif</span> <span class="nv">op</span> <span class="o">==</span> <span class="s1">&#39;</span><span class="s">:</span><span class="s1">&#39;</span> <span class="o">%</span>}
+    {{<span class="nv">a</span> <span class="o">/</span> <span class="nv">b</span>}}     
+{<span class="o">%</span> <span class="k">endif</span> <span class="o">%</span>}
+<span class="s1">&#39;&#39;&#39;</span>
+</pre></div>
+
+
+<p><em>Задача 8 - Отображение списка:</em></p>
+<p>На этот раз функция представления написана, нужно написать только шаблон. Вам дан список чисел под именем numbers, задача состоит в том, чтобы вывести его как список (без использования html). Если же список окажется пуст, необходимо вывести сообщение "Численная последовательность не существует".</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span>{<span class="o">%</span> <span class="k">for</span> <span class="nv">num</span> <span class="nv">in</span> <span class="nv">numbers</span> <span class="o">%</span>}
+{{ <span class="k">loop</span>.<span class="nv">index</span> }} <span class="o">-</span> {{ <span class="nv">num</span> }}
+{<span class="o">%</span> <span class="k">else</span> <span class="o">%</span>}
+{{ <span class="s2">&quot;</span><span class="s">Численная последовательность не существует</span><span class="s2">&quot;</span> }}
+{<span class="o">%</span> <span class="nv">endfor</span> <span class="o">%</span>}
+</pre></div>
+
+
+<p><em>Задача 9:</em></p>
+<p>Снова требуется написать только шаблон. На этот раз предоставлен словарь под именем numbers из строчного ключа и численного значения. Если ключ состоит только из цифр, тогда ключ и значение нужно сравнить и вывести меньшее из этих значений.</p>
+<p>Чтобы преобразовать строку к числу, используйте фильтр int.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span>{<span class="o">%</span> <span class="k">for</span> <span class="nv">k</span>, <span class="nv">v</span> <span class="nv">in</span> <span class="nv">numbers</span>.<span class="nv">items</span><span class="ss">()</span> <span class="o">%</span>}
+{<span class="o">%</span> <span class="k">if</span> <span class="nv">k</span>.<span class="nv">isdigit</span><span class="ss">()</span> <span class="o">%</span>}
+{{ [<span class="nv">k</span> <span class="o">|</span> <span class="nv">int</span>, <span class="nv">v</span>] <span class="o">|</span> <span class="nv">min</span> }} 
+{<span class="o">%</span> <span class="k">endif</span> <span class="o">%</span>}
+{<span class="o">%</span> <span class="nv">endfor</span> <span class="o">%</span>}
+</pre></div>
+
+
+<p><em>Задача 10:</em></p>
+<p>Для этого задания снова потребуется написать только шаблон. Создайте макрос с именем post_email. Он должен принимать три параметра: email, message и title. Именно в таком порядке. Для последнего параметра значение по умолчанию должно быть строкой "Без темы". Если в параметре email отсутствует символ собачки @, тогда необходимо вывести "E-mail '{email}' некорректный". Иначе  "Сообщение '{message}' для адресата '{email}' отправлено с темой '{title}'".</p>
+<p>Вызов макроса уже написан.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span>{<span class="o">%</span> <span class="nv">macro</span> <span class="nv">post_email</span><span class="ss">(</span><span class="nv">email</span>, <span class="nv">message</span>, <span class="nv">title</span><span class="o">=</span><span class="s1">&#39;</span><span class="s">Без темы</span><span class="s1">&#39;</span><span class="ss">)</span> <span class="o">%</span>}
+{<span class="o">%</span> <span class="k">if</span> <span class="s1">&#39;</span><span class="s">@</span><span class="s1">&#39;</span> <span class="nv">not</span> <span class="nv">in</span> <span class="nv">email</span> <span class="o">%</span>}
+<span class="nv">E</span><span class="o">-</span><span class="nv">mail</span> <span class="s1">&#39;</span><span class="s">{{email}}</span><span class="s1">&#39;</span> некорректный
+{<span class="o">%</span> <span class="k">else</span> <span class="o">%</span>}
+Сообщение <span class="s1">&#39;</span><span class="s">{{message}}</span><span class="s1">&#39;</span> для адресата <span class="s1">&#39;</span><span class="s">{{email}}</span><span class="s1">&#39;</span> отправлено с темой <span class="s1">&#39;</span><span class="s">{{title}}</span><span class="s1">&#39;</span>
+{<span class="o">%</span> <span class="k">endif</span> <span class="o">%</span>}
+{<span class="o">%</span> <span class="nv">endmacro</span> <span class="o">%</span>}
+</pre></div>
+
+
+<p><em>Задача 11:</em></p>
+<p>Пишем шаблон: добавьте макрос с именем get_solution; вызов для него уже прописан. Макрос принимает переменное количество переменных в виде списка и множественные аргументы в виде словаря.</p>
+<p>При помощи фильтра sum необходимо посчитать сумму значений списка. Если в словаре находится ключ с таким числом, нужно вывести значение по этому ключу. После этого список удаляет последний элемент и повторяет действия снова.</p>
+<p>Для решения задачи можно воспользоваться циклом или рекурсией. Еще вам может пригодиться фильтр length, фильтр int и  фильтр string.</p>
+<p><em>Решение 12:</em></p>
+<div class="codehilite"><pre><span></span>{<span class="o">%</span> <span class="nv">macro</span> <span class="nv">get_solution</span><span class="ss">()</span> <span class="o">%</span>}
+{<span class="o">%</span> <span class="nv">set</span> <span class="nv">k</span> <span class="o">=</span> <span class="nv">varargs</span><span class="o">|</span><span class="nv">length</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">%</span>}
+{<span class="o">%</span> <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">varargs</span><span class="o">|</span><span class="nv">length</span><span class="ss">)</span> <span class="o">%</span>}
+{<span class="o">%</span> <span class="k">if</span> <span class="nv">varargs</span>[:<span class="nv">k</span><span class="o">-</span><span class="k">loop</span>.<span class="nv">index</span>]<span class="o">|</span><span class="nv">sum</span><span class="o">|</span><span class="nv">string</span> <span class="nv">in</span> <span class="nv">kwargs</span><span class="o">%</span>}
+{{<span class="nv">kwargs</span>[<span class="nv">varargs</span>[:<span class="nv">k</span><span class="o">-</span><span class="k">loop</span>.<span class="nv">index</span>]<span class="o">|</span><span class="nv">sum</span><span class="o">|</span><span class="nv">string</span>]}}
+{<span class="o">%</span> <span class="k">endif</span> <span class="o">%</span>}
+{<span class="o">%</span> <span class="nv">endfor</span> <span class="o">%</span>}
+{<span class="o">%</span> <span class="nv">endmacro</span> <span class="o">%</span>}
+</pre></div>
+
+
+<p><em>Решение 13:</em></p>
+<div class="codehilite"><pre><span></span><span class="p">{</span><span class="c1">% macro get_solution() %}</span>
+<span class="p">{</span><span class="c1">% if varargs|length &gt; 0 %}</span>
+<span class="p">{{</span> <span class="s s-Atom">kwargs</span><span class="p">[</span><span class="s s-Atom">varargs</span><span class="p">|</span><span class="s s-Atom">sum</span><span class="p">|</span><span class="s s-Atom">string</span><span class="p">]</span> <span class="p">}}</span>
+<span class="p">{{</span> <span class="nf">get_solution</span><span class="p">(</span><span class="o">*</span><span class="s s-Atom">varargs</span><span class="p">[:-</span><span class="mi">1</span><span class="p">],</span> <span class="s s-Atom">**kwargs</span><span class="p">)</span> <span class="p">}}</span>
+<span class="p">{</span><span class="c1">% endif %}</span>
+<span class="p">{</span><span class="c1">% endmacro %}</span>
+</pre></div>
+
+
+<p><em>Задача 14:</em></p>
+<p>В проекте уже определено три макроса: get_info, search_info и validate_data. Первоначально импортируйте их с использованием ключевого слова from из process/helper.html. Первый макрос работает всегда: он отобразит все переменные, которые передают тестовые данные. Второй макрос работает, если в переменной action указана строка "search" или "find". Если это не так, будет вызван третий макрос. Вызовы этих двух макросов не влияют на работу программы.</p>
+<p>Итак, Вам необходимо создать переменную под именем values, хранящую список как минимум из пяти строчных значений. Далее идет action, хранящий строчное значение. Далее идет x целого типа и y вещественного. Указывать можно любые значения, главное, чтобы совпадал тип данных.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="p">{</span><span class="o">%</span> <span class="kn">from</span> <span class="s1">&#39;process/helper.html&#39;</span> <span class="kn">import</span> <span class="nn">get_info</span><span class="o">,</span> <span class="nn">search_info</span><span class="o">,</span> <span class="nn">validate_data</span> <span class="o">%</span><span class="p">}</span>
+<span class="p">{</span><span class="o">%</span> <span class="nb">set</span> <span class="n">values</span><span class="p">,</span> <span class="n">action</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;1&#39;</span><span class="p">,</span> <span class="s1">&#39;2&#39;</span><span class="p">,</span> <span class="s1">&#39;3&#39;</span><span class="p">,</span> <span class="s1">&#39;4&#39;</span><span class="p">,</span> <span class="s1">&#39;5&#39;</span><span class="p">],</span> <span class="s1">&#39;find&#39;</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mf">5.55</span> <span class="o">%</span><span class="p">}</span>
+</pre></div>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div><!-- конец карточки -->
+  <!-- конец поста -->
+
+  </main>
+  <!-- Скрипты -->
+  <script src="/static/assets/purecounter/purecounter.js"></script>
+  <script src="/static/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/static/assets/glightbox/js/glightbox.min.js"></script>
+  <script src="/static/assets/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/static/assets/swiper/swiper-bundle.min.js"></script>
+  <script src="/static/assets/waypoints/noframework.waypoints.js"></script>
+  <script src="/static/js/main.js"></script>
+</body>
+</html>

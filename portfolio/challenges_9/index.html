@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title></title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <link href="/static/img/favicon.png" rel="icon">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="/static/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/static/assets/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/static/assets/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="/static/assets/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/static/assets/remixicon/remixicon.css" rel="stylesheet">
+  <link href="/static/assets/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/69e2443572.js" crossorigin="anonymous"></script>
+  <link href="/static/css/style.css" rel="stylesheet">
+  <link href="/pygments.css" rel="stylesheet">
+  <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(89602269, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/89602269" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</head>
+<body>
+  <main id="main">
+
+<style>
+body::before {
+	background: #040404 url("/static/img/portfolio/post.jpg");
+}
+</style>
+    <!-- ======= шаблон для поста ======= -->
+    <div id="portfolio-details" class="portfolio-details">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <h2 class="portfolio-title">Подборка задач с решениями - 9</h2>
+          </div>
+          <div class="col-lg-8 portfolio-info">
+            <h3></h3>
+            <ul>
+              <li><strong>Категория</strong>: Python</li>
+              <li><strong>Дата публикации</strong>: 2021-12-28</li>
+              <li><strong>Посмотреть на сайте</strong>: <a href="https://stepik.org">Stepik</a></li>
+            </ul>
+            <p>
+              <p><em>Задача 1:</em></p>
+<p>Заданы две клетки шахматной доски. Напишите программу, которая определяет имеют ли указанные клетки один цвет или нет. Если они покрашены в один цвет, то выведите слово «YES», а если в разные цвета — то «NO».</p>
+<p><strong>Формат входных данных</strong>
+На вход программе подаётся четыре числа от 1 до 8 каждое, задающие номер столбца и номер строки сначала для первой клетки, потом для второй клетки.</p>
+<p><em>Решение 1:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">x1</span>, <span class="nv">x2</span>, <span class="nv">y1</span>, <span class="nv">y2</span> <span class="o">=</span> [<span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span> <span class="k">for</span> <span class="nv">_</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="mi">4</span><span class="ss">)</span>]
+<span class="nv">print</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">YES</span><span class="s1">&#39;</span> <span class="k">if</span> <span class="ss">(</span><span class="nv">x1</span> <span class="o">+</span> <span class="nv">y1</span> <span class="o">+</span> <span class="nv">x2</span> <span class="o">+</span> <span class="nv">y2</span><span class="ss">)</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span> <span class="k">else</span> <span class="s1">&#39;</span><span class="s">NO</span><span class="s1">&#39;</span><span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Решение 2:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">print</span><span class="ss">(</span><span class="s2">&quot;</span><span class="s">YES</span><span class="s2">&quot;</span> <span class="k">if</span> <span class="nv">not</span> <span class="nv">sum</span><span class="ss">(</span><span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span> <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="s2">&quot;</span><span class="s">1234</span><span class="s2">&quot;</span><span class="ss">)</span> <span class="o">%</span> <span class="mi">2</span> <span class="k">else</span> <span class="s2">&quot;</span><span class="s">NO</span><span class="s2">&quot;</span><span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Задача 2 - "Ход слона":</em></p>
+<p>Даны две различные клетки шахматной доски. Напишите программу, которая определяет, может ли слон попасть с первой клетки на вторую одним ходом. Программа получает на вход четыре числа от 1 до 8 каждое, задающие номер столбца и номер строки сначала для первой клетки, потом для второй клетки. Программа должна вывести «YES», если из первой клетки ходом слона можно попасть во вторую или «NO» в противном случае.</p>
+<p><strong>Формат входных данных</strong>
+На вход программе подаётся четыре числа от 1 до 8.</p>
+<p><strong>Формат выходных данных</strong>
+Программа должна вывести текст в соответствии с условием задачи.</p>
+<p>Примечание. Шахматный слон ходит по диагоналям.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">x1</span>, <span class="nv">x2</span>, <span class="nv">y1</span>, <span class="nv">y2</span> <span class="o">=</span> [<span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span> <span class="k">for</span> <span class="nv">_</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="mi">4</span><span class="ss">)</span>]
+<span class="k">if</span> <span class="ss">(</span><span class="nv">x2</span> <span class="o">-</span> <span class="nv">x1</span><span class="ss">)</span> <span class="o">**</span> <span class="mi">2</span> <span class="o">==</span> <span class="ss">(</span><span class="nv">y2</span> <span class="o">-</span> <span class="nv">y1</span><span class="ss">)</span> <span class="o">**</span> <span class="mi">2</span>:
+    <span class="nv">print</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">YES</span><span class="s1">&#39;</span><span class="ss">)</span>
+<span class="k">else</span>:
+    <span class="nv">print</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">NO</span><span class="s1">&#39;</span><span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Задача 3 - "Ход коня":</em></p>
+<p>Даны две различные клетки шахматной доски. Напишите программу,  которая определяет, может ли конь попасть с первой клетки на вторую одним ходом. Программа получает на вход четыре числа от 1 до 8 каждое, задающие номер столбца и номер строки сначала для первой клетки, потом для второй клетки. Программа должна вывести «YES», если из первой клетки ходом коня можно попасть во вторую или «NO» в противном случае.</p>
+<p><strong>Формат входных данных</strong>
+На вход программе подаётся четыре числа от 1 до 8.</p>
+<p><strong>Формат выходных данных</strong>
+Программа должна вывести текст в соответствии с условием задачи.</p>
+<p>Примечание. Шахматный конь ходит буквой «Г».</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">x1</span>, <span class="nv">x2</span>, <span class="nv">y1</span>, <span class="nv">y2</span> <span class="o">=</span> [<span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span> <span class="k">for</span> <span class="nv">_</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="mi">4</span><span class="ss">)</span>]
+<span class="k">if</span> <span class="ss">(</span><span class="nv">abs</span><span class="ss">(</span><span class="nv">x2</span> <span class="o">-</span> <span class="nv">x1</span><span class="ss">)</span> <span class="o">==</span> <span class="mi">1</span> <span class="nv">and</span> <span class="nv">abs</span><span class="ss">(</span><span class="nv">y2</span> <span class="o">-</span> <span class="nv">y1</span><span class="ss">)</span> <span class="o">==</span> <span class="mi">2</span><span class="ss">)</span> <span class="nv">or</span> <span class="ss">(</span><span class="nv">abs</span><span class="ss">(</span><span class="nv">x2</span> <span class="o">-</span> <span class="nv">x1</span><span class="ss">)</span> <span class="o">==</span> <span class="mi">2</span> <span class="nv">and</span> <span class="nv">abs</span><span class="ss">(</span><span class="nv">y2</span> <span class="o">-</span> <span class="nv">y1</span><span class="ss">)</span> <span class="o">==</span> <span class="mi">1</span><span class="ss">)</span>:
+    <span class="nv">print</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">YES</span><span class="s1">&#39;</span><span class="ss">)</span>
+<span class="k">else</span>:
+    <span class="nv">print</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">NO</span><span class="s1">&#39;</span><span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Задача 4 - "Ход ферзя":</em></p>
+<p>Даны две различные клетки шахматной доски. Напишите программу,  которая определяет, может ли ферзь попасть с первой клетки на вторую одним ходом. Программа получает на вход четыре числа от 1 до 8 каждое, задающие номер столбца и номер строки сначала для первой клетки, потом для второй клетки. Программа должна вывести «YES», если из первой клетки ходом ферзя можно попасть во вторую или «NO» в противном случае.</p>
+<p><strong>Формат входных данных</strong>
+На вход программе подаётся четыре числа от 1 до 8.</p>
+<p><strong>Формат выходных данных</strong>
+Программа должна вывести текст в соответствии с условием задачи.</p>
+<p>Примечание. Шахматный ферзь ходит по диагонали, горизонтали или вертикали.</p>
+<p><em>Решение 1:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">x1</span>, <span class="nv">x2</span>, <span class="nv">y1</span>, <span class="nv">y2</span> <span class="o">=</span> [<span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span> <span class="k">for</span> <span class="nv">_</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="mi">4</span><span class="ss">)</span>]
+<span class="k">if</span> <span class="ss">(</span><span class="nv">x1</span> <span class="o">==</span> <span class="nv">x2</span> <span class="nv">and</span> <span class="nv">y1</span> <span class="o">!=</span> <span class="nv">y2</span><span class="ss">)</span> <span class="nv">or</span> <span class="ss">(</span><span class="nv">x1</span> <span class="o">!=</span> <span class="nv">x2</span> <span class="nv">and</span> <span class="nv">y1</span> <span class="o">==</span> <span class="nv">y2</span><span class="ss">)</span> <span class="nv">or</span> <span class="ss">(</span><span class="nv">abs</span><span class="ss">(</span><span class="nv">x1</span> <span class="o">-</span> <span class="nv">x2</span><span class="ss">)</span> <span class="o">==</span> <span class="nv">abs</span><span class="ss">(</span><span class="nv">y1</span> <span class="o">-</span> <span class="nv">y2</span><span class="ss">))</span>:
+    <span class="nv">print</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">YES</span><span class="s1">&#39;</span><span class="ss">)</span>
+<span class="k">else</span>:
+    <span class="nv">print</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">NO</span><span class="s1">&#39;</span><span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Решение 2:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">x1</span>, <span class="nv">x2</span>, <span class="nv">y1</span>, <span class="nv">y2</span> <span class="o">=</span> [<span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span> <span class="k">for</span> <span class="nv">_</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="mi">4</span><span class="ss">)</span>]
+<span class="k">if</span> <span class="nv">abs</span><span class="ss">(</span><span class="nv">x1</span> <span class="o">-</span> <span class="nv">x2</span><span class="ss">)</span> <span class="o">==</span> <span class="nv">abs</span><span class="ss">(</span><span class="nv">y1</span> <span class="o">-</span> <span class="nv">y2</span><span class="ss">)</span> <span class="nv">or</span> <span class="nv">x1</span> <span class="o">==</span> <span class="nv">x2</span> <span class="nv">or</span> <span class="nv">y1</span> <span class="o">==</span> <span class="nv">y2</span>:
+    <span class="nv">print</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">YES</span><span class="s1">&#39;</span><span class="ss">)</span>
+<span class="k">else</span>:
+    <span class="nv">print</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">NO</span><span class="s1">&#39;</span><span class="ss">)</span>
+</pre></div>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div><!-- конец карточки -->
+  <!-- конец поста -->
+
+  </main>
+  <!-- Скрипты -->
+  <script src="/static/assets/purecounter/purecounter.js"></script>
+  <script src="/static/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/static/assets/glightbox/js/glightbox.min.js"></script>
+  <script src="/static/assets/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/static/assets/swiper/swiper-bundle.min.js"></script>
+  <script src="/static/assets/waypoints/noframework.waypoints.js"></script>
+  <script src="/static/js/main.js"></script>
+</body>
+</html>

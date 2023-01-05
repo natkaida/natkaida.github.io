@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title></title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <link href="/static/img/favicon.png" rel="icon">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="/static/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/static/assets/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/static/assets/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="/static/assets/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/static/assets/remixicon/remixicon.css" rel="stylesheet">
+  <link href="/static/assets/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/69e2443572.js" crossorigin="anonymous"></script>
+  <link href="/static/css/style.css" rel="stylesheet">
+  <link href="/pygments.css" rel="stylesheet">
+  <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(89602269, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/89602269" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</head>
+<body>
+  <main id="main">
+
+<style>
+body::before {
+	background: #040404 url("/static/img/portfolio/post.jpg");
+}
+</style>
+    <!-- ======= шаблон для поста ======= -->
+    <div id="portfolio-details" class="portfolio-details">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <h2 class="portfolio-title">Подборка задач с решениями - 40</h2>
+          </div>
+          <div class="col-lg-8 portfolio-info">
+            <h3></h3>
+            <ul>
+              <li><strong>Категория</strong>: Python</li>
+              <li><strong>Дата публикации</strong>: 2022-02-06</li>
+              <li><strong>Посмотреть на сайте</strong>: <a href="https://stepik.org">Stepik</a></li>
+            </ul>
+            <p>
+              <p><em>Задача 1 - Одинаковые цифры:</em></p>
+<p>На вход программе подаются два числа. Напишите программу, определяющую, есть ли в данных числах одинаковые цифры.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="n">print</span><span class="p">((</span><span class="ss">&quot;YES&quot;</span><span class="p">,</span> <span class="ss">&quot;NO&quot;</span><span class="p">)[</span><span class="k">set</span><span class="p">(</span><span class="k">input</span><span class="p">()).</span><span class="n">isdisjoint</span><span class="p">(</span><span class="k">input</span><span class="p">())])</span>
+</pre></div>
+
+
+<p><em>Задача 2:</em></p>
+<p>На вход программе подаются два числа. Напишите программу, которая определяет, входят ли в запись первого числа все цифры, содержащиеся в записи второго (независимо от повтора, то есть количества цифр) числа или нет.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="n">print</span><span class="p">([</span><span class="s1">&#39;NO&#39;</span><span class="p">,</span> <span class="s1">&#39;YES&#39;</span><span class="p">][</span><span class="k">set</span><span class="p">(</span><span class="k">input</span><span class="p">())</span> <span class="o">&gt;=</span> <span class="k">set</span><span class="p">(</span><span class="k">input</span><span class="p">())])</span>
+</pre></div>
+
+
+<p><em>Задача 3:</em></p>
+<p>Даны по 10-балльной шкале оценки по информатике трех учеников. Напишите программу, которая выводит множество оценок, которые есть и у первого и у второго учеников, но которых нет у третьего ученика.</p>
+<p><strong>Формат входных данных</strong></p>
+<p>На вход программе подаются оценки трех учеников, разделенные символом пробела (оценки каждого ученика на отдельной строке).</p>
+<p><strong>Формат выходных данных</strong></p>
+<p>Программа должна вывести множество оценок в порядке убывания на одной строке, разделенных пробелами, в соответствии с условием задачи.</p>
+<p>Примечание. Оценка ученика находится в диапазоне от 0 до 10 включительно.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="s s-Atom">a</span><span class="p">,</span> <span class="s s-Atom">b</span><span class="p">,</span> <span class="s s-Atom">c</span> <span class="o">=</span> <span class="p">(</span><span class="nf">set</span><span class="p">(</span><span class="nf">int</span><span class="p">(</span><span class="s s-Atom">i</span><span class="p">)</span> <span class="s s-Atom">for</span> <span class="s s-Atom">i</span> <span class="s s-Atom">in</span> <span class="nf">input</span><span class="p">().</span><span class="nf">split</span><span class="p">())</span> <span class="s s-Atom">for</span> <span class="s s-Atom">i</span> <span class="s s-Atom">in</span> <span class="nf">range</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>
+<span class="nf">print</span><span class="p">(</span><span class="o">*</span><span class="nf">sorted</span><span class="p">(</span><span class="nf">set</span><span class="p">(</span><span class="s s-Atom">a</span><span class="p">.</span><span class="nf">intersection</span><span class="p">(</span><span class="s s-Atom">b</span><span class="p">).</span><span class="nf">difference</span><span class="p">(</span><span class="s s-Atom">c</span><span class="p">)))[</span><span class="s s-Atom">::-</span><span class="mi">1</span><span class="p">])</span>
+</pre></div>
+
+
+<p><em>Задача 4:</em></p>
+<p>Даны по 10-балльной шкале оценки по математике трех учеников. Напишите программу, которая выводит множество оценок, имеющихся у учеников, которые встречаются не более, чем у двух из указанных учеников.</p>
+<p><strong>Формат входных данных</strong></p>
+<p>На вход программе подаются оценки трех учеников, разделенные символом пробела (оценки каждого ученика на отдельной строке).</p>
+<p><strong>Формат выходных данных</strong></p>
+<p>Программа должна вывести множество оценок в порядке возрастания на одной строке, разделенных пробелами, в соответствии с условием задачи.</p>
+<p>Примечание. Оценка ученика находится в диапазоне от 0 до 10 включительно.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">set1</span>, <span class="nv">set2</span>, <span class="nv">set3</span> <span class="o">=</span> [<span class="nv">set</span><span class="ss">(</span>[<span class="nv">int</span><span class="ss">(</span><span class="nv">i</span><span class="ss">)</span> <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">()</span>]<span class="ss">)</span> <span class="k">for</span> <span class="nv">k</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="mi">3</span><span class="ss">)</span>]
+<span class="nv">print</span><span class="ss">(</span><span class="o">*</span><span class="nv">sorted</span><span class="ss">((</span><span class="nv">set1</span> <span class="o">|</span> <span class="nv">set2</span> <span class="o">|</span> <span class="nv">set3</span><span class="ss">)</span> <span class="o">-</span> <span class="ss">(</span><span class="nv">set1</span> <span class="o">&amp;</span> <span class="nv">set2</span> <span class="o">&amp;</span> <span class="nv">set3</span><span class="ss">)))</span>
+</pre></div>
+
+
+<p><em>Задача 5:</em></p>
+<p>Даны по 10-балльной шкале оценки по физике трех учеников. Напишите программу, которая выводит множество оценок третьего ученика, которые не встречаются ни у первого, ни у второго ученика.</p>
+<p><strong>Формат входных данных</strong></p>
+<p>На вход программе подаются оценки трех учеников, разделенные символом пробела (оценки каждого ученика на отдельной строке).</p>
+<p><strong>Формат выходных данных</strong></p>
+<p>Программа должна вывести множество оценок в порядке убывания на одной строке, разделенных пробелами, в соответствии с условием задачи.</p>
+<p>Примечание. Оценка ученика находится в диапазоне от 0 до 10 включительно.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">set_1</span>, <span class="nv">set_2</span>, <span class="nv">set_3</span> <span class="o">=</span> <span class="ss">(</span><span class="nv">set</span><span class="ss">(</span><span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">())</span> <span class="k">for</span> <span class="nv">_</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="mi">3</span><span class="ss">))</span>
+<span class="nv">print</span><span class="ss">(</span><span class="o">*</span><span class="ss">(</span><span class="nv">sorted</span><span class="ss">(</span><span class="nv">set_3</span> <span class="o">-</span> <span class="ss">(</span><span class="nv">set_1</span> <span class="o">|</span> <span class="nv">set_2</span><span class="ss">)</span>, <span class="nv">key</span><span class="o">=</span><span class="nv">int</span>, <span class="nv">reverse</span><span class="o">=</span><span class="nv">True</span><span class="ss">)))</span>
+</pre></div>
+
+
+<p><em>Задача 6:</em></p>
+<p>Даны по 10-балльной шкале оценки по биологии трех учеников. Напишите программу, которая выводит множество оценок, не встречающихся ни у одного из трех учеников.</p>
+<p><strong>Формат входных данных</strong></p>
+<p>На вход программе подаются оценки трех учеников, разделенные символом пробела (оценки каждого ученика на отдельной строке).</p>
+<p><strong>Формат выходных данных</strong></p>
+<p>Программа должна вывести множество оценок в порядке возрастания на одной строке, разделенных пробелами, в соответствии с условием задачи.</p>
+<p>Примечание. Оценка ученика находится в диапазоне от 0 до 10 включительно.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="k">set</span><span class="p">(</span><span class="k">input</span><span class="p">().</span><span class="n">split</span><span class="p">()</span> <span class="o">+</span> <span class="k">input</span><span class="p">().</span><span class="n">split</span><span class="p">()</span> <span class="o">+</span> <span class="k">input</span><span class="p">().</span><span class="n">split</span><span class="p">())</span>
+<span class="n">b</span> <span class="o">=</span> <span class="k">set</span><span class="p">(</span><span class="k">map</span><span class="p">(</span><span class="n">str</span><span class="p">,</span> <span class="n">range</span><span class="p">(</span><span class="mi">11</span><span class="p">)))</span>
+<span class="n">print</span><span class="p">(</span><span class="o">*</span><span class="n">sorted</span><span class="p">(</span><span class="n">b</span> <span class="o">-</span>  <span class="n">a</span><span class="p">,</span> <span class="k">key</span><span class="o">=</span><span class="nb">int</span><span class="p">))</span>
+</pre></div>
+
+
+<p><em>Задача 7:</em></p>
+<p>Используя генератор множеств, дополните приведенный код, так чтобы получить множество, содержащее уникальные значения списка items. Результат вывести на одной строке, в упорядоченном виде, разделяя элементы одним символом пробела.</p>
+<p>Примечание 1. Обратите внимание, некоторые элементы списка – числа, а некоторые – строки, при этом строки необходимо трактовать как числа.</p>
+<p>Примечание 2. Чтобы вывести элементы множества в упорядоченном виде используйте следующий код:</p>
+<div class="codehilite"><pre><span></span><span class="n">print</span><span class="p">(</span><span class="o">*</span><span class="n">sorted</span><span class="p">(</span><span class="n">myset</span><span class="p">))</span>
+</pre></div>
+
+
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">items</span> <span class="o">=</span> [<span class="mi">10</span>, <span class="s1">&#39;</span><span class="s">30</span><span class="s1">&#39;</span>, <span class="mi">30</span>, <span class="mi">10</span>, <span class="s1">&#39;</span><span class="s">56</span><span class="s1">&#39;</span>, <span class="mi">34</span>, <span class="s1">&#39;</span><span class="s">12</span><span class="s1">&#39;</span>, <span class="mi">90</span>, <span class="mi">89</span>, <span class="mi">34</span>, <span class="mi">45</span>, <span class="s1">&#39;</span><span class="s">67</span><span class="s1">&#39;</span>, <span class="mi">12</span>, <span class="mi">10</span>, <span class="mi">90</span>, <span class="mi">23</span>, <span class="s1">&#39;</span><span class="s">45</span><span class="s1">&#39;</span>, <span class="mi">56</span>, <span class="s1">&#39;</span><span class="s">56</span><span class="s1">&#39;</span>, <span class="mi">1</span>, <span class="mi">5</span>, <span class="s1">&#39;</span><span class="s">6</span><span class="s1">&#39;</span>, <span class="mi">5</span>]
+<span class="nv">myset</span> <span class="o">=</span> {<span class="nv">int</span><span class="ss">(</span><span class="nv">c</span><span class="ss">)</span> <span class="k">for</span> <span class="nv">c</span> <span class="nv">in</span> <span class="nv">items</span>}
+<span class="nv">print</span><span class="ss">(</span><span class="o">*</span><span class="nv">sorted</span><span class="ss">(</span><span class="nv">myset</span><span class="ss">))</span>
+</pre></div>
+
+
+<p><em>Задача 8:</em></p>
+<p>Используя генератор множеств, дополните приведенный код, так чтобы получить множество, содержащее первую букву каждого слова (в нижнем регистре) списка words. Результат вывести на одной строке в алфавитном порядке, разделяя элементы одним символом пробела.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">words</span> <span class="o">=</span> [<span class="s1">&#39;</span><span class="s">Plum</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">Grapefruit</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">apple</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">orange</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">pomegranate</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">Cranberry</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">lime</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">Lemon</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">grapes</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">persimmon</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">tangerine</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">Watermelon</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">currant</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">Almond</span><span class="s1">&#39;</span>]
+<span class="nv">myset</span> <span class="o">=</span> {<span class="nv">i</span>[<span class="mi">0</span>].<span class="nv">lower</span><span class="ss">()</span> <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">words</span>}
+<span class="nv">print</span><span class="ss">(</span><span class="o">*</span><span class="nv">sorted</span><span class="ss">(</span><span class="nv">myset</span><span class="ss">))</span>
+</pre></div>
+
+
+<p><em>Задача 9:</em></p>
+<p>Используя генератор множеств, дополните приведенный код, так чтобы получить множество, содержащее уникальные слова (в нижнем регистре) строки sentence. Результат вывести на одной строке в алфавитном порядке, разделяя элементы одним символом пробела.</p>
+<p>Примечание. Учтите, что знаки пунктуации не относятся к словам.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">re</span>
+<span class="n">sentence</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;My very photogenic mother died in a freak accident (picnic, lightning) when I was three, and, save for a pocket of warmth in the darkest past, nothing of her subsists within the hollows and dells of memory, over which, if you can still stand my style (I am writing under observation), the sun of my infancy had set: surely, you all know those redolent remnants of day suspended, with the midges, about some hedge in bloom or suddenly entered and traversed by the rambler, at the bottom of a hill, in the summer dusk; a furry warmth, golden midges.&#39;&#39;&#39;</span>
+<span class="n">stroka</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;[-()</span><span class="se">\&quot;</span><span class="s2">#/@;:&lt;&gt;{}`+=~|.!?,]&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">sentence</span><span class="p">)</span>
+<span class="n">spisok</span> <span class="o">=</span> <span class="n">stroka</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+<span class="n">myset</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">spisok</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="o">*</span><span class="nb">sorted</span><span class="p">(</span><span class="n">myset</span><span class="p">))</span>
+</pre></div>
+
+
+<p><em>Задача 10:</em></p>
+<p>Используя генератор множеств, дополните приведенный код, так чтобы получить множество, содержащее уникальные слова  строки sentence длиною меньше 4 символов. Результат вывести на одной строке (в нижнем регистре) в алфавитном порядке, разделяя элементы одним символом пробела.</p>
+<p>Примечание. Учтите, что знаки пунктуации не относятся к словам.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">re</span>
+<span class="n">sentence</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;My very photogenic mother died in a freak accident (picnic, lightning) when I was three, and, save for a pocket of warmth in the darkest past, nothing of her subsists within the hollows and dells of memory, over which, if you can still stand my style (I am writing under observation), the sun of my infancy had set: surely, you all know those redolent remnants of day suspended, with the midges, about some hedge in bloom or suddenly entered and traversed by the rambler, at the bottom of a hill, in the summer dusk; a furry warmth, golden midges.&#39;&#39;&#39;</span>
+<span class="n">stroka</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;[-()</span><span class="se">\&quot;</span><span class="s2">#/@;:&lt;&gt;{}`+=~|.!?,]&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">sentence</span><span class="p">)</span>
+<span class="n">spisok</span> <span class="o">=</span> <span class="n">stroka</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+
+<span class="n">myset</span> <span class="o">=</span> <span class="p">{</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">spisok</span> <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">4</span><span class="p">}</span>
+<span class="k">print</span><span class="p">(</span><span class="o">*</span><span class="nb">sorted</span><span class="p">(</span><span class="n">myset</span><span class="p">))</span>
+</pre></div>
+
+
+<p><em>Задача 11:</em></p>
+<p>Используя генератор множеств, дополните приведенный код, так чтобы он выбрал из списка files уникальные имена файлов c расширением .png, независимо от регистра имен и расширений. Имена файлов вывести вместе с расширением, все на одной строке, в нижнем регистре, в алфавитном порядке через пробел.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">files</span> <span class="o">=</span> [<span class="s1">&#39;</span><span class="s">python.png</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">qwerty.py</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">stepik.png</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">beegeek.org</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">windows.pnp</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">pen.txt</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">phone.py</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">book.txT</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">board.pNg</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">keyBoard.jpg</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">Python.PNg</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">apple.jpeg</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">png.png</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">input.tXt</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">split.pop</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">solution.Py</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">stepik.org</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">kotlin.ko</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">github.git</span><span class="s1">&#39;</span>]
+<span class="nb">result</span> <span class="o">=</span> {<span class="nv">c</span>.<span class="nv">lower</span><span class="ss">()</span> <span class="k">for</span> <span class="nv">c</span> <span class="nv">in</span> <span class="nv">files</span> <span class="k">if</span> <span class="nv">c</span>.<span class="nv">lower</span><span class="ss">()</span>.<span class="nv">endswith</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">.png</span><span class="s1">&#39;</span><span class="ss">)</span>}
+<span class="nv">print</span><span class="ss">(</span><span class="o">*</span><span class="nv">sorted</span><span class="ss">(</span><span class="nb">result</span><span class="ss">))</span>
+</pre></div>
+
+
+<p><em>Задача 12:</em></p>
+<p>Учитель проверяет домашнее задание в классе и получил следующие ответы: из n школьников у m домашнее задание съела собака, у k отключили свет, а p учеников постигли оба несчастья. Напишите программу, которая определяет сколько человек выполнило домашнее задание.</p>
+<p><strong>Формат входных данных</strong></p>
+<p>На вход программе подаются числа n, m, k, p, каждое на отдельной строке.</p>
+<p><strong>Формат выходных данных</strong></p>
+<p>Программа должна вывести количество учеников, сделавших домашнее задание.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">n</span>, <span class="nv">m</span>, <span class="nv">k</span>, <span class="nv">p</span> <span class="o">=</span> [<span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span> <span class="k">for</span> <span class="nv">_</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="mi">4</span><span class="ss">)</span>]
+<span class="nv">print</span><span class="ss">(</span><span class="nv">n</span> <span class="o">+</span> <span class="nv">p</span> <span class="o">-</span> <span class="nv">m</span> <span class="o">-</span> <span class="nv">k</span><span class="ss">)</span>
+</pre></div>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div><!-- конец карточки -->
+  <!-- конец поста -->
+
+  </main>
+  <!-- Скрипты -->
+  <script src="/static/assets/purecounter/purecounter.js"></script>
+  <script src="/static/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/static/assets/glightbox/js/glightbox.min.js"></script>
+  <script src="/static/assets/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/static/assets/swiper/swiper-bundle.min.js"></script>
+  <script src="/static/assets/waypoints/noframework.waypoints.js"></script>
+  <script src="/static/js/main.js"></script>
+</body>
+</html>

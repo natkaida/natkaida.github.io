@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title></title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <link href="/static/img/favicon.png" rel="icon">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="/static/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/static/assets/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/static/assets/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="/static/assets/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/static/assets/remixicon/remixicon.css" rel="stylesheet">
+  <link href="/static/assets/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/69e2443572.js" crossorigin="anonymous"></script>
+  <link href="/static/css/style.css" rel="stylesheet">
+  <link href="/pygments.css" rel="stylesheet">
+  <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(89602269, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/89602269" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</head>
+<body>
+  <main id="main">
+
+<style>
+body::before {
+	background: #040404 url("/static/img/portfolio/post.jpg");
+}
+</style>
+    <!-- ======= шаблон для поста ======= -->
+    <div id="portfolio-details" class="portfolio-details">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <h2 class="portfolio-title">Подборка задач с решениями - 28</h2>
+          </div>
+          <div class="col-lg-8 portfolio-info">
+            <h3></h3>
+            <ul>
+              <li><strong>Категория</strong>: Python</li>
+              <li><strong>Дата публикации</strong>: 2022-01-22</li>
+              <li><strong>Посмотреть на сайте</strong>: <a href="https://stepik.org">Stepik</a></li>
+            </ul>
+            <p>
+              <p><em>Задача 1:</em></p>
+<p>На вход программе подается одно число nnn. Напишите программу, которая выводит список [1, 2, 3, ..., n].</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="n">print</span><span class="p">(</span><span class="n">list</span><span class="p">(</span><span class="n">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="k">input</span><span class="p">())</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)))</span>
+</pre></div>
+
+
+<p><em>Задача 2:</em></p>
+<p>На вход программе подается одно число nnn. Напишите программу, которая выводит список, состоящий из nnn букв английского алфавита ['a', 'b', 'c', ...] в нижнем регистре.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">n</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
+<span class="nv">print</span><span class="ss">(</span>[<span class="nv">chr</span><span class="ss">(</span><span class="nv">ord</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">a</span><span class="s1">&#39;</span><span class="ss">)</span><span class="o">+</span><span class="nv">i</span><span class="ss">)</span> <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">n</span><span class="ss">)</span>]<span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Задача 3:</em></p>
+<p>Дополните приведенный код, чтобы он:</p>
+<ul>
+<li>Вывел длину списка;</li>
+<li>Вывел последний элемент списка;</li>
+<li>Вывел список в обратном порядке (вспоминаем срезы);</li>
+<li>Вывел YES если список содержит числа 5 и 17, и NO в противном случае;</li>
+<li>Вывел список с удаленным первым и последним элементами.</li>
+</ul>
+<p>Примечание. Каждый вывод осуществлять с новой строки.
+Код: </p>
+<div class="codehilite"><pre><span></span><span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+</pre></div>
+
+
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nf">print</span><span class="p">(</span>
+    <span class="nf">len</span><span class="p">(</span><span class="s s-Atom">numbers</span><span class="p">),</span> 
+    <span class="s s-Atom">numbers</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> 
+    <span class="s s-Atom">numbers</span><span class="p">[</span><span class="s s-Atom">::-</span><span class="mi">1</span><span class="p">],</span>
+    <span class="s s-Atom">&#39;YES&#39;</span> <span class="s s-Atom">if</span> <span class="p">{</span><span class="mi">5</span><span class="p">,</span> <span class="mi">17</span><span class="p">}</span> <span class="s s-Atom">in</span> <span class="nf">set</span><span class="p">(</span><span class="s s-Atom">numbers</span><span class="p">)</span> <span class="s s-Atom">else</span> <span class="s s-Atom">&#39;NO&#39;</span><span class="p">,</span>
+    <span class="s s-Atom">numbers</span><span class="p">[</span><span class="mi">1</span><span class="p">:-</span><span class="mi">1</span><span class="p">],</span>
+    <span class="s s-Atom">sep=&#39;\n&#39;</span>
+<span class="p">)</span>
+</pre></div>
+
+
+<p><em>Задача 4:</em></p>
+<p>На вход программе подается натуральное число n, а затем n строк. Напишите программу, которая создает из указанных строк список и выводит его.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">n</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
+<span class="nv">spisok</span> <span class="o">=</span> []
+<span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">n</span><span class="ss">)</span>:
+    <span class="nv">a</span> <span class="o">=</span> <span class="nv">input</span><span class="ss">()</span>
+    <span class="nv">spisok</span>.<span class="nv">append</span><span class="ss">(</span><span class="nv">a</span><span class="ss">)</span>
+<span class="nv">print</span><span class="ss">(</span><span class="nv">spisok</span><span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Задача 5:</em></p>
+<p>Напишите программу, выводящую следующий список:</p>
+<div class="codehilite"><pre><span></span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;bb&#39;</span><span class="p">,</span> <span class="s1">&#39;ccc&#39;</span><span class="p">,</span> <span class="s1">&#39;dddd&#39;</span><span class="p">,</span> <span class="s1">&#39;eeeee&#39;</span><span class="p">,</span> <span class="s1">&#39;ffffff&#39;</span><span class="p">,</span> <span class="p">...]</span>
+</pre></div>
+
+
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">spisok</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="s">abcdefghijklmnopqrstuvwxyz</span><span class="s1">&#39;</span>
+<span class="nv">res</span> <span class="o">=</span> []
+<span class="nv">j</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">spisok</span>:
+    <span class="nv">res</span>.<span class="nv">append</span><span class="ss">(</span><span class="nv">i</span> <span class="o">*</span> <span class="nv">j</span><span class="ss">)</span>
+    <span class="nv">j</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="nv">print</span><span class="ss">(</span><span class="nv">res</span><span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Задача 6:</em></p>
+<p>На вход программе подается натуральное число n, а затем n целых чисел. Напишите программу, которая создает из указанных чисел список их кубов.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">n</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
+<span class="nv">spisok</span> <span class="o">=</span> []
+<span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">n</span><span class="ss">)</span>:
+    <span class="nv">a</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
+    <span class="nv">b</span> <span class="o">=</span> <span class="nv">a</span> <span class="o">**</span> <span class="mi">3</span>
+    <span class="nv">spisok</span>.<span class="nv">append</span><span class="ss">(</span><span class="nv">b</span><span class="ss">)</span>
+<span class="nv">print</span><span class="ss">(</span><span class="nv">spisok</span><span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Задача 7:</em></p>
+<p>На вход программе подается натуральное число n. Напишите программу, которая создает список состоящий из делителей введенного числа.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">n</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
+<span class="nv">spisok</span> <span class="o">=</span> []
+<span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="mi">1</span>, <span class="nv">n</span><span class="o">+</span><span class="mi">1</span><span class="ss">)</span>:
+    <span class="k">if</span> <span class="nv">n</span> <span class="o">%</span> <span class="nv">i</span> <span class="o">==</span> <span class="mi">0</span>:
+        <span class="nv">spisok</span>.<span class="nv">append</span><span class="ss">(</span><span class="nv">i</span><span class="ss">)</span>
+<span class="nv">print</span><span class="ss">(</span><span class="nv">spisok</span><span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Задача 8:</em></p>
+<p>На вход программе подается натуральное число n ≥ 2, а затем n целых чисел. Напишите программу, которая создает из указанных чисел список, состоящий из сумм соседних чисел (000 и 111, 111 и 222, 222 и 333 и т.д.).</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">n</span>, <span class="nv">a</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>, <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
+<span class="nv">lst</span> <span class="o">=</span> []
+<span class="k">for</span> <span class="nv">_</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">n</span><span class="o">-</span><span class="mi">1</span><span class="ss">)</span>:
+    <span class="nv">b</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
+    <span class="nv">lst</span>.<span class="nv">append</span><span class="ss">(</span><span class="nv">a</span> <span class="o">+</span> <span class="nv">b</span><span class="ss">)</span>
+    <span class="nv">a</span> <span class="o">=</span> <span class="nv">b</span>
+<span class="nv">print</span><span class="ss">(</span><span class="nv">lst</span><span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Задача 9:</em></p>
+<p>На вход программе подается натуральное число n, а затем n целых чисел. Напишите программу, которая создает из указанных чисел список, затем удаляет все элементы стоящие по нечетным индексам, а затем выводит полученный список.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">n</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
+<span class="nv">spisok</span> <span class="o">=</span> []
+<span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">n</span><span class="ss">)</span>:
+    <span class="nv">a</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
+    <span class="nv">spisok</span>.<span class="nv">append</span><span class="ss">(</span><span class="nv">a</span><span class="ss">)</span>
+<span class="nv">del</span> <span class="nv">spisok</span>[<span class="mi">1</span>::<span class="mi">2</span>]
+<span class="nv">print</span><span class="ss">(</span><span class="nv">spisok</span><span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Задача 10:</em></p>
+<p>На вход программе подается натуральное число n и n строк, а затем число k. Напишите программу, которая выводит k-ую букву из введенных строк на одной строке без пробелов.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">data</span> <span class="o">=</span> [<span class="nv">input</span><span class="ss">()</span> <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">()))</span>]
+<span class="nv">k</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
+<span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">data</span>:
+    <span class="k">if</span> <span class="nv">len</span><span class="ss">(</span><span class="nv">i</span><span class="ss">)</span> <span class="o">&gt;=</span> <span class="nv">k</span>:
+        <span class="nv">print</span><span class="ss">(</span><span class="nv">i</span>[<span class="nv">k</span> <span class="o">-</span> <span class="mi">1</span>], <span class="k">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Задача 11:</em></p>
+<p>На вход программе подается натуральное число n, а затем n строк. Напишите программу, которая создает список из символов всех строк, а затем выводит его.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">n</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
+<span class="nv">spisok</span> <span class="o">=</span> []
+<span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">n</span><span class="ss">)</span>:
+    <span class="nv">a</span> <span class="o">=</span> <span class="nv">list</span><span class="ss">(</span><span class="nv">map</span><span class="ss">(</span><span class="nv">str</span>, <span class="nv">input</span><span class="ss">()))</span>
+    <span class="nv">spisok</span>.<span class="nv">extend</span><span class="ss">(</span><span class="nv">a</span><span class="ss">)</span>
+<span class="nv">print</span><span class="ss">(</span><span class="nv">spisok</span><span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Задача 12:</em></p>
+<p>При анализе данных, собранных в рамках научного эксперимента, бывает полезно удалить самое большое и самое маленькое значение.</p>
+<p>На вход программе подается натуральное число n, а затем n различных натуральных чисел. Напишите программу, которая удаляет наименьшее и наибольшее значение из указанных чисел, а затем выводит оставшиеся числа каждое на отдельной строке, не меняя их порядок.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">s</span>, <span class="nv">x</span> <span class="o">=</span> [], <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
+<span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">x</span><span class="ss">)</span>:
+    <span class="nv">s</span>.<span class="nv">append</span><span class="ss">(</span><span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">()))</span>  
+<span class="nv">del</span> <span class="nv">s</span>[<span class="nv">s</span>.<span class="nv">index</span><span class="ss">(</span><span class="nv">min</span><span class="ss">(</span><span class="nv">s</span><span class="ss">))</span>]
+<span class="nv">del</span> <span class="nv">s</span>[<span class="nv">s</span>.<span class="nv">index</span><span class="ss">(</span><span class="nv">max</span><span class="ss">(</span><span class="nv">s</span><span class="ss">))</span>]
+<span class="nv">print</span><span class="ss">(</span><span class="o">*</span><span class="nv">s</span>, <span class="nv">sep</span><span class="o">=</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="ss">)</span>
+</pre></div>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div><!-- конец карточки -->
+  <!-- конец поста -->
+
+  </main>
+  <!-- Скрипты -->
+  <script src="/static/assets/purecounter/purecounter.js"></script>
+  <script src="/static/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/static/assets/glightbox/js/glightbox.min.js"></script>
+  <script src="/static/assets/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/static/assets/swiper/swiper-bundle.min.js"></script>
+  <script src="/static/assets/waypoints/noframework.waypoints.js"></script>
+  <script src="/static/js/main.js"></script>
+</body>
+</html>

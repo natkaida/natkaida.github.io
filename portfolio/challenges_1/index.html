@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title></title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <link href="/static/img/favicon.png" rel="icon">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="/static/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/static/assets/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/static/assets/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="/static/assets/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/static/assets/remixicon/remixicon.css" rel="stylesheet">
+  <link href="/static/assets/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/69e2443572.js" crossorigin="anonymous"></script>
+  <link href="/static/css/style.css" rel="stylesheet">
+  <link href="/pygments.css" rel="stylesheet">
+  <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(89602269, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/89602269" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</head>
+<body>
+  <main id="main">
+
+<style>
+body::before {
+	background: #040404 url("/static/img/portfolio/post.jpg");
+}
+</style>
+    <!-- ======= шаблон для поста ======= -->
+    <div id="portfolio-details" class="portfolio-details">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <h2 class="portfolio-title">Подборка задач с решениями - 1</h2>
+          </div>
+          <div class="col-lg-8 portfolio-info">
+            <h3></h3>
+            <ul>
+              <li><strong>Категория</strong>: Python</li>
+              <li><strong>Дата публикации</strong>: 2021-12-03</li>
+              <li><strong>Посмотреть на сайте</strong>: <a href="https://stepik.org">Stepik</a></li>
+            </ul>
+            <p>
+              <p><em>Задача 1:</em></p>
+<p>На вход программе подаются два натуральных числа n и m, каждое на отдельной строке — количество строк и столбцов в матрице. Далее вводятся сами элементы матрицы — слова, каждое на отдельной строке; подряд идут элементы сначала первой строки, затем второй, и т.д.</p>
+<p>Напишите программу, которая считывает элементы матрицы один за другим, выводит их в виде матрицы, выводит пустую строку, и снова ту же матрицу, но уже поменяв местами строки со столбцами: первая строка выводится как первый столбец, и так далее.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">n</span>, <span class="nv">m</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>, <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
+<span class="nv">matrix</span> <span class="o">=</span> []
+<span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">n</span><span class="ss">)</span>:
+    <span class="nv">matrix</span>.<span class="nv">append</span><span class="ss">(</span>[]<span class="ss">)</span>
+    <span class="k">for</span> <span class="nv">j</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">m</span><span class="ss">)</span>:
+        <span class="nv">temp</span> <span class="o">=</span> <span class="nv">input</span><span class="ss">()</span>
+        <span class="nv">matrix</span>[<span class="nv">i</span>].<span class="nv">append</span><span class="ss">(</span><span class="nv">temp</span><span class="ss">)</span>
+<span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">n</span><span class="ss">)</span>:
+    <span class="k">for</span> <span class="nv">j</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">m</span><span class="ss">)</span>:
+        <span class="nv">print</span><span class="ss">(</span><span class="nv">matrix</span>[<span class="nv">i</span>][<span class="nv">j</span>], <span class="k">end</span><span class="o">=</span><span class="s1">&#39;</span><span class="s"> </span><span class="s1">&#39;</span><span class="ss">)</span>
+    <span class="nv">print</span><span class="ss">()</span>
+<span class="nv">print</span><span class="ss">()</span>               
+<span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">m</span><span class="ss">)</span>:
+    <span class="k">for</span> <span class="nv">j</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">n</span><span class="ss">)</span>:
+        <span class="nv">print</span><span class="ss">(</span><span class="nv">matrix</span>[<span class="nv">j</span>][<span class="nv">i</span>], <span class="k">end</span><span class="o">=</span><span class="s1">&#39;</span><span class="s"> </span><span class="s1">&#39;</span><span class="ss">)</span>
+    <span class="nv">print</span><span class="ss">()</span>
+</pre></div>
+
+
+<p><em>Задача 2:</em></p>
+<p>Следом квадратной матрицы называется сумма элементов главной диагонали. Напишите программу, которая выводит след заданной квадратной матрицы.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">n</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
+<span class="nv">matrix</span> <span class="o">=</span> []
+<span class="nv">s</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="nv">_</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">n</span><span class="ss">)</span>:
+    <span class="nv">matrix</span>.<span class="nv">append</span><span class="ss">(</span><span class="nv">list</span><span class="ss">(</span><span class="nv">map</span><span class="ss">(</span><span class="nv">int</span>, <span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">())))</span>
+
+<span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">n</span><span class="ss">)</span>:
+    <span class="k">for</span> <span class="nv">j</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">n</span><span class="ss">)</span>:
+        <span class="k">if</span> <span class="nv">i</span> <span class="o">==</span> <span class="nv">j</span>:
+            <span class="nv">s</span> <span class="o">+=</span> <span class="nv">matrix</span>[<span class="nv">i</span>][<span class="nv">j</span>]
+<span class="nv">print</span><span class="ss">(</span><span class="nv">s</span><span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Задача 3:</em></p>
+<p>Напишите программу, которая выводит количество элементов квадратной матрицы в каждой строке, больших среднего арифметического элементов данной строки.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">n</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
+<span class="nv">matrix</span> <span class="o">=</span> [<span class="nv">list</span><span class="ss">(</span><span class="nv">map</span><span class="ss">(</span><span class="nv">int</span>, <span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">()))</span> <span class="k">for</span> <span class="nv">_</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">n</span><span class="ss">)</span>]
+<span class="k">for</span> <span class="nv">e</span> <span class="nv">in</span> <span class="nv">matrix</span>:
+    <span class="nv">count</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="nv">x</span> <span class="nv">in</span> <span class="nv">e</span>:
+        <span class="k">if</span> <span class="nv">x</span> <span class="o">&gt;</span> <span class="ss">(</span><span class="nv">sum</span><span class="ss">(</span><span class="nv">e</span><span class="ss">)</span><span class="o">/</span><span class="nv">len</span><span class="ss">(</span><span class="nv">e</span><span class="ss">))</span>:
+            <span class="nv">count</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="nv">print</span><span class="ss">(</span><span class="nv">count</span><span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Задача 4:</em></p>
+<p>Напишите программу, которая выводит максимальный элемент в <a href="https://stepik.orgucarecdn.com/9d46c688-d33f-44a3-a2c4-9f5e0e865958/">заштрихованной области</a> квадратной матрицы.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">n</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
+<span class="nv">matrix</span> <span class="o">=</span> [[<span class="o">*</span><span class="nv">map</span><span class="ss">(</span><span class="nv">int</span>, <span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">())</span>] <span class="k">for</span> <span class="nv">_</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">n</span><span class="ss">)</span>]
+<span class="nv">print</span><span class="ss">(</span><span class="nv">max</span><span class="ss">(</span><span class="nv">matrix</span>[<span class="nv">i</span>][<span class="nv">j</span>] <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">n</span><span class="ss">)</span> <span class="k">for</span> <span class="nv">j</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">n</span><span class="ss">)</span> <span class="k">if</span> <span class="nv">j</span> <span class="o">&lt;=</span> <span class="nv">i</span> <span class="o">&lt;=</span> <span class="nv">n</span> <span class="o">-</span> <span class="nv">j</span> <span class="o">-</span> <span class="mi">1</span> <span class="nv">or</span> <span class="nv">j</span> <span class="o">&gt;=</span> <span class="nv">i</span> <span class="o">&gt;=</span> <span class="nv">n</span> <span class="o">-</span> <span class="nv">j</span> <span class="o">-</span> <span class="mi">1</span><span class="ss">))</span>
+</pre></div>
+
+
+<p><em>Задача 5:</em></p>
+<p>Квадратная матрица разбивается на четыре четверти, ограниченные главной и побочной диагоналями: верхнюю, нижнюю, левую и правую - <a href="https://stepik.orgucarecdn.com/734b102d-e18a-495c-a3cf-37cec3bc508f/">как показано на схеме</a>.</p>
+<p>Напишите программу, которая вычисляет сумму элементов: верхней четверти; правой четверти; нижней четверти; левой четверти.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">n</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
+<span class="nv">mtr</span> <span class="o">=</span> [[<span class="nv">int</span><span class="ss">(</span><span class="nv">ch</span><span class="ss">)</span> <span class="k">for</span> <span class="nv">ch</span> <span class="nv">in</span> <span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">()</span>] <span class="k">for</span> <span class="nv">_</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">n</span><span class="ss">)</span>]
+<span class="nv">print</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">Верхняя четверть:</span><span class="s1">&#39;</span>, <span class="nv">sum</span><span class="ss">(</span>[<span class="nv">mtr</span>[<span class="nv">i</span>][<span class="nv">j</span>] <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">n</span><span class="ss">)</span> <span class="k">for</span> <span class="nv">j</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">n</span><span class="ss">)</span> <span class="k">if</span> <span class="ss">(</span><span class="nv">i</span> <span class="o">&lt;</span> <span class="nv">j</span> <span class="nv">and</span> <span class="nv">i</span> <span class="o">&lt;</span> <span class="nv">n</span> <span class="o">-</span> <span class="mi">1</span> <span class="o">-</span> <span class="nv">j</span><span class="ss">)</span>]<span class="ss">))</span>
+<span class="nv">print</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">Правая четверть:</span><span class="s1">&#39;</span>, <span class="nv">sum</span><span class="ss">(</span>[<span class="nv">mtr</span>[<span class="nv">i</span>][<span class="nv">j</span>] <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">n</span><span class="ss">)</span> <span class="k">for</span> <span class="nv">j</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">n</span><span class="ss">)</span> <span class="k">if</span> <span class="ss">(</span><span class="nv">i</span> <span class="o">&lt;</span> <span class="nv">j</span> <span class="nv">and</span> <span class="nv">i</span> <span class="o">&gt;</span> <span class="nv">n</span> <span class="o">-</span> <span class="mi">1</span> <span class="o">-</span> <span class="nv">j</span><span class="ss">)</span>]<span class="ss">))</span>
+<span class="nv">print</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">Нижняя четверть:</span><span class="s1">&#39;</span>, <span class="nv">sum</span><span class="ss">(</span>[<span class="nv">mtr</span>[<span class="nv">i</span>][<span class="nv">j</span>] <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">n</span><span class="ss">)</span> <span class="k">for</span> <span class="nv">j</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">n</span><span class="ss">)</span> <span class="k">if</span> <span class="ss">(</span><span class="nv">i</span> <span class="o">&gt;</span> <span class="nv">j</span> <span class="nv">and</span> <span class="nv">i</span> <span class="o">&gt;</span> <span class="nv">n</span> <span class="o">-</span> <span class="mi">1</span> <span class="o">-</span> <span class="nv">j</span><span class="ss">)</span>]<span class="ss">))</span>
+<span class="nv">print</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">Левая четверть:</span><span class="s1">&#39;</span>, <span class="nv">sum</span><span class="ss">(</span>[<span class="nv">mtr</span>[<span class="nv">i</span>][<span class="nv">j</span>] <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">n</span><span class="ss">)</span> <span class="k">for</span> <span class="nv">j</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">n</span><span class="ss">)</span> <span class="k">if</span> <span class="ss">(</span><span class="nv">i</span> <span class="o">&gt;</span> <span class="nv">j</span> <span class="nv">and</span> <span class="nv">i</span> <span class="o">&lt;</span> <span class="nv">n</span> <span class="o">-</span> <span class="mi">1</span> <span class="o">-</span> <span class="nv">j</span><span class="ss">)</span>]<span class="ss">))</span>
+</pre></div>
+
+
+<p><em>Задача 6:</em></p>
+<p>На вход программе подаются два натуральных числа n и m — количество строк и столбцов в матрице. Создайте матрицу mult размером n × m и заполните её таблицей умножения по формуле mult[i][j] = i * j.</p>
+<p>Программа должна вывести таблицу умножения, отводя на вывод каждого числа ровно 3 символа (для этого используйте строковый метод ljust()).</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">n</span>, <span class="nv">m</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>, <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
+<span class="nv">matrix</span> <span class="o">=</span> []
+<span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">n</span><span class="ss">)</span>:
+    <span class="nv">matrix</span>.<span class="nv">append</span><span class="ss">(</span>[]<span class="ss">)</span>
+    <span class="k">for</span> <span class="nv">j</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">m</span><span class="ss">)</span>:
+        <span class="nv">temp</span> <span class="o">=</span> <span class="nv">i</span> <span class="o">*</span> <span class="nv">j</span>
+        <span class="nv">matrix</span>[<span class="nv">i</span>].<span class="nv">append</span><span class="ss">(</span><span class="nv">temp</span><span class="ss">)</span>
+<span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">len</span><span class="ss">(</span><span class="nv">matrix</span><span class="ss">))</span>:
+    <span class="k">for</span> <span class="nv">j</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">len</span><span class="ss">(</span><span class="nv">matrix</span>[<span class="nv">i</span>]<span class="ss">))</span>:
+        <span class="nv">print</span><span class="ss">(</span><span class="nv">str</span><span class="ss">(</span><span class="nv">matrix</span>[<span class="nv">i</span>][<span class="nv">j</span>]<span class="ss">)</span>.<span class="nv">ljust</span><span class="ss">(</span><span class="mi">3</span><span class="ss">)</span>, <span class="k">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="ss">)</span>  
+    <span class="nv">print</span><span class="ss">()</span>
+</pre></div>
+
+
+<p><em>Задача 7:</em></p>
+<p>На вход программе подаются два натуральных числа n и m — количество строк и столбцов в матрице, затем n строк по m целых чисел в каждой, отделенных символом пробела.</p>
+<p>Напишите программу, которая находит индексы (строку и столбец) первого вхождения максимального элемента.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="n">n</span><span class="p">,</span> <span class="n">m</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">()),</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+<span class="kp">matrix</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="kp">matrix</span><span class="o">.</span><span class="kp">append</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="kp">split</span><span class="p">())))</span>
+<span class="n">np</span><span class="o">.</span><span class="kp">matrix</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="kp">array</span><span class="p">(</span><span class="kp">matrix</span><span class="p">)</span>
+<span class="n">ind</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="kp">unravel_index</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="kp">argmax</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="kp">matrix</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="bp">None</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="kp">matrix</span><span class="o">.</span><span class="kp">shape</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="o">*</span><span class="n">ind</span><span class="p">)</span>
+</pre></div>
+
+
+<p><em>Задача 8:</em></p>
+<p>Напишите программу, которая меняет местами столбцы в матрице.</p>
+<p><strong>Формат входных данных</strong></p>
+<p>На вход программе на разных строках подаются два натуральных числа n и m — количество строк и столбцов в матрице, затем элементы матрицы построчно через пробел, затем числа i и j — номера столбцов, подлежащих обмену.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="n">n</span><span class="p">,</span> <span class="n">m</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">()),</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+<span class="kp">matrix</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="kp">matrix</span><span class="o">.</span><span class="kp">append</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="kp">split</span><span class="p">())))</span>
+<span class="n">i</span><span class="p">,</span> <span class="n">j</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="kp">split</span><span class="p">()</span>
+<span class="n">i</span><span class="p">,</span> <span class="n">j</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">i</span><span class="p">),</span> <span class="nb">int</span><span class="p">(</span><span class="n">j</span><span class="p">)</span>
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="kp">array</span><span class="p">(</span><span class="kp">matrix</span><span class="p">)</span>
+<span class="n">A</span><span class="o">.</span><span class="n">T</span><span class="p">[[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">]]</span> <span class="o">=</span> <span class="n">A</span><span class="o">.</span><span class="n">T</span><span class="p">[[</span><span class="n">j</span><span class="p">,</span> <span class="n">i</span><span class="p">]]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">m</span><span class="p">):</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">],</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">()</span>
+</pre></div>
+
+
+<p><em>Задача 9:</em></p>
+<p>Напишите программу, которая проверяет симметричность квадратной матрицы относительно главной диагонали.</p>
+<p><strong>Формат входных данных</strong>
+На вход программе подаётся натуральное число nnn — количество строк и столбцов в матрице, затем элементы матрицы построчно через пробел.</p>
+<p><strong>Формат выходных данных</strong>
+Программа должна вывести YES, если матрица симметрична относительно главной диагонали, и слово NO в противном случае.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+<span class="kp">matrix</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">def</span> <span class="nf">check_symmetric</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">tol</span><span class="o">=</span><span class="mf">1e-8</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">np</span><span class="o">.</span><span class="kp">all</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="kp">abs</span><span class="p">(</span><span class="n">a</span><span class="o">-</span><span class="n">a</span><span class="o">.</span><span class="n">T</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">tol</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s1">&#39;YES&#39;</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s1">&#39;NO&#39;</span>
+
+<span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="kp">matrix</span><span class="o">.</span><span class="kp">append</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="kp">split</span><span class="p">())))</span>
+<span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="kp">array</span><span class="p">(</span><span class="kp">matrix</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">check_symmetric</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
+</pre></div>
+
+
+<p><em>Задача 10:</em></p>
+<p>Дана квадратная матрица чисел. Напишите программу, которая меняет местами элементы, стоящие на главной и побочной диагонали, при этом каждый элемент должен остаться в том же столбце (то есть в каждом столбце нужно поменять местами элемент на главной диагонали и на побочной диагонали).</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">n</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
+<span class="nv">matrix</span> <span class="o">=</span> [<span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">()</span> <span class="k">for</span> <span class="nv">_</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">n</span><span class="ss">)</span>]
+
+<span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">n</span><span class="ss">)</span>:
+    <span class="nv">matrix</span>[<span class="nv">i</span>][<span class="nv">i</span>], <span class="nv">matrix</span>[<span class="nv">n</span> <span class="o">-</span> <span class="nv">i</span> <span class="o">-</span> <span class="mi">1</span>][<span class="nv">i</span>] <span class="o">=</span> <span class="nv">matrix</span>[<span class="nv">n</span> <span class="o">-</span> <span class="nv">i</span> <span class="o">-</span> <span class="mi">1</span>][<span class="nv">i</span>], <span class="nv">matrix</span>[<span class="nv">i</span>][<span class="nv">i</span>]
+
+<span class="k">for</span> <span class="nv">row</span> <span class="nv">in</span> <span class="nv">matrix</span>:
+    <span class="nv">print</span><span class="ss">(</span><span class="o">*</span><span class="nv">row</span><span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Задача 11:</em></p>
+<p>Дана квадратная матрица чисел. Напишите программу, которая зеркально отображает её элементы относительно горизонтальной оси симметрии.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">n</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
+<span class="nv">matrix</span> <span class="o">=</span> []
+<span class="k">for</span> <span class="nv">_</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">n</span><span class="ss">)</span>:
+    <span class="nv">matrix</span>.<span class="nv">append</span><span class="ss">(</span><span class="nv">list</span><span class="ss">(</span><span class="nv">map</span><span class="ss">(</span><span class="nv">int</span>, <span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">())))</span>
+
+<span class="nv">matrix</span> <span class="o">=</span> <span class="nv">list</span><span class="ss">(</span><span class="nv">reversed</span><span class="ss">(</span><span class="nv">matrix</span><span class="ss">))</span>
+
+<span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">n</span><span class="ss">)</span>:
+    <span class="k">for</span> <span class="nv">j</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">n</span><span class="ss">)</span>:
+        <span class="nv">print</span><span class="ss">(</span><span class="nv">matrix</span>[<span class="nv">i</span>][<span class="nv">j</span>], <span class="k">end</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="s"> </span><span class="s2">&quot;</span><span class="ss">)</span>
+    <span class="nv">print</span><span class="ss">()</span>
+</pre></div>
+
+
+<p><em>Задача 12:</em></p>
+<p>Напишите программу, которая поворачивает квадратную матрицу чисел на 90 градусов по часовой стрелке.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="s s-Atom">n</span> <span class="o">=</span> <span class="nf">int</span><span class="p">(</span><span class="nf">input</span><span class="p">())</span>
+<span class="s s-Atom">matrix</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="s s-Atom">for</span> <span class="k">_</span> <span class="s s-Atom">in</span> <span class="nf">range</span><span class="p">(</span><span class="s s-Atom">n</span><span class="p">)</span><span class="s s-Atom">:</span>
+    <span class="s s-Atom">matrix</span><span class="p">.</span><span class="nf">append</span><span class="p">(</span><span class="nf">list</span><span class="p">(</span><span class="nf">map</span><span class="p">(</span><span class="s s-Atom">int</span><span class="p">,</span> <span class="nf">input</span><span class="p">().</span><span class="nf">split</span><span class="p">())))</span>
+
+<span class="s s-Atom">rotated</span> <span class="o">=</span> <span class="nf">list</span><span class="p">(</span><span class="nf">zip</span><span class="p">(</span><span class="o">*</span><span class="s s-Atom">matrix</span><span class="p">[</span><span class="s s-Atom">::-</span><span class="mi">1</span><span class="p">]))</span>
+
+<span class="s s-Atom">for</span> <span class="s s-Atom">i</span> <span class="s s-Atom">in</span> <span class="nf">range</span><span class="p">(</span><span class="s s-Atom">n</span><span class="p">)</span><span class="s s-Atom">:</span>
+    <span class="s s-Atom">for</span> <span class="s s-Atom">j</span> <span class="s s-Atom">in</span> <span class="nf">range</span><span class="p">(</span><span class="s s-Atom">n</span><span class="p">)</span><span class="s s-Atom">:</span>
+        <span class="nf">print</span><span class="p">(</span><span class="s s-Atom">rotated</span><span class="p">[</span><span class="s s-Atom">i</span><span class="p">][</span><span class="s s-Atom">j</span><span class="p">],</span> <span class="s s-Atom">end</span> <span class="o">=</span> <span class="s2">&quot; &quot;</span><span class="p">)</span>
+    <span class="nf">print</span><span class="p">()</span>
+</pre></div>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div><!-- конец карточки -->
+  <!-- конец поста -->
+
+  </main>
+  <!-- Скрипты -->
+  <script src="/static/assets/purecounter/purecounter.js"></script>
+  <script src="/static/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/static/assets/glightbox/js/glightbox.min.js"></script>
+  <script src="/static/assets/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/static/assets/swiper/swiper-bundle.min.js"></script>
+  <script src="/static/assets/waypoints/noframework.waypoints.js"></script>
+  <script src="/static/js/main.js"></script>
+</body>
+</html>

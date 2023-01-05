@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title></title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <link href="/static/img/favicon.png" rel="icon">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="/static/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/static/assets/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/static/assets/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="/static/assets/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/static/assets/remixicon/remixicon.css" rel="stylesheet">
+  <link href="/static/assets/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/69e2443572.js" crossorigin="anonymous"></script>
+  <link href="/static/css/style.css" rel="stylesheet">
+  <link href="/pygments.css" rel="stylesheet">
+  <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(89602269, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/89602269" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</head>
+<body>
+  <main id="main">
+
+<style>
+body::before {
+	background: #040404 url("/static/img/portfolio/post.jpg");
+}
+</style>
+    <!-- ======= шаблон для поста ======= -->
+    <div id="portfolio-details" class="portfolio-details">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <h2 class="portfolio-title">Подборка задач с решениями - 5</h2>
+          </div>
+          <div class="col-lg-8 portfolio-info">
+            <h3></h3>
+            <ul>
+              <li><strong>Категория</strong>: Python</li>
+              <li><strong>Дата публикации</strong>: 2021-12-07</li>
+              <li><strong>Посмотреть на сайте</strong>: <a href="https://stepik.org">Stepik</a></li>
+            </ul>
+            <p>
+              <p><em>Задача 1:</em></p>
+<p>Напишите программу ввода двух слов через пробел. Сформируйте новую строку, продублировав первое слово дважды, а второе - трижды (все слова в результирующей строке должны идти через пробел). Результат выведите на экран.</p>
+<p>Программу следует реализовать без использования F-строк, а с применением оператора дублирования строк.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="n">s1</span><span class="p">,</span> <span class="n">s2</span> <span class="o">=</span> <span class="k">input</span><span class="p">().</span><span class="n">split</span><span class="p">()</span>
+<span class="n">print</span><span class="p">((</span><span class="n">s1</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span><span class="p">)</span> <span class="o">*</span> <span class="mi">2</span> <span class="o">+</span> <span class="p">(</span><span class="n">s2</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span><span class="p">)</span> <span class="o">*</span> <span class="mi">3</span><span class="p">)</span>
+</pre></div>
+
+
+<p><em>Задача 2:</em></p>
+<p>Выполняется считывание двух целочисленных значений в переменные a и b (вводятся в одну строчку через пробел). Необходимо сформировать строку вида: "Переменная a = &lt;значение&gt;, переменная b = &lt;значение&gt;", используя оператор конкатенации (соединения) строк. Результат выведите на экран.</p>
+<p>P. S. F-строки в программе не использовать.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="n">var1</span><span class="p">,</span> <span class="n">var2</span> <span class="o">=</span> <span class="k">input</span><span class="p">().</span><span class="n">split</span><span class="p">()</span>
+<span class="n">print</span><span class="p">(</span><span class="s1">&#39;Переменная a = &#39;</span> <span class="o">+</span> <span class="n">var1</span> <span class="o">+</span> <span class="s1">&#39;, переменная b = &#39;</span> <span class="o">+</span> <span class="n">var2</span><span class="p">)</span>
+</pre></div>
+
+
+<p><em>Задача 3:</em></p>
+<p>Написать программу ввода строки и формирования новой строчки вида: "Строка: &lt;введенная строка&gt;. Длина: &lt;длина строки&gt;". Результат сформированной строки вывести на экран.</p>
+<p>P. S. В программе F-строки не использовать.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="k">input</span><span class="p">()</span>
+<span class="n">print</span><span class="p">(</span><span class="s1">&#39;Строка: &#39;</span> <span class="o">+</span> <span class="n">s</span> <span class="o">+</span> <span class="s1">&#39;. Длина: &#39;</span> <span class="o">+</span> <span class="n">str</span><span class="p">(</span><span class="n">len</span><span class="p">(</span><span class="n">s</span><span class="p">)))</span>
+</pre></div>
+
+
+<p><em>Задача 4:</em></p>
+<p>Написать программу ввода двух слов (через пробел в одну строчку). Определить булевы значения для оператора in проверки вхождения первого слова во второе. А также для операторов ==, &gt;, &lt;. Все булевы значения объединить в одну строку через пробел и вывести на экран.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="n">s1</span><span class="p">,</span> <span class="n">s2</span> <span class="o">=</span> <span class="k">input</span><span class="p">().</span><span class="n">split</span><span class="p">()</span>
+<span class="n">print</span><span class="p">(</span><span class="n">str</span><span class="p">(</span><span class="n">s1</span> <span class="k">in</span> <span class="n">s2</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span> <span class="o">+</span> <span class="n">str</span><span class="p">(</span><span class="n">s1</span> <span class="o">==</span> <span class="n">s2</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span> <span class="o">+</span> <span class="n">str</span><span class="p">(</span><span class="n">s1</span> <span class="o">&gt;</span> <span class="n">s2</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span> <span class="o">+</span> <span class="n">str</span><span class="p">(</span><span class="n">s1</span> <span class="o">&lt;</span> <span class="n">s2</span><span class="p">))</span>
+</pre></div>
+
+
+<p><em>Задача 5:</em></p>
+<p>С клавиатуры вводятся две буквы (в одну строку через пробел). Вывести на экран следующую строку:</p>
+<p>"Коды: &lt;буква1&gt; = &lt;код буквы1&gt;, &lt;буква2&gt; = &lt;код буквы2&gt;".</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="n">l1</span><span class="p">,</span> <span class="n">l2</span> <span class="o">=</span> <span class="k">input</span><span class="p">().</span><span class="n">split</span><span class="p">()</span>
+<span class="n">print</span><span class="p">(</span><span class="s1">&#39;Коды: &#39;</span> <span class="o">+</span> <span class="n">l1</span> <span class="o">+</span> <span class="s1">&#39; = &#39;</span> <span class="o">+</span> <span class="n">str</span><span class="p">(</span><span class="n">ord</span><span class="p">(</span><span class="n">l1</span><span class="p">))</span> <span class="o">+</span> <span class="s1">&#39;, &#39;</span> <span class="o">+</span> <span class="n">l2</span> <span class="o">+</span> <span class="s1">&#39; = &#39;</span> <span class="o">+</span> <span class="n">str</span><span class="p">(</span><span class="n">ord</span><span class="p">(</span><span class="n">l2</span><span class="p">)))</span>
+</pre></div>
+
+
+<p><em>Задача 6:</em></p>
+<p>Напишите программу отображения первых четырех символов из введенной строки. Будем полагать, что строка гарантированно длиной не менее четырех символов.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="n">print</span><span class="p">(</span><span class="k">input</span><span class="p">()[</span><span class="mi">0</span><span class="p">:</span><span class="mi">4</span><span class="p">])</span>
+</pre></div>
+
+
+<p><em>Задача 7:</em></p>
+<p>Напишите программу отображения последних трех символов из введенной строки. Будем полагать, что строка гарантированно длиной не менее трех символов.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="n">print</span><span class="p">(</span><span class="k">input</span><span class="p">()[</span><span class="o">-</span><span class="mi">3</span><span class="p">:])</span>
+</pre></div>
+
+
+<p><em>Задача 8:</em></p>
+<p>Напишите программу отображения всех символов с нечетными индексами из введенной строки.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nf">print</span><span class="p">(</span><span class="nf">input</span><span class="p">()[</span><span class="mi">1</span><span class="p">:-</span><span class="mi">1</span><span class="s s-Atom">:</span><span class="mi">2</span><span class="p">])</span>
+</pre></div>
+
+
+<p><em>Задача 9:</em></p>
+<p>Вводятся две строки (каждая с новой строчки). Из первой строки выделить все символы с четными индексами, а из второй - с нечетными. Объединить строки через пробел и вывести на экран.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="n">s1</span><span class="p">,</span> <span class="n">s2</span> <span class="o">=</span> <span class="k">input</span><span class="p">()[::</span><span class="mi">2</span><span class="p">],</span> <span class="k">input</span><span class="p">()[</span><span class="mi">1</span><span class="p">::</span><span class="mi">2</span><span class="p">]</span>
+<span class="n">print</span><span class="p">(</span><span class="n">s1</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span> <span class="o">+</span> <span class="n">s2</span><span class="p">)</span>
+</pre></div>
+
+
+<p><em>Задача 10:</em></p>
+<p>Из введенной строки отобразить первые пять символов в обратном порядке. Полагается, что введенная строка имеет минимум пять символов.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nf">print</span><span class="p">(</span><span class="nf">input</span><span class="p">()[</span><span class="s s-Atom">:</span><span class="mi">5</span><span class="p">][</span><span class="s s-Atom">::-</span><span class="mi">1</span><span class="p">])</span>
+</pre></div>
+
+
+<p><em>Задача 11:</em></p>
+<p>Вводятся два слова (через пробел в одной строке). Длина первого слова меньше второго. Необходимо обрезать второе слово до длины первого и отобразить обрезанное слово на экране.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="n">s1</span><span class="p">,</span> <span class="n">s2</span> <span class="o">=</span> <span class="k">input</span><span class="p">().</span><span class="n">split</span><span class="p">()</span>
+<span class="n">print</span><span class="p">(</span><span class="n">s2</span><span class="p">[:</span><span class="n">len</span><span class="p">(</span><span class="n">s1</span><span class="p">)])</span>
+</pre></div>
+
+
+<p><em>Задача 12:</em></p>
+<p>Вводятся два слова (через пробел в одной строке). Длина второго слова меньше первого. Из этих слов выделить символы с нечетными индексами с обрезкой первого слова до длины второго. Сравнить полученные строки между собой на равенство и результат (True или False) вывести на экран. Задачу выполнять без использования условного оператора.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="n">s1</span><span class="p">,</span> <span class="n">s2</span> <span class="o">=</span> <span class="k">input</span><span class="p">().</span><span class="n">split</span><span class="p">()</span>
+<span class="n">print</span><span class="p">(</span><span class="n">s2</span><span class="p">[</span><span class="mi">1</span><span class="p">::</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="n">s1</span><span class="p">[:</span><span class="n">len</span><span class="p">(</span><span class="n">s2</span><span class="p">)][</span><span class="mi">1</span><span class="p">::</span><span class="mi">2</span><span class="p">])</span>
+</pre></div>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div><!-- конец карточки -->
+  <!-- конец поста -->
+
+  </main>
+  <!-- Скрипты -->
+  <script src="/static/assets/purecounter/purecounter.js"></script>
+  <script src="/static/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/static/assets/glightbox/js/glightbox.min.js"></script>
+  <script src="/static/assets/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/static/assets/swiper/swiper-bundle.min.js"></script>
+  <script src="/static/assets/waypoints/noframework.waypoints.js"></script>
+  <script src="/static/js/main.js"></script>
+</body>
+</html>

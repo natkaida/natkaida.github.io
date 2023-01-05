@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title></title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <link href="/static/img/favicon.png" rel="icon">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="/static/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/static/assets/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/static/assets/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="/static/assets/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/static/assets/remixicon/remixicon.css" rel="stylesheet">
+  <link href="/static/assets/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/69e2443572.js" crossorigin="anonymous"></script>
+  <link href="/static/css/style.css" rel="stylesheet">
+  <link href="/pygments.css" rel="stylesheet">
+  <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(89602269, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/89602269" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</head>
+<body>
+  <main id="main">
+
+<style>
+body::before {
+	background: #040404 url("/static/img/portfolio/post.jpg");
+}
+</style>
+    <!-- ======= шаблон для поста ======= -->
+    <div id="portfolio-details" class="portfolio-details">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <h2 class="portfolio-title">Подборка задач с решениями - 41</h2>
+          </div>
+          <div class="col-lg-8 portfolio-info">
+            <h3></h3>
+            <ul>
+              <li><strong>Категория</strong>: Python</li>
+              <li><strong>Дата публикации</strong>: 2022-02-07</li>
+              <li><strong>Посмотреть на сайте</strong>: <a href="https://stepik.org">Stepik</a></li>
+            </ul>
+            <p>
+              <p><em>Задача 1:</em></p>
+<p>На спутнике «Восход» установлен прибор для измерения солнечной активности. Каждую минуту он передаёт в обсерваторию по каналу связи положительное целое число — количество энергии солнечного излучения. Для правильного анализа результатов нет необходимости держать повторяющиеся данные. Напишите программу, которая выводит максимальное количество показаний спутника, при удалении которых результат будет правильно проанализирован.</p>
+<p><strong>Формат входных данных</strong></p>
+<p>На вход программе подаётся одна строка, содержащая числа – показания спутника «Восход». Числа указываются через пробел и не содержат ведущих нулей.</p>
+<p><strong>Формат выходных данных</strong></p>
+<p>Программа должна вывести максимальное количество показаний, после удаления которых анализ результатов будет произведен верно.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="n">sputnik</span> <span class="o">=</span> <span class="k">input</span><span class="p">().</span><span class="n">split</span><span class="p">()</span>
+<span class="n">print</span><span class="p">(</span><span class="n">len</span><span class="p">(</span><span class="n">sputnik</span><span class="p">)</span> <span class="o">-</span> <span class="n">len</span><span class="p">(</span><span class="k">set</span><span class="p">(</span><span class="n">sputnik</span><span class="p">)))</span>
+</pre></div>
+
+
+<p><em>Задача 2:</em></p>
+<p>Тимур и Руслан играют в игру города. Они очень любят эту игру и знают много городов, особенно Тимур, однако к концу игры ввиду своего возраста забывают, какие города уже называли.</p>
+<p>Напишите программу, считывающую информацию об игре и сообщающую ребятам, что очередной город назван повторно.</p>
+<p><strong>Формат входных данных</strong></p>
+<p>На вход программе в первой строке подаётся натуральное число n – количество названных городов, в последующих n строках вводятся названные города и ещё одна строка с новым, только что названым городом.</p>
+<p><strong>Формат выходных данных</strong></p>
+<p>Программа должна вывести OK, если этот город ещё не вспоминали, и REPEAT, если город уже был назван.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">cites</span> <span class="o">=</span> {<span class="nv">input</span><span class="ss">()</span> <span class="k">for</span> <span class="nv">_</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">()))</span>}
+<span class="nv">print</span><span class="ss">((</span><span class="s1">&#39;</span><span class="s">OK</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">REPEAT</span><span class="s1">&#39;</span><span class="ss">)</span>[<span class="nv">input</span><span class="ss">()</span> <span class="nv">in</span> <span class="nv">cites</span>]<span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Задача 3:</em></p>
+<p>Руслан получил в конце учебного года список литературы на лето. Теперь ему надо выяснить, какие книги из этого списка у него есть. У Руслана на компьютере в текстовом файле записаны все книги из его домашней библиотеки в случайном порядке.</p>
+<p>Напишите программу, определяющую для каждой книги из списка на прочтение, есть она у Руслана или нет.</p>
+<p><strong>Формат входных данных</strong></p>
+<p>На вход программе в первой строке подается натуральное число m — количество книг в домашней библиотеке Руслана. Во второй строке записано натуральное число n —  количество книг в списке на лето. Далее идут m строк с названиями книг из домашней библиотеки и nnn строк названий из списка на лето.</p>
+<p><strong>Формат выходных данных</strong></p>
+<p>Программа должна вывести n строк, в каждой из которых написано слово YES, если книга найдена в библиотеке, и NO, если нет.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">m</span>, <span class="nv">n</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>, <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
+<span class="nv">dom</span> <span class="o">=</span> <span class="nv">set</span><span class="ss">(</span>[<span class="nv">input</span><span class="ss">()</span> <span class="k">for</span> <span class="nv">_</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">m</span><span class="ss">)</span>]<span class="ss">)</span>
+<span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">n</span><span class="ss">)</span>:
+    <span class="nv">print</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">NO</span><span class="s1">&#39;</span> <span class="k">if</span> <span class="nv">input</span><span class="ss">()</span> <span class="nv">not</span> <span class="nv">in</span> <span class="nv">dom</span> <span class="k">else</span> <span class="s1">&#39;</span><span class="s">YES</span><span class="s1">&#39;</span><span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Задача 4:</em></p>
+<p>Каждый день Тимур решает ровно две сложные математические задачи. Решая первую задачу, он записывает на первом листочке все числа, которые в ней встречаются. Далее он делает паузу и берется за вторую задачу. Затем записывает на втором листочке все числа, которые в ней встречаются. После этого он берет еще один листок и выписывает на него все совпадающие числа из первых двух листочков. Если такие числа есть, день удался, если общих чисел нет, Тимур считает день неудачным.</p>
+<p>Напишите программу, которая находит общие числа двух листочков или сообщает, что день не удался.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">day</span> <span class="o">=</span> <span class="nv">set</span><span class="ss">(</span><span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">())</span> <span class="o">&amp;</span> <span class="nv">set</span><span class="ss">(</span><span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">())</span>
+<span class="nv">print</span><span class="ss">(</span><span class="o">*</span><span class="nv">sorted</span><span class="ss">(</span><span class="nv">day</span>, <span class="nv">key</span><span class="o">=</span><span class="nv">int</span>, <span class="nv">reverse</span><span class="o">=</span><span class="nv">True</span><span class="ss">)</span> <span class="k">if</span> <span class="nv">day</span> <span class="k">else</span> [<span class="s1">&#39;</span><span class="s">BAD DAY</span><span class="s1">&#39;</span>]<span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Задача 5:</em></p>
+<p>При приёме новых сотрудников в онлайн-школу её руководитель тестирует не только профессиональные качества кандидата, но и его память.</p>
+<p>Кандидату показывают ненадолго несколько различных чисел, а затем кандидат должен их назвать. Причем неважно, в каком порядке он их вспоминает, и повторяется он или нет, главное он должен назвать все числа, не добавляя лишних.</p>
+<p>Напишите программу, определяющую, успешно ли прошел кандидат тестирование памяти.</p>
+<p><strong>Формат входных данных</strong></p>
+<p>На вход программе подаются две строки с числами: в первой строке показанные кандидату, а во второй ответы кандидата.</p>
+<p><strong>Формат выходных данных</strong></p>
+<p>Программа должна вывести YES, если кандидат прошел испытание и его можно брать на работу и NO в противном случае.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="n">print</span><span class="p">((</span><span class="s1">&#39;NO&#39;</span><span class="p">,</span> <span class="s1">&#39;YES&#39;</span><span class="p">)[</span><span class="k">set</span><span class="p">(</span><span class="k">input</span><span class="p">().</span><span class="n">split</span><span class="p">())</span> <span class="o">==</span> <span class="k">set</span><span class="p">(</span><span class="k">input</span><span class="p">().</span><span class="n">split</span><span class="p">())])</span>
+</pre></div>
+
+
+<p><em>Задача 6:</em></p>
+<p>Каждый ученик, обучающийся в онлайн-школе изучает либо математику, либо информатику, либо оба эти предмета. У руководителя школы есть списки изучающих каждый предмет.</p>
+<p>Напишите программу, позволяющую руководителю выяснить, сколько учеников изучает только математику.</p>
+<p><strong>Формат входных данных</strong></p>
+<p>На вход программе в первых двух строках подаются числа m и n – количества учеников, изучающих математику и информатику соответственно. Далее идут m строк — фамилии учеников, которые изучают математику и n строк с фамилиями учеников, изучающих информатику.</p>
+<p><strong>Формат выходных данных</strong></p>
+<p>Программа должна вывести количество учеников, которые изучают только математику.</p>
+<p>Примечание. Гарантируется, что среди учеников школы нет однофамильцев.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">m</span>, <span class="nv">n</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>, <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
+<span class="nv">a</span> <span class="o">=</span> <span class="nv">set</span><span class="ss">(</span><span class="nv">input</span><span class="ss">()</span> <span class="k">for</span> <span class="nv">_</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">m</span><span class="ss">))</span>
+<span class="nv">b</span> <span class="o">=</span> <span class="nv">set</span><span class="ss">(</span><span class="nv">input</span><span class="ss">()</span> <span class="k">for</span> <span class="nv">_</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">n</span><span class="ss">))</span>
+<span class="nv">print</span><span class="ss">(</span><span class="nv">len</span><span class="ss">(</span><span class="nv">a</span> <span class="o">-</span> <span class="nv">b</span><span class="ss">))</span>
+</pre></div>
+
+
+<p><em>Задача 7:</em></p>
+<p>Каждый ученик, обучающийся в онлайн-школе, изучает либо математику, либо информатику, либо оба этих предмета. У руководителя школы есть списки изучающих каждый предмет.</p>
+<p>Напишите программу, позволяющую руководителю выяснить, сколько учеников изучает только один предмет.</p>
+<p><strong>Формат входных данных</strong></p>
+<p>На вход программе в первых двух строках подаются числа m и n – количества учеников, изучающих математику и информатику соответственно. Далее идут m строк — фамилии учеников, которые изучают математику и n строк с фамилиями учеников, изучающих информатику.</p>
+<p><strong>Формат выходных данных</strong></p>
+<p>Программа должна вывести количество учеников, которые изучают только один предмет. Если таких учеников не окажется, то необходимо вывести NO.</p>
+<p>Примечание. Гарантируется, что среди учеников школы нет однофамильцев.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">m</span>, <span class="nv">n</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>, <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
+<span class="nv">s</span> <span class="o">=</span> {<span class="nv">input</span><span class="ss">()</span> <span class="k">for</span> <span class="nv">_</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">m</span><span class="ss">)</span>} <span class="o">^</span> {<span class="nv">input</span><span class="ss">()</span> <span class="k">for</span> <span class="nv">_</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">n</span><span class="ss">)</span>}
+<span class="nv">print</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">NO</span><span class="s1">&#39;</span> <span class="k">if</span> <span class="nv">len</span><span class="ss">(</span><span class="nv">s</span><span class="ss">)</span> <span class="o">==</span> <span class="mi">0</span> <span class="k">else</span> <span class="nv">len</span><span class="ss">(</span><span class="nv">s</span><span class="ss">))</span>
+</pre></div>
+
+
+<p><em>Задача 8:</em></p>
+<p>Руководитель онлайн-школы и его помощник составили списки учеников их школы.</p>
+<p>Напишите программу, которая выведет все фамилии учеников, которые вспомнили руководитель и его помощник.</p>
+<p><strong>Формат входных данных</strong></p>
+<p>На вход программе в первой строке подаются фамилии, записанные руководителем школы, а на второй строке - помощником руководителя. Фамилии указываются через пробел.</p>
+<p><strong>Формат выходных данных</strong></p>
+<p>Программа должна вывести все фамилии учеников, отсортированных в лексикографическом порядке, записанные руководителем и его помощником.</p>
+<p>Примечание. Гарантируется, что среди учеников школы нет однофамильцев.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="n">print</span><span class="p">(</span><span class="o">*</span><span class="n">sorted</span><span class="p">(</span><span class="k">set</span><span class="p">(</span><span class="k">input</span><span class="p">().</span><span class="n">split</span><span class="p">())</span> <span class="o">|</span><span class="k">set</span><span class="p">(</span><span class="k">input</span><span class="p">().</span><span class="n">split</span><span class="p">())))</span>
+</pre></div>
+
+
+<p><em>Задача 9:</em></p>
+<p>Каждый ученик, обучающийся в онлайн-школе, изучает либо математику, либо информатику, либо оба этих предмета. У руководителя школы есть списки учеников, изучающих каждый предмет. Случайно списки всех учеников перемешались.</p>
+<p>Напишите программу, которая позволит руководителю выяснить, сколько учеников изучает только один предмет.</p>
+<p><strong>Формат входных данных</strong></p>
+<p>На вход программе в первых двух строках подаются числа m и n – количества учеников, изучающих математику и информатику соответственно. Далее идут m + n строк — фамилии учеников, изучающих математику и информатику, в произвольном порядке.</p>
+<p><strong>Формат выходных данных</strong></p>
+<p>Программа должна вывести количество учеников, которые изучают только один предмет. Если таких учеников не окажется, то необходимо вывести NO.</p>
+<p>Примечание. Гарантируется, что среди учеников школы нет однофамильцев.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">n</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span> <span class="o">+</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
+<span class="nv">print</span><span class="ss">(</span><span class="mi">2</span> <span class="o">*</span> <span class="nv">len</span><span class="ss">(</span><span class="nv">set</span><span class="ss">(</span>[<span class="nv">input</span><span class="ss">()</span> <span class="k">for</span> <span class="nv">_</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">n</span><span class="ss">)</span>]<span class="ss">))</span> <span class="o">-</span> <span class="nv">n</span> <span class="nv">or</span> <span class="s1">&#39;</span><span class="s">NO</span><span class="s1">&#39;</span><span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Задача 10:</em></p>
+<p>Руководителю онлайн-школы захотелось узнать, кто из его учеников присутствовал на всех уроках с начала учебного года. Для каждого урока есть листок со списком присутствовавших учеников.</p>
+<p>Напишите программу, определяющую фамилии учеников, которые присутствовали на всех уроках.</p>
+<p><strong>Формат входных данных</strong></p>
+<p>На вход программе в первой строке дается число m – количество уроков, проведенных с начала учебного года. Далее идёт m блоков строк, описывающих листки с фамилиями. На первой строке каждого блока указано количество фамилий n<sub>i</sub>, затем идёт n<sub>i</sub> строчек с фамилиями тех, кто был на уроке i-ом уроке.</p>
+<p><strong>Формат выходных данных</strong></p>
+<p>Программа должна вывести фамилии учеников, которые были на всех уроках, отсортированных в лексикографическом порядке. Каждая фамилия должна быть записана на отдельной строке.</p>
+<p>Примечание 1. Гарантируется, что среди учеников школы нет однофамильцев.</p>
+<p>Примечание 2. Гарантируется, что хотя бы один ученик был на всех уроках.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">m</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
+<span class="nv">a</span> <span class="o">=</span> <span class="nv">set</span><span class="ss">(</span>[<span class="nv">input</span><span class="ss">()</span> <span class="k">for</span> <span class="nv">_</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">()))</span>]<span class="ss">)</span>
+<span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">m</span> <span class="o">-</span> <span class="mi">1</span><span class="ss">)</span>:
+    <span class="nv">a</span> <span class="o">&amp;=</span> <span class="nv">set</span><span class="ss">(</span>[<span class="nv">input</span><span class="ss">()</span> <span class="k">for</span> <span class="nv">_</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">()))</span>]<span class="ss">)</span>
+<span class="nv">print</span><span class="ss">(</span><span class="o">*</span><span class="nv">sorted</span><span class="ss">(</span><span class="nv">a</span><span class="ss">)</span>, <span class="nv">sep</span><span class="o">=</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Задача 11:</em></p>
+<p>Ученики 10 класса онлайн-школы получили задание прочесть на летних каникулах три книги:</p>
+<ul>
+<li>"Что такое математика?";</li>
+<li>"Математическая составляющая";</li>
+<li>"100 гениальных идей по математике".</li>
+</ul>
+<p>Оказалось, что n учеников прочитали первую книгу, m учеников — вторую, k учеников — третью. Также известно, что x учеников прочли первую или вторую, или обе эти книги, y учеников — вторую или третью, или обе, z учеников — первую и третью, или хотя бы одну из этих двух книг. Полностью выполнили задание только t учеников. Всего в 10 классе учится a учеников. Напишите программу, которая выводит сколько учеников:</p>
+<ul>
+<li>прочитали только одну книгу;</li>
+<li>прочитали две книги;</li>
+<li>не прочитали ни одной из рекомендованных книг.</li>
+</ul>
+<p><strong>Формат входных данных</strong></p>
+<p>На вход программе подаются числа n, m, k, x, y, z, t каждое на отдельной строке.</p>
+<p><strong>Формат выходных данных</strong></p>
+<p>Программа должна вывести три числа в соответствии с условием задачи, каждое на отдельной строке.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">n</span>, <span class="nv">m</span>, <span class="nv">k</span>, <span class="nv">x</span>, <span class="nv">y</span>, <span class="nv">z</span>, <span class="nv">t</span>, <span class="nv">a</span> <span class="o">=</span> <span class="ss">(</span><span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span> <span class="k">for</span> <span class="nv">_</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="mi">8</span><span class="ss">))</span>
+<span class="nv">one</span> <span class="o">=</span> <span class="nv">n</span> <span class="o">+</span> <span class="nv">m</span> <span class="o">-</span> <span class="nv">x</span> <span class="o">-</span> <span class="nv">t</span>
+<span class="nv">two</span> <span class="o">=</span> <span class="nv">n</span> <span class="o">+</span> <span class="nv">k</span> <span class="o">-</span> <span class="nv">z</span> <span class="o">-</span> <span class="nv">t</span>
+<span class="nv">three</span> <span class="o">=</span> <span class="nv">m</span> <span class="o">+</span> <span class="nv">k</span> <span class="o">-</span> <span class="nv">t</span> <span class="o">-</span> <span class="nv">y</span>
+<span class="nv">first</span> <span class="o">=</span> <span class="nv">n</span> <span class="o">-</span> <span class="nv">one</span> <span class="o">-</span> <span class="nv">two</span> <span class="o">-</span> <span class="nv">t</span> <span class="o">+</span> <span class="nv">m</span> <span class="o">-</span> <span class="nv">one</span> <span class="o">-</span> <span class="nv">three</span> <span class="o">-</span> <span class="nv">t</span> <span class="o">+</span> <span class="nv">k</span> <span class="o">-</span> <span class="nv">two</span> <span class="o">-</span> <span class="nv">three</span> <span class="o">-</span> <span class="nv">t</span>
+<span class="nv">second</span> <span class="o">=</span> <span class="nv">one</span> <span class="o">+</span> <span class="nv">two</span> <span class="o">+</span> <span class="nv">three</span>
+<span class="nv">last</span> <span class="o">=</span> <span class="nv">a</span> <span class="o">-</span> <span class="ss">(</span><span class="nv">first</span> <span class="o">+</span> <span class="nv">second</span> <span class="o">+</span> <span class="nv">t</span><span class="ss">)</span>
+<span class="nv">print</span><span class="ss">(</span><span class="nv">first</span>,<span class="nv">second</span>, <span class="nv">last</span>, <span class="nv">sep</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Задача 12:</em></p>
+<p>На летних каникулах ученики онлайн-школы решили отдохнуть. В результате n учеников школы поехали отдыхать на море, m учеников съездили в деревню, а k учеников сходили в горы. Оказалось, что и в деревне, и на море были x учеников, а в деревне и в горах — y учеников. Побывать и в горах, и на море не удалось никому. </p>
+<p>Напишите программу для определения количества учеников в школе, если никто не смог посетить все три места сразу, а z учеников писали ДВИ по математике для поступления в МГУ, и никуда не ездили.</p>
+<p><strong>Формат входных данных</strong></p>
+<p>На вход программе подаются числа n, m, k, x, y, z каждое на отдельной строке.</p>
+<p><strong>Формат выходных данных</strong></p>
+<p>Программа должна вывести одно число в соответствии с условием задачи.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">n</span>, <span class="nv">m</span>, <span class="nv">k</span>, <span class="nv">x</span>, <span class="nv">y</span>, <span class="nv">z</span> <span class="o">=</span> [<span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span> <span class="k">for</span> <span class="nv">_</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="mi">6</span><span class="ss">)</span>]
+<span class="nb">result</span> <span class="o">=</span> <span class="nv">n</span> <span class="o">+</span> <span class="nv">m</span> <span class="o">+</span> <span class="nv">k</span> <span class="o">-</span> <span class="nv">x</span> <span class="o">-</span> <span class="nv">y</span> <span class="o">+</span> <span class="nv">z</span>
+<span class="nv">print</span><span class="ss">(</span><span class="nv">f</span><span class="s1">&#39;</span><span class="s">{result}</span><span class="s1">&#39;</span><span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Задача 13:</em></p>
+<p>На вход программе подаются две строки текста, содержащие числа. Напишите программу, которая выводит все числа в порядке возрастания, которые есть как в первой строке, так и во второй.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">print</span><span class="ss">(</span><span class="o">*</span><span class="nv">sorted</span><span class="ss">(</span><span class="nv">set</span><span class="ss">(</span>[<span class="nv">int</span><span class="ss">(</span><span class="nv">i</span><span class="ss">)</span> <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">()</span>]<span class="ss">)</span>.<span class="nv">intersection</span><span class="ss">(</span><span class="nv">set</span><span class="ss">(</span>[<span class="nv">int</span><span class="ss">(</span><span class="nv">i</span><span class="ss">)</span> <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">()</span>]<span class="ss">))))</span>
+</pre></div>
+
+
+<p><em>Задача 14:</em></p>
+<p>Используя генератор множеств, дополните приведенный код, так чтобы получить множество, содержащее уникальные значения списка items. Результат вывести на одной строке, в упорядоченном виде, разделяя элементы одним символом пробела. Обратите внимание, некоторые элементы списка – числа, а некоторые – строки, при этом строки необходимо трактовать как числа.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">items</span> <span class="o">=</span> [<span class="mi">10</span>, <span class="s1">&#39;</span><span class="s">30</span><span class="s1">&#39;</span>, <span class="mi">30</span>, <span class="mi">10</span>, <span class="s1">&#39;</span><span class="s">56</span><span class="s1">&#39;</span>, <span class="mi">34</span>, <span class="s1">&#39;</span><span class="s">12</span><span class="s1">&#39;</span>, <span class="mi">90</span>, <span class="mi">89</span>, <span class="mi">34</span>, <span class="mi">45</span>, <span class="s1">&#39;</span><span class="s">67</span><span class="s1">&#39;</span>, <span class="mi">12</span>, <span class="mi">10</span>, <span class="mi">90</span>, <span class="mi">23</span>, <span class="s1">&#39;</span><span class="s">45</span><span class="s1">&#39;</span>, <span class="mi">56</span>, <span class="s1">&#39;</span><span class="s">56</span><span class="s1">&#39;</span>, <span class="mi">1</span>, <span class="mi">5</span>, <span class="s1">&#39;</span><span class="s">6</span><span class="s1">&#39;</span>, <span class="mi">5</span>]
+<span class="nv">myset</span> <span class="o">=</span> {<span class="nv">int</span><span class="ss">(</span><span class="nv">c</span><span class="ss">)</span> <span class="k">for</span> <span class="nv">c</span> <span class="nv">in</span> <span class="nv">items</span>}
+<span class="nv">print</span><span class="ss">(</span><span class="o">*</span><span class="nv">sorted</span><span class="ss">(</span><span class="nv">myset</span><span class="ss">))</span>
+</pre></div>
+
+
+<p><em>Задача 15:</em></p>
+<p>Вводятся вещественные числа в одну строчку через пробел. Необходимо на их основе сформировать множество s. Вывести на экран значения множества s в порядке возрастания в одну строчку через пробел.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="n">print</span><span class="p">(</span><span class="o">*</span><span class="n">sorted</span><span class="p">(</span><span class="k">set</span><span class="p">(</span><span class="k">map</span><span class="p">(</span><span class="nb">float</span><span class="p">,</span> <span class="k">input</span><span class="p">().</span><span class="n">split</span><span class="p">()))))</span>
+</pre></div>
+
+
+<p><em>Задача 16:</em></p>
+<p>Вводится текст в одну строку, слова разделены пробелом. Необходимо подсчитать число уникальных слов (без учета регистра) в этом тексте. Результат (число уникальных слов) вывести на экран.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="n">print</span><span class="p">(</span><span class="n">len</span><span class="p">(</span><span class="k">set</span><span class="p">(</span><span class="k">input</span><span class="p">().</span><span class="k">lower</span><span class="p">().</span><span class="n">split</span><span class="p">())))</span>
+</pre></div>
+
+
+<p><em>Задача 17:</em></p>
+<p>Вводится строка, содержащая латинские символы, пробелы и цифры. Необходимо выделить из нее все неповторяющиеся цифры (символы от 0 до 9) и вывести на экран в одну строку через пробел их в порядке возрастания значений. Если цифры отсутствуют, то вывести слово НЕТ.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">res</span> <span class="o">=</span> <span class="nv">sorted</span><span class="ss">(</span><span class="nv">set</span><span class="ss">(</span>[<span class="nv">i</span> <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">input</span><span class="ss">()</span> <span class="k">if</span> <span class="nv">i</span>.<span class="nv">isdigit</span><span class="ss">()</span>]<span class="ss">))</span>
+<span class="nv">print</span><span class="ss">(</span><span class="o">*</span><span class="nv">res</span> <span class="k">if</span> <span class="nv">len</span><span class="ss">(</span><span class="nv">res</span><span class="ss">)</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="k">else</span> [<span class="s1">&#39;</span><span class="s">НЕТ</span><span class="s1">&#39;</span>]<span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Задача 18:</em></p>
+<p>В ночном клубе фиксируется список гостей. Причем гости могут выходить из помещения, а затем, снова заходить. Тогда их имена фиксируются повторно. На вход программы поступает такой список (каждое имя записано с новой строки). Требуется подсчитать общее число гостей, которые посетили ночной клуб. Полагается, что гости имеют уникальные имена. На экран вывести общее число гостей клуба.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">sys</span>
+<span class="n">lst_in</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">str</span><span class="o">.</span><span class="n">strip</span><span class="p">,</span> <span class="n">sys</span><span class="o">.</span><span class="n">stdin</span><span class="o">.</span><span class="n">readlines</span><span class="p">()))</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">lst_in</span><span class="p">)))</span>
+</pre></div>
+
+
+<p><em>Задача 19:</em></p>
+<p>В аккаунте youtube Сергея прокомментировали очередное видео. Некоторые посетители оставляли несколько комментариев. Требуется по списку комментариев определить уникальное число комментаторов. Комментарии поступают на вход программы в формате:</p>
+<p>имя 1: комментарий 1
+имя 2: комментарий 2
+...
+имя N: комментарий N</p>
+<p>Также полагается, что имена у разных комментаторов не совпадают. Вывести на экран общее число уникальных комментаторов.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">sys</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">i</span><span class="p">:</span> <span class="n">i</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;:&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">],</span> <span class="n">sys</span><span class="o">.</span><span class="n">stdin</span><span class="o">.</span><span class="n">readlines</span><span class="p">()))))</span>
+</pre></div>
+
+
+<p><em>Задача 20:</em></p>
+<p>Пользователь с клавиатуры вводит названия городов, пока не введет букву q. Определить общее уникальное число городов, которые вводил пользователь. На экран вывести это число. Из коллекций при реализации программы использовать только множества.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">a</span>, <span class="nv">s</span> <span class="o">=</span> <span class="nv">input</span><span class="ss">()</span>, <span class="nv">set</span><span class="ss">()</span>
+<span class="k">while</span> <span class="nv">a</span> <span class="o">!=</span> <span class="s2">&quot;</span><span class="s">q</span><span class="s2">&quot;</span>:
+    <span class="nv">s</span>.<span class="nv">add</span><span class="ss">(</span><span class="nv">a</span><span class="ss">)</span>
+    <span class="nv">a</span> <span class="o">=</span> <span class="nv">input</span><span class="ss">()</span>
+<span class="nv">print</span><span class="ss">(</span><span class="nv">len</span><span class="ss">(</span><span class="nv">s</span><span class="ss">))</span>
+</pre></div>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div><!-- конец карточки -->
+  <!-- конец поста -->
+
+  </main>
+  <!-- Скрипты -->
+  <script src="/static/assets/purecounter/purecounter.js"></script>
+  <script src="/static/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/static/assets/glightbox/js/glightbox.min.js"></script>
+  <script src="/static/assets/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/static/assets/swiper/swiper-bundle.min.js"></script>
+  <script src="/static/assets/waypoints/noframework.waypoints.js"></script>
+  <script src="/static/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title></title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <link href="/static/img/favicon.png" rel="icon">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="/static/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/static/assets/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/static/assets/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="/static/assets/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/static/assets/remixicon/remixicon.css" rel="stylesheet">
+  <link href="/static/assets/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/69e2443572.js" crossorigin="anonymous"></script>
+  <link href="/static/css/style.css" rel="stylesheet">
+  <link href="/pygments.css" rel="stylesheet">
+  <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(89602269, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/89602269" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</head>
+<body>
+  <main id="main">
+
+<style>
+body::before {
+	background: #040404 url("/static/img/portfolio/post.jpg");
+}
+</style>
+    <!-- ======= шаблон для поста ======= -->
+    <div id="portfolio-details" class="portfolio-details">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <h2 class="portfolio-title">Подборка задач с решениями - 33</h2>
+          </div>
+          <div class="col-lg-8 portfolio-info">
+            <h3></h3>
+            <ul>
+              <li><strong>Категория</strong>: Python</li>
+              <li><strong>Дата публикации</strong>: 2022-01-27</li>
+              <li><strong>Посмотреть на сайте</strong>: <a href="https://stepik.org">Stepik</a></li>
+            </ul>
+            <p>
+              <p><em>Задача 1:</em></p>
+<p>Вводятся три целых числа в одну строку через пробел. Сформируйте список lst, хранящий эти значения в порядке их ввода. Результат выведите на экран, используя команду: print(lst)</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="n">print</span><span class="p">(</span><span class="n">list</span><span class="p">(</span><span class="k">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="k">input</span><span class="p">().</span><span class="n">split</span><span class="p">())))</span>
+</pre></div>
+
+
+<p><em>Задача 2:</em></p>
+<p>Вводятся названия городов в одну строчку через пробел. На основе этой строки формируется список с помощью команды: cities = input().split()</p>
+<p>Необходимо проверить, присутствует ли в этом списке город "Москва". Вывести на экран True, если присутствует и False - в противном случае. Решить эту задачу следует без использования условного оператора.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="n">print</span><span class="p">(</span><span class="s1">&#39;Москва&#39;</span> <span class="k">in</span> <span class="k">input</span><span class="p">().</span><span class="n">split</span><span class="p">())</span>
+</pre></div>
+
+
+<p><em>Задача 3:</em></p>
+<p>Вводятся названия городов в одну строчку через пробел. На основе этой строки формируется список с помощью команды: cities = input().split()</p>
+<p>Необходимо вывести значение последнего элемента этого списка на экран.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="n">print</span><span class="p">(</span><span class="k">input</span><span class="p">().</span><span class="n">split</span><span class="p">()[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+</pre></div>
+
+
+<p><em>Задача 4:</em></p>
+<p>Вводятся оценки студента (целые числа от 2 до 5) в одну строчку через пробел. На основе введенной строки формируется список командой: marks = list(map(int, input().split()))</p>
+<p>Необходимо вычислить средний балл и вывести его на экран с точностью до десятых (один знак после запятой).</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="n">marks</span> <span class="o">=</span> <span class="n">list</span><span class="p">(</span><span class="k">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="k">input</span><span class="p">().</span><span class="n">split</span><span class="p">()))</span>
+<span class="n">print</span><span class="p">(</span><span class="n">round</span><span class="p">(</span><span class="k">sum</span><span class="p">(</span><span class="n">marks</span><span class="p">)</span><span class="o">/</span><span class="n">len</span><span class="p">(</span><span class="n">marks</span><span class="p">),</span> <span class="mi">1</span><span class="p">))</span>
+</pre></div>
+
+
+<p><em>Задача 5:</em></p>
+<p>Вводится информация по книге (каждое значение с новой строки): название, автор, число страниц (целое число), цена (вещественное число). На основе этих данных формируется список book с элементами в порядке их ввода. Затем, из этого списка необходимо удалить 3-й элемент (число страниц), в качестве автора записать "Пушкин" и цену увеличить в 2 раза. Результат вывести на экран командой: print(book)</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="n">book</span> <span class="o">=</span> <span class="p">[</span><span class="k">input</span><span class="p">(),</span> <span class="k">input</span><span class="p">(),</span> <span class="nb">int</span><span class="p">(</span><span class="k">input</span><span class="p">()),</span> <span class="nb">float</span><span class="p">(</span><span class="k">input</span><span class="p">())]</span>
+<span class="n">del</span> <span class="n">book</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span>
+<span class="n">book</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">book</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="n">book</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;Пушкин&#39;</span>
+<span class="n">print</span><span class="p">(</span><span class="n">book</span><span class="p">)</span>
+</pre></div>
+
+
+<p><em>Задача 6:</em></p>
+<p>Вводится число новых подписчиков канала по дням в одну строку через пробел. На основе введенной строки необходимо сформировать список из целых чисел. Затем, вывести на экран максимальное, минимальное и суммарное значения этого списка через пробел.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="n">sp</span> <span class="o">=</span> <span class="n">list</span><span class="p">(</span><span class="k">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="k">input</span><span class="p">().</span><span class="n">split</span><span class="p">()))</span>
+<span class="n">print</span><span class="p">(</span><span class="k">max</span><span class="p">(</span><span class="n">sp</span><span class="p">),</span> <span class="k">min</span><span class="p">(</span><span class="n">sp</span><span class="p">),</span> <span class="k">sum</span><span class="p">(</span><span class="n">sp</span><span class="p">))</span>
+</pre></div>
+
+
+<p><em>Задача 7:</em></p>
+<p>Вводится число новых подписчиков канала по дням в одну строку через пробел. На основе введенной строки необходимо сформировать список lst из целых чисел. Требуется отсортировать элементы этого списка по убыванию и результат вывести на экран командой: print(*lst)</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="n">print</span><span class="p">(</span><span class="o">*</span><span class="n">sorted</span><span class="p">(</span><span class="n">list</span><span class="p">(</span><span class="k">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="k">input</span><span class="p">().</span><span class="n">split</span><span class="p">())),</span> <span class="n">reverse</span><span class="o">=</span><span class="k">True</span><span class="p">))</span>
+</pre></div>
+
+
+<p><em>Задача 8:</em></p>
+<p>Вводятся названия городов в одну строку через пробел. На основе этой строки необходимо создать список lst и добавить его в конец следующего списка:</p>
+<div class="codehilite"><pre><span></span><span class="n">cities</span> <span class="o">=</span> <span class="p">[</span><span class="ss">&quot;Москва&quot;</span><span class="p">,</span> <span class="ss">&quot;Тверь&quot;</span><span class="p">,</span> <span class="ss">&quot;Вологда&quot;</span><span class="p">]</span>
+</pre></div>
+
+
+<p>Вывести результат на экран командой print(*lst)</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="n">cities</span> <span class="o">=</span> <span class="p">[</span><span class="ss">&quot;Москва&quot;</span><span class="p">,</span> <span class="ss">&quot;Тверь&quot;</span><span class="p">,</span> <span class="ss">&quot;Вологда&quot;</span><span class="p">]</span>
+<span class="n">lst</span> <span class="o">=</span> <span class="n">list</span><span class="p">(</span><span class="k">input</span><span class="p">().</span><span class="n">split</span><span class="p">())</span>
+<span class="n">cities</span><span class="p">.</span><span class="n">extend</span><span class="p">(</span><span class="n">lst</span><span class="p">)</span>
+<span class="n">print</span><span class="p">(</span><span class="o">*</span><span class="n">cities</span><span class="p">)</span>
+</pre></div>
+
+
+<p><em>Задача 9:</em></p>
+<p>Вводятся названия городов в одну строку через пробел. На основе этой строки необходимо создать список lst и добавить его в начало другого списка:</p>
+<div class="codehilite"><pre><span></span><span class="n">cities</span> <span class="o">=</span> <span class="p">[</span><span class="ss">&quot;Москва&quot;</span><span class="p">,</span> <span class="ss">&quot;Тверь&quot;</span><span class="p">,</span> <span class="ss">&quot;Вологда&quot;</span><span class="p">]</span>
+</pre></div>
+
+
+<p>Вывести результат на экран командой: print(*lst)</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="n">cities</span> <span class="o">=</span> <span class="p">[</span><span class="ss">&quot;Москва&quot;</span><span class="p">,</span> <span class="ss">&quot;Тверь&quot;</span><span class="p">,</span> <span class="ss">&quot;Вологда&quot;</span><span class="p">]</span>
+<span class="n">print</span><span class="p">(</span><span class="o">*</span><span class="n">list</span><span class="p">(</span><span class="k">input</span><span class="p">().</span><span class="n">split</span><span class="p">())</span> <span class="o">+</span> <span class="n">cities</span><span class="p">)</span>
+</pre></div>
+
+
+<p><em>Задача 10:</em></p>
+<p>Вводится строка из русских букв и символов пробела. Необходимо ее закодировать азбукой Морзе, где каждой букве ставится в соответствие код из точки и тире. После каждой закодированной буквы должен стоять пробел (символ окончания кода буквы). После последнего кода пробела быть не должно (в конце строки).</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">d</span> <span class="o">=</span> {<span class="s1">&#39;</span><span class="s"> </span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">-...-</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">Ё</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">.</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">А</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">.-</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">Б</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">-...</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">В</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">.--</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">Г</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">--.</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">Д</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">-..</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">Е</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">.</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">Ж</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">...-</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">З</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">--..</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">И</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">..</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">Й</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">.---</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">К</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">-.-</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">Л</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">.-..</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">М</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">--</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">Н</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">-.</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">О</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">---</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">П</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">.--.</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">Р</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">.-.</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">С</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">...</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">Т</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">-</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">У</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">..-</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">Ф</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">..-.</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">Х</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">....</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">Ц</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">-.-.</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">Ч</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">---.</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">Ш</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">----</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">Щ</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">--.-</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">Ъ</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">--.--</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">Ы</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">-.--</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">Ь</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">-..-</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">Э</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">..-..</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">Ю</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">..--</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">Я</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">.-.-</span><span class="s1">&#39;</span>}
+<span class="nv">s</span> <span class="o">=</span> <span class="nv">input</span><span class="ss">()</span>.<span class="nv">upper</span><span class="ss">()</span>
+<span class="nv">kod</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+<span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">s</span>:
+    <span class="nv">kod</span> <span class="o">+=</span> <span class="nv">d</span>[<span class="nv">i</span>] <span class="o">+</span> <span class="s1">&#39;</span><span class="s"> </span><span class="s1">&#39;</span>
+<span class="nv">print</span><span class="ss">(</span><span class="nv">kod</span><span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Задача 11:</em></p>
+<p>Имеется закодированная строка с помощью азбуки Морзе. Коды разделены между собой пробелом. Необходимо ее раскодировать, используя азбуку Морзе из предыдущего занятия. Полученное сообщение (строку) вывести на экран.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">morze</span> <span class="o">=</span> {<span class="s2">&quot;</span><span class="s">.-</span><span class="s2">&quot;</span>: <span class="s2">&quot;</span><span class="s">А</span><span class="s2">&quot;</span>, <span class="s2">&quot;</span><span class="s">-...</span><span class="s2">&quot;</span>: <span class="s2">&quot;</span><span class="s">Б</span><span class="s2">&quot;</span>, <span class="s2">&quot;</span><span class="s">.--</span><span class="s2">&quot;</span>: <span class="s2">&quot;</span><span class="s">В</span><span class="s2">&quot;</span>, <span class="s2">&quot;</span><span class="s">--.</span><span class="s2">&quot;</span>: <span class="s2">&quot;</span><span class="s">Г</span><span class="s2">&quot;</span>, <span class="s2">&quot;</span><span class="s">-..</span><span class="s2">&quot;</span>: <span class="s2">&quot;</span><span class="s">Д</span><span class="s2">&quot;</span>, <span class="s2">&quot;</span><span class="s">.</span><span class="s2">&quot;</span>: <span class="s2">&quot;</span><span class="s">Е</span><span class="s2">&quot;</span>, <span class="s2">&quot;</span><span class="s">...-</span><span class="s2">&quot;</span>: <span class="s2">&quot;</span><span class="s">Ж</span><span class="s2">&quot;</span>, <span class="s2">&quot;</span><span class="s">--..</span><span class="s2">&quot;</span>: <span class="s2">&quot;</span><span class="s">З</span><span class="s2">&quot;</span>, <span class="s2">&quot;</span><span class="s">..</span><span class="s2">&quot;</span>: <span class="s2">&quot;</span><span class="s">И</span><span class="s2">&quot;</span>, <span class="s2">&quot;</span><span class="s">.---</span><span class="s2">&quot;</span>: <span class="s2">&quot;</span><span class="s">Й</span><span class="s2">&quot;</span>, <span class="s2">&quot;</span><span class="s">-.-</span><span class="s2">&quot;</span>: <span class="s2">&quot;</span><span class="s">К</span><span class="s2">&quot;</span>, <span class="s2">&quot;</span><span class="s">.-..</span><span class="s2">&quot;</span>: <span class="s2">&quot;</span><span class="s">Л</span><span class="s2">&quot;</span>, <span class="s2">&quot;</span><span class="s">--</span><span class="s2">&quot;</span>: <span class="s2">&quot;</span><span class="s">М</span><span class="s2">&quot;</span>, <span class="s2">&quot;</span><span class="s">-.</span><span class="s2">&quot;</span>: <span class="s2">&quot;</span><span class="s">Н</span><span class="s2">&quot;</span>, <span class="s2">&quot;</span><span class="s">---</span><span class="s2">&quot;</span>: <span class="s2">&quot;</span><span class="s">О</span><span class="s2">&quot;</span>, <span class="s2">&quot;</span><span class="s">.--.</span><span class="s2">&quot;</span>: <span class="s2">&quot;</span><span class="s">П</span><span class="s2">&quot;</span>, <span class="s2">&quot;</span><span class="s">.-.</span><span class="s2">&quot;</span>: <span class="s2">&quot;</span><span class="s">Р</span><span class="s2">&quot;</span>, <span class="s2">&quot;</span><span class="s">...</span><span class="s2">&quot;</span>: <span class="s2">&quot;</span><span class="s">С</span><span class="s2">&quot;</span>, <span class="s2">&quot;</span><span class="s">-</span><span class="s2">&quot;</span>: <span class="s2">&quot;</span><span class="s">Т</span><span class="s2">&quot;</span>, <span class="s2">&quot;</span><span class="s">..-</span><span class="s2">&quot;</span>: <span class="s2">&quot;</span><span class="s">У</span><span class="s2">&quot;</span>, <span class="s2">&quot;</span><span class="s">..-.</span><span class="s2">&quot;</span>: <span class="s2">&quot;</span><span class="s">Ф</span><span class="s2">&quot;</span>, <span class="s2">&quot;</span><span class="s">....</span><span class="s2">&quot;</span>: <span class="s2">&quot;</span><span class="s">Х</span><span class="s2">&quot;</span>, <span class="s2">&quot;</span><span class="s">-.-.</span><span class="s2">&quot;</span>: <span class="s2">&quot;</span><span class="s">Ц</span><span class="s2">&quot;</span>, <span class="s2">&quot;</span><span class="s">---.</span><span class="s2">&quot;</span>: <span class="s2">&quot;</span><span class="s">Ч</span><span class="s2">&quot;</span>, <span class="s2">&quot;</span><span class="s">----</span><span class="s2">&quot;</span>: <span class="s2">&quot;</span><span class="s">Ш</span><span class="s2">&quot;</span>, <span class="s2">&quot;</span><span class="s">--.-</span><span class="s2">&quot;</span>: <span class="s2">&quot;</span><span class="s">Щ</span><span class="s2">&quot;</span>, <span class="s2">&quot;</span><span class="s">.--.-</span><span class="s2">&quot;</span>: <span class="s2">&quot;</span><span class="s">Ъ</span><span class="s2">&quot;</span>, <span class="s2">&quot;</span><span class="s">-.--</span><span class="s2">&quot;</span>: <span class="s2">&quot;</span><span class="s">Ы</span><span class="s2">&quot;</span>, <span class="s2">&quot;</span><span class="s">-..-</span><span class="s2">&quot;</span>: <span class="s2">&quot;</span><span class="s">Ь</span><span class="s2">&quot;</span>, <span class="s2">&quot;</span><span class="s">...-...</span><span class="s2">&quot;</span>: <span class="s2">&quot;</span><span class="s">Э</span><span class="s2">&quot;</span>, <span class="s2">&quot;</span><span class="s">..--</span><span class="s2">&quot;</span>: <span class="s2">&quot;</span><span class="s">Ю</span><span class="s2">&quot;</span>, <span class="s2">&quot;</span><span class="s">.-.-</span><span class="s2">&quot;</span>: <span class="s2">&quot;</span><span class="s">Я</span><span class="s2">&quot;</span>, <span class="s2">&quot;</span><span class="s">-...-</span><span class="s2">&quot;</span>: <span class="s2">&quot;</span><span class="s"> </span><span class="s2">&quot;</span>}
+<span class="nv">kod</span> <span class="o">=</span> <span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">()</span>
+<span class="nv">s</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+<span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">kod</span>:
+    <span class="nv">s</span> <span class="o">+=</span> <span class="nv">morze</span>[<span class="nv">i</span>]
+<span class="nv">print</span><span class="ss">(</span><span class="nv">s</span>.<span class="nv">lower</span><span class="ss">())</span>
+</pre></div>
+
+
+<p><em>Задача 12:</em></p>
+<p>Вводится список целых чисел в одну строчку через пробел. С помощью словаря выделите только уникальные (не повторяющиеся) введенные значения и, затем, сформируйте список из уникальных чисел. Выведите его на экран в виде набора чисел, записанных через пробел.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">d</span> <span class="o">=</span> {<span class="nv">k</span>:<span class="nv">k</span>.<span class="nv">count</span><span class="ss">(</span><span class="nv">k</span><span class="ss">)</span> <span class="k">for</span> <span class="nv">k</span> <span class="nv">in</span> <span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">()</span> <span class="k">if</span> <span class="nv">k</span>.<span class="nv">count</span><span class="ss">(</span><span class="nv">k</span><span class="ss">)</span> <span class="o">==</span> <span class="mi">1</span>}
+<span class="nv">print</span><span class="ss">(</span><span class="o">*</span><span class="nv">d</span>.<span class="nv">keys</span><span class="ss">())</span>
+</pre></div>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div><!-- конец карточки -->
+  <!-- конец поста -->
+
+  </main>
+  <!-- Скрипты -->
+  <script src="/static/assets/purecounter/purecounter.js"></script>
+  <script src="/static/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/static/assets/glightbox/js/glightbox.min.js"></script>
+  <script src="/static/assets/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/static/assets/swiper/swiper-bundle.min.js"></script>
+  <script src="/static/assets/waypoints/noframework.waypoints.js"></script>
+  <script src="/static/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title></title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <link href="/static/img/favicon.png" rel="icon">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="/static/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/static/assets/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/static/assets/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="/static/assets/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/static/assets/remixicon/remixicon.css" rel="stylesheet">
+  <link href="/static/assets/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/69e2443572.js" crossorigin="anonymous"></script>
+  <link href="/static/css/style.css" rel="stylesheet">
+  <link href="/pygments.css" rel="stylesheet">
+  <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(89602269, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/89602269" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</head>
+<body>
+  <main id="main">
+
+<style>
+body::before {
+	background: #040404 url("/static/img/portfolio/post.jpg");
+}
+</style>
+    <!-- ======= шаблон для поста ======= -->
+    <div id="portfolio-details" class="portfolio-details">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <h2 class="portfolio-title">Подборка задач с решениями - 20</h2>
+          </div>
+          <div class="col-lg-8 portfolio-info">
+            <h3></h3>
+            <ul>
+              <li><strong>Категория</strong>: Python</li>
+              <li><strong>Дата публикации</strong>: 2022-01-14</li>
+              <li><strong>Посмотреть на сайте</strong>: <a href="https://stepik.org">Stepik</a></li>
+            </ul>
+            <p>
+              <p><em>Задача 1:</em></p>
+<p>Напишите функцию is_one_away(word1, word2), которая принимает в качестве аргументов два слова word1 и word2 и возвращает значение True если слова имеют одинаковую длину и отличаются ровно в 1 символе и False в противном случае.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">def</span> <span class="nv">is_one_away</span><span class="ss">(</span><span class="nv">word1</span>, <span class="nv">word2</span><span class="ss">)</span>:
+    <span class="nv">a</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">len</span><span class="ss">(</span><span class="nv">word1</span><span class="ss">))</span>:
+        <span class="k">if</span> <span class="nv">word1</span>[<span class="nv">i</span>] <span class="o">!=</span> <span class="nv">word2</span>[<span class="nv">i</span>]:
+            <span class="nv">a</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">return</span> <span class="nv">len</span><span class="ss">(</span><span class="nv">word1</span><span class="ss">)</span> <span class="o">==</span> <span class="nv">len</span><span class="ss">(</span><span class="nv">word2</span><span class="ss">)</span> <span class="nv">and</span> <span class="nv">a</span> <span class="o">==</span> <span class="mi">1</span>
+
+<span class="nv">txt1</span> <span class="o">=</span> <span class="nv">input</span><span class="ss">()</span>
+<span class="nv">txt2</span> <span class="o">=</span> <span class="nv">input</span><span class="ss">()</span>
+
+<span class="nv">print</span><span class="ss">(</span><span class="nv">is_one_away</span><span class="ss">(</span><span class="nv">txt1</span>, <span class="nv">txt2</span><span class="ss">))</span>
+</pre></div>
+
+
+<p><em>Задача 2:</em></p>
+<p>Напишите функцию is_palindrome(text), которая принимает в качестве аргумента строку text и возвращает значение True если указанный текст является палиндромом и False в противном случае.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="s s-Atom">def</span> <span class="nf">is_palindrome</span><span class="p">(</span><span class="s s-Atom">text</span><span class="p">)</span><span class="s s-Atom">:</span>
+    <span class="s s-Atom">pal</span> <span class="o">=</span> <span class="s s-Atom">&#39;&#39;</span><span class="p">.</span><span class="nf">join</span><span class="p">(</span><span class="s s-Atom">e</span> <span class="s s-Atom">for</span> <span class="s s-Atom">e</span> <span class="s s-Atom">in</span> <span class="s s-Atom">txt</span> <span class="s s-Atom">if</span> <span class="s s-Atom">e</span><span class="p">.</span><span class="nf">isalnum</span><span class="p">())</span>
+    <span class="s s-Atom">pal</span> <span class="o">=</span> <span class="s s-Atom">pal</span><span class="p">.</span><span class="nf">lower</span><span class="p">()</span>
+    <span class="s s-Atom">if</span> <span class="s s-Atom">pal</span> <span class="o">==</span> <span class="s s-Atom">pal</span><span class="p">[</span><span class="s s-Atom">::-</span><span class="mi">1</span><span class="p">]</span><span class="s s-Atom">:</span>
+        <span class="s s-Atom">return</span> <span class="nv">True</span>
+    <span class="nn">else</span><span class="p">:</span>
+        <span class="s s-Atom">return</span> <span class="nv">False</span>
+
+<span class="s s-Atom">txt</span> <span class="o">=</span> <span class="nf">input</span><span class="p">()</span>
+<span class="nf">print</span><span class="p">(</span><span class="nf">is_palindrome</span><span class="p">(</span><span class="s s-Atom">txt</span><span class="p">))</span>
+</pre></div>
+
+
+<p><em>Задача 3:</em></p>
+<p>BEEGEEK наконец открыл свой банк в котором используются специальные банкоматы с необычным паролем.</p>
+<p>Действительный пароль BEEGEEK банка имеет вид a:b:c, где a, b и c – натуральные числа. Поскольку основатель BEEGEEK фанатеет от математики, то он решил:</p>
+<ul>
+<li>число a – должно быть палиндромом;</li>
+<li>число b – должно быть простым;</li>
+<li>число c – должно быть четным.</li>
+</ul>
+<p>Напишите функцию is_valid_password(password), которая принимает в качестве аргумента строковое значение пароля password и возвращает значение True если пароль является действительным паролем BEEGEEK банка и False в противном случае.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="s s-Atom">def</span> <span class="nf">is_valid_password</span><span class="p">(</span><span class="s s-Atom">password</span><span class="p">)</span><span class="s s-Atom">:</span>
+    <span class="s s-Atom">password</span> <span class="o">=</span> <span class="s s-Atom">password</span><span class="p">.</span><span class="nf">split</span><span class="p">(</span><span class="s s-Atom">&#39;:&#39;</span><span class="p">)</span>
+    <span class="s s-Atom">a</span><span class="p">,</span> <span class="s s-Atom">b</span><span class="p">,</span> <span class="s s-Atom">c</span> <span class="o">=</span> <span class="s s-Atom">password</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="nf">int</span><span class="p">(</span><span class="s s-Atom">password</span><span class="p">[</span><span class="mi">1</span><span class="p">]),</span> <span class="nf">int</span><span class="p">(</span><span class="s s-Atom">password</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+    <span class="s s-Atom">if</span> <span class="nf">len</span><span class="p">(</span><span class="s s-Atom">password</span><span class="p">)</span> <span class="p">!</span><span class="o">=</span> <span class="mi">3</span> <span class="s s-Atom">or</span> <span class="s s-Atom">a</span> <span class="p">!</span><span class="o">=</span> <span class="s s-Atom">a</span><span class="p">[</span><span class="s s-Atom">::-</span><span class="mi">1</span><span class="p">]</span> <span class="s s-Atom">or</span> <span class="s s-Atom">c</span> <span class="c1">% 2 != 0:</span>
+        <span class="s s-Atom">return</span> <span class="nv">False</span>
+    <span class="s s-Atom">for</span> <span class="s s-Atom">i</span> <span class="s s-Atom">in</span> <span class="nf">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="s s-Atom">b</span><span class="p">)</span><span class="s s-Atom">:</span>
+        <span class="s s-Atom">if</span> <span class="s s-Atom">b</span> <span class="c1">% i == 0:</span>
+            <span class="s s-Atom">return</span> <span class="nv">False</span>
+    <span class="s s-Atom">return</span> <span class="nv">True</span>
+
+<span class="s s-Atom">psw</span> <span class="o">=</span> <span class="nf">input</span><span class="p">()</span>
+<span class="nf">print</span><span class="p">(</span><span class="nf">is_valid_password</span><span class="p">(</span><span class="s s-Atom">psw</span><span class="p">))</span>
+</pre></div>
+
+
+<p><em>Задача 4:</em></p>
+<p>Напишите функцию is_correct_bracket(text), которая принимает в качестве аргумента непустую строку text, состоящую из символов ( и ) и возвращает значение True если поступившая на вход строка является правильной скобочной последовательностью и False в противном случае.</p>
+<p>Примечание. Правильной скобочной последовательностью называется строка, состоящая только из символов ( и ), где каждой открывающей скобке найдется парная закрывающая скобка.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">def</span> <span class="nv">is_correct_bracket</span><span class="ss">(</span><span class="nv">text</span><span class="ss">)</span>:
+    <span class="nv">n</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="nv">a</span> <span class="nv">in</span> <span class="nv">text</span>:
+        <span class="k">if</span> <span class="nv">a</span> <span class="o">==</span><span class="s1">&#39;</span><span class="s">(</span><span class="s1">&#39;</span>:
+            <span class="nv">n</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="nv">elif</span> <span class="nv">a</span> <span class="o">==</span> <span class="s1">&#39;</span><span class="s">)</span><span class="s1">&#39;</span>:
+            <span class="nv">n</span> <span class="o">-=</span> <span class="mi">1</span>
+            <span class="k">if</span> <span class="nv">n</span> <span class="o">&lt;</span> <span class="mi">0</span>:
+                <span class="k">break</span>
+    <span class="k">if</span> <span class="nv">n</span> <span class="o">==</span> <span class="mi">0</span>:
+        <span class="k">return</span> <span class="nv">True</span>
+    <span class="k">else</span>:
+        <span class="k">return</span> <span class="nv">False</span>
+
+<span class="nv">txt</span> <span class="o">=</span> <span class="nv">input</span><span class="ss">()</span>
+<span class="nv">print</span><span class="ss">(</span><span class="nv">is_correct_bracket</span><span class="ss">(</span><span class="nv">txt</span><span class="ss">))</span>
+</pre></div>
+
+
+<p><em>Задача 5:</em></p>
+<p>Напишите функцию convert_to_python_case(text), которая принимает в качестве аргумента строку в «верблюжьем регистре» и преобразует его в «змеиный регистр».</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">re</span>
+<span class="k">def</span> <span class="nf">convert_to_python_case</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="s1">&#39;[A-Z][^A-Z]*&#39;</span><span class="p">,</span> <span class="n">text</span><span class="p">)</span>
+    <span class="n">pyth_name</span> <span class="o">=</span> <span class="s1">&#39;_&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">pyth_name</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+
+<span class="n">text</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+<span class="k">print</span><span class="p">(</span><span class="n">convert_to_python_case</span><span class="p">(</span><span class="n">text</span><span class="p">))</span>
+</pre></div>
+
+
+<p><em>Задача 6:</em></p>
+<p>Напишите функцию get_middle_point(x1, y1, x2, y2), которая принимает в качестве аргументов координаты концов отрезка (x1; y1) и (x2; y2) и возвращает координаты точки являющейся серединой данного отрезка.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">def</span> <span class="nv">get_middle_point</span><span class="ss">(</span><span class="nv">x1</span>, <span class="nv">y1</span>, <span class="nv">x2</span>, <span class="nv">y2</span><span class="ss">)</span>:
+    <span class="nv">x</span> <span class="o">=</span> <span class="ss">(</span><span class="nv">x_1</span> <span class="o">+</span> <span class="nv">x_2</span><span class="ss">)</span> <span class="o">/</span> <span class="mi">2</span>
+    <span class="nv">y</span> <span class="o">=</span> <span class="ss">(</span><span class="nv">y_1</span> <span class="o">+</span> <span class="nv">y_2</span><span class="ss">)</span> <span class="o">/</span> <span class="mi">2</span>
+    <span class="k">return</span> <span class="nv">x</span>, <span class="nv">y</span>
+
+# считываем данные
+<span class="nv">x_1</span>, <span class="nv">y_1</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>, <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
+<span class="nv">x_2</span>, <span class="nv">y_2</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>, <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
+
+# вызываем функцию
+<span class="nv">x</span>, <span class="nv">y</span> <span class="o">=</span> <span class="nv">get_middle_point</span><span class="ss">(</span><span class="nv">x_1</span>, <span class="nv">y_1</span>, <span class="nv">x_2</span>, <span class="nv">y_2</span><span class="ss">)</span>
+<span class="nv">print</span><span class="ss">(</span><span class="nv">x</span>, <span class="nv">y</span><span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Задача 7:</em></p>
+<p>Напишите функцию get_circle(radius), которая принимает в качестве аргумента радиус окружности и возвращает два значения: длину окружности и площадь круга, ограниченного данной окружностью.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="k">def</span> <span class="nf">get_circle</span><span class="p">(</span><span class="n">radius</span><span class="p">):</span>
+    <span class="n">length</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">pi</span><span class="o">*</span><span class="n">r</span>
+    <span class="n">square</span> <span class="o">=</span> <span class="n">pi</span><span class="o">*</span><span class="n">r</span><span class="o">**</span><span class="mi">2</span>
+    <span class="k">return</span> <span class="n">length</span><span class="p">,</span> <span class="n">square</span>
+
+
+<span class="n">r</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+
+<span class="n">length</span><span class="p">,</span> <span class="n">square</span> <span class="o">=</span> <span class="n">get_circle</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">length</span><span class="p">,</span> <span class="n">square</span><span class="p">)</span>
+</pre></div>
+
+
+<p><em>Задача 8:</em></p>
+<p>Напишите функцию solve(a, b, c), которая принимает в качестве аргументов три целых числа a, b, c – коэффициенты квадратного уравнения ax<sup>2</sup>+bx+c==0 и возвращает его корни в порядке возрастания.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="k">def</span> <span class="nf">solve</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">):</span>
+    <span class="n">d</span> <span class="o">=</span> <span class="n">b</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="mi">4</span><span class="o">*</span><span class="n">a</span><span class="o">*</span><span class="n">c</span>
+    <span class="n">x1</span> <span class="o">=</span> <span class="p">(</span><span class="o">-</span><span class="n">b</span> <span class="o">-</span> <span class="n">sqrt</span><span class="p">(</span><span class="n">d</span><span class="p">))</span> <span class="o">/</span> <span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">a</span><span class="p">)</span>
+    <span class="n">x2</span> <span class="o">=</span> <span class="p">(</span><span class="o">-</span><span class="n">b</span> <span class="o">+</span> <span class="n">sqrt</span><span class="p">(</span><span class="n">d</span><span class="p">))</span> <span class="o">/</span> <span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">a</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="nb">min</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="n">x2</span><span class="p">),</span> <span class="nb">max</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="n">x2</span><span class="p">)</span>
+
+<span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">()),</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">()),</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+
+<span class="n">x1</span><span class="p">,</span> <span class="n">x2</span> <span class="o">=</span> <span class="n">solve</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="n">x2</span><span class="p">)</span>
+</pre></div>
+
+
+<p><em>Задача 9:</em></p>
+<p>Напишите функцию draw_triangle(), которая выводит звездный равнобедренный треугольник с основанием и высотой равными 15 и 8 соответственно:</p>
+<div class="codehilite"><pre><span></span>       <span class="o">*</span>
+      <span class="o">***</span>
+     <span class="o">*****</span>
+    <span class="o">*******</span>
+   <span class="o">*********</span>
+  <span class="o">***********</span>
+ <span class="o">*************</span>
+<span class="o">***************</span>
+</pre></div>
+
+
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">def</span> <span class="nv">draw_triangle</span><span class="ss">()</span>:
+    <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="mi">8</span><span class="ss">)</span>:
+        <span class="nv">print</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s"> </span><span class="s1">&#39;</span> <span class="o">*</span> <span class="ss">(</span><span class="mi">8</span><span class="o">-</span><span class="mi">1</span><span class="o">-</span><span class="nv">i</span><span class="ss">)</span><span class="o">+</span><span class="s1">&#39;</span><span class="s">*</span><span class="s1">&#39;</span><span class="o">*</span><span class="ss">(</span><span class="mi">1</span><span class="o">+</span><span class="nv">i</span><span class="o">*</span><span class="mi">2</span><span class="ss">))</span>
+
+<span class="nv">draw_triangle</span><span class="ss">()</span>
+</pre></div>
+
+
+<p><em>Задача 10:</em></p>
+<p>Напишите функцию compute_binom(n, k), которая принимает в качестве аргументов два натуральных числа n и k и возвращает значение биномиального коэффициента.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="k">def</span> <span class="nf">compute_binom</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">k</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">k</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">k</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="p">:</span>
+        <span class="n">koeff</span> <span class="o">=</span> <span class="n">factorial</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="o">//</span> <span class="p">(</span><span class="n">factorial</span><span class="p">(</span><span class="n">k</span><span class="p">)</span> <span class="o">*</span> <span class="n">factorial</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="n">k</span><span class="p">))</span>
+        <span class="k">return</span> <span class="n">koeff</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="mi">0</span>
+
+<span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+<span class="n">k</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">compute_binom</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">k</span><span class="p">))</span>
+</pre></div>
+
+
+<p><em>Задача 11 - Число словами:</em></p>
+<p>Напишите функцию number_to_words(num), которая принимает в качестве аргумента натуральное число num и возвращает его словесное описание на русском языке.</p>
+<p>Примечание. Считайте, что число 1 ≤ num ≤ 99.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">def</span> <span class="nv">number_to_words</span><span class="ss">(</span><span class="nv">num</span><span class="ss">)</span>:
+    <span class="nv">s</span> <span class="o">=</span> [<span class="s1">&#39;</span><span class="s">один</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">два</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">три</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">четыре</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">пять</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">шесть</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">семь</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">восемь</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">девять</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">десять</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">одиннадцать</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">двенадцать</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">тринадцать</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">четырнадцать</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">пятнадцать</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">шестнадцать</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">семнадцать</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">восемнадцать</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">девятнадцать</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">двадцать</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">тридцать</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">сорок</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">пятьдесят</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">шестьдесят</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">семьдесят</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">восемьдесят</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">девяносто</span><span class="s1">&#39;</span>,<span class="s1">&#39;&#39;</span>]
+    <span class="k">if</span> <span class="nv">num</span> <span class="o">&lt;=</span> <span class="mi">20</span>:
+        <span class="k">return</span> <span class="nv">s</span>[<span class="nv">num</span> <span class="o">-</span> <span class="mi">1</span>]
+    <span class="k">else</span>:
+        <span class="k">return</span> <span class="nv">s</span>[<span class="nv">num</span> <span class="o">//</span> <span class="mi">10</span> <span class="o">-</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">18</span>] <span class="o">+</span> <span class="s1">&#39;</span><span class="s"> </span><span class="s1">&#39;</span> <span class="o">+</span> <span class="nv">s</span>[<span class="nv">num</span> <span class="o">%</span> <span class="mi">10</span> <span class="o">-</span> <span class="mi">1</span>]
+
+
+<span class="nv">n</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
+
+<span class="nv">print</span><span class="ss">(</span><span class="nv">number_to_words</span><span class="ss">(</span><span class="nv">n</span><span class="ss">))</span>
+</pre></div>
+
+
+<p><em>Задача 12:</em></p>
+<p>Напишите функцию get_month(language, number), которая принимает на вход два аргумента language – язык ru или en и number – номер месяца (от 1 до 12) и возвращает название месяца на русском или английском языке.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">def</span> <span class="nv">get_month</span><span class="ss">(</span><span class="nv">language</span>, <span class="nv">number</span><span class="ss">)</span>:
+    <span class="nv">lng_ru</span> <span class="o">=</span> [<span class="s1">&#39;</span><span class="s">январь</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">февраль</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">март</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">апрель</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">май</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">июнь</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">июль</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">август</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">сентябрь</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">октябрь</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">ноябрь</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">декабрь</span><span class="s1">&#39;</span>]
+
+    <span class="nv">lng_en</span> <span class="o">=</span> [<span class="s1">&#39;</span><span class="s">january</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">february</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">march</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">april</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">may</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">june</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">july</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">august</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">september</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">october</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">november</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">december</span><span class="s1">&#39;</span>]
+    <span class="k">if</span> <span class="nv">lan</span> <span class="o">==</span> <span class="s1">&#39;</span><span class="s">ru</span><span class="s1">&#39;</span>:
+        <span class="k">return</span> <span class="nv">lng_ru</span>[<span class="nv">num</span><span class="o">-</span><span class="mi">1</span>]
+    <span class="k">if</span> <span class="nv">lan</span> <span class="o">==</span> <span class="s1">&#39;</span><span class="s">en</span><span class="s1">&#39;</span>:
+        <span class="k">return</span> <span class="nv">lng_en</span>[<span class="nv">num</span><span class="o">-</span><span class="mi">1</span>]
+<span class="nv">lan</span> <span class="o">=</span> <span class="nv">input</span><span class="ss">()</span>
+<span class="nv">num</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
+
+<span class="nv">print</span><span class="ss">(</span><span class="nv">get_month</span><span class="ss">(</span><span class="nv">lan</span>, <span class="nv">num</span><span class="ss">))</span>
+</pre></div>
+
+
+<p><em>Задача 13:</em></p>
+<p>Магическая дата – это дата, когда день, умноженный на месяц, равен числу образованному последними двумя цифрами года.</p>
+<p>Напишите функцию is_magic(date) которая принимает в качестве аргумента строковое представление корректой даты и возвращает значение True если дата является магической и False в противном случае.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">def</span> <span class="nv">is_magic</span><span class="ss">(</span><span class="nv">date</span><span class="ss">)</span>:
+    <span class="k">return</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">date</span>[:<span class="mi">2</span>]<span class="ss">)</span> <span class="o">*</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">date</span>[<span class="mi">3</span>:<span class="mi">5</span>]<span class="ss">)</span> <span class="o">==</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">date</span>[<span class="o">-</span><span class="mi">2</span>:]<span class="ss">)</span>
+
+<span class="nv">date</span> <span class="o">=</span> <span class="nv">input</span><span class="ss">()</span>
+
+<span class="nv">print</span><span class="ss">(</span><span class="nv">is_magic</span><span class="ss">(</span><span class="nv">date</span><span class="ss">))</span>
+</pre></div>
+
+
+<p><em>Задача 14:</em></p>
+<p>Панграмма – это фраза, содержащая в себе все буквы алфавита. Обычно панграммы используют для презентации шрифтов, чтобы можно было в одной фразе рассмотреть все глифы.</p>
+<p>Напишите функцию is_pangram(text) которая принимает в качестве аргумента строку текста на английском языке и возвращает значение True если текст является панграммой и False в противном случае.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">def</span> <span class="nv">is_pangram</span><span class="ss">(</span><span class="nv">text</span><span class="ss">)</span>:
+    <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="mi">97</span>,<span class="mi">123</span><span class="ss">)</span>:
+        <span class="k">if</span> <span class="nv">not</span> <span class="nv">chr</span><span class="ss">(</span><span class="nv">i</span><span class="ss">)</span> <span class="nv">in</span> <span class="nv">text</span>.<span class="nv">lower</span><span class="ss">()</span>:
+            <span class="k">return</span> <span class="nv">False</span>
+    <span class="k">return</span> <span class="nv">True</span>
+
+<span class="nv">text</span> <span class="o">=</span> <span class="nv">input</span><span class="ss">()</span>
+
+<span class="nv">print</span><span class="ss">(</span><span class="nv">is_pangram</span><span class="ss">(</span><span class="nv">text</span><span class="ss">))</span>
+</pre></div>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div><!-- конец карточки -->
+  <!-- конец поста -->
+
+  </main>
+  <!-- Скрипты -->
+  <script src="/static/assets/purecounter/purecounter.js"></script>
+  <script src="/static/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/static/assets/glightbox/js/glightbox.min.js"></script>
+  <script src="/static/assets/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/static/assets/swiper/swiper-bundle.min.js"></script>
+  <script src="/static/assets/waypoints/noframework.waypoints.js"></script>
+  <script src="/static/js/main.js"></script>
+</body>
+</html>

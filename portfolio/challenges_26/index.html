@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title></title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <link href="/static/img/favicon.png" rel="icon">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="/static/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/static/assets/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/static/assets/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="/static/assets/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/static/assets/remixicon/remixicon.css" rel="stylesheet">
+  <link href="/static/assets/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/69e2443572.js" crossorigin="anonymous"></script>
+  <link href="/static/css/style.css" rel="stylesheet">
+  <link href="/pygments.css" rel="stylesheet">
+  <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(89602269, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/89602269" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</head>
+<body>
+  <main id="main">
+
+<style>
+body::before {
+	background: #040404 url("/static/img/portfolio/post.jpg");
+}
+</style>
+    <!-- ======= шаблон для поста ======= -->
+    <div id="portfolio-details" class="portfolio-details">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <h2 class="portfolio-title">Подборка задач с решениями - 26</h2>
+          </div>
+          <div class="col-lg-8 portfolio-info">
+            <h3></h3>
+            <ul>
+              <li><strong>Категория</strong>: Python</li>
+              <li><strong>Дата публикации</strong>: 2022-01-20</li>
+              <li><strong>Посмотреть на сайте</strong>: <a href="https://stepik.org">Stepik</a></li>
+            </ul>
+            <p>
+              <p><em>Задача 1:</em></p>
+<p>Напишите функцию, которая проверяет корректность переданного ей email-адреса в виде строки. Будем полагать, что адрес верен, если он обязательно содержит символы '@' и '.', а все остальные символы могут принимать значения: 'a-z', 'A-Z', '0-9' и '_'. Если email верен, то функция выводит ДА, иначе - НЕТ.</p>
+<p>После объявления функции прочитайте (с помощью функции input) строку с email-адресом и вызовите функцию с этим аргументом.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">re</span>
+<span class="n">pattern</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;([A-Za-z0-9]+[.-_])*[A-Za-z0-9]+@[A-Za-z0-9-]+(\.[A-Z|a-z]{2,})+&#39;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">isValid</span><span class="p">(</span><span class="n">email</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">re</span><span class="o">.</span><span class="n">fullmatch</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span> <span class="n">email</span><span class="p">):</span>
+      <span class="k">print</span><span class="p">(</span><span class="s2">&quot;ДА&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+      <span class="k">print</span><span class="p">(</span><span class="s2">&quot;НЕТ&quot;</span><span class="p">)</span>
+<span class="n">isValid</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+</pre></div>
+
+
+<p><em>Задача 2:</em></p>
+<p>Объявите функцию с двумя параметрами width и height (ширина и высота прямоугольника), которая выводит сообщение (без кавычек):</p>
+<p>"Периметр прямоугольника, равен x"</p>
+<p>где x - вычисленный периметр прямоугольника. После объявления функции прочитайте (с помощью функции input) два целых числа, записанных в одну строку через пробел, и вызовите функцию с этими значениями.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="n">def</span> <span class="n">per</span><span class="p">(</span><span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">):</span>
+    <span class="n">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;Периметр прямоугольника, равен {2 * (width + height)}&#39;</span><span class="p">)</span>
+<span class="n">width</span><span class="p">,</span><span class="n">height</span> <span class="o">=</span> <span class="n">list</span><span class="p">(</span><span class="k">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="k">input</span><span class="p">().</span><span class="n">split</span><span class="p">()))</span>
+<span class="n">per</span><span class="p">(</span><span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">)</span>
+</pre></div>
+
+
+<p><em>Задача 3:</em></p>
+<p>Объявите функцию, которая принимает список, находит максимальное, минимальное и сумму значений этого списка и выводит результат в виде строки (без кавычек):</p>
+<p>"Min = v_min, max = v_max, sum = v_sum"</p>
+<p>где v_min, v_max, v_sum - вычисленные значения минимального, максимального и суммы значений списка.</p>
+<p>После объявления функции прочитайте (с помощью функции input) список целых чисел, записанных в одну строку через пробел, и вызовите функцию с этим списком.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="n">def</span> <span class="n">sp</span><span class="p">():</span>
+    <span class="n">sp</span> <span class="o">=</span> <span class="n">list</span><span class="p">(</span><span class="k">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="k">input</span><span class="p">().</span><span class="n">split</span><span class="p">()))</span>
+    <span class="n">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;Min = {min(sp)}, max = {max(sp)}, sum = {sum(sp)}&#39;</span><span class="p">)</span>
+<span class="n">sp</span><span class="p">()</span>
+</pre></div>
+
+
+<p><em>Задача 4:</em></p>
+<p>Объявите функцию, которая принимает один аргумент (вещественное число), и возвращает квадрат этого числа. 
+После объявления функции прочитайте (с помощью функции input) вещественное число и вызовите функцию с этим значением. Выведите на экран результат работы функции.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">def</span> <span class="nv">square</span><span class="ss">(</span><span class="nv">x</span><span class="ss">)</span>:
+    <span class="k">return</span> <span class="nv">x</span> <span class="o">**</span> <span class="mi">2</span>
+<span class="nv">print</span><span class="ss">(</span><span class="nv">square</span><span class="ss">(</span><span class="nv">float</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())))</span>
+</pre></div>
+
+
+<p><em>Задача 5:</em></p>
+<p>Объявите функцию с именем is_triangle, которая принимает три стороны треугольника (целые числа) и проверяет, можно ли из переданных аргументов составить треугольник. (Напомню, что у любого треугольника длина третьей стороны всегда должна быть меньше суммы двух других). Если  проверка проходит, вернуть булево значение True, иначе - значение False.</p>
+<p>Вызывать функцию не нужно, только задать.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">def</span> <span class="nv">is_triangle</span><span class="ss">(</span><span class="nv">a</span>, <span class="nv">b</span>, <span class="nv">c</span><span class="ss">)</span>:
+    <span class="k">if</span> <span class="ss">(</span><span class="nv">a</span> <span class="o">&lt;</span> <span class="nv">b</span> <span class="o">+</span> <span class="nv">c</span><span class="ss">)</span> <span class="nv">and</span> <span class="ss">(</span><span class="nv">b</span> <span class="o">&lt;</span> <span class="nv">c</span> <span class="o">+</span> <span class="nv">a</span><span class="ss">)</span> <span class="nv">and</span> <span class="ss">(</span><span class="nv">c</span> <span class="o">&lt;</span> <span class="nv">a</span> <span class="o">+</span> <span class="nv">b</span><span class="ss">)</span>:
+        <span class="k">return</span> <span class="nv">True</span>
+    <span class="k">else</span>:
+        <span class="k">return</span> <span class="nv">False</span>
+</pre></div>
+
+
+<p><em>Задача 6:</em></p>
+<p>Объявите функцию с именем is_large, которая принимает строку (в качестве аргумента) и возвращает False, если длина строки меньше трех символов. Иначе возвращается значение True.</p>
+<p>Вызывать функцию не нужно, только объявить.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">def</span> <span class="nv">is_large</span><span class="ss">(</span><span class="nv">s</span><span class="ss">)</span>:
+    <span class="k">return</span> <span class="nv">False</span> <span class="k">if</span> <span class="nv">len</span><span class="ss">(</span><span class="nv">s</span><span class="ss">)</span> <span class="o">&lt;</span> <span class="mi">3</span> <span class="k">else</span> <span class="nv">True</span>
+</pre></div>
+
+
+<p><em>Задача 7:</em></p>
+<p>Объявите функцию для проверки числа на четность (возвращается True, если переданное число четное и False, если число нечетное).</p>
+<p>После объявления функции в цикле необходимо считывать целое числовое значение (функцией input), пока не поступит число 1. Если прочитанное значение четное (проверяется с помощью заданной функции), то оно выводится на экран (в столбик, то есть, каждое значение с новой строки).</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">def</span> <span class="nv">isEven</span><span class="ss">(</span><span class="nv">x</span><span class="ss">)</span>:
+    <span class="k">return</span> <span class="nv">True</span> <span class="k">if</span> <span class="nv">x</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span> <span class="k">else</span> <span class="nv">False</span>
+<span class="nv">x</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
+<span class="k">while</span> <span class="nv">x</span> <span class="o">!=</span> <span class="mi">1</span>:
+    <span class="k">if</span> <span class="nv">isEven</span><span class="ss">(</span><span class="nv">x</span><span class="ss">)</span> <span class="o">==</span> <span class="nv">True</span>:
+        <span class="nv">print</span><span class="ss">(</span><span class="nv">x</span><span class="ss">)</span>
+    <span class="nv">x</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
+</pre></div>
+
+
+<p><em>Задача 8:</em></p>
+<p>Объявите функцию для проверки числа на нечетность (возвращается True, если переданное число нечетное и False, если число четное). </p>
+<p>После объявления функции прочитайте (с помощью функции input) список целых значений, записанных в одну строку через пробел. И, используя генератор списков и созданную функцию, сформируйте список из нечетных значений на основе введенного исходного списка. Результат отобразите на экране командой:</p>
+<div class="codehilite"><pre><span></span><span class="n">print</span><span class="p">(</span><span class="o">*</span><span class="n">lst</span><span class="p">)</span>
+</pre></div>
+
+
+<p>где lst - сформированный список из нечетных значений.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">def</span> <span class="nv">isEven</span><span class="ss">(</span><span class="nv">i</span><span class="ss">)</span>:
+    <span class="k">return</span> <span class="nv">True</span> <span class="k">if</span> <span class="nv">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">!=</span> <span class="mi">0</span> <span class="k">else</span> <span class="nv">False</span>
+<span class="nv">sp</span> <span class="o">=</span> <span class="nv">list</span><span class="ss">(</span><span class="nv">map</span><span class="ss">(</span><span class="nv">int</span>, <span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">()))</span>
+<span class="nv">lst</span> <span class="o">=</span> []
+<span class="nv">lst</span> <span class="o">=</span> [<span class="nv">i</span> <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">sp</span> <span class="k">if</span> <span class="nv">isEven</span><span class="ss">(</span><span class="nv">i</span><span class="ss">)</span> <span class="o">==</span> <span class="nv">True</span>]
+<span class="nv">print</span><span class="ss">(</span><span class="o">*</span><span class="nv">lst</span><span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Задача 9:</em></p>
+<p>Вводится слово в переменную tp. Если это слово RECT, то следует объявить функцию с именем get_sq с двумя параметрами, вычисляющую площадь прямоугольника и возвращающую вычисленное значение. (На экран она ничего не должна выводить, только возвращать значение). </p>
+<p>Если же введенное слово не RECT (любое другое), то объявляется функция с тем же именем get_sq, с одним параметром для вычисления площади квадрата (формула: a*a). Вычисленное значение возвращается функцией. (Она также ничего не выводит на экран).</p>
+<p>Примечание: в программе должна быть задана только одна функция с именем get_sq в зависимости от введенного слова. Вызывать функцию не нужно, только объявлять.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">tp</span> <span class="o">=</span> <span class="nv">input</span><span class="ss">()</span>.<span class="nv">strip</span><span class="ss">()</span>
+<span class="k">if</span> <span class="nv">tp</span> <span class="o">==</span> <span class="s1">&#39;</span><span class="s">RECT</span><span class="s1">&#39;</span>:
+    <span class="nv">def</span> <span class="nv">get_sq</span><span class="ss">(</span><span class="nv">a</span>, <span class="nv">b</span><span class="ss">)</span>:
+        <span class="k">return</span> <span class="nv">a</span> <span class="o">*</span> <span class="nv">b</span>
+<span class="k">else</span>:
+    <span class="nv">def</span> <span class="nv">get_sq</span><span class="ss">(</span><span class="nv">a</span><span class="ss">)</span>:
+        <span class="k">return</span> <span class="nv">a</span> <span class="o">*</span> <span class="nv">a</span>
+</pre></div>
+
+
+<p><em>Задача 10:</em></p>
+<p>Объявите функцию, которая принимает строку (в качестве аргумента) и возвращает False, если длина строки меньше 6 символов. Иначе возвращается значение True.</p>
+<p>После объявления функции прочитайте (с помощью функции input) список названий городов, записанных в одну строку через пробел. Затем, используя генератор списка и созданную функцию, сформируйте список из названий городов длиной не менее шести символов на основе введенного исходного списка. Результат отобразите на экране командой:</p>
+<div class="codehilite"><pre><span></span><span class="n">print</span><span class="p">(</span><span class="o">*</span><span class="n">lst</span><span class="p">)</span>
+</pre></div>
+
+
+<p>где lst - итоговый сформированный список.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">def</span> <span class="nv">len_str</span><span class="ss">(</span><span class="nv">s</span><span class="ss">)</span>:
+    <span class="k">return</span> <span class="nv">False</span> <span class="k">if</span> <span class="nv">len</span><span class="ss">(</span><span class="nv">s</span><span class="ss">)</span> <span class="o">&lt;</span> <span class="mi">6</span> <span class="k">else</span> <span class="nv">True</span>
+<span class="nv">sp</span> <span class="o">=</span> <span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">()</span>
+<span class="nv">lst</span> <span class="o">=</span> [<span class="nv">i</span> <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">sp</span> <span class="k">if</span> <span class="nv">len_str</span><span class="ss">(</span><span class="nv">i</span><span class="ss">)</span>]
+<span class="nv">print</span><span class="ss">(</span><span class="o">*</span><span class="nv">lst</span><span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Задача 11:</em></p>
+<p>Объявите функцию, которая принимает строку (в качестве аргумента) и возвращает два значения в виде кортежа: переданная строка и ее длина.</p>
+<p>После объявления функции прочитайте (с помощью функции input) список названий городов, записанных в одну строку через пробел. Затем, используя генератор словарей и созданную функцию, сформируйте словарь d в формате:</p>
+<p>d = {&lt;город 1&gt;: &lt;число символов&gt;, ..., &lt;город N&gt;: &lt;число символов&gt;}</p>
+<p>Выведите этот словарь в порядке возрастания длин строк с помощью команд:</p>
+<div class="codehilite"><pre><span></span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sorted</span><span class="p">(</span><span class="n">d</span><span class="p">,</span><span class="w"> </span><span class="k">key</span><span class="o">=</span><span class="n">lambda</span><span class="w"> </span><span class="nl">x</span><span class="p">:</span><span class="w"> </span><span class="n">d</span><span class="o">[</span><span class="n">x</span><span class="o">]</span><span class="p">)</span><span class="w"></span>
+<span class="k">print</span><span class="p">(</span><span class="o">*</span><span class="n">a</span><span class="p">)</span><span class="w"></span>
+</pre></div>
+
+
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">def</span> <span class="nv">f</span><span class="ss">(</span><span class="nv">s</span><span class="ss">)</span>:
+    <span class="k">return</span> <span class="nv">s</span>, <span class="nv">len</span><span class="ss">(</span><span class="nv">s</span><span class="ss">)</span>
+<span class="nv">l</span> <span class="o">=</span> [<span class="nv">_</span> <span class="k">for</span> <span class="nv">_</span> <span class="nv">in</span> <span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">()</span>]
+<span class="nv">d</span> <span class="o">=</span> {<span class="nv">f</span><span class="ss">(</span><span class="nv">item</span><span class="ss">)</span>[<span class="mi">0</span>]:<span class="nv">f</span><span class="ss">(</span><span class="nv">item</span><span class="ss">)</span>[<span class="mi">1</span>] <span class="k">for</span> <span class="nv">item</span> <span class="nv">in</span> <span class="nv">l</span>}
+<span class="nv">a</span> <span class="o">=</span> <span class="nv">sorted</span><span class="ss">(</span><span class="nv">d</span>, <span class="nv">key</span><span class="o">=</span><span class="nv">lambda</span> <span class="nv">x</span>: <span class="nv">d</span>[<span class="nv">x</span>]<span class="ss">)</span>
+<span class="nv">print</span><span class="ss">(</span><span class="o">*</span><span class="nv">a</span><span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Задача 12:</em></p>
+<p>Вводится список целых чисел в одну строчку через пробел. Необходимо задать функцию, которая принимает два аргумента (максимальное и минимальное значения из списка) и возвращает их произведение. Вызовите эту функцию и отобразите на экране полученное числовое значение.</p>
+<p>Подсказка: для передачи аргументов функции используйте функции max и min для введенного списка чисел.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">def</span> <span class="nv">prod</span><span class="ss">(</span><span class="nv">l</span><span class="ss">)</span>:
+    <span class="k">return</span> <span class="nv">min</span><span class="ss">(</span><span class="nv">l</span><span class="ss">)</span> <span class="o">*</span> <span class="nv">max</span><span class="ss">(</span><span class="nv">l</span><span class="ss">)</span>
+<span class="nv">print</span><span class="ss">(</span><span class="nv">prod</span><span class="ss">(</span><span class="nv">list</span><span class="ss">(</span><span class="nv">map</span><span class="ss">(</span><span class="nv">int</span>, <span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">()))))</span>
+</pre></div>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div><!-- конец карточки -->
+  <!-- конец поста -->
+
+  </main>
+  <!-- Скрипты -->
+  <script src="/static/assets/purecounter/purecounter.js"></script>
+  <script src="/static/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/static/assets/glightbox/js/glightbox.min.js"></script>
+  <script src="/static/assets/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/static/assets/swiper/swiper-bundle.min.js"></script>
+  <script src="/static/assets/waypoints/noframework.waypoints.js"></script>
+  <script src="/static/js/main.js"></script>
+</body>
+</html>

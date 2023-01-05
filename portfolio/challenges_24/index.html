@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title></title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <link href="/static/img/favicon.png" rel="icon">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="/static/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/static/assets/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/static/assets/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="/static/assets/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/static/assets/remixicon/remixicon.css" rel="stylesheet">
+  <link href="/static/assets/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/69e2443572.js" crossorigin="anonymous"></script>
+  <link href="/static/css/style.css" rel="stylesheet">
+  <link href="/pygments.css" rel="stylesheet">
+  <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(89602269, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/89602269" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</head>
+<body>
+  <main id="main">
+
+<style>
+body::before {
+	background: #040404 url("/static/img/portfolio/post.jpg");
+}
+</style>
+    <!-- ======= шаблон для поста ======= -->
+    <div id="portfolio-details" class="portfolio-details">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <h2 class="portfolio-title">Подборка задач с решениями - 24</h2>
+          </div>
+          <div class="col-lg-8 portfolio-info">
+            <h3></h3>
+            <ul>
+              <li><strong>Категория</strong>: Python</li>
+              <li><strong>Дата публикации</strong>: 2022-01-18</li>
+              <li><strong>Посмотреть на сайте</strong>: <a href="https://stepik.org">Stepik</a></li>
+            </ul>
+            <p>
+              <p><em>Задача 1:</em></p>
+<p>IP-адрес – уникальный числовой идентификатор устройства в компьютерной сети, работающей по протоколу TCP/IP.</p>
+<p>В 4-й версии IP-адрес представляет собой 32-битное число. Адрес записывается в виде четырёх десятичных чисел (октетов) со значением от 0 до 255 (включительно), разделённых точками, например, 192.168.1.2.</p>
+<p>Напишите программу с использованием встроенной функции all() для проверки корректности IP-адреса: все ли октеты в IP-адресе – числа со значением от 0 до 255.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="n">print</span><span class="p">(</span><span class="k">all</span><span class="p">(</span><span class="k">map</span><span class="p">(</span><span class="n">lambda</span> <span class="n">n</span><span class="p">:</span> <span class="n">n</span><span class="p">.</span><span class="n">isdigit</span><span class="p">()</span> <span class="k">and</span> <span class="mi">0</span> <span class="o">&lt;=</span> <span class="nb">int</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mi">255</span><span class="p">,</span> <span class="k">input</span><span class="p">().</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">))))</span>
+</pre></div>
+
+
+<p><em>Задача 2 - Интересные числа:</em></p>
+<p>На вход программе подаются два натуральных числа a и b. Напишите программу с использованием встроенной функции all() для обнаружения всех целых чисел в диапазоне [a;b], которые делятся на каждую содержащуюся в них цифру без остатка.</p>
+<p><strong>Формат входных данных</strong></p>
+<p>На вход программе подаются два натуральных числа a и b на отдельных строках.</p>
+<p><strong>Формат выходных данных</strong></p>
+<p>Программа должна вывести все числа из диапазона [a;b], удовлетворяющие условию задачи, на одной строке, разделяя их символом пробела.</p>
+<p>Примечание. Числа, содержащие нули, неинтересны, их выводить не нужно.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">n</span>, <span class="nv">m</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>, <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
+<span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">n</span>, <span class="nv">m</span> <span class="o">+</span> <span class="mi">1</span><span class="ss">)</span>:
+    <span class="k">if</span> <span class="nv">all</span><span class="ss">(</span><span class="nv">map</span><span class="ss">(</span><span class="nv">lambda</span> <span class="nv">x</span>: <span class="nv">x</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="nv">and</span> <span class="nv">i</span> <span class="o">%</span> <span class="nv">x</span> <span class="o">==</span> <span class="mi">0</span>, <span class="nv">list</span><span class="ss">(</span><span class="nv">map</span><span class="ss">(</span><span class="nv">int</span>, <span class="nv">str</span><span class="ss">(</span><span class="nv">i</span><span class="ss">)))))</span>:
+        <span class="nv">print</span><span class="ss">(</span><span class="nv">i</span>, <span class="k">end</span><span class="o">=</span><span class="s1">&#39;</span><span class="s"> </span><span class="s1">&#39;</span><span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Задача 3:</em></p>
+<p>Хороший пароль по условиям этой задачи состоит как минимум из 7 символов, содержит хотя бы одну цифру, заглавную и строчную букву. Напишите программу со встроенной функцией any() для определения хорош ли введенный пароль.</p>
+<p><strong>Формат входных данных</strong></p>
+<p>На вход программе подаётся одна строка текста.</p>
+<p><strong>Формат выходных данных</strong></p>
+<p>Программа должна вывести YES, если строка – хороший пароль, и NO в противном случае.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">password</span> <span class="o">=</span> <span class="nv">input</span><span class="ss">()</span>
+<span class="nv">print</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">YES</span><span class="s1">&#39;</span> <span class="k">if</span> <span class="nv">all</span><span class="ss">((</span><span class="nv">any</span><span class="ss">(</span><span class="nv">i</span>.<span class="nv">isupper</span><span class="ss">()</span> <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">password</span><span class="ss">)</span>, 
+                    <span class="nv">any</span><span class="ss">(</span><span class="nv">i</span>.<span class="nv">islower</span><span class="ss">()</span> <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">password</span><span class="ss">)</span>, 
+                    <span class="nv">any</span><span class="ss">(</span><span class="nv">i</span>.<span class="nv">isdigit</span><span class="ss">()</span> <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">password</span><span class="ss">)</span>, 
+                    <span class="nv">len</span><span class="ss">(</span><span class="nv">password</span><span class="ss">)</span> <span class="o">&gt;=</span> <span class="mi">7</span><span class="ss">))</span> <span class="k">else</span> <span class="s1">&#39;</span><span class="s">NO</span><span class="s1">&#39;</span><span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Задача 4 - Отличники:</em></p>
+<p>Учитель проверял контрольные работы по математике в нескольких классах онлайн-школы и решил убедиться, что в каждом классе есть хотя бы один отличник – ученик с оценкой 5 по контрольной работе. Напишите программу с использованием встроенных функций all(), any() для помощи в проверке.</p>
+<p><strong>Формат входных данных</strong></p>
+<p>На вход программе подается натуральное число n – количество классов. Затем для каждого класса вводится блок информации вида:</p>
+<ul>
+<li>натуральное число k – количество учеников в классе;</li>
+<li>далее вводится k строк вида: фамилия оценка.</li>
+</ul>
+<p><strong>Формат выходных данных</strong></p>
+<p>Программа должна вывести YES, если в каждом классе есть хотя бы один отличник, и NO в противном случае.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">n</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
+<span class="nv">res</span> <span class="o">=</span> []
+<span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">n</span><span class="ss">)</span>:
+    <span class="nv">m</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
+    <span class="nv">temp</span> <span class="o">=</span> []
+    <span class="k">for</span> <span class="nv">j</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">m</span><span class="ss">)</span>:
+        <span class="k">if</span> <span class="nv">any</span><span class="ss">(</span><span class="nv">map</span><span class="ss">(</span><span class="nv">lambda</span> <span class="nv">x</span>: <span class="nv">x</span> <span class="o">==</span> <span class="s1">&#39;</span><span class="s">5</span><span class="s1">&#39;</span>, <span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">()))</span> <span class="nv">and</span> <span class="s1">&#39;</span><span class="s">yes</span><span class="s1">&#39;</span> <span class="nv">not</span> <span class="nv">in</span> <span class="nv">temp</span>:
+            <span class="nv">temp</span>.<span class="nv">append</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">yes</span><span class="s1">&#39;</span><span class="ss">)</span>
+            <span class="nv">res</span>.<span class="nv">append</span><span class="ss">(</span><span class="nv">temp</span><span class="ss">)</span>
+
+<span class="nv">print</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">YES</span><span class="s1">&#39;</span> <span class="k">if</span> <span class="nv">len</span><span class="ss">(</span><span class="nv">res</span><span class="ss">)</span> <span class="o">==</span> <span class="nv">n</span> <span class="k">else</span> <span class="s1">&#39;</span><span class="s">NO</span><span class="s1">&#39;</span><span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Задача 5:</em></p>
+<p>Напишите функцию generate_letter(), которая будет собирать электронное письмо в соответствии с шаблоном:</p>
+<p>To: <mail>
+Приветствую, <name>!
+Вам назначен экзамен, который пройдет <date>, в <time>.
+По адресу: <place>. 
+Экзамен будет проводить <teacher> в кабинете <number>. 
+Желаем удачи на экзамене!</p>
+<p>Функция должна получать на вход пять обязательных аргументов mail, name, date, time, place и два необязательных teacher, number и возвращать текст готового письма. При отсутствии аргумента teacher учителем будет Тимур Гуев, а если нет аргумента number, то кабинет будет 17.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">def</span> <span class="nv">generate_letter</span><span class="ss">(</span><span class="nv">mail</span>, <span class="nv">name</span>, <span class="nv">date</span>, <span class="nv">time</span>, <span class="nv">place</span>, <span class="nv">teacher</span><span class="o">=</span><span class="s1">&#39;</span><span class="s">Тимур Гуев</span><span class="s1">&#39;</span>, <span class="nv">number</span><span class="o">=</span><span class="mi">17</span><span class="ss">)</span>:
+    <span class="nv">res</span> <span class="o">=</span> <span class="ss">(</span><span class="nv">f</span><span class="s1">&#39;</span><span class="s">To: {mail}</span><span class="se">\n</span><span class="s">Приветствую, {name}!</span><span class="se">\n</span><span class="s">Вам назначен экзамен, который пройдет {date}, в {time}.</span><span class="se">\n</span><span class="s">По адресу: {place}.</span><span class="se">\n</span><span class="s">Экзамен будет проводить {teacher} в кабинете {number}.</span><span class="se">\n</span><span class="s">Желаем удачи на экзамене!</span><span class="s1">&#39;</span><span class="ss">)</span>
+    <span class="k">return</span> <span class="nv">res</span>
+</pre></div>
+
+
+<p><em>Задача 6:</em></p>
+<p>Напишите функцию pretty_print(), которая выводит содержимое списка с рамкой. </p>
+<p>Функция должна получать на вход один обязательный аргумент data – список, который следует вывести и два необязательных строковых односимвольных  аргумента side и delimiter и выводить содержимое списка в соответствии с примерами.</p>
+<p>В случае если отсутствует аргумент side, то полагаем side='-', а если отсутствует аргумент delimiter, то полагаем delimiter='|'.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="n">def</span> <span class="n">pretty_print</span><span class="p">(</span><span class="k">data</span><span class="p">,</span> <span class="n">side</span><span class="o">=</span><span class="s1">&#39;-&#39;</span><span class="p">,</span> <span class="n">delimeter</span><span class="o">=</span><span class="s1">&#39;|&#39;</span><span class="p">):</span>
+    <span class="n">line</span> <span class="o">=</span> <span class="n">f</span><span class="ss">&quot; {delimeter} &quot;</span><span class="p">.</span><span class="k">join</span><span class="p">(</span><span class="k">map</span><span class="p">(</span><span class="n">str</span><span class="p">,</span> <span class="k">data</span><span class="p">))</span>
+    <span class="n">print</span><span class="p">(</span><span class="s1">&#39; &#39;</span> <span class="o">+</span> <span class="n">side</span> <span class="o">*</span> <span class="p">(</span><span class="mi">2</span> <span class="o">+</span> <span class="n">len</span><span class="p">(</span><span class="n">line</span><span class="p">)))</span>
+    <span class="n">print</span><span class="p">(</span><span class="n">delimeter</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span> <span class="o">+</span> <span class="n">line</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span> <span class="o">+</span> <span class="n">delimeter</span><span class="p">)</span>
+    <span class="n">print</span><span class="p">(</span><span class="s1">&#39; &#39;</span> <span class="o">+</span> <span class="n">side</span> <span class="o">*</span> <span class="p">(</span><span class="mi">2</span> <span class="o">+</span> <span class="n">len</span><span class="p">(</span><span class="n">line</span><span class="p">)))</span>
+</pre></div>
+
+
+<p><em>Задача 7:</em></p>
+<p>Напишите функцию concat(), принимающую переменное количество аргументов и объединяющую их в одну строку через разделитель (sep). Если разделитель не задан, им служит пробел.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">def</span> <span class="nv">concat</span><span class="ss">(</span><span class="o">*</span><span class="nv">args</span>, <span class="nv">sep</span><span class="o">=</span><span class="s1">&#39;</span><span class="s"> </span><span class="s1">&#39;</span><span class="ss">)</span>:
+    <span class="k">return</span> <span class="nv">sep</span>.<span class="nv">join</span><span class="ss">(</span><span class="nv">map</span><span class="ss">(</span><span class="nv">str</span>, <span class="nv">args</span><span class="ss">))</span>
+</pre></div>
+
+
+<p><em>Задача 8:</em></p>
+<p>Перепишите функцию product_of_odds() в функциональном стиле с использованием встроенных функций filter() и reduce().</p>
+<div class="codehilite"><pre><span></span><span class="nv">def</span> <span class="nv">product_of_odds</span><span class="ss">(</span><span class="nv">data</span><span class="ss">)</span>:   # <span class="nv">data</span> <span class="o">-</span> список целых чисел
+    <span class="nb">result</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">data</span>:
+        <span class="k">if</span> <span class="nv">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">1</span>:
+            <span class="nb">result</span> <span class="o">*=</span> <span class="nv">i</span>
+    <span class="k">return</span> <span class="nb">result</span>
+</pre></div>
+
+
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="kn">from</span> <span class="nn">functools</span> <span class="kn">import</span> <span class="nb">reduce</span>
+<span class="kn">from</span> <span class="nn">operator</span> <span class="kn">import</span> <span class="n">mul</span>
+
+<span class="k">def</span> <span class="nf">product_of_odds</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+    <span class="k">return</span> <span class="nb">reduce</span><span class="p">(</span><span class="n">mul</span><span class="p">,</span> <span class="nb">filter</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">1</span><span class="p">,</span> <span class="n">data</span><span class="p">),</span> <span class="mi">1</span><span class="p">)</span>
+</pre></div>
+
+
+<p><em>Задача 9:</em></p>
+<p>Дан список слов words. Допишите код после оператора распаковки *, который оборачивает в двойные кавычки все элементы списка words, а затем печатает результат на одной строке через пробел.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="n">words</span> <span class="o">=</span> <span class="s1">&#39;the world is mine take a look what you have started&#39;</span><span class="p">.</span><span class="n">split</span><span class="p">()</span>
+
+<span class="n">print</span><span class="p">(</span><span class="o">*</span><span class="k">map</span><span class="p">(</span><span class="n">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">f</span><span class="s1">&#39;&quot;{x}&quot;&#39;</span><span class="p">,</span> <span class="n">words</span><span class="p">))</span>
+</pre></div>
+
+
+<p><em>Задача 10:</em></p>
+<p>Дан список целых чисел numbers. Допишите код после оператора распаковки *, для удаления из списка всех чисел-палиндромов и печати результата на одной строке через пробел.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="s s-Atom">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">18</span><span class="p">,</span> <span class="mi">191</span><span class="p">,</span> <span class="mi">9009</span><span class="p">,</span> <span class="mi">5665</span><span class="p">,</span> <span class="mi">78</span><span class="p">,</span> <span class="mi">77</span><span class="p">,</span> <span class="mi">45</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span> <span class="mi">19991</span><span class="p">,</span> <span class="mi">908</span><span class="p">,</span> <span class="mi">8976</span><span class="p">,</span> <span class="mi">6565</span><span class="p">,</span> <span class="mi">5665</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">1000</span><span class="p">,</span> <span class="mi">908</span><span class="p">,</span> <span class="mi">909</span><span class="p">,</span> <span class="mi">232</span><span class="p">,</span> <span class="mi">45654</span><span class="p">,</span> <span class="mi">786</span><span class="p">]</span>
+<span class="nf">print</span><span class="p">(</span><span class="o">*</span><span class="nf">list</span><span class="p">(</span><span class="nf">filter</span><span class="p">(</span><span class="s s-Atom">lambda</span> <span class="nn">x</span><span class="p">:</span> <span class="nf">str</span><span class="p">(</span><span class="s s-Atom">x</span><span class="p">)</span> <span class="p">!</span><span class="o">=</span> <span class="nf">str</span><span class="p">(</span><span class="s s-Atom">x</span><span class="p">)[</span><span class="s s-Atom">::-</span><span class="mi">1</span><span class="p">],</span> <span class="s s-Atom">numbers</span><span class="p">)),</span> <span class="s s-Atom">sep=&#39; &#39;</span><span class="p">)</span>
+</pre></div>
+
+
+<p><em>Задача 11:</em></p>
+<p>Дан список numbers, состоящий из кортежей. Допишите пропущенную часть программы, чтобы список sorted_numbers был упорядочен по убыванию среднего арифметического элементов кортежей списка numbers.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="n">numbers</span> <span class="o">=</span> <span class="p">[(</span><span class="mi">10</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="p">(</span><span class="o">-</span><span class="mi">13</span><span class="p">,</span> <span class="mi">56</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">9</span><span class="p">,</span> <span class="o">-</span><span class="mi">45</span><span class="p">,</span> <span class="mi">32</span><span class="p">),</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="mi">17</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="mi">3</span><span class="p">,),</span> <span class="p">(</span><span class="mi">39</span><span class="p">,</span> <span class="mi">12</span><span class="p">),</span> <span class="p">(</span><span class="mi">11</span><span class="p">,</span> <span class="o">-</span><span class="mi">23</span><span class="p">),</span> <span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="o">-</span><span class="mi">100</span><span class="p">,</span> <span class="mi">21</span><span class="p">,</span> <span class="mi">32</span><span class="p">),</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="o">-</span><span class="mi">8</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)]</span>
+
+<span class="n">sorted_numbers</span> <span class="o">=</span> <span class="n">sorted</span><span class="p">(</span><span class="n">numbers</span><span class="p">,</span> <span class="k">key</span><span class="o">=</span><span class="n">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="k">sum</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">/</span><span class="n">len</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="n">reverse</span><span class="o">=</span><span class="k">True</span><span class="p">)</span>
+<span class="n">print</span><span class="p">(</span><span class="n">sorted_numbers</span><span class="p">)</span>
+</pre></div>
+
+
+<p><em>Задача 12:</em></p>
+<p>Напишите функцию call(), которая принимает произвольную функцию и аргументы для неё и делает вызов переданной функции, возвращая ее значение.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">def</span> <span class="nv">call</span><span class="ss">(</span><span class="nv">func</span>, <span class="o">*</span><span class="nv">args</span><span class="ss">)</span>:
+
+    <span class="k">return</span> <span class="nv">func</span><span class="ss">(</span><span class="o">*</span><span class="nv">args</span><span class="ss">)</span>
+</pre></div>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div><!-- конец карточки -->
+  <!-- конец поста -->
+
+  </main>
+  <!-- Скрипты -->
+  <script src="/static/assets/purecounter/purecounter.js"></script>
+  <script src="/static/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/static/assets/glightbox/js/glightbox.min.js"></script>
+  <script src="/static/assets/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/static/assets/swiper/swiper-bundle.min.js"></script>
+  <script src="/static/assets/waypoints/noframework.waypoints.js"></script>
+  <script src="/static/js/main.js"></script>
+</body>
+</html>

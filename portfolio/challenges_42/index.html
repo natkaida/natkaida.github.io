@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title></title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <link href="/static/img/favicon.png" rel="icon">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="/static/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/static/assets/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/static/assets/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="/static/assets/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/static/assets/remixicon/remixicon.css" rel="stylesheet">
+  <link href="/static/assets/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/69e2443572.js" crossorigin="anonymous"></script>
+  <link href="/static/css/style.css" rel="stylesheet">
+  <link href="/pygments.css" rel="stylesheet">
+  <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(89602269, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/89602269" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</head>
+<body>
+  <main id="main">
+
+<style>
+body::before {
+	background: #040404 url("/static/img/portfolio/post.jpg");
+}
+</style>
+    <!-- ======= шаблон для поста ======= -->
+    <div id="portfolio-details" class="portfolio-details">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <h2 class="portfolio-title">Подборка задач с решениями - 42</h2>
+          </div>
+          <div class="col-lg-8 portfolio-info">
+            <h3></h3>
+            <ul>
+              <li><strong>Категория</strong>: Python</li>
+              <li><strong>Дата публикации</strong>: 2022-02-08</li>
+              <li><strong>Посмотреть на сайте</strong>: <a href="https://stepik.org">Stepik</a></li>
+            </ul>
+            <p>
+              <p><em>Задача 1:</em></p>
+<p>Работа светофора для пешеходов запрограммирована следующим образом: в начале каждого часа в течение трех минут горит зеленый сигнал, затем в течение двух минут – красный, в течение трех минут – опять зеленый и т. д. Дано вещественное число t, означающее время в минутах, прошедшее с начала очередного часа. Определить, сигнал какого цвета горит для пешеходов в этот момент. На экран вывести сообщение (без кавычек) "green" - для зеленого и "red" - для красного.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">n</span> <span class="o">=</span> <span class="nv">float</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
+<span class="nv">print</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">green</span><span class="s1">&#39;</span> <span class="k">if</span> <span class="nv">n</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">&lt;=</span> <span class="mi">1</span> <span class="nv">or</span> <span class="nv">n</span> <span class="o">%</span> <span class="mi">5</span> <span class="o">&lt;=</span> <span class="mi">3</span> <span class="k">else</span> <span class="s1">&#39;</span><span class="s">red</span><span class="s1">&#39;</span><span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Задача 2:</em></p>
+<p>Вводится шестизначное число. Определить, является ли оно счастливым. (Счастливым называют такое шестизначное число, в котором сумма его первых трех цифр равна сумме его последних трех цифр.). Вывести ДА, если счастливое и НЕТ - в противном случае.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">n</span> <span class="o">=</span> <span class="ss">(</span><span class="nv">list</span><span class="ss">(</span><span class="nv">map</span><span class="ss">(</span><span class="nv">int</span>, <span class="nv">input</span><span class="ss">())))</span>
+<span class="nv">print</span><span class="ss">(</span><span class="s2">&quot;</span><span class="s">ДА</span><span class="s2">&quot;</span> <span class="k">if</span> <span class="nv">sum</span><span class="ss">(</span><span class="nv">n</span>[<span class="mi">0</span>:<span class="mi">3</span>]<span class="ss">)</span> <span class="o">==</span> <span class="nv">sum</span><span class="ss">(</span><span class="nv">n</span>[<span class="mi">3</span>:<span class="mi">6</span>]<span class="ss">)</span> <span class="k">else</span> <span class="s2">&quot;</span><span class="s">НЕТ</span><span class="s2">&quot;</span><span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Задача 3:</em></p>
+<p>Вводятся четыре целых числа a, b, c, d в одну строку через пробел. Определить, войдет ли в конверт с внутренними размерами a и b мм прямоугольная открытка с размерами с и d мм. Для размещения открытки в конверте необходим зазор в 1 мм с каждой стороны. Открытку можно поворачивать на 90 градусов. Вывести ДА, если входит и НЕТ - если не входит.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">a</span>, <span class="nv">b</span>, <span class="nv">c</span>, <span class="nv">d</span> <span class="o">=</span> <span class="nv">list</span><span class="ss">(</span><span class="nv">map</span><span class="ss">(</span><span class="nv">int</span>, <span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">()))</span>
+<span class="nv">print</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">ДА</span><span class="s1">&#39;</span> <span class="k">if</span> <span class="nv">c</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">&lt;=</span> <span class="nv">a</span> <span class="nv">and</span> <span class="nv">d</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">&lt;=</span> <span class="nv">b</span> <span class="nv">or</span> <span class="nv">c</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">&lt;=</span> <span class="nv">b</span> <span class="nv">and</span> <span class="nv">d</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">&lt;=</span> <span class="nv">a</span> <span class="k">else</span> <span class="s1">&#39;</span><span class="s">НЕТ</span><span class="s1">&#39;</span><span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Задача 4:</em></p>
+<p>Вводится список городов в одну строку через пробел. Если в этом списке присутствует город Москва, то удалить его. Вывести на экран результирующий список в виде строки с городами через пробел.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">s</span> <span class="o">=</span> <span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">()</span>
+<span class="k">if</span> <span class="s1">&#39;</span><span class="s">Москва</span><span class="s1">&#39;</span> <span class="nv">in</span> <span class="nv">s</span>:
+    <span class="nv">s</span>.<span class="nv">remove</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">Москва</span><span class="s1">&#39;</span><span class="ss">)</span>
+<span class="nv">print</span><span class="ss">(</span><span class="o">*</span><span class="nv">s</span><span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Задача 5:</em></p>
+<p>Вводится слово. Проверить, что в этом слове присутствуют все три буквы: t, h и o (в произвольном порядке). Реализовать программу с помощью одного условного оператора. Если проверка проходит, вывести ДА, иначе - НЕТ.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">s</span> <span class="o">=</span> <span class="nv">set</span><span class="ss">(</span><span class="nv">input</span><span class="ss">()</span>.<span class="nv">lower</span><span class="ss">())</span>
+<span class="nv">x</span> <span class="o">=</span> {<span class="s1">&#39;</span><span class="s">t</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">h</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">o</span><span class="s1">&#39;</span>}
+<span class="nv">print</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">ДА</span><span class="s1">&#39;</span> <span class="k">if</span> <span class="nv">x</span>.<span class="nv">issubset</span><span class="ss">(</span><span class="nv">s</span><span class="ss">)</span> <span class="k">else</span> <span class="s1">&#39;</span><span class="s">НЕТ</span><span class="s1">&#39;</span><span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Задача 6:</em></p>
+<p>Вводится четырехзначное число. Проверить, что оно оканчивается на цифру 7. Вывести на экран ДА, если это так и НЕТ - в противном случае.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">n</span> <span class="o">=</span> <span class="nv">list</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
+<span class="nv">print</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">ДА</span><span class="s1">&#39;</span> <span class="k">if</span> <span class="nv">n</span>[<span class="o">-</span><span class="mi">1</span>] <span class="o">==</span> <span class="s1">&#39;</span><span class="s">7</span><span class="s1">&#39;</span> <span class="k">else</span> <span class="s1">&#39;</span><span class="s">НЕТ</span><span class="s1">&#39;</span><span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Задача 7:</em></p>
+<p>Вводятся три целых положительных числа в одну строку через пробел. Убедиться, что первые два числа - это катеты прямоугольного треугольника, а третье - его гипотенуза. (Подсказка: проверка делается по теореме Пифагора). Если проверка проходит (истинна), то вывести на экран ДА, иначе - НЕТ.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">n</span> <span class="o">=</span> <span class="ss">(</span><span class="nv">list</span><span class="ss">(</span><span class="nv">map</span><span class="ss">(</span><span class="nv">int</span>, <span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">())))</span>
+<span class="nv">print</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">ДА</span><span class="s1">&#39;</span> <span class="k">if</span> <span class="ss">(</span><span class="nv">n</span>[<span class="mi">0</span>]<span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="nv">n</span>[<span class="mi">1</span>]<span class="o">**</span><span class="mi">2</span><span class="ss">)</span> <span class="o">==</span> <span class="nv">n</span>[<span class="mi">2</span>]<span class="o">**</span><span class="mi">2</span> <span class="k">else</span> <span class="s1">&#39;</span><span class="s">НЕТ</span><span class="s1">&#39;</span><span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Задача 8:</em></p>
+<p>Вводятся два целых положительных числа m и n в одну строку через пробел. Если число m делится нацело на число n, то вывести на экран частное от деления (результат деления) в виде целого числа. В противном случае вывести сообщение «m на n нацело не делится» (без кавычек) и вместо m и n подставить соответствующие числа, например: «13 на 2 нацело не делится».</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">n</span>, <span class="nv">m</span> <span class="o">=</span> <span class="nv">list</span><span class="ss">(</span><span class="nv">map</span><span class="ss">(</span><span class="nv">int</span>, <span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">()))</span>
+<span class="nv">print</span><span class="ss">(</span><span class="nv">n</span> <span class="o">//</span> <span class="nv">m</span> <span class="k">if</span> <span class="nv">n</span> <span class="o">%</span> <span class="nv">m</span> <span class="o">==</span> <span class="mi">0</span> <span class="k">else</span> <span class="nv">f</span><span class="s1">&#39;</span><span class="s">{n} на {m} нацело не делится</span><span class="s1">&#39;</span><span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Задача 9:</em></p>
+<p>Вводится слово. Необходимо определить, является ли это слово палиндромом (одинаково читается вперед и назад, например, АННА). Регистр букв не учитывать. Если введенное слово палиндром, на экран вывести ДА, иначе - НЕТ.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="s s-Atom">s</span> <span class="o">=</span> <span class="nf">input</span><span class="p">().</span><span class="nf">lower</span><span class="p">()</span>
+<span class="nf">print</span><span class="p">(</span><span class="s s-Atom">&#39;ДА&#39;</span> <span class="s s-Atom">if</span> <span class="s s-Atom">s</span> <span class="o">==</span> <span class="s s-Atom">s</span><span class="p">[</span><span class="s s-Atom">::-</span><span class="mi">1</span><span class="p">]</span> <span class="s s-Atom">else</span> <span class="s s-Atom">&#39;НЕТ&#39;</span><span class="p">)</span>
+</pre></div>
+
+
+<p><em>Задача 10:</em></p>
+<p>Вводятся два вещественных числа в одну строку через пробел. Вывести на экран наибольшее из чисел. Задачу решить с помощью условного оператора.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">n</span>, <span class="nv">m</span> <span class="o">=</span> <span class="nv">list</span><span class="ss">(</span><span class="nv">map</span><span class="ss">(</span><span class="nv">float</span>, <span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">()))</span>
+<span class="nv">print</span><span class="ss">(</span><span class="nv">n</span> <span class="k">if</span> <span class="nv">n</span> <span class="o">&gt;</span> <span class="nv">m</span> <span class="k">else</span> <span class="nv">m</span><span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Задача 11:</em></p>
+<p>Вводятся три целых числа в одну строку через пробел. Необходимо определить наименьшее среди них и вывести его на экран. Реализовать программу, используя условный оператор, без использования функции min.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">a</span>, <span class="nv">b</span>, <span class="nv">c</span> <span class="o">=</span> <span class="nv">list</span><span class="ss">(</span><span class="nv">map</span><span class="ss">(</span><span class="nv">int</span>, <span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">()))</span>
+<span class="k">if</span> <span class="nv">a</span> <span class="o">&lt;</span> <span class="nv">b</span> <span class="nv">and</span> <span class="nv">a</span> <span class="o">&lt;</span> <span class="nv">c</span>:
+    <span class="nv">print</span><span class="ss">(</span><span class="nv">a</span><span class="ss">)</span>
+<span class="nv">elif</span> <span class="nv">b</span> <span class="o">&lt;</span> <span class="nv">a</span> <span class="nv">and</span> <span class="nv">b</span> <span class="o">&lt;</span> <span class="nv">c</span>:
+    <span class="nv">print</span><span class="ss">(</span><span class="nv">b</span><span class="ss">)</span>
+<span class="k">else</span>:
+    <span class="nv">print</span><span class="ss">(</span><span class="nv">c</span><span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Задача 12:</em></p>
+<p>Вводится вес боксера-любителя (в кг, в виде вещественного числа). Известно, что вес таков, что боксер может быть отнесен к одной из весовых категорий:</p>
+<p>1) легкий вес – до 60 кг (включительно);
+2) первый полусредний вес – до 64 кг (включительно);
+3) полусредний вес – до 69 кг (включительно);
+4) остальные - более 69 кг.</p>
+<p>Вывести на экран номер категории, в которой будет выступать боксер.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">n</span> <span class="o">=</span> <span class="nv">float</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
+<span class="k">if</span> <span class="nv">n</span> <span class="o">&lt;=</span> <span class="mi">60</span>:
+    <span class="nv">print</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">1</span><span class="s1">&#39;</span><span class="ss">)</span>
+<span class="nv">elif</span> <span class="mi">60</span> <span class="o">&lt;</span> <span class="nv">n</span> <span class="o">&lt;=</span> <span class="mi">64</span>:
+    <span class="nv">print</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">2</span><span class="s1">&#39;</span><span class="ss">)</span>    
+<span class="nv">elif</span> <span class="mi">64</span> <span class="o">&lt;</span> <span class="nv">n</span> <span class="o">&lt;=</span> <span class="mi">69</span>:
+    <span class="nv">print</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">3</span><span class="s1">&#39;</span><span class="ss">)</span>
+<span class="k">else</span>:
+    <span class="nv">print</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">4</span><span class="s1">&#39;</span><span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Задача 13:</em></p>
+<p>Напишите программу, на вход которой подаётся прямоугольная матрица в виде последовательности строк. После последней строки матрицы идёт строка, содержащая только строку "end" (без кавычек, см. <strong>Sample Input</strong>).</p>
+<p>Программа должна вывести матрицу того же размера, у которой каждый элемент в позиции i, j равен сумме элементов первой матрицы на позициях (i-1, j), (i+1, j), (i, j-1), (i, j+1). У крайних символов соседний элемент находится с противоположной стороны матрицы.</p>
+<p>В случае одной строки/столбца элемент сам себе является соседом по соответствующему направлению.</p>
+<div class="codehilite"><pre><span></span><span class="o">**</span><span class="nv">Sample</span> <span class="nv">Input</span> <span class="mi">1</span>:<span class="o">**</span>
+
+<span class="mi">9</span> <span class="mi">5</span> <span class="mi">3</span>
+
+<span class="mi">0</span> <span class="mi">7</span> <span class="o">-</span><span class="mi">1</span>
+
+<span class="o">-</span><span class="mi">5</span> <span class="mi">2</span> <span class="mi">9</span>
+
+<span class="k">end</span>
+
+<span class="o">**</span><span class="nv">Sample</span> <span class="nv">Output</span> <span class="mi">1</span>:<span class="o">**</span>
+
+<span class="mi">3</span> <span class="mi">21</span> <span class="mi">22</span>
+
+<span class="mi">10</span> <span class="mi">6</span> <span class="mi">19</span>
+
+<span class="mi">20</span> <span class="mi">16</span> <span class="o">-</span><span class="mi">1</span>
+
+<span class="o">**</span><span class="nv">Sample</span> <span class="nv">Input</span> <span class="mi">2</span>:<span class="o">**</span>
+
+<span class="mi">1</span>
+
+<span class="k">end</span>
+
+<span class="o">**</span><span class="nv">Sample</span> <span class="nv">Output</span> <span class="mi">2</span>:<span class="o">**</span>
+
+<span class="mi">4</span>
+</pre></div>
+
+
+<p><em>Решение 1:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">line</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+<span class="nv">matrix</span> <span class="o">=</span> []
+<span class="k">while</span> <span class="nv">line</span> <span class="o">!=</span> <span class="s1">&#39;</span><span class="s">end</span><span class="s1">&#39;</span>:
+    <span class="nv">line</span> <span class="o">=</span> <span class="nv">input</span><span class="ss">()</span>
+    <span class="nv">matrix</span>.<span class="nv">append</span><span class="ss">(</span>[<span class="nv">int</span><span class="ss">(</span><span class="nv">_</span><span class="ss">)</span> <span class="k">for</span> <span class="nv">_</span> <span class="nv">in</span> <span class="nv">line</span>.<span class="nv">split</span><span class="ss">()</span>]<span class="ss">)</span> 
+<span class="nv">li</span>, <span class="nv">lj</span> <span class="o">=</span> <span class="nv">len</span><span class="ss">(</span><span class="nv">matrix</span><span class="ss">)</span>, <span class="nv">len</span><span class="ss">(</span><span class="nv">matrix</span>[<span class="mi">0</span>]<span class="ss">)</span>
+<span class="nv">new_matrix</span> <span class="o">=</span> [[<span class="nv">sum</span><span class="ss">(</span>[<span class="nv">matrix</span>[<span class="nv">i</span><span class="o">-</span><span class="mi">1</span>][<span class="nv">j</span>], <span class="nv">matrix</span>[<span class="ss">(</span><span class="nv">i</span><span class="o">+</span><span class="mi">1</span><span class="ss">)</span><span class="o">%</span><span class="nv">li</span>][<span class="nv">j</span>], <span class="nv">matrix</span>[<span class="nv">i</span>][<span class="nv">j</span><span class="o">-</span><span class="mi">1</span>], <span class="nv">matrix</span>[<span class="nv">i</span>][<span class="ss">(</span><span class="nv">j</span><span class="o">+</span><span class="mi">1</span><span class="ss">)</span><span class="o">%</span><span class="nv">lj</span>]]<span class="ss">)</span> <span class="k">for</span> <span class="nv">j</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">lj</span><span class="ss">)</span>] <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">li</span><span class="ss">)</span>]
+
+[<span class="nv">print</span><span class="ss">(</span><span class="o">*</span><span class="nv">i</span><span class="ss">)</span> <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">new_matrix</span>]
+</pre></div>
+
+
+<p><em>Решение 2:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">matrix</span>, <span class="nv">line</span> <span class="o">=</span> [], <span class="nv">input</span><span class="ss">()</span>
+<span class="k">while</span> <span class="nv">line</span><span class="o">!=</span><span class="s1">&#39;</span><span class="s">end</span><span class="s1">&#39;</span>:
+    <span class="nv">matrix</span> <span class="o">+=</span> [[<span class="nv">int</span><span class="ss">(</span><span class="nv">i</span><span class="ss">)</span> <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">line</span>.<span class="nv">split</span><span class="ss">()</span>]]
+    <span class="nv">line</span> <span class="o">=</span> <span class="nv">input</span><span class="ss">()</span>
+<span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">len</span><span class="ss">(</span><span class="nv">matrix</span><span class="ss">))</span>:
+    <span class="k">for</span> <span class="nv">j</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">len</span><span class="ss">(</span><span class="nv">matrix</span>[<span class="nv">i</span>]<span class="ss">))</span>:
+        <span class="nv">print</span><span class="ss">(</span><span class="nv">matrix</span>[<span class="nv">i</span>][<span class="nv">j</span><span class="o">-</span><span class="mi">1</span>] <span class="o">+</span> <span class="nv">matrix</span>[<span class="nv">i</span><span class="o">-</span><span class="mi">1</span>][<span class="nv">j</span>] <span class="o">+</span> <span class="nv">matrix</span>[<span class="ss">(</span><span class="nv">i</span><span class="o">+</span><span class="mi">1</span><span class="ss">)</span> <span class="o">*</span> <span class="ss">(</span><span class="nv">len</span><span class="ss">(</span><span class="nv">matrix</span><span class="ss">)</span> <span class="o">-</span> <span class="mi">1</span> <span class="o">!=</span> <span class="nv">i</span><span class="ss">)</span>][<span class="nv">j</span>] <span class="o">+</span> <span class="nv">matrix</span>[<span class="nv">i</span>][<span class="ss">(</span><span class="nv">j</span> <span class="o">+</span> <span class="mi">1</span><span class="ss">)</span><span class="o">*</span> <span class="ss">(</span><span class="nv">len</span><span class="ss">(</span><span class="nv">matrix</span>[<span class="nv">i</span>]<span class="ss">)</span> <span class="o">-</span> <span class="mi">1</span> <span class="o">!=</span> <span class="nv">j</span><span class="ss">)</span>], <span class="k">end</span><span class="o">=</span><span class="s1">&#39;</span><span class="s"> </span><span class="s1">&#39;</span><span class="ss">)</span>
+    <span class="nv">print</span><span class="ss">()</span>
+</pre></div>
+
+
+<p><em>Задача 14:</em> </p>
+<p>Напишите программу, которая выводит часть последовательности 1 2 2 3 3 3 4 4 4 4 5 5 5 5 5 ... (число повторяется столько раз, чему равно). На вход программе передаётся неотрицательное целое число n — столько элементов последовательности должна отобразить программа. На выходе ожидается последовательность чисел, записанных через пробел в одну строку.</p>
+<p>Например, если n = 7, то программа должна вывести 1 2 2 3 3 3 4.</p>
+<p><em>Решение 1:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">n</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
+<span class="nv">spisok</span> <span class="o">=</span> []
+<span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="mi">1</span>, <span class="nv">n</span> <span class="o">+</span> <span class="mi">1</span><span class="ss">)</span>:
+    <span class="k">for</span> <span class="nv">j</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="mi">1</span>, <span class="nv">i</span> <span class="o">+</span> <span class="mi">1</span><span class="ss">)</span>:
+        <span class="nv">spisok</span>.<span class="nv">append</span><span class="ss">(</span><span class="nv">i</span><span class="ss">)</span>
+<span class="nv">print</span><span class="ss">(</span><span class="o">*</span><span class="nv">spisok</span>[:<span class="nv">n</span>]<span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Решение 2:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">n</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
+<span class="nv">spisok</span> <span class="o">=</span> []
+<span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="mi">1</span>, <span class="nv">n</span> <span class="o">+</span> <span class="mi">1</span><span class="ss">)</span>:
+    <span class="nv">spisok</span> <span class="o">+=</span> <span class="ss">(</span>[<span class="nv">i</span>] <span class="o">*</span> <span class="nv">i</span><span class="ss">)</span>
+<span class="nv">print</span><span class="ss">(</span><span class="o">*</span><span class="nv">spisok</span>[<span class="mi">0</span>:<span class="nv">n</span>]<span class="ss">)</span>
+</pre></div>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div><!-- конец карточки -->
+  <!-- конец поста -->
+
+  </main>
+  <!-- Скрипты -->
+  <script src="/static/assets/purecounter/purecounter.js"></script>
+  <script src="/static/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/static/assets/glightbox/js/glightbox.min.js"></script>
+  <script src="/static/assets/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/static/assets/swiper/swiper-bundle.min.js"></script>
+  <script src="/static/assets/waypoints/noframework.waypoints.js"></script>
+  <script src="/static/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title></title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <link href="/static/img/favicon.png" rel="icon">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="/static/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/static/assets/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/static/assets/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="/static/assets/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/static/assets/remixicon/remixicon.css" rel="stylesheet">
+  <link href="/static/assets/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/69e2443572.js" crossorigin="anonymous"></script>
+  <link href="/static/css/style.css" rel="stylesheet">
+  <link href="/pygments.css" rel="stylesheet">
+  <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(89602269, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/89602269" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</head>
+<body>
+  <main id="main">
+
+<style>
+body::before {
+	background: #040404 url("/static/img/portfolio/post.jpg");
+}
+</style>
+    <!-- ======= шаблон для поста ======= -->
+    <div id="portfolio-details" class="portfolio-details">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <h2 class="portfolio-title">Подборка задач с решениями - 25</h2>
+          </div>
+          <div class="col-lg-8 portfolio-info">
+            <h3></h3>
+            <ul>
+              <li><strong>Категория</strong>: Python</li>
+              <li><strong>Дата публикации</strong>: 2022-01-19</li>
+              <li><strong>Посмотреть на сайте</strong>: <a href="https://stepik.org">Stepik</a></li>
+            </ul>
+            <p>
+              <p><em>Задача 1:</em></p>
+<p>Напишите функцию compose(), которая принимает на вход две других одноаргументных функции f и g и возвращает новую функцию. Эта новая функция также должна принимать один аргумент x и применять к нему исходные функции в нужном порядке: для функций f и g порядок применения должен выглядеть, как f(g(x)).</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">def</span> <span class="nv">compose</span><span class="ss">(</span><span class="nv">f</span>, <span class="nv">g</span><span class="ss">)</span>:
+    <span class="k">return</span> <span class="nv">lambda</span> <span class="nv">x</span>: <span class="nv">f</span><span class="ss">(</span><span class="nv">g</span><span class="ss">(</span><span class="nv">x</span><span class="ss">))</span>
+</pre></div>
+
+
+<p><em>Задача 2:</em></p>
+<p>Напишите функцию arithmetic_operation(), которая принимает символ одной из четырех арифметических операций +, -, *, / и возвращает функцию двух аргументов для соответствующей операции.</p>
+<p><em>Решение 1:</em></p>
+<div class="codehilite"><pre><span></span><span class="kn">from</span> <span class="nn">operator</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="k">def</span> <span class="nf">arithmetic_operation</span><span class="p">(</span><span class="n">operation</span><span class="p">):</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;+&#39;</span><span class="p">:</span> <span class="n">add</span><span class="p">,</span> <span class="s1">&#39;-&#39;</span><span class="p">:</span> <span class="n">sub</span><span class="p">,</span> <span class="s1">&#39;*&#39;</span><span class="p">:</span> <span class="n">mul</span><span class="p">,</span> <span class="s1">&#39;/&#39;</span><span class="p">:</span> <span class="n">truediv</span><span class="p">}</span>
+    <span class="k">return</span> <span class="n">result</span><span class="p">[</span><span class="n">operation</span><span class="p">]</span>
+</pre></div>
+
+
+<p><em>Решение 2:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">def</span> <span class="nv">arithmetic_operation</span><span class="ss">(</span><span class="nv">op</span><span class="ss">)</span>:
+    <span class="k">return</span> <span class="nv">lambda</span> <span class="nv">x</span>, <span class="nv">y</span>: <span class="nv">eval</span><span class="ss">(</span><span class="nv">f</span><span class="s2">&quot;</span><span class="s">{x}{op}{y}</span><span class="s2">&quot;</span><span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Задача 3:</em></p>
+<p>Дана строка из разделенных пробелами слов в разных регистрах. Напишите программу, которая отсортирует слова независимо от регистра, а затем выведет их. Отсортированные слова должны выводиться на печать в исходном регистре, в каком переданы программе на вход.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="n">spisok</span> <span class="o">=</span> <span class="k">input</span><span class="p">().</span><span class="n">split</span><span class="p">()</span>
+<span class="k">new</span> <span class="o">=</span> <span class="p">(</span><span class="n">sorted</span><span class="p">(</span><span class="n">spisok</span><span class="p">,</span> <span class="k">key</span><span class="o">=</span><span class="n">lambda</span> <span class="n">word</span><span class="p">:</span> <span class="n">word</span><span class="p">.</span><span class="k">lower</span><span class="p">()))</span>
+<span class="n">print</span><span class="p">(</span><span class="o">*</span><span class="k">new</span><span class="p">)</span>
+</pre></div>
+
+
+<p><em>Задача 4 - Гематрия слова:</em></p>
+<p>Гематрией слова называется сумма числовых значений входящих в него букв.</p>
+<p>Для вычисления гематрии слова в этой задаче:</p>
+<ul>
+<li>переведём слово в верхний регистр;</li>
+<li>числовое значение буквы вычислим как код(буквы) - код(буквы A).</li>
+</ul>
+<p>На вход программе подается натуральное число n, а затем n строк английских слов в разных регистрах.</p>
+<p>Напишите программу, которая выводит слова в начальном регистре (каждое на отдельной строке) в порядке возрастания их гематрии. Если гематрия слов совпадает, они выводятся в алфавитном (лексикографическом) порядке.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">def</span> <span class="nv">gematria</span><span class="ss">(</span><span class="nv">word</span><span class="ss">)</span>:
+    <span class="k">return</span> <span class="nv">sum</span><span class="ss">(</span><span class="nv">map</span><span class="ss">(</span><span class="nv">lambda</span> <span class="nv">c</span>: <span class="nv">ord</span><span class="ss">(</span><span class="nv">c</span>.<span class="nv">upper</span><span class="ss">())</span> <span class="o">-</span> <span class="nv">ord</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">A</span><span class="s1">&#39;</span><span class="ss">)</span>, <span class="nv">word</span><span class="ss">))</span>, <span class="nv">word</span>
+
+<span class="nv">words</span> <span class="o">=</span> [<span class="nv">input</span><span class="ss">()</span> <span class="k">for</span> <span class="nv">_</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">()))</span>]
+
+<span class="nv">print</span><span class="ss">(</span><span class="o">*</span><span class="nv">sorted</span><span class="ss">(</span><span class="nv">words</span>, <span class="nv">key</span><span class="o">=</span><span class="nv">gematria</span><span class="ss">)</span>, <span class="nv">sep</span><span class="o">=</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Задача 5 - Сортировка IP-адресов:</em></p>
+<p>IP-адрес – уникальный числовой идентификатор устройства в компьютерной сети, работающий по протоколу TCP/IP.</p>
+<p>В 4-й версии IP-адрес представляет собой 32-битное число. Адрес записывается в виде четырёх десятичных чисел (октетов) со значением от 0 до 255, разделённых точками, например, 192.168.1.2.</p>
+<p>Напишите программу, которая считывает IP-адреса и выводит их в порядке возрастания в соответствии с десятичным представлением.</p>
+<p><em>Решение 1:</em></p>
+<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">ipaddress</span>
+<span class="n">l</span> <span class="o">=</span> <span class="p">[</span><span class="nb">input</span><span class="p">()</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">()))]</span>
+<span class="k">print</span><span class="p">(</span><span class="o">*</span><span class="nb">sorted</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="n">key</span> <span class="o">=</span> <span class="n">ipaddress</span><span class="o">.</span><span class="n">ip_address</span><span class="p">),</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+</pre></div>
+
+
+<p><em>Решение 2:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">print</span><span class="ss">(</span><span class="o">*</span><span class="nv">sorted</span><span class="ss">(</span>[<span class="nv">input</span><span class="ss">()</span> <span class="k">for</span> <span class="nv">_</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">()))</span>], <span class="nv">key</span><span class="o">=</span><span class="nv">lambda</span> <span class="nv">x</span>: [<span class="o">*</span><span class="nv">map</span><span class="ss">(</span><span class="nv">int</span>, <span class="nv">x</span>.<span class="nv">split</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">.</span><span class="s1">&#39;</span><span class="ss">))</span>]<span class="ss">)</span>, <span class="nv">sep</span><span class="o">=</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="ss">)</span>
+</pre></div>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div><!-- конец карточки -->
+  <!-- конец поста -->
+
+  </main>
+  <!-- Скрипты -->
+  <script src="/static/assets/purecounter/purecounter.js"></script>
+  <script src="/static/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/static/assets/glightbox/js/glightbox.min.js"></script>
+  <script src="/static/assets/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/static/assets/swiper/swiper-bundle.min.js"></script>
+  <script src="/static/assets/waypoints/noframework.waypoints.js"></script>
+  <script src="/static/js/main.js"></script>
+</body>
+</html>

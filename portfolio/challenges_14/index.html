@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title></title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <link href="/static/img/favicon.png" rel="icon">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="/static/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/static/assets/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/static/assets/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="/static/assets/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/static/assets/remixicon/remixicon.css" rel="stylesheet">
+  <link href="/static/assets/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/69e2443572.js" crossorigin="anonymous"></script>
+  <link href="/static/css/style.css" rel="stylesheet">
+  <link href="/pygments.css" rel="stylesheet">
+  <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(89602269, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/89602269" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</head>
+<body>
+  <main id="main">
+
+<style>
+body::before {
+	background: #040404 url("/static/img/portfolio/post.jpg");
+}
+</style>
+    <!-- ======= шаблон для поста ======= -->
+    <div id="portfolio-details" class="portfolio-details">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <h2 class="portfolio-title">Подборка задач с решениями - 14</h2>
+          </div>
+          <div class="col-lg-8 portfolio-info">
+            <h3></h3>
+            <ul>
+              <li><strong>Категория</strong>: Python</li>
+              <li><strong>Дата публикации</strong>: 2022-01-08</li>
+              <li><strong>Посмотреть на сайте</strong>: <a href="https://stepik.org">Stepik</a></li>
+            </ul>
+            <p>
+              <p><em>Задача 1:</em></p>
+<p>Дополните приведенный код, чтобы он вывел имена всех пользователей (в алфавитном порядке), чей номер оканчивается на 8.</p>
+<p>Примечание. Имена необходимо вывести на одной строке, разделяя символом пробела.</p>
+<p>Код:</p>
+<p>users = [{'name': 'Todd', 'phone': '551-1414', 'email': 'todd@gmail.com'},
+         {'name': 'Helga', 'phone': '555-1618', 'email': 'helga@mail.net'},
+         {'name': 'Olivia', 'phone': '449-3141', 'email': ''},
+         {'name': 'LJ', 'phone': '555-2718', 'email': 'lj@gmail.net'},
+         {'name': 'Ruslan', 'phone': '422-145-9098', 'email': 'rus-lan.cha@yandex.ru'},
+         {'name': 'John', 'phone': '233-421-32', 'email': ''},
+         {'name': 'Lara', 'phone': '+7998-676-2532', 'email': 'g.lara89@gmail.com'},
+         {'name': 'Alina', 'phone': '+7948-799-2434', 'email': 'ali.ch.b@gmail.com'},
+         {'name': 'Robert', 'phone': '420-2011', 'email': ''},
+         {'name': 'Riyad', 'phone': '128-8890-128', 'email': 'r.mahrez@mail.net'},
+         {'name': 'Khabib', 'phone': '+7995-600-9080', 'email': 'kh.nurmag@gmail.com'},
+         {'name': 'Olga', 'phone': '6449-314-1213', 'email': ''},
+         {'name': 'Roman', 'phone': '+7459-145-8059', 'email': 'roma988@mail.ru'},
+         {'name': 'Maria', 'phone': '12-129-3148', 'email': 'm.sharapova@gmail.com'},
+         {'name': 'Fedor', 'phone': '+7445-341-0545', 'email': ''},
+         {'name': 'Tim', 'phone': '242-449-3141', 'email': 'timm.ggg@yandex.ru'}]</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">print</span><span class="ss">(</span><span class="o">*</span><span class="nv">sorted</span><span class="ss">(</span>[<span class="nv">item</span>[<span class="s1">&#39;</span><span class="s">name</span><span class="s1">&#39;</span>] <span class="k">for</span> <span class="nv">item</span> <span class="nv">in</span> <span class="nv">users</span> <span class="k">if</span> <span class="nv">item</span>[<span class="s1">&#39;</span><span class="s">phone</span><span class="s1">&#39;</span>].<span class="nv">endswith</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">8</span><span class="s1">&#39;</span><span class="ss">)</span>]<span class="ss">))</span>
+</pre></div>
+
+
+<p><em>Задача 2:</em></p>
+<p>Дополните приведенный код, чтобы он вывел имена всех пользователей (в алфавитном порядке), у которых нет информации об электронной почте. </p>
+<p>Примечание 1. Ключ email может отсутствовать в словаре.</p>
+<p>Примечание 2. Имена необходимо вывести на одной строке, разделяя символом пробела.</p>
+<p>Код:</p>
+<p>users = [{'name': 'Todd', 'phone': '551-1414', 'email': 'todd@gmail.com'},
+         {'name': 'Helga', 'phone': '555-1618'},
+         {'name': 'Olivia', 'phone': '449-3141', 'email': ''},
+         {'name': 'LJ', 'phone': '555-2718', 'email': 'lj@gmail.net'},
+         {'name': 'Ruslan', 'phone': '422-145-9098', 'email': 'rus-lan.cha@yandex.ru'},
+         {'name': 'John', 'phone': '233-421-32', 'email': ''},
+         {'name': 'Lara', 'phone': '+7998-676-2532', 'email': 'g.lara89@gmail.com'},
+         {'name': 'Alina', 'phone': '+7948-799-2434'},
+         {'name': 'Robert', 'phone': '420-2011', 'email': ''},
+         {'name': 'Riyad', 'phone': '128-8890-128', 'email': 'r.mahrez@mail.net'},
+         {'name': 'Khabib', 'phone': '+7995-600-9080', 'email': 'kh.nurmag@gmail.com'},
+         {'name': 'Olga', 'phone': '6449-314-1213', 'email': ''},
+         {'name': 'Roman', 'phone': '+7459-145-8059'},
+         {'name': 'Maria', 'phone': '12-129-3148', 'email': 'm.sharapova@gmail.com'},
+         {'name': 'Fedor', 'phone': '+7445-341-0545', 'email': ''},
+         {'name': 'Tim', 'phone': '242-449-3141', 'email': 'timm.ggg@yandex.ru'}]</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">print</span><span class="ss">(</span><span class="o">*</span><span class="nv">sorted</span><span class="ss">(</span>[<span class="nv">element</span>[<span class="s1">&#39;</span><span class="s">name</span><span class="s1">&#39;</span>]  <span class="k">for</span> <span class="nv">element</span> <span class="nv">in</span> <span class="nv">users</span> <span class="k">if</span> <span class="s1">&#39;</span><span class="s">email</span><span class="s1">&#39;</span> <span class="nv">not</span> <span class="nv">in</span> <span class="nv">element</span> <span class="nv">or</span> <span class="nv">element</span>[<span class="s1">&#39;</span><span class="s">email</span><span class="s1">&#39;</span>] <span class="o">==</span> <span class="s1">&#39;&#39;</span>]<span class="ss">))</span>
+</pre></div>
+
+
+<p><em>Задача 3:</em></p>
+<p>Напишите программу, которая будет превращать натуральное число в строку, заменяя все цифры в числе на слова:</p>
+<ul>
+<li>0 на zero;</li>
+<li>1 на one;</li>
+<li>2 на two;</li>
+<li>3 на three;</li>
+<li>4 на four;</li>
+<li>5 на five;</li>
+<li>6 на six;</li>
+<li>7 на seven;</li>
+<li>8 на eight;</li>
+<li>9 на nine.</li>
+</ul>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">d</span> <span class="o">=</span> {
+    <span class="mi">0</span>: <span class="s2">&quot;</span><span class="s">zero</span><span class="s2">&quot;</span>,
+    <span class="mi">1</span>: <span class="s2">&quot;</span><span class="s">one</span><span class="s2">&quot;</span>,
+    <span class="mi">2</span>: <span class="s2">&quot;</span><span class="s">two</span><span class="s2">&quot;</span>,
+    <span class="mi">3</span>: <span class="s2">&quot;</span><span class="s">three</span><span class="s2">&quot;</span>,
+    <span class="mi">4</span>: <span class="s2">&quot;</span><span class="s">four</span><span class="s2">&quot;</span>,
+    <span class="mi">5</span>: <span class="s2">&quot;</span><span class="s">five</span><span class="s2">&quot;</span>,
+    <span class="mi">6</span>: <span class="s2">&quot;</span><span class="s">six</span><span class="s2">&quot;</span>,
+    <span class="mi">7</span>: <span class="s2">&quot;</span><span class="s">seven</span><span class="s2">&quot;</span>,
+    <span class="mi">8</span>: <span class="s2">&quot;</span><span class="s">eight</span><span class="s2">&quot;</span>,
+    <span class="mi">9</span>: <span class="s2">&quot;</span><span class="s">nine</span><span class="s2">&quot;</span>
+}
+<span class="nv">print</span><span class="ss">(</span><span class="o">*</span>[<span class="nv">d</span>[<span class="nv">i</span>] <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">list</span><span class="ss">(</span><span class="nv">map</span><span class="ss">(</span><span class="nv">int</span>, <span class="nv">input</span><span class="ss">()))</span>]<span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Задача 4:</em></p>
+<p>Напишите программу, которая по номеру курса выводит информацию о данном курсе. </p>
+<p>| Номер курса (ключ) | Номер аудитории (значение) | Преподаватель (значение) | Время (значение) |
+|:------------------:|:--------------------------:|:------------------------:|:----------------:|
+|        CS101       |            3004            |           Хайнс          |       8:00       |
+|        CS102       |            4501            |         Альварадо        |       9:00       |
+|        CS103       |            6755            |            Рич           |       10:00      |
+|        NT110       |            1244            |           Берк           |       11:00      |
+|        CM241       |            1411            |            Ли            |       13:00      |</p>
+<p><strong>Формат входных данных</strong></p>
+<p>На вход программе подается одна строка – номер курса.</p>
+<p><strong>Формат выходных данных</strong></p>
+<p>Программа должна вывести номер курса, затем номер аудитории, имя преподавателя и время проведения курса в соответствии с примерами.</p>
+<p>Примечание 1. Используйте словарь вместо условного оператора.</p>
+<p>Примечание 2. Для удобного вывода используйте строковый метод format() или f-строки.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="n">d</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="err">{</span><span class="w"></span>
+<span class="w">    </span><span class="ss">&quot;CS101&quot;</span><span class="err">:</span><span class="w"> </span><span class="ss">&quot;3004, Хайнс, 8:00&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="ss">&quot;CS102&quot;</span><span class="err">:</span><span class="w"> </span><span class="ss">&quot;4501, Альварадо, 9:00&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="ss">&quot;CS103&quot;</span><span class="err">:</span><span class="w"> </span><span class="ss">&quot;6755, Рич, 10:00&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="ss">&quot;NT110&quot;</span><span class="err">:</span><span class="w"> </span><span class="ss">&quot;1244, Берк, 11:00&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="ss">&quot;CM241&quot;</span><span class="err">:</span><span class="w"> </span><span class="ss">&quot;1411, Ли, 13:00&quot;</span><span class="w"></span>
+<span class="err">}</span><span class="w"></span>
+<span class="n">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">input</span><span class="p">()</span><span class="w"></span>
+<span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;{n}: {d[n]}&#39;</span><span class="p">)</span><span class="w"></span>
+</pre></div>
+
+
+<p><em>Задача 5:</em></p>
+<p>На мобильных кнопочных телефонах текстовые сообщения можно отправлять с помощью цифровой клавиатуры. Поскольку с каждой клавишей связано несколько букв, для большинства букв требуется несколько нажатий клавиш. При однократном нажатии цифры генерируется первый символ, указанный для этой клавиши. Нажатие цифры 2, 3, 4 или 5 раз генерирует второй, третий, четвертый или пятый символ клавиши.</p>
+<p>| 1 | .,?!:          |
+|:--:|:---------------:|
+| 2 | ABC            |
+| 3 | DEF            |
+| 4 | GHI            |
+| 5 | JKL            |
+| 6 | MNO            |
+| 7 | PQRS           |
+| 8 | TUV            |
+| 9 | WXYZ           |
+| 0 | space (пробел) |</p>
+<p>Напишите программу, которая отображает нажатия клавиш, необходимые для введенного сообщения.</p>
+<p><strong>Формат входных данных</strong></p>
+<p>На вход программе подается одна строка – текстовое сообщение.</p>
+<p><strong>Формат выходных данных</strong></p>
+<p>Программа должна вывести нажатия клавиш, необходимых для введенного сообщения.</p>
+<p>Примечание 1. Ваша программа должна обрабатывать как прописные, так и строчные буквы.</p>
+<p>Примечание 2. Ваша программа должна игнорировать любые символы, не указанные в приведенной выше таблице.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">num</span> <span class="o">=</span> {<span class="s1">&#39;</span><span class="s">.,?!:</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">1</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">ABC</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">2</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">DEF</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">3</span><span class="s1">&#39;</span>,
+       <span class="s1">&#39;</span><span class="s">GHI</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">4</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">JKL</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">5</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">MNO</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">6</span><span class="s1">&#39;</span>,
+       <span class="s1">&#39;</span><span class="s">PQRS</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">7</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">TUV</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">8</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">WXYZ</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">9</span><span class="s1">&#39;</span>,
+       <span class="s1">&#39;</span><span class="s"> </span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">0</span><span class="s1">&#39;</span>}
+<span class="k">for</span> <span class="nv">l</span> <span class="nv">in</span> <span class="nv">input</span><span class="ss">()</span>.<span class="nv">upper</span><span class="ss">()</span>:
+    [<span class="nv">print</span><span class="ss">(</span><span class="nv">num</span>[<span class="nv">i</span>] <span class="o">*</span> <span class="ss">(</span><span class="nv">i</span>.<span class="nv">index</span><span class="ss">(</span><span class="nv">l</span><span class="ss">)</span> <span class="o">+</span> <span class="mi">1</span><span class="ss">)</span>, <span class="k">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="ss">)</span> <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">num</span> <span class="k">if</span> <span class="nv">l</span> <span class="nv">in</span> <span class="nv">i</span>]
+</pre></div>
+
+
+<p><em>Задача 6 - код Морзе:</em></p>
+<p>Код Морзе для представления цифр и букв использует тире и точки.</p>
+<p>Напишите программу для кодирования текстового сообщения в соответствии с кодом Морзе.</p>
+<p>| Символ |  Код | Символ |  Код | Символ |  Код  | Символ |  Код  |
+|:------:|:----:|:------:|:----:|:------:|:-----:|:------:|:-----:|
+| A      | .-   | J      | .--- | S      | ...   | 1      | .---- |
+| B      | -... | K      | -.-  | T      | -     | 2      | ..--- |
+| C      | -.-. | L      | .-.. | U      | ..-   | 3      | ...-- |
+| D      | -..  | M      | --   | V      | ...-  | 4      | ....- |
+| E      | .    | N      | -.   | W      | .--   | 5      | ..... |
+| F      | ..-. | O      | ---  | X      | -..-  | 6      | -.... |
+| G      | --.  | P      | .--. | Y      | -.--  | 7      | --... |
+| H      | .... | Q      | --.- | Z      | --..  | 8      | ---.. |
+| I      | ..   | R      | .-.  | 0      | ----- | 9      | ----. |</p>
+<p><strong>Формат входных данных</strong></p>
+<p>На вход программе подается одна строка – текстовое сообщение.</p>
+<p><strong>Формат выходных данных</strong></p>
+<p>Программа должна вывести закодированное с помощью кода Морзе сообщение, оставляя пробел между каждым закодированным символом (последовательностью тире и точек).</p>
+<p>Примечание. Ваша программа должна игнорировать любые символы, не перечисленные в таблице.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">letters</span> <span class="o">=</span> [<span class="nv">c</span> <span class="k">for</span> <span class="nv">c</span> <span class="nv">in</span> <span class="s1">&#39;</span><span class="s">ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789</span><span class="s1">&#39;</span>]
+<span class="nv">morse</span> <span class="o">=</span> [<span class="s1">&#39;</span><span class="s">.-</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">-...</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">-.-.</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">-..</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">.</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">..-.</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">--.</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">....</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">..</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">.---</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">-.-</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">.-..</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">--</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">-.</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">---</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">.--.</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">--.-</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">.-.</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">...</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">-</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">..-</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">...-</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">.--</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">-..-</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">-.--</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">--..</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">-----</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">.----</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">..---</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">...--</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">....-</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">.....</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">-....</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">--...</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">---..</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">----.</span><span class="s1">&#39;</span>]
+<span class="nv">d_morse</span> <span class="o">=</span> <span class="nv">dict</span><span class="ss">(</span><span class="nv">zip</span><span class="ss">(</span><span class="nv">letters</span>, <span class="nv">morse</span><span class="ss">))</span>
+
+<span class="k">for</span> <span class="nv">letter</span> <span class="nv">in</span> <span class="nv">input</span><span class="ss">()</span>.<span class="nv">upper</span><span class="ss">()</span>:
+    <span class="k">if</span> <span class="nv">letter</span> <span class="nv">in</span> <span class="nv">d_morse</span>:
+        <span class="nv">print</span><span class="ss">(</span><span class="nv">d_morse</span>[<span class="nv">letter</span>], <span class="k">end</span><span class="o">=</span><span class="s1">&#39;</span><span class="s"> </span><span class="s1">&#39;</span><span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Задача 7:</em></p>
+<p>Дополните приведенный код, чтобы в переменной result хранился словарь, в котором ключи – числа от 1 до 15 (включительно), а значения представляют собой квадраты ключей.</p>
+<p>Примечание. Выводить содержимое словаря result не нужно.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nb">result</span> <span class="o">=</span> {<span class="nv">i</span> : <span class="nv">i</span><span class="o">**</span><span class="mi">2</span> <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="mi">1</span>, <span class="mi">16</span><span class="ss">)</span>}
+</pre></div>
+
+
+<p><em>Задача 8:</em></p>
+<p>Дополните приведенный код так, чтобы он объединил содержимое двух словарей dict1 и dict2 по ключам, складывая значения по одному и тому же ключу, в случае, если ключ присутствует в обоих словарях. Результирующий словарь необходимо присвоить переменной result.</p>
+<p>Примечание. Выводить содержимое словаря result не нужно.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">dict1</span> <span class="o">=</span> {<span class="s1">&#39;</span><span class="s">a</span><span class="s1">&#39;</span>: <span class="mi">100</span>, <span class="s1">&#39;</span><span class="s">z</span><span class="s1">&#39;</span>: <span class="mi">333</span>, <span class="s1">&#39;</span><span class="s">b</span><span class="s1">&#39;</span>: <span class="mi">200</span>, <span class="s1">&#39;</span><span class="s">c</span><span class="s1">&#39;</span>: <span class="mi">300</span>, <span class="s1">&#39;</span><span class="s">d</span><span class="s1">&#39;</span>: <span class="mi">45</span>, <span class="s1">&#39;</span><span class="s">e</span><span class="s1">&#39;</span>: <span class="mi">98</span>, <span class="s1">&#39;</span><span class="s">t</span><span class="s1">&#39;</span>: <span class="mi">76</span>, <span class="s1">&#39;</span><span class="s">q</span><span class="s1">&#39;</span>: <span class="mi">34</span>, <span class="s1">&#39;</span><span class="s">f</span><span class="s1">&#39;</span>: <span class="mi">90</span>, <span class="s1">&#39;</span><span class="s">m</span><span class="s1">&#39;</span>: <span class="mi">230</span>}
+<span class="nv">dict2</span> <span class="o">=</span> {<span class="s1">&#39;</span><span class="s">a</span><span class="s1">&#39;</span>: <span class="mi">300</span>, <span class="s1">&#39;</span><span class="s">b</span><span class="s1">&#39;</span>: <span class="mi">200</span>, <span class="s1">&#39;</span><span class="s">d</span><span class="s1">&#39;</span>: <span class="mi">400</span>, <span class="s1">&#39;</span><span class="s">t</span><span class="s1">&#39;</span>: <span class="mi">777</span>, <span class="s1">&#39;</span><span class="s">c</span><span class="s1">&#39;</span>: <span class="mi">12</span>, <span class="s1">&#39;</span><span class="s">p</span><span class="s1">&#39;</span>: <span class="mi">123</span>, <span class="s1">&#39;</span><span class="s">w</span><span class="s1">&#39;</span>: <span class="mi">111</span>, <span class="s1">&#39;</span><span class="s">z</span><span class="s1">&#39;</span>: <span class="mi">666</span>}
+
+<span class="nb">result</span> <span class="o">=</span> {<span class="nv">key</span>: <span class="nv">dict1</span>.<span class="nv">get</span><span class="ss">(</span><span class="nv">key</span>, <span class="mi">0</span><span class="ss">)</span> <span class="o">+</span> <span class="nv">dict2</span>.<span class="nv">get</span><span class="ss">(</span><span class="nv">key</span>, <span class="mi">0</span><span class="ss">)</span> <span class="k">for</span> <span class="nv">key</span> <span class="nv">in</span> <span class="nv">set</span><span class="ss">(</span><span class="nv">dict1</span><span class="ss">)</span> <span class="o">|</span> <span class="nv">set</span><span class="ss">(</span><span class="nv">dict2</span><span class="ss">)</span>}
+</pre></div>
+
+
+<p><em>Задача 9:</em></p>
+<p>Дополните приведенный код так, чтобы в переменной result хранился словарь, в котором для каждого символа строки text будет подсчитано количество его вхождений.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">text</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="s">footballcyberpunkextraterritorialityconversationalistblockophthalmoscopicinterdependencemamauserfff</span><span class="s1">&#39;</span>
+
+<span class="nb">result</span> <span class="o">=</span> {<span class="nv">elem</span>: <span class="nv">text</span>.<span class="nv">count</span><span class="ss">(</span><span class="nv">elem</span><span class="ss">)</span> <span class="k">for</span> <span class="nv">elem</span> <span class="nv">in</span> <span class="nv">set</span><span class="ss">(</span><span class="nv">text</span><span class="ss">)</span>}
+</pre></div>
+
+
+<p><em>Задача 10:</em></p>
+<p>Дополните приведенный код, чтобы он вывел наиболее часто встречающееся слово строки s. Если таких слов несколько, должно быть выведено то, что меньше в лексикографическом порядке.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">s</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="s">orange strawberry barley gooseberry apple apricot barley currant orange melon pomegranate banana banana orange barley apricot plum grapefruit banana quince strawberry barley grapefruit banana grapes melon strawberry apricot currant currant gooseberry raspberry apricot currant orange lime quince grapefruit barley banana melon pomegranate barley banana orange barley apricot plum banana quince lime grapefruit strawberry gooseberry apple barley apricot currant orange melon pomegranate banana banana orange apricot barley plum banana grapefruit banana quince currant orange melon pomegranate barley plum banana quince barley lime grapefruit pomegranate barley</span><span class="s1">&#39;</span>
+
+<span class="nv">d</span> <span class="o">=</span> {}
+<span class="k">for</span> <span class="nv">w</span> <span class="nv">in</span> <span class="nv">s</span>.<span class="nv">split</span><span class="ss">()</span>:
+    <span class="nv">d</span>[<span class="nv">w</span>] <span class="o">=</span> <span class="nv">d</span>.<span class="nv">get</span><span class="ss">(</span><span class="nv">w</span>, <span class="mi">0</span><span class="ss">)</span> <span class="o">+</span> <span class="mi">1</span>  
+<span class="nv">print</span><span class="ss">(</span><span class="nv">min</span><span class="ss">(</span><span class="nv">d</span>, <span class="nv">key</span><span class="o">=</span><span class="nv">lambda</span> <span class="nv">x</span>: <span class="ss">(</span><span class="o">-</span><span class="nv">d</span>[<span class="nv">x</span>], <span class="nv">x</span><span class="ss">)))</span>
+</pre></div>
+
+
+<p><em>Задача 11:</em></p>
+<p>Вам доступен список pets, содержащий информацию о собаках и их владельцах.  Каждый элемент списка – это кортеж вида (кличка собаки, имя владельца, фамилия владельца, возраст владельца).</p>
+<p>Дополните приведенный код так, чтобы в переменной result хранился словарь, в котором для каждого владельца будут перечислены его собаки. Ключом словаря должен быть кортеж (имя, фамилия, возраст владельца), а значением – список кличек собак (сохранив исходный порядок следования).</p>
+<p>Примечание 1. Не забывайте: кортежи являются неизменямыми, поэтому могут быть ключами словаря.</p>
+<p>Примечание 2. Обратите внимание, что у некоторых владельцев по несколько собак.</p>
+<p>Примечание 3. Выводить содержимое словаря result не нужно.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">pets</span> <span class="o">=</span> [<span class="ss">(</span><span class="s1">&#39;</span><span class="s">Hatiko</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">Parker</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">Wilson</span><span class="s1">&#39;</span>, <span class="mi">50</span><span class="ss">)</span>,
+        <span class="ss">(</span><span class="s1">&#39;</span><span class="s">Rusty</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">Josh</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">King</span><span class="s1">&#39;</span>, <span class="mi">25</span><span class="ss">)</span>,
+        <span class="ss">(</span><span class="s1">&#39;</span><span class="s">Fido</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">John</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">Smith</span><span class="s1">&#39;</span>, <span class="mi">28</span><span class="ss">)</span>,
+        <span class="ss">(</span><span class="s1">&#39;</span><span class="s">Butch</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">Jake</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">Smirnoff</span><span class="s1">&#39;</span>, <span class="mi">18</span><span class="ss">)</span>,
+        <span class="ss">(</span><span class="s1">&#39;</span><span class="s">Odi</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">Emma</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">Wright</span><span class="s1">&#39;</span>, <span class="mi">18</span><span class="ss">)</span>,
+        <span class="ss">(</span><span class="s1">&#39;</span><span class="s">Balto</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">Josh</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">King</span><span class="s1">&#39;</span>, <span class="mi">25</span><span class="ss">)</span>,
+        <span class="ss">(</span><span class="s1">&#39;</span><span class="s">Barry</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">Josh</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">King</span><span class="s1">&#39;</span>, <span class="mi">25</span><span class="ss">)</span>,
+        <span class="ss">(</span><span class="s1">&#39;</span><span class="s">Snape</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">Hannah</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">Taylor</span><span class="s1">&#39;</span>, <span class="mi">40</span><span class="ss">)</span>,
+        <span class="ss">(</span><span class="s1">&#39;</span><span class="s">Horry</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">Martha</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">Robinson</span><span class="s1">&#39;</span>, <span class="mi">73</span><span class="ss">)</span>,
+        <span class="ss">(</span><span class="s1">&#39;</span><span class="s">Giro</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">Alex</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">Martinez</span><span class="s1">&#39;</span>, <span class="mi">65</span><span class="ss">)</span>,
+        <span class="ss">(</span><span class="s1">&#39;</span><span class="s">Zooma</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">Simon</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">Nevel</span><span class="s1">&#39;</span>, <span class="mi">32</span><span class="ss">)</span>,
+        <span class="ss">(</span><span class="s1">&#39;</span><span class="s">Lassie</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">Josh</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">King</span><span class="s1">&#39;</span>, <span class="mi">25</span><span class="ss">)</span>,
+        <span class="ss">(</span><span class="s1">&#39;</span><span class="s">Chase</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">Martha</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">Robinson</span><span class="s1">&#39;</span>, <span class="mi">73</span><span class="ss">)</span>,
+        <span class="ss">(</span><span class="s1">&#39;</span><span class="s">Ace</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">Martha</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">Williams</span><span class="s1">&#39;</span>, <span class="mi">38</span><span class="ss">)</span>,
+        <span class="ss">(</span><span class="s1">&#39;</span><span class="s">Rocky</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">Simon</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">Nevel</span><span class="s1">&#39;</span>, <span class="mi">32</span><span class="ss">)</span>]
+
+<span class="nv">values</span> <span class="o">=</span> [<span class="nv">i</span>[<span class="mi">0</span>] <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">pets</span>]
+<span class="nv">keys</span> <span class="o">=</span>  [<span class="nv">i</span>[<span class="mi">1</span>:<span class="mi">4</span>] <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">pets</span>]
+<span class="nb">result</span> <span class="o">=</span> {}
+<span class="k">for</span> <span class="nv">x</span>, <span class="nv">y</span> <span class="nv">in</span> <span class="nv">zip</span><span class="ss">(</span><span class="nv">values</span>, <span class="nv">keys</span><span class="ss">)</span>:
+    <span class="nb">result</span>.<span class="nv">setdefault</span><span class="ss">(</span><span class="nv">y</span>, []<span class="ss">)</span>.<span class="nv">append</span><span class="ss">(</span><span class="nv">x</span><span class="ss">)</span>
+</pre></div>
+
+
+<p><em>Задача 12:</em></p>
+<p>На вход программе подается строка текста. Напишите программу, которая выводит слово, которое встречается реже всего, без учета регистра. Если таких слов несколько, выведите то, которое меньше в лексикографическом порядке.</p>
+<p><em>Решение:</em></p>
+<div class="codehilite"><pre><span></span><span class="nv">d</span> <span class="o">=</span> {}
+<span class="k">for</span> <span class="nv">w</span> <span class="nv">in</span> <span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">()</span>:
+    <span class="nv">w</span> <span class="o">=</span> <span class="nv">w</span>.<span class="nv">strip</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">.,!?:;-</span><span class="s1">&#39;</span><span class="ss">)</span>.<span class="nv">lower</span><span class="ss">()</span>
+    <span class="nv">d</span>[<span class="nv">w</span>] <span class="o">=</span> <span class="nv">d</span>.<span class="nv">get</span><span class="ss">(</span><span class="nv">w</span>, <span class="mi">0</span><span class="ss">)</span> <span class="o">+</span> <span class="mi">1</span>  
+<span class="nv">print</span><span class="ss">(</span><span class="nv">min</span><span class="ss">(</span><span class="nv">d</span>.<span class="nv">items</span><span class="ss">()</span>, <span class="nv">key</span><span class="o">=</span><span class="nv">lambda</span> <span class="nv">x</span>: <span class="ss">(</span><span class="nv">x</span>[<span class="mi">1</span>], <span class="nv">x</span>[<span class="mi">0</span>]<span class="ss">))</span>[<span class="mi">0</span>]<span class="ss">)</span>
+</pre></div>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div><!-- конец карточки -->
+  <!-- конец поста -->
+
+  </main>
+  <!-- Скрипты -->
+  <script src="/static/assets/purecounter/purecounter.js"></script>
+  <script src="/static/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/static/assets/glightbox/js/glightbox.min.js"></script>
+  <script src="/static/assets/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/static/assets/swiper/swiper-bundle.min.js"></script>
+  <script src="/static/assets/waypoints/noframework.waypoints.js"></script>
+  <script src="/static/js/main.js"></script>
+</body>
+</html>
