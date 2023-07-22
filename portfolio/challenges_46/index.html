@@ -57,51 +57,23 @@ body::before {
               <p><em>Задача 1:</em></p>
 <p>На вход программе подается строка с именем текстового файла. Напишите программу, которая выводит на экран его содержимое.</p>
 <p><em>Решение 1:</em></p>
-<div class="codehilite"><pre><span></span><span class="n">file</span> <span class="o">=</span> <span class="k">open</span><span class="p">(</span><span class="k">input</span><span class="p">())</span>
-<span class="n">print</span><span class="p">(</span><span class="n">file</span><span class="p">.</span><span class="k">read</span><span class="p">())</span>
-<span class="n">file</span><span class="p">.</span><span class="k">close</span><span class="p">()</span>
-</pre></div>
-
-
 <p><em>Решение 2:</em></p>
-<div class="codehilite"><pre><span></span><span class="k">with</span> <span class="k">open</span><span class="p">(</span><span class="k">input</span><span class="p">())</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-    <span class="n">print</span><span class="p">(</span><span class="n">f</span><span class="p">.</span><span class="k">read</span><span class="p">())</span>
-</pre></div>
-
-
 <p><em>Задача 2:</em></p>
 <p>На вход программе подается строка с именем текстового файла. Напишите программу, которая выводит на экран его предпоследнюю строку.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="k">with</span> <span class="k">open</span><span class="p">(</span><span class="k">input</span><span class="p">())</span> <span class="k">as</span> <span class="k">output</span><span class="p">:</span>
-    <span class="n">print</span><span class="p">(</span><span class="k">output</span><span class="p">.</span><span class="n">readlines</span><span class="p">()[</span><span class="o">-</span><span class="mi">2</span><span class="p">])</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 3:</em></p>
 <p>Вам доступен текстовый файл lines.txt из нескольких строк. Напишите программу, которая выводит на экран случайную строку из этого файла.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">choice</span>
-<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;lines.txt&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">choice</span><span class="p">([</span><span class="o">*</span><span class="n">f</span><span class="p">])</span><span class="o">.</span><span class="n">rstrip</span><span class="p">())</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 4:</em></p>
 <p>Вам доступен текстовый файл numbers.txt из двух строк, на каждой из них записано целое число. Напишите программу, выводящую на экран сумму этих чисел.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="k">with</span> <span class="k">open</span><span class="p">(</span><span class="s1">&#39;numbers.txt&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-    <span class="n">print</span><span class="p">(</span><span class="k">sum</span><span class="p">(</span><span class="n">list</span><span class="p">(</span><span class="k">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="n">f</span><span class="p">.</span><span class="n">readlines</span><span class="p">()))))</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 5:</em></p>
 <p>Вам доступен текстовый файл nums.txt. В файле записано два целых числа, они могут быть разделены символами пробела и конца строки. Напишите программу, выводящую на экран сумму этих чисел.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">with</span> <span class="nv">open</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">nums.txt</span><span class="s1">&#39;</span>, <span class="nv">encoding</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="s">utf-8</span><span class="s1">&#39;</span><span class="ss">)</span> <span class="nv">as</span> <span class="nv">f</span>:
-    <span class="nv">print</span><span class="ss">(</span><span class="nv">sum</span><span class="ss">(</span>[<span class="nv">int</span><span class="ss">(</span><span class="nv">i</span>.<span class="nv">strip</span><span class="ss">())</span> <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">f</span>.<span class="nv">readlines</span><span class="ss">()</span> <span class="k">if</span> <span class="nv">i</span>.<span class="nv">strip</span><span class="ss">()</span>.<span class="nv">isdigit</span><span class="ss">()</span>]<span class="ss">))</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 6:</em></p>
 <p>Вам доступен текстовый файл prices.txt с информацией о заказе из интернет магазина. В нем каждая строка с помощью символа табуляции (\t) разделена на три колонки:</p>
 <ul>
@@ -111,145 +83,64 @@ body::before {
 </ul>
 <p>Напишите программу, выводящую на экран общую стоимость заказа.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">with</span> <span class="nv">open</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">prices.txt</span><span class="s1">&#39;</span>, <span class="nv">encoding</span><span class="o">=</span><span class="s1">&#39;</span><span class="s">utf=8</span><span class="s1">&#39;</span><span class="ss">)</span> <span class="nv">as</span> <span class="nv">prices</span>:
-    <span class="nv">lines</span> <span class="o">=</span> [<span class="nv">i</span>.<span class="nv">split</span><span class="ss">()</span> <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">prices</span>.<span class="nv">readlines</span><span class="ss">()</span>]
-    <span class="nv">k</span> <span class="o">=</span> <span class="nv">sum</span><span class="ss">(</span><span class="nv">map</span><span class="ss">(</span><span class="nv">lambda</span> <span class="nv">x</span>: <span class="nv">int</span><span class="ss">(</span><span class="nv">x</span>[<span class="mi">1</span>]<span class="ss">)</span> <span class="o">*</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">x</span>[<span class="mi">2</span>]<span class="ss">)</span>, <span class="nv">lines</span><span class="ss">))</span>
-    <span class="nv">print</span><span class="ss">(</span><span class="nv">k</span><span class="ss">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 7:</em></p>
 <p>Вам доступен текстовый файл text.txt с одной строкой текста. Напишите программу, которая выводит на экран эту строку в обратном порядке.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="s s-Atom">with</span> <span class="nf">open</span><span class="p">(</span><span class="s s-Atom">&#39;text.txt&#39;</span><span class="p">)</span> <span class="s s-Atom">as</span> <span class="nn">f</span><span class="p">:</span>
-    <span class="nf">print</span><span class="p">(</span><span class="s s-Atom">f</span><span class="p">.</span><span class="nf">read</span><span class="p">()[</span><span class="s s-Atom">::-</span><span class="mi">1</span><span class="p">])</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 8:</em></p>
 <p>Вам доступен текстовый файл data.txt, в котором записаны строки текста. Напишите программу, выводящую все строки данного файла в обратном порядке: сначала последнюю, затем предпоследнюю и т.д.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="s s-Atom">with</span> <span class="nf">open</span><span class="p">(</span><span class="s s-Atom">&#39;data.txt&#39;</span><span class="p">,</span> <span class="s s-Atom">encoding=&#39;utf-8&#39;</span><span class="p">)</span> <span class="s s-Atom">as</span> <span class="nn">file</span><span class="p">:</span>
-    <span class="nf">print</span><span class="p">(</span><span class="o">*</span><span class="nf">map</span><span class="p">(</span><span class="s s-Atom">str</span><span class="p">.</span><span class="s s-Atom">rstrip</span><span class="p">,</span> <span class="s s-Atom">file</span><span class="p">.</span><span class="nf">readlines</span><span class="p">()[</span><span class="s s-Atom">::-</span><span class="mi">1</span><span class="p">]),</span> <span class="s s-Atom">sep=&#39;\n&#39;</span><span class="p">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 9:</em></p>
 <p>Вам доступен текстовый файл lines.txt, в котором записаны строки текста. Напишите программу, которая выводит все строки наибольшей длины из файла, не меняя их порядок.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="k">with</span> <span class="k">open</span><span class="p">(</span><span class="s1">&#39;lines.txt&#39;</span><span class="p">,</span> <span class="k">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
-    <span class="nb">text</span> <span class="o">=</span> <span class="n">file</span><span class="p">.</span><span class="n">readlines</span><span class="p">()</span>
-
-<span class="n">n</span> <span class="o">=</span> <span class="n">len</span><span class="p">(</span><span class="k">max</span><span class="p">(</span><span class="nb">text</span><span class="p">,</span> <span class="k">key</span><span class="o">=</span><span class="n">len</span><span class="p">))</span>
-<span class="n">print</span><span class="p">(</span><span class="o">*</span><span class="n">filter</span><span class="p">(</span><span class="n">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">len</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">==</span> <span class="n">n</span><span class="p">,</span> <span class="nb">text</span><span class="p">),</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 10:</em></p>
 <p>Вам доступен текстовый файл numbers.txt, каждая строка которого может содержать одно или несколько целых чисел, разделенных одним или несколькими пробелами.</p>
 <p>Напишите программу, которая вычисляет сумму чисел в каждой строке и выводит эту сумму на экран (для каждой строки выводится сумма чисел в этой строке).</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">with</span> <span class="nv">open</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">numbers.txt</span><span class="s1">&#39;</span><span class="ss">)</span> <span class="nv">as</span> <span class="nv">f</span>:
-    <span class="k">for</span> <span class="nv">line</span> <span class="nv">in</span> <span class="nv">f</span>:
-        <span class="nv">print</span><span class="ss">(</span><span class="nv">sum</span><span class="ss">(</span><span class="nv">map</span><span class="ss">(</span><span class="nv">int</span>, <span class="nv">line</span>.<span class="nv">split</span><span class="ss">())))</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 11:</em></p>
 <p>Вам доступен текстовый файл nums.txt. В файле могут быть записаны целые неотрицательные числа и все, что угодно. Числом назовем последовательность одной и более цифр, идущих подряд (число всегда неотрицательно).</p>
 <p>Напишите программу, которая вычисляет сумму всех чисел, записанных в файле.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">with</span> <span class="nv">open</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">numbers.txt</span><span class="s1">&#39;</span>, <span class="nv">encoding</span><span class="o">=</span><span class="s1">&#39;</span><span class="s">utf-8</span><span class="s1">&#39;</span><span class="ss">)</span> <span class="nv">as</span> <span class="nv">file</span>:
-    <span class="nv">row</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>.<span class="nv">join</span><span class="ss">(</span><span class="nv">c</span> <span class="k">if</span> <span class="nv">c</span>.<span class="nv">isdigit</span><span class="ss">()</span> <span class="k">else</span> <span class="s1">&#39;</span><span class="s"> </span><span class="s1">&#39;</span> <span class="k">for</span> <span class="nv">c</span> <span class="nv">in</span> <span class="nv">file</span>.<span class="nv">read</span><span class="ss">())</span>
-    <span class="nv">print</span><span class="ss">(</span><span class="nv">sum</span><span class="ss">(</span><span class="nv">map</span><span class="ss">(</span><span class="nv">int</span>, <span class="nv">row</span>.<span class="nv">split</span><span class="ss">())))</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 12:</em></p>
 <p>Вам доступен текстовый файл file.txt, набранный латиницей. Напишите программу, которая выводит количество букв латинского алфавита, слов и строк. Выведите три найденных числа в формате, приведенном в примере.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="k">with</span> <span class="k">open</span><span class="p">(</span><span class="s1">&#39;lines.txt&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-    <span class="n">txt</span> <span class="o">=</span> <span class="n">f</span><span class="p">.</span><span class="k">read</span><span class="p">()</span>
-    <span class="n">print</span><span class="p">(</span><span class="s1">&#39;Input file contains:&#39;</span><span class="p">)</span>
-    <span class="n">print</span><span class="p">(</span><span class="k">sum</span><span class="p">(</span><span class="k">map</span><span class="p">(</span><span class="n">str</span><span class="p">.</span><span class="n">isalpha</span><span class="p">,</span> <span class="n">txt</span><span class="p">)),</span> <span class="s1">&#39;letters&#39;</span><span class="p">)</span>
-    <span class="n">print</span><span class="p">(</span><span class="n">len</span><span class="p">(</span><span class="n">txt</span><span class="p">.</span><span class="n">split</span><span class="p">()),</span> <span class="s1">&#39;words&#39;</span><span class="p">)</span>
-    <span class="n">print</span><span class="p">(</span><span class="n">txt</span><span class="p">.</span><span class="k">count</span><span class="p">(</span><span class="s1">&#39;\n&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;lines&#39;</span><span class="p">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 13:</em></p>
 <p>Вам доступны два текстовых файла first_names.txt и last_names.txt, один с именами, другой с фамилиями.</p>
 <p>Напишите программу, которая c помощью модуля random создает 3 случайные пары имя + фамилия, а затем выводит их, каждую на отдельной строке.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
-<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;first_names.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">,</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;last_names.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">l</span><span class="p">:</span>
-    <span class="n">z</span><span class="p">,</span> <span class="n">x</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">(),</span> <span class="n">l</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
-        <span class="k">print</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">z</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">(),</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">(),</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 14:</em></p>
 <p>Вам доступен текстовый файл population.txt с названиями стран и численностью их населения, разделенными символом табуляции '\t'.</p>
 <p>Напишите программу, выводящую все страны, название которых начинается с буквы 'G', численность населения которых больше чем 500 000 человек, не меняя их порядок.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">with</span> <span class="nv">open</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">population.txt</span><span class="s1">&#39;</span><span class="ss">)</span> <span class="nv">as</span> <span class="nv">f</span>:
-    <span class="k">for</span> <span class="nv">line</span> <span class="nv">in</span> <span class="nv">f</span>:
-        <span class="nv">n</span>, <span class="nv">p</span> <span class="o">=</span> <span class="nv">line</span>.<span class="nv">split</span><span class="ss">(</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">&#39;</span><span class="ss">)</span>
-        <span class="k">if</span> <span class="nv">n</span>.<span class="nv">startswith</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">G</span><span class="s1">&#39;</span><span class="ss">)</span> <span class="nv">and</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">p</span><span class="ss">)</span> <span class="o">&gt;</span> <span class="mi">500000</span>:
-            <span class="nv">print</span><span class="ss">(</span><span class="nv">n</span><span class="ss">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 15:</em></p>
 <p>Вам доступен CSV-файл data.csv, содержащий информацию в csv формате. Напишите функцию read_csv для чтения данных из этого файла. Она должна возвращать список словарей, интерпретируя первую строку как имена ключей, а каждую последующую строку как значения этих ключей.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">csv</span>
-<span class="k">def</span> <span class="nf">read_csv</span><span class="p">():</span>
-    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;data.csv&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-        <span class="n">a</span> <span class="o">=</span> <span class="p">[{</span><span class="n">k</span><span class="p">:</span> <span class="n">v</span> <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">row</span><span class="o">.</span><span class="n">items</span><span class="p">()}</span>
-            <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">csv</span><span class="o">.</span><span class="n">DictReader</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">skipinitialspace</span><span class="o">=</span><span class="bp">True</span><span class="p">)]</span>
-        <span class="k">return</span> <span class="n">a</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 16:</em></p>
 <p>Напишите программу, которая считывает строку текста и записывает её в текстовый файл output.txt.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="k">with</span> <span class="k">open</span><span class="p">(</span><span class="s1">&#39;output.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-    <span class="n">f</span><span class="p">.</span><span class="k">write</span><span class="p">(</span><span class="k">input</span><span class="p">())</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 17:</em></p>
 <p>Напишите программу, записывающую в текстовый файл random.txt 25 случайных чисел в диапазоне от 111 до 777 (включительно), каждое с новой строки.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
-<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;random.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="nb">file</span><span class="p">:</span>
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">25</span><span class="p">):</span>
-        <span class="n">num</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">111</span><span class="p">,</span> <span class="mi">777</span><span class="p">)</span>
-        <span class="nb">file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">num</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 18:</em></p>
 <p>Вам доступен текстовый файл input.txt, состоящий из нескольких строк. Напишите программу для записи содержимого этого файла в файл output.txt в виде нумерованного списка, где перед каждой строкой стоит ее номер, символ ) и пробел. Нумерация строк должна начинаться с 1.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">with</span> <span class="nv">open</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">input.txt</span><span class="s1">&#39;</span><span class="ss">)</span> <span class="nv">as</span> <span class="nv">fin</span>, <span class="nv">open</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">output.txt</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">w</span><span class="s1">&#39;</span><span class="ss">)</span> <span class="nv">as</span> <span class="nv">fout</span>:
-    [<span class="nv">fout</span>.<span class="nv">write</span><span class="ss">(</span><span class="nv">f</span><span class="s1">&#39;</span><span class="s">{i}) {line}</span><span class="s1">&#39;</span><span class="ss">)</span> <span class="k">for</span> <span class="nv">i</span>, <span class="nv">line</span> <span class="nv">in</span> <span class="nv">enumerate</span><span class="ss">(</span><span class="nv">fin</span>, <span class="mi">1</span><span class="ss">)</span>]
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 19:</em></p>
 <p>Вам доступен текстовый файл class_scores.txt с оценками за итоговый тест на строках вида: фамилия оценка (фамилия и оценка разделены пробелом). Оценка - целое число от 0 до 100 включительно.</p>
 <p>Напишите программу для добавления 5 баллов к каждому результату теста и вывода фамилий и новых результатов тестов в файл new_scores.txt.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">with</span> <span class="nv">open</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">class_scores.txt</span><span class="s1">&#39;</span><span class="ss">)</span> <span class="nv">as</span> <span class="nv">fi</span>, <span class="nv">open</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">new_scores.txt</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">w</span><span class="s1">&#39;</span><span class="ss">)</span> <span class="nv">as</span> <span class="nv">fo</span>:
-    <span class="k">for</span> <span class="nv">line</span> <span class="nv">in</span> <span class="nv">fi</span>:
-        <span class="nv">li</span> <span class="o">=</span> <span class="nv">line</span>.<span class="nv">rstrip</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">()</span>
-        <span class="nv">score</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">li</span>[<span class="mi">1</span>]<span class="ss">)</span> <span class="o">+</span> <span class="mi">5</span> <span class="k">if</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">li</span>[<span class="mi">1</span>]<span class="ss">)</span> <span class="o">&lt;=</span> <span class="mi">95</span> <span class="k">else</span> <span class="mi">100</span>
-        <span class="nv">fo</span>.<span class="nv">write</span><span class="ss">(</span><span class="nv">li</span>[<span class="mi">0</span>] <span class="o">+</span> <span class="s1">&#39;</span><span class="s"> </span><span class="s1">&#39;</span> <span class="o">+</span><span class="nv">str</span><span class="ss">(</span><span class="nv">score</span><span class="ss">)</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="ss">)</span>
-</pre></div>
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
             </p>
       
           </div>

@@ -57,17 +57,7 @@ body::before {
               <p><em>Задача 1:</em></p>
 <p>Словарь emails содержит информацию об электронных адресах пользователей, сгруппированных по домену. Дополните приведенный код, чтобы он вывел все электронные адреса в алфавитном порядке, каждый на отдельной строке, в формате username@domain.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">emails</span> <span class="o">=</span> {<span class="s1">&#39;</span><span class="s">nosu.edu</span><span class="s1">&#39;</span>: [<span class="s1">&#39;</span><span class="s">timyr</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">joseph</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">svetlana.gaeva</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">larisa.mamuk</span><span class="s1">&#39;</span>], 
-          <span class="s1">&#39;</span><span class="s">gmail.com</span><span class="s1">&#39;</span>: [<span class="s1">&#39;</span><span class="s">ruslan.chaika</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">rustam.mini</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">stepik-best</span><span class="s1">&#39;</span>], 
-          <span class="s1">&#39;</span><span class="s">msu.edu</span><span class="s1">&#39;</span>: [<span class="s1">&#39;</span><span class="s">apple.fruit</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">beegeek</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">beegeek.school</span><span class="s1">&#39;</span>], 
-          <span class="s1">&#39;</span><span class="s">yandex.ru</span><span class="s1">&#39;</span>: [<span class="s1">&#39;</span><span class="s">surface</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">google</span><span class="s1">&#39;</span>],
-          <span class="s1">&#39;</span><span class="s">hse.edu</span><span class="s1">&#39;</span>: [<span class="s1">&#39;</span><span class="s">tomas-henders</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">cream.soda</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">zivert</span><span class="s1">&#39;</span>],
-          <span class="s1">&#39;</span><span class="s">mail.ru</span><span class="s1">&#39;</span>: [<span class="s1">&#39;</span><span class="s">angel.down</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">joanne</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">the.fame.moster</span><span class="s1">&#39;</span>]}
-
-<span class="nv">print</span><span class="ss">(</span><span class="o">*</span><span class="nv">sorted</span><span class="ss">(</span>[<span class="nv">i</span><span class="o">+</span><span class="s1">&#39;</span><span class="s">@</span><span class="s1">&#39;</span><span class="o">+</span><span class="nv">k</span> <span class="k">for</span> <span class="nv">k</span>, <span class="nv">v</span> <span class="nv">in</span> <span class="nv">emails</span>.<span class="nv">items</span><span class="ss">()</span> <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">v</span>]<span class="ss">)</span>, <span class="nv">sep</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="ss">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 2:</em></p>
 <p>Напишите программу, переводящую цепь ДНК в цепь РНК. Как известно из курса биологии ДНК и РНК – последовательности нуклеотидов.</p>
 <p>Четыре нуклеотида в ДНК:</p>
@@ -85,20 +75,8 @@ body::before {
 <li>урацил (U).</li>
 </ul>
 <p>Цепь РНК строится на основе цепи ДНК последовательным присоединением комплементарных нуклеотидов:</p>
-<div class="codehilite"><pre><span></span><span class="k">G</span> <span class="err">→</span> <span class="k">C</span><span class="p">;</span>
-<span class="k">C</span> <span class="err">→</span> <span class="k">G</span><span class="p">;</span>
-<span class="n">T</span> <span class="err">→</span> <span class="n">A</span><span class="p">;</span>
-<span class="n">A</span> <span class="err">→</span> <span class="n">U</span><span class="p">.</span>
-</pre></div>
-
-
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">d</span> <span class="o">=</span> {<span class="s1">&#39;</span><span class="s">ACGT</span><span class="s1">&#39;</span>[<span class="nv">i</span>]: <span class="s1">&#39;</span><span class="s">UGCA</span><span class="s1">&#39;</span>[<span class="nv">i</span>] <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="mi">4</span><span class="ss">)</span>}
-<span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">input</span><span class="ss">()</span>:
-    <span class="nv">print</span><span class="ss">(</span><span class="nv">d</span>[<span class="nv">i</span>], <span class="k">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="ss">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 3:</em></p>
 <p>Дана строка текста на русском языке, состоящая из слов и символов пробела. Словом считается последовательность букв, слова разделены одним пробелом или несколькими.</p>
 <p>Напишите программу, определяющую для каждого слова порядковый номер его вхождения в текст именно в этой форме, с учетом регистра. Для первого вхождения слова программа выведет 1, для второго вхождения того же слова — 2 и т. д.</p>
@@ -107,14 +85,7 @@ body::before {
 <p><strong>Формат выходных данных</strong></p>
 <p>Для каждого слова исходного текста программа выводит одно целое число — номер вхождения этого слова в текст. Числа необходимо выводятся на одной строке, через пробел.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">d</span> <span class="o">=</span> {}
-<span class="k">for</span> <span class="nv">w</span> <span class="nv">in</span> <span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">()</span>:
-    <span class="nv">n</span> <span class="o">=</span> <span class="nv">d</span>.<span class="nv">get</span><span class="ss">(</span><span class="nv">w</span>, <span class="mi">1</span><span class="ss">)</span>
-    <span class="nv">print</span><span class="ss">(</span><span class="nv">n</span> <span class="k">if</span> <span class="nv">n</span> <span class="k">else</span> <span class="nv">w</span>, <span class="k">end</span><span class="o">=</span><span class="s1">&#39;</span><span class="s"> </span><span class="s1">&#39;</span><span class="ss">)</span>
-    <span class="nv">d</span>[<span class="nv">w</span>] <span class="o">=</span> <span class="nv">n</span> <span class="o">+</span> <span class="mi">1</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 4:</em></p>
 <p>В игре Scrabble каждая буква приносит определенное количество баллов. Общая стоимость слова – сумма баллов его букв. Чем реже буква встречается, тем больше она ценится:</p>
 <p>|  Баллы |                       Буква                      |
@@ -128,52 +99,17 @@ body::before {
 | 10 |                     Q, Z                     |</p>
 <p>Напишите программу подсчета итоговой стоимости введенного слова.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">d</span> <span class="o">=</span> {
-    <span class="mi">1</span>: <span class="s2">&quot;</span><span class="s">AEILNORSTU</span><span class="s2">&quot;</span>,
-    <span class="mi">2</span>: <span class="s2">&quot;</span><span class="s">DG</span><span class="s2">&quot;</span>,
-    <span class="mi">3</span>: <span class="s2">&quot;</span><span class="s">BCMP</span><span class="s2">&quot;</span>,
-    <span class="mi">4</span>: <span class="s2">&quot;</span><span class="s">FHVWY</span><span class="s2">&quot;</span>,
-    <span class="mi">5</span>: <span class="s2">&quot;</span><span class="s">K</span><span class="s2">&quot;</span>,
-    <span class="mi">8</span>: <span class="s2">&quot;</span><span class="s">JX</span><span class="s2">&quot;</span>,
-    <span class="mi">10</span>: <span class="s2">&quot;</span><span class="s">QZ</span><span class="s2">&quot;</span>
-}
-
-<span class="nv">print</span><span class="ss">(</span><span class="nv">sum</span><span class="ss">(</span>[<span class="nv">k</span> <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">input</span><span class="ss">()</span> <span class="k">for</span> <span class="nv">k</span>, <span class="nv">v</span> <span class="nv">in</span> <span class="nv">d</span>.<span class="nv">items</span><span class="ss">()</span> <span class="k">if</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">v</span>]<span class="ss">))</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 5:</em></p>
 <p>Строка запроса (query string) — часть URL адреса, содержащая ключи и их значения. Она начинается после вопросительного знака и идет до конца адреса. Если параметров в строке запроса несколько, то они отделяются символом амперсанда &amp;.</p>
 <p>Напишите функцию build_query_string(), которая принимает на вход словарь с параметрами и возвращает строку запроса, сформированную из этих параметров.</p>
 <p>Примечание 1. В итоговой строке параметры должны быть отсортированы в лексикографическом порядке ключей словаря.</p>
 <p><em>Решение 1:</em></p>
-<div class="codehilite"><pre><span></span><span class="kn">from</span> <span class="nn">urllib.parse</span> <span class="kn">import</span> <span class="n">urlencode</span>
-<span class="k">def</span> <span class="nf">build_query_string</span><span class="p">(</span><span class="n">params</span><span class="p">):</span>
-    <span class="n">sortedpar</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">sorted</span><span class="p">(</span><span class="n">params</span><span class="o">.</span><span class="n">items</span><span class="p">()))</span>
-    <span class="n">params</span> <span class="o">=</span> <span class="n">urlencode</span><span class="p">(</span><span class="n">sortedpar</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">params</span>
-</pre></div>
-
-
 <p><em>Решение 2:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">def</span> <span class="nv">build_query_string</span><span class="ss">(</span><span class="nb">params</span><span class="ss">)</span>:
-    <span class="nv">res</span> <span class="o">=</span> [<span class="nv">f</span><span class="s1">&#39;</span><span class="s">{k}={v}</span><span class="s1">&#39;</span> <span class="k">for</span> <span class="nv">k</span>, <span class="nv">v</span> <span class="nv">in</span> <span class="nb">params</span>.<span class="nv">items</span><span class="ss">()</span>]
-    <span class="k">return</span> <span class="s1">&#39;</span><span class="s">&amp;</span><span class="s1">&#39;</span>.<span class="nv">join</span><span class="ss">(</span><span class="nv">sorted</span><span class="ss">(</span><span class="nv">res</span><span class="ss">))</span>
-</pre></div>
-
-
 <p><em>Задача 6:</em></p>
 <p>Напишите функцию merge(), объединяющую словари в один общий. Функция должна принимать список словарей и возвращать словарь, каждый ключ которого содержит множество (тип данных set) уникальных значений собранных из всех словарей переданного списка.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">def</span> <span class="nv">merge</span><span class="ss">(</span><span class="nv">values</span><span class="ss">)</span>:
-    <span class="nv">res</span> <span class="o">=</span> {}
-    <span class="k">for</span> <span class="nv">d</span> <span class="nv">in</span> <span class="nv">values</span>:
-        <span class="k">for</span> <span class="nv">k</span>, <span class="nv">v</span> <span class="nv">in</span> <span class="nv">d</span>.<span class="nv">items</span><span class="ss">()</span>:
-            <span class="nv">res</span>.<span class="nv">setdefault</span><span class="ss">(</span><span class="nv">k</span>, <span class="nv">set</span><span class="ss">())</span>.<span class="nv">add</span><span class="ss">(</span><span class="nv">v</span><span class="ss">)</span>
-    <span class="k">return</span> <span class="nv">res</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 7:</em></p>
 <p>В файловую систему сервера проник опасный вирус и сломал контроль прав доступа к файлам. Говорят, вирус написал один из студентов курса Python для начинающих.</p>
 <p>Для каждого файла известно, с какими действиями можно к нему обращаться:</p>
@@ -184,17 +120,7 @@ body::before {
 </ul>
 <p>Напишите программу для восстановления контроля прав доступа к файлам. Ваша программа для каждого запроса должна будет возвращать OK если выполняется допустимая операция, и Access denied, если операция недопустима.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">r</span> <span class="o">=</span> {}
-<span class="nv">z</span> <span class="o">=</span> {<span class="s1">&#39;</span><span class="s">W</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">write</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">R</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">read</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">X</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">execute</span><span class="s1">&#39;</span>}
-<span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">()))</span>:
-    <span class="nv">x</span> <span class="o">=</span> <span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">()</span>
-    <span class="nv">r</span>[<span class="nv">x</span>[<span class="mi">0</span>]] <span class="o">=</span> [<span class="nv">z</span>[<span class="nv">i</span>] <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">x</span>[<span class="mi">1</span>:]]
-<span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">()))</span>:
-    <span class="nv">a</span>, <span class="nv">b</span> <span class="o">=</span> <span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">()</span>
-    <span class="nv">print</span><span class="ss">((</span><span class="s1">&#39;</span><span class="s">Access denied</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">OK</span><span class="s1">&#39;</span><span class="ss">)</span>[<span class="nv">a</span> <span class="nv">in</span> <span class="nv">r</span>[<span class="nv">b</span>]]<span class="ss">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 8:</em></p>
 <p>Напишите программу для подсчета количества единиц каждого вида товара из приобретенных каждым покупателем интернет-магазина.</p>
 <p><strong>Формат входных данных</strong></p>
@@ -202,15 +128,7 @@ body::before {
 <p><strong>Формат выходных данных</strong></p>
 <p>Программа должна вывести список всех покупателей в лексикографическом порядке, после имени каждого покупателя — двоеточие, затем список названий всех приобретенных им товаров в лексикографическом порядке, после названия каждого товара — количество единиц товара. Информация о каждом товаре выводится на отдельной строке.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">d</span> <span class="o">=</span> {}
-<span class="k">for</span> <span class="nv">_</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">()))</span>:
-    <span class="nv">name</span>, <span class="nv">good</span>, <span class="nv">count</span> <span class="o">=</span> <span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">()</span>
-    <span class="nv">d</span>[<span class="nv">name</span>][<span class="nv">good</span>] <span class="o">=</span> <span class="nv">d</span>.<span class="nv">setdefault</span><span class="ss">(</span><span class="nv">name</span>, {}<span class="ss">)</span>.<span class="nv">setdefault</span><span class="ss">(</span><span class="nv">good</span>, <span class="mi">0</span><span class="ss">)</span> <span class="o">+</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">count</span><span class="ss">)</span>
-<span class="k">for</span> <span class="nv">key</span> <span class="nv">in</span> <span class="nv">sorted</span><span class="ss">(</span><span class="nv">d</span><span class="ss">)</span>:
-    <span class="nv">print</span><span class="ss">(</span><span class="nv">f</span><span class="s1">&#39;</span><span class="s">{key}:</span><span class="s1">&#39;</span><span class="ss">)</span>
-    <span class="k">for</span> <span class="nv">x</span> <span class="nv">in</span> <span class="nv">sorted</span><span class="ss">(</span><span class="nv">d</span>[<span class="nv">key</span>].<span class="nv">items</span><span class="ss">())</span>:
-        <span class="nv">print</span><span class="ss">(</span><span class="o">*</span><span class="nv">x</span><span class="ss">)</span>
-</pre></div>
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
             </p>
       
           </div>

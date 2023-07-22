@@ -59,19 +59,7 @@ body::before {
 Первое слово в тексте последнего файла: "We".</p>
 <p>Скачайте предложенный файл. В нём содержится ссылка на первый файл из этого набора. </p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
-<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;dataset_3378_3.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="nb">file</span><span class="p">:</span>
-    <span class="n">url</span> <span class="o">=</span> <span class="nb">file</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
-    <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
-    <span class="n">r</span> <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="n">text</span>
-<span class="k">while</span> <span class="s1">&#39;We&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">r</span><span class="p">:</span>
-    <span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;https://stepik.orgstepic.org/media/attachments/course67/3.6.3/&#39;</span> <span class="o">+</span> <span class="n">r</span>
-    <span class="n">r1</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
-    <span class="n">r</span> <span class="o">=</span> <span class="n">r1</span><span class="o">.</span><span class="n">text</span>
-<span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 2:</em></p>
 <p>Создайте три разные функции представления:</p>
 <ul>
@@ -81,80 +69,24 @@ body::before {
 </ul>
 <p>Здесь уже импортирован Flask и создан экзмемпляр сервера под переменной app.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span>@<span class="nv">app</span>.<span class="nv">route</span><span class="ss">(</span><span class="s2">&quot;</span><span class="s">/</span><span class="s2">&quot;</span><span class="ss">)</span>
-@<span class="nv">app</span>.<span class="nv">route</span><span class="ss">(</span><span class="s2">&quot;</span><span class="s">/index/</span><span class="s2">&quot;</span><span class="ss">)</span>
-<span class="nv">def</span> <span class="nv">index</span><span class="ss">()</span>:
-    <span class="k">return</span> <span class="s2">&quot;</span><span class="s">index</span><span class="s2">&quot;</span>
-
-@<span class="nv">app</span>.<span class="nv">route</span><span class="ss">(</span><span class="s2">&quot;</span><span class="s">/contact/</span><span class="s2">&quot;</span><span class="ss">)</span>
-<span class="nv">def</span> <span class="nv">contact</span><span class="ss">()</span>:
-    <span class="k">return</span> <span class="s2">&quot;</span><span class="s">contact information</span><span class="s2">&quot;</span>
-
-@<span class="nv">app</span>.<span class="nv">route</span><span class="ss">(</span><span class="s2">&quot;</span><span class="s">/calculate/7/9/</span><span class="s2">&quot;</span><span class="ss">)</span>
-<span class="nv">def</span> <span class="nv">calculate</span><span class="ss">()</span>:
-    <span class="k">return</span> <span class="nv">str</span><span class="ss">(</span><span class="mi">7</span><span class="o">**</span><span class="mi">9</span><span class="ss">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 3:</em></p>
 <p>Ваша задача: создать динамический запрос, который принимает одно целое число и возвращает строковое представление следующего числа за ним.</p>
 <p>Например, при переходе по ссылке localhost:5000/4/ страница должна отобразить "5". Маршрут должен начинаться со знака слэш (/) и завершаться знаком слэш (/).</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">Flask</span>
-
-<span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
-
-<span class="nd">@app.route</span><span class="p">(</span><span class="s1">&#39;/&lt;int:num&gt;/&#39;</span><span class="p">)</span>
-<span class="k">def</span> <span class="nf">page</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
-    <span class="k">return</span> <span class="nb">str</span><span class="p">(</span><span class="n">num</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 4:</em></p>
 <p>Создайте функцию представления, где маршрут принимает число, знак операции и второе число. Исходя из этих данных функция должна вывести ответ выражения. Т.е., если путь выглядит как /7<em>2/, то программа должна решить задачу 7</em>2 и вывести 14. Воспользуемся только сложением, вычитанием, делением, умножением и возведением в степень. Т.к. знак слэш лучше не использовать в маршруте, принимаем знак деления как в математике через двоеточие.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">Flask</span>
-<span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
-<span class="nd">@app.route</span><span class="p">(</span><span class="s1">&#39;/&lt;a&gt;/&#39;</span><span class="p">)</span>
-<span class="k">def</span> <span class="nf">calc</span><span class="p">(</span><span class="n">a</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">f</span><span class="s2">&quot;{eval(a.replace(&#39;:&#39;, &#39;/&#39;))}&quot;</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 5:</em></p>
 <p>Напишите программу, которая принимает на стандартный вход список игр футбольных команд с результатом матча и выводит на стандартный вывод сводную таблицу результатов всех матчей.</p>
 <p>За победу команде начисляется 3 очка, за поражение — 0, за ничью — 1.</p>
 <p>Формат ввода следующий:
 В первой строке указано целое число n — количество завершенных игр.
-После этого идет n строк, в которых записаны результаты игры в следующем формате:
-    Первая_команда;Забито_первой_командой;Вторая_команда;Забито_второй_командой</p>
-<div class="codehilite"><pre><span></span><span class="err">Вывод</span> <span class="err">программы</span> <span class="err">необходимо</span> <span class="err">оформить</span> <span class="err">следующим</span> <span class="err">образом</span><span class="p">:</span>
-
-<span class="err">Команда</span><span class="p">:</span><span class="err">Всего</span><span class="n">_игр</span> <span class="err">Побед</span> <span class="err">Ничьих</span> <span class="err">Поражений</span> <span class="err">Всего</span><span class="n">_очков</span>
-</pre></div>
-
-
+После этого идет n строк, в которых записаны результаты игры в следующем формате:</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">n</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
-<span class="nv">d</span> <span class="o">=</span> {}
-<span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">n</span><span class="ss">)</span>:
-    <span class="nv">s</span> <span class="o">=</span> <span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">;</span><span class="s1">&#39;</span><span class="ss">)</span>
-    <span class="nv">d</span>.<span class="nv">setdefault</span><span class="ss">(</span><span class="nv">s</span>[<span class="mi">0</span>], [<span class="mi">0</span>, <span class="mi">0</span>, <span class="mi">0</span>]<span class="ss">)</span>, <span class="nv">d</span>.<span class="nv">setdefault</span><span class="ss">(</span><span class="nv">s</span>[<span class="mi">2</span>], [<span class="mi">0</span>, <span class="mi">0</span>, <span class="mi">0</span>]<span class="ss">)</span>
-    <span class="k">if</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">s</span>[<span class="mi">1</span>]<span class="ss">)</span> <span class="o">&gt;</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">s</span>[<span class="mi">3</span>]<span class="ss">)</span>:
-        <span class="nv">d</span>[<span class="nv">s</span>[<span class="mi">0</span>]][<span class="mi">0</span>] <span class="o">+=</span> <span class="mi">1</span>
-        <span class="nv">d</span>[<span class="nv">s</span>[<span class="mi">2</span>]][<span class="mi">2</span>] <span class="o">+=</span> <span class="mi">1</span>
-    <span class="nv">elif</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">s</span>[<span class="mi">1</span>]<span class="ss">)</span> <span class="o">&lt;</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">s</span>[<span class="mi">3</span>]<span class="ss">)</span>:
-        <span class="nv">d</span>[<span class="nv">s</span>[<span class="mi">0</span>]][<span class="mi">2</span>] <span class="o">+=</span> <span class="mi">1</span>
-        <span class="nv">d</span>[<span class="nv">s</span>[<span class="mi">2</span>]][<span class="mi">0</span>] <span class="o">+=</span> <span class="mi">1</span>
-    <span class="nv">elif</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">s</span>[<span class="mi">1</span>]<span class="ss">)</span> <span class="o">==</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">s</span>[<span class="mi">3</span>]<span class="ss">)</span>:
-        <span class="nv">d</span>[<span class="nv">s</span>[<span class="mi">0</span>]][<span class="mi">1</span>] <span class="o">+=</span> <span class="mi">1</span>
-        <span class="nv">d</span>[<span class="nv">s</span>[<span class="mi">2</span>]][<span class="mi">1</span>] <span class="o">+=</span> <span class="mi">1</span>
-
-<span class="k">for</span> <span class="nv">k</span>, <span class="nv">v</span> <span class="nv">in</span> <span class="nv">d</span>.<span class="nv">items</span><span class="ss">()</span>:
-    <span class="nv">print</span><span class="ss">(</span><span class="nv">f</span><span class="s1">&#39;</span><span class="s">{k}:{sum(v)}</span><span class="s1">&#39;</span>, <span class="nv">v</span>[<span class="mi">0</span>], <span class="nv">v</span>[<span class="mi">1</span>], <span class="nv">v</span>[<span class="mi">2</span>], <span class="ss">(</span><span class="nv">v</span>[<span class="mi">0</span>] <span class="o">*</span> <span class="mi">3</span> <span class="o">+</span> <span class="nv">v</span>[<span class="mi">1</span>]<span class="ss">))</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 6:</em></p>
 <p>Простейшая система проверки орфографии может быть основана на использовании списка известных слов.
 Если введённое слово не найдено в этом списке, оно помечается как "ошибка".</p>
@@ -162,65 +94,17 @@ body::before {
 <p>На вход программе первой строкой передаётся количество d известных нам слов, после чего на d строках указываются эти слова. Затем передаётся количество l строк текста для проверки, после чего l строк текста.</p>
 <p>Выведите уникальные "ошибки" в произвольном порядке. Работу производите без учёта регистра.</p>
 <p><em>Решение 1:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">words</span> <span class="o">=</span> <span class="nv">set</span><span class="ss">(</span><span class="nv">input</span><span class="ss">()</span>.<span class="nv">lower</span><span class="ss">()</span> <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())))</span>
-<span class="nv">text</span> <span class="o">=</span> <span class="nv">set</span><span class="ss">((</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span>.<span class="nv">join</span><span class="ss">(</span><span class="nv">input</span><span class="ss">()</span>.<span class="nv">lower</span><span class="ss">()</span> <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">()))))</span>.<span class="nv">split</span><span class="ss">())</span>
-<span class="nv">print</span><span class="ss">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span>.<span class="nv">join</span><span class="ss">(</span><span class="nv">text</span> <span class="o">-</span> <span class="nv">words</span><span class="ss">))</span>
-</pre></div>
-
-
 <p><em>Решение 2:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">dic</span> <span class="o">=</span> {<span class="nv">input</span><span class="ss">()</span>.<span class="nv">lower</span><span class="ss">()</span> <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">()))</span>}
-
-<span class="nv">wrd</span> <span class="o">=</span> <span class="nv">set</span><span class="ss">()</span>
-<span class="k">for</span> <span class="nv">w</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">()))</span>:
-    <span class="nv">wrd</span> <span class="o">|=</span> {<span class="nv">i</span>.<span class="nv">lower</span><span class="ss">()</span> <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">()</span>}
-
-<span class="nv">print</span><span class="ss">(</span><span class="o">*</span><span class="nv">wrd</span>.<span class="nv">difference</span><span class="ss">(</span><span class="nv">dic</span><span class="ss">)</span>, <span class="nv">sep</span><span class="o">=</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="ss">)</span>
-</pre></div>
-
-
 <p><em>Задача 7:</em></p>
 <p>Одним из самых часто используемых классов в Python является класс filter. Он принимает в конструкторе два аргумента a и f – последовательность и функцию, и позволяет проитерироваться только по таким элементам x из последовательности a, что f(x) равно True. Будем говорить, что в этом случае функция f допускает элемент x, а элемент x является допущенным.</p>
 <p>В данной задаче мы просим вас реализовать класс multifilter, который будет выполнять ту же функцию, что и стандартный класс filter, но будет использовать не одну функцию, а несколько.</p>
 <p>Решение о допуске элемента будет приниматься на основании того, сколько функций допускают этот элемент, и сколько не допускают. Обозначим эти количества за pos и neg.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">class</span> <span class="nv">multifilter</span>:
-    <span class="nv">def</span> <span class="nv">judge_half</span><span class="ss">(</span><span class="nv">pos</span>, <span class="nv">neg</span><span class="ss">)</span>:
-        <span class="k">return</span> <span class="nv">pos</span> <span class="o">&gt;=</span> <span class="nv">neg</span>
-
-    <span class="nv">def</span> <span class="nv">judge_any</span><span class="ss">(</span><span class="nv">pos</span>, <span class="nv">neg</span><span class="ss">)</span>:
-        <span class="k">return</span> <span class="nv">pos</span> <span class="o">&gt;=</span> <span class="mi">1</span>
-
-    <span class="nv">def</span> <span class="nv">judge_all</span><span class="ss">(</span><span class="nv">pos</span>, <span class="nv">neg</span><span class="ss">)</span>:
-        <span class="k">return</span> <span class="nv">neg</span> <span class="o">==</span> <span class="mi">0</span>
-
-    <span class="nv">def</span> <span class="nv">__init__</span><span class="ss">(</span><span class="nv">self</span>, <span class="nv">iterable</span>, <span class="o">*</span><span class="nv">funcs</span>, <span class="nv">judge</span><span class="o">=</span><span class="nv">judge_any</span><span class="ss">)</span>:
-        <span class="nv">self</span>.<span class="nv">iterable</span> <span class="o">=</span> <span class="nv">iterable</span>
-        <span class="nv">self</span>.<span class="nv">funcs</span> <span class="o">=</span> <span class="nv">funcs</span>
-        <span class="nv">self</span>.<span class="nv">full</span> <span class="o">=</span> <span class="nv">len</span><span class="ss">(</span><span class="nv">funcs</span><span class="ss">)</span>
-        <span class="nv">self</span>.<span class="nv">judge</span> <span class="o">=</span> <span class="nv">judge</span>
-
-    <span class="nv">def</span> <span class="nv">__iter__</span><span class="ss">(</span><span class="nv">self</span><span class="ss">)</span>:
-        <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">self</span>.<span class="nv">iterable</span>:
-            <span class="nv">pos</span> <span class="o">=</span> <span class="nv">len</span><span class="ss">(</span><span class="nv">list</span><span class="ss">(</span><span class="nv">filter</span><span class="ss">(</span><span class="nv">lambda</span> <span class="nv">f</span>: <span class="nv">f</span><span class="ss">(</span><span class="nv">i</span><span class="ss">)</span>, <span class="nv">self</span>.<span class="nv">funcs</span><span class="ss">)))</span>
-            <span class="k">if</span> <span class="nv">self</span>.<span class="nv">judge</span><span class="ss">(</span><span class="nv">pos</span>, <span class="nv">self</span>.<span class="nv">full</span> <span class="o">-</span> <span class="nv">pos</span><span class="ss">)</span>:
-                <span class="nv">yield</span> <span class="nv">i</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 8:</em></p>
 <p>Реализуйте функцию-генератор primes, которая будет генерировать простые числа в порядке возрастания, начиная с числа 2.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">def</span> <span class="nv">primes</span><span class="ss">()</span>:
-    <span class="nv">a</span> <span class="o">=</span> <span class="mi">2</span>
-    <span class="k">while</span> <span class="nv">True</span>:
-        <span class="nv">divisors</span> <span class="o">=</span> [<span class="nv">divisor</span> <span class="k">for</span> <span class="nv">divisor</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="mi">2</span>, <span class="nv">a</span><span class="ss">)</span>]
-        <span class="k">if</span> <span class="nv">all</span><span class="ss">(</span><span class="nv">map</span><span class="ss">(</span><span class="nv">lambda</span> <span class="nv">x</span>: <span class="nv">a</span> <span class="o">%</span> <span class="nv">x</span>, <span class="nv">divisors</span><span class="ss">))</span>:
-            <span class="nv">yield</span> <span class="nv">a</span>
-        <span class="nv">a</span> <span class="o">+=</span> <span class="mi">1</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 9:</em></p>
 <p>Напишите программу, которая при помощи метода Монте-Карло вычисляет площадь фигуры, задаваемой с помощью системы неравенств:</p>
 <p>−2 ≤ x ≤ 2</p>
@@ -228,35 +112,11 @@ body::before {
 <p>x<sup>3</sup> + y<sup>4</sup> + 2 ≥ 0</p>
 <p>3x + y<sup>2</sup> ≤ 2​</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
-
-<span class="n">n</span> <span class="o">=</span> <span class="mi">10</span> <span class="o">**</span> <span class="mi">6</span>      
-<span class="n">k</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="n">s</span> <span class="o">=</span> <span class="mi">16</span>
-
-<span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
-    <span class="n">x</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
-    <span class="n">y</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
-    <span class="k">if</span> <span class="p">((</span><span class="n">x</span> <span class="o">**</span> <span class="mi">3</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="n">y</span> <span class="o">**</span> <span class="mi">4</span><span class="p">)</span> <span class="o">+</span> <span class="mi">2</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="ow">and</span> <span class="p">((</span><span class="mi">3</span> <span class="o">*</span> <span class="n">x</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="n">y</span> <span class="o">**</span> <span class="mi">2</span><span class="p">))</span> <span class="o">&lt;=</span> <span class="mi">2</span><span class="p">:</span>
-        <span class="n">k</span> <span class="o">+=</span> <span class="mi">1</span>
-<span class="k">print</span><span class="p">((</span><span class="n">k</span> <span class="o">/</span> <span class="n">n</span><span class="p">)</span> <span class="o">*</span> <span class="n">s</span><span class="p">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 10:</em></p>
 <p>Напишите программу, которая при помощи метода Монте-Карло определяет приближённое значение числа π.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">n</span> <span class="o">=</span> <span class="mi">10</span> <span class="o">**</span> <span class="mi">6</span>       
-<span class="nv">k</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="nv">s</span> <span class="o">=</span> <span class="mi">4</span>
-
-<span class="k">for</span> <span class="nv">_</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">n</span><span class="ss">)</span>:
-    <span class="nv">x</span> <span class="o">=</span> <span class="k">random</span>.<span class="nv">uniform</span><span class="ss">(</span><span class="o">-</span><span class="mi">1</span>, <span class="mi">1</span><span class="ss">)</span>
-    <span class="nv">y</span> <span class="o">=</span> <span class="k">random</span>.<span class="nv">uniform</span><span class="ss">(</span><span class="o">-</span><span class="mi">1</span>, <span class="mi">1</span><span class="ss">)</span>
-    <span class="k">if</span> <span class="nv">x</span> <span class="o">*</span> <span class="nv">x</span> <span class="o">+</span> <span class="nv">y</span> <span class="o">*</span> <span class="nv">y</span> <span class="o">&lt;=</span> <span class="mi">1</span>:
-        <span class="nv">k</span> <span class="o">+=</span> <span class="mi">1</span>
-<span class="nv">print</span><span class="ss">((</span><span class="nv">k</span><span class="o">/</span><span class="nv">n</span><span class="ss">)</span><span class="o">*</span><span class="nv">s</span><span class="ss">)</span>
-</pre></div>
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
             </p>
       
           </div>

@@ -57,76 +57,30 @@ body::before {
               <p><em>Задача 1:</em></p>
 <p>На вход программе подается строка текста с именем текстового файла. Напишите программу для вывода на экран количества строк данного файла.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="k">with</span> <span class="k">open</span><span class="p">(</span><span class="k">input</span><span class="p">())</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-    <span class="n">print</span><span class="p">(</span><span class="n">len</span><span class="p">(</span><span class="n">f</span><span class="p">.</span><span class="n">readlines</span><span class="p">()))</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 2:</em></p>
 <p>Вам доступен текстовый файл ledger.txt с данными о продажах фирмы за месяц. На каждой строке файла указано, сколько клиент заплатил за товар, в долларах (целое число):</p>
-<div class="codehilite"><pre><span></span><span class="err">$</span><span class="mi">47</span>
-<span class="err">$</span><span class="mi">100</span>
-<span class="err">$</span><span class="mi">60</span>
-<span class="err">$</span><span class="mi">12</span>
-<span class="err">$</span><span class="mi">8</span>
-<span class="p">...</span>
-</pre></div>
-
-
 <p>Напишите программу для подсчета суммарной месячной выручки фирмы. </p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="k">with</span> <span class="k">open</span><span class="p">(</span><span class="s1">&#39;ledger.txt&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">ledger</span><span class="p">:</span>
-    <span class="k">result</span> <span class="o">=</span> <span class="k">sum</span><span class="p">(</span><span class="k">map</span><span class="p">(</span><span class="n">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">strip</span><span class="p">(</span><span class="s1">&#39;$&#39;</span><span class="p">)),</span> <span class="n">ledger</span><span class="p">.</span><span class="n">readlines</span><span class="p">()))</span>
-    <span class="n">print</span><span class="p">(</span><span class="s1">&#39;$&#39;</span><span class="p">,</span> <span class="k">result</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 3:</em></p>
 <p>Вам доступен текстовый файл grades.txt, содержащий оценки студента за три теста в каждом из триместров. Строки файла имеют вид: фамилия оценка_1 оценка_2 оценка_3.</p>
 <p>Напишите программу для подсчета количества студентов, сдавших все три теста. Тест считается сданным, если количество баллов по нему не меньше 65.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">with</span> <span class="nv">open</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">grades.txt</span><span class="s1">&#39;</span><span class="ss">)</span> <span class="nv">as</span> <span class="nv">f</span>:
-    <span class="nv">print</span><span class="ss">(</span><span class="nv">sum</span><span class="ss">(</span><span class="mi">1</span> <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">f</span>.<span class="nv">readlines</span><span class="ss">()</span> <span class="k">if</span> <span class="nv">all</span><span class="ss">(</span>[<span class="nv">int</span><span class="ss">(</span><span class="nv">j</span><span class="ss">)</span> <span class="o">&gt;=</span> <span class="mi">65</span> <span class="k">for</span> <span class="nv">j</span> <span class="nv">in</span> <span class="nv">i</span>.<span class="nv">split</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s"> </span><span class="s1">&#39;</span><span class="ss">)</span>[<span class="mi">1</span>:]]<span class="ss">)))</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 4:</em></p>
 <p>Вам доступен текстовый файл words.txt со словами, разделенными пробелом. Напишите программу, которая находит и выводит самые длинные слова этого файла, не меняя порядка их следования.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="k">with</span> <span class="k">open</span><span class="p">(</span><span class="s1">&#39;words.txt&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-    <span class="n">mylist</span> <span class="o">=</span> <span class="n">f</span><span class="p">.</span><span class="k">read</span><span class="p">().</span><span class="n">split</span><span class="p">()</span>
-    <span class="n">longest</span> <span class="o">=</span> <span class="k">max</span><span class="p">(</span><span class="k">map</span><span class="p">(</span><span class="n">len</span><span class="p">,</span> <span class="n">mylist</span><span class="p">))</span>
-    <span class="n">print</span><span class="p">(</span><span class="o">*</span><span class="n">list</span><span class="p">(</span><span class="n">filter</span><span class="p">(</span><span class="n">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">len</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">==</span> <span class="n">longest</span><span class="p">,</span> <span class="n">mylist</span><span class="p">)),</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;\n&#39;</span><span class="p">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 5:</em></p>
 <p>На вход программе подается строка текста с именем текстового файла. Напишите программу, выводящую на экран последние 10 строк данного файла.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">s</span> <span class="o">=</span> <span class="nv">input</span><span class="ss">()</span>
-<span class="nv">with</span> <span class="nv">open</span><span class="ss">(</span><span class="nv">s</span><span class="ss">)</span> <span class="nv">as</span> <span class="nv">file</span>:
-    <span class="nv">lines</span> <span class="o">=</span> [<span class="nv">i</span>.<span class="nv">strip</span><span class="ss">()</span> <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">file</span>.<span class="nv">readlines</span><span class="ss">()</span>[<span class="o">-</span><span class="mi">10</span>:]]
-<span class="k">for</span> <span class="nv">line</span> <span class="nv">in</span> <span class="nv">lines</span>:
-    <span class="nv">print</span><span class="ss">(</span><span class="nv">line</span><span class="ss">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 6:</em></p>
 <p>На вход программе подается строка текста с именем текстового файла. Напишите программу, выводящую на экран содержимое этого файла, но с заменой всех запрещенных слов звездочками * (количество звездочек равно количеству букв в слове).</p>
 <p>Запрещенные слова, разделенные символом пробела, хранятся в текстовом файле forbidden_words.txt. Гарантируется, что все слова в этом файле записаны в нижнем регистре.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">with</span> <span class="nv">open</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">forbidden_words.txt</span><span class="s1">&#39;</span><span class="ss">)</span> <span class="nv">as</span> <span class="nv">forbidden_words</span>, <span class="nv">open</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span> <span class="nv">as</span> <span class="nv">to_change</span>:
-    <span class="nv">pattern</span>, <span class="nv">text</span> <span class="o">=</span> <span class="nv">forbidden_words</span>.<span class="nv">read</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">()</span>, <span class="nv">to_change</span>.<span class="nv">read</span><span class="ss">()</span>
-
-<span class="nv">text_lower</span> <span class="o">=</span> <span class="nv">text</span>.<span class="nv">lower</span><span class="ss">()</span>
-<span class="k">for</span> <span class="nv">word</span> <span class="nv">in</span> <span class="nv">pattern</span>:
-    <span class="nv">text_lower</span> <span class="o">=</span> <span class="nv">text_lower</span>.<span class="nv">replace</span><span class="ss">(</span><span class="nv">word</span>, <span class="s1">&#39;</span><span class="s">*</span><span class="s1">&#39;</span> <span class="o">*</span> <span class="nv">len</span><span class="ss">(</span><span class="nv">word</span><span class="ss">))</span>
-
-<span class="nb">result</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>.<span class="nv">join</span><span class="ss">((</span><span class="nv">y</span>, <span class="nv">x</span><span class="ss">)</span>[<span class="nv">x</span> <span class="o">==</span> <span class="s1">&#39;</span><span class="s">*</span><span class="s1">&#39;</span>] <span class="k">for</span> <span class="nv">x</span>, <span class="nv">y</span> <span class="nv">in</span> <span class="nv">zip</span><span class="ss">(</span><span class="nv">text_lower</span>, <span class="nv">text</span><span class="ss">))</span>
-<span class="nv">print</span><span class="ss">(</span><span class="nb">result</span><span class="ss">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 7:</em></p>
 <p>Дан файл с таблицей в формате TSV с информацией о росте школьников разных классов.</p>
 <p>Напишите программу, которая прочитает этот файл и подсчитает для каждого класса средний рост учащегося.</p>
@@ -136,55 +90,19 @@ body::before {
 <p>Выводить информацию о среднем росте следует в порядке возрастания номера класса (для классов с первого по одиннадцатый). Если про какой-то класс нет информации, необходимо вывести напротив него прочерк.</p>
 <p>В качестве ответа прикрепите файл с полученными данными о среднем росте.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">grade_dict</span> <span class="o">=</span> {}
-
-<span class="nv">with</span> <span class="nv">open</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">pupil.txt</span><span class="s1">&#39;</span>, <span class="nv">encoding</span><span class="o">=</span><span class="s1">&#39;</span><span class="s">utf-8</span><span class="s1">&#39;</span><span class="ss">)</span> <span class="nv">as</span> <span class="nv">f</span>:
-    <span class="k">for</span> <span class="nv">line</span> <span class="nv">in</span> <span class="nv">f</span>.<span class="nv">readlines</span><span class="ss">()</span>:
-        <span class="nv">h</span> <span class="o">=</span> []
-        <span class="nv">grade</span>, <span class="nv">height</span> <span class="o">=</span> <span class="nv">list</span><span class="ss">(</span><span class="nv">map</span><span class="ss">(</span><span class="nv">int</span>, <span class="nv">line</span>.<span class="nv">split</span><span class="ss">()</span>[<span class="mi">0</span>:<span class="mi">3</span>:<span class="mi">2</span>]<span class="ss">))</span>
-        <span class="nv">grade_dict</span>.<span class="nv">setdefault</span><span class="ss">(</span><span class="nv">grade</span>, []<span class="ss">)</span>.<span class="nv">append</span><span class="ss">(</span><span class="nv">height</span><span class="ss">)</span>
-
-<span class="nv">print</span><span class="ss">(</span><span class="nv">grade_dict</span><span class="ss">)</span>
-
-<span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="mi">1</span>, <span class="mi">12</span><span class="ss">)</span>:
-    <span class="nv">print</span><span class="ss">(</span><span class="nv">f</span><span class="s1">&#39;</span><span class="s">{i} {sum(grade_dict[i])/len(grade_dict[i]) if i in grade_dict else &quot;-&quot;}</span><span class="s1">&#39;</span><span class="ss">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 8:</em></p>
 <p>Вам дается текстовый файл, содержащий некоторое количество непустых строк.
 На основе него сгенерируйте новый текстовый файл, содержащий те же строки в обратном порядке.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="s s-Atom">with</span> <span class="nf">open</span><span class="p">(</span><span class="s s-Atom">&#39;dataset_24465_4.txt&#39;</span><span class="p">,</span> <span class="s s-Atom">&#39;r&#39;</span><span class="p">)</span> <span class="s s-Atom">as</span> <span class="s s-Atom">file</span><span class="p">,</span> <span class="nf">open</span><span class="p">(</span><span class="s s-Atom">&#39;result.txt&#39;</span><span class="p">,</span> <span class="s s-Atom">&#39;w&#39;</span><span class="p">)</span> <span class="s s-Atom">as</span> <span class="nn">result</span><span class="p">:</span>
-
-    <span class="s s-Atom">for</span> <span class="s s-Atom">line</span> <span class="s s-Atom">in</span> <span class="s s-Atom">file</span><span class="p">.</span><span class="nf">readlines</span><span class="p">()[</span><span class="o">-</span><span class="mi">1</span><span class="s s-Atom">::-</span><span class="mi">1</span><span class="p">]</span><span class="s s-Atom">:</span>
-        <span class="s s-Atom">result</span><span class="p">.</span><span class="nf">write</span><span class="p">(</span><span class="s s-Atom">line</span><span class="p">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 9:</em></p>
 <p>В этой задаче вам необходимо воспользоваться API сайта numbersapi.com</p>
 <p>Вам дается набор чисел. Для каждого из чисел необходимо узнать, существует ли интересный математический факт об этом числе.</p>
 <p>Для каждого числа выведите Interesting, если для числа существует интересный факт, и Boring иначе.
 Выводите информацию об интересности чисел в таком же порядке, в каком следуют числа во входном файле.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
-<span class="kn">import</span> <span class="nn">json</span>
-
-
-<span class="k">def</span> <span class="nf">check_interesting</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
-   <span class="n">txt</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;http://numbersapi.com/{num}/math?json=true&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
-   <span class="k">if</span> <span class="n">txt</span><span class="p">[</span><span class="s1">&#39;found&#39;</span><span class="p">]:</span> <span class="k">return</span> <span class="s1">&#39;Boring&#39;</span>
-   <span class="k">return</span> <span class="s1">&#39;Interesting&#39;</span>
-
-
-<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;C:\Users\fkkor\Downloads\dataset_24476_3 (3).txt&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-   <span class="n">text</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
-   <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">text</span><span class="p">:</span>
-      <span class="k">print</span><span class="p">(</span><span class="n">check_interesting</span><span class="p">(</span><span class="n">i</span><span class="o">.</span><span class="n">strip</span><span class="p">()))</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 10:</em></p>
 <p>В этой задаче вам необходимо воспользоваться API сайта artsy.net</p>
 <p>API проекта Artsy предоставляет информацию о некоторых деятелях искусства, их работах, выставках.</p>
@@ -193,32 +111,7 @@ body::before {
 Для каждого идентификатора получите информацию о имени художника и годе рождения.
 Выведите имена художников в порядке неубывания года рождения. В случае если у художников одинаковый год рождения, выведите их имена в лексикографическом порядке.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
-<span class="kn">import</span> <span class="nn">json</span>
-<span class="n">result</span> <span class="o">=</span> <span class="p">{}</span>
-
-<span class="n">client_id</span> <span class="o">=</span> <span class="s1">&#39;ваш ID&#39;</span>
-<span class="n">client_secret</span> <span class="o">=</span> <span class="s1">&#39;ваш secret&#39;</span>
-
-<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="s2">&quot;https://stepik.orgapi.artsy.net/api/tokens/xapp_token&quot;</span><span class="p">,</span>
-                  <span class="n">data</span><span class="o">=</span><span class="p">{</span>
-                      <span class="s2">&quot;client_id&quot;</span><span class="p">:</span> <span class="n">client_id</span><span class="p">,</span>
-                      <span class="s2">&quot;client_secret&quot;</span><span class="p">:</span> <span class="n">client_secret</span>
-                  <span class="p">})</span>
-
-<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;X-Xapp-Token&quot;</span> <span class="p">:</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">text</span><span class="p">)[</span><span class="s2">&quot;token&quot;</span><span class="p">]}</span>
-
-<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;dataset_24476_4.txt&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="nb">file</span><span class="p">:</span>
-    <span class="k">for</span> <span class="n">artist</span> <span class="ow">in</span> <span class="nb">file</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">splitlines</span><span class="p">():</span>
-        <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;https://stepik.orgapi.artsy.net/api/artists/{artist}&#39;</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
-        <span class="n">j</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
-        <span class="n">result</span><span class="p">[</span><span class="n">j</span><span class="p">[</span><span class="s1">&#39;sortable_name&#39;</span><span class="p">]]</span> <span class="o">=</span> <span class="n">j</span><span class="p">[</span><span class="s1">&#39;birthday&#39;</span><span class="p">]</span>
-
-<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">items</span><span class="p">(),</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">])):</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 11:</em></p>
 <p>Вашей программе на вход подается ссылка на HTML файл.
 Вам необходимо скачать этот файл, затем найти в нем все ссылки вида <a ... href="..." ... > и вывести список сайтов, на которые есть ссылка.</p>
@@ -226,18 +119,7 @@ body::before {
 <a href="../some_path/index.html">.</p>
 <p>Сайты следует выводить в алфавитном порядке.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">re</span><span class="o">,</span> <span class="nn">requests</span>
-
-<span class="n">res</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">((</span><span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">strip</span><span class="p">()))</span>
-<span class="n">l</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;&lt;a.+href=(?:&quot;|</span><span class="se">\&#39;</span><span class="s1">)(?:[\w-]+://)?(\w[\w.-]+)&#39;</span><span class="p">,</span> <span class="n">res</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
-<span class="n">ans</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">l</span><span class="p">)</span>
-<span class="n">ans</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">ans</span><span class="p">)</span>
-<span class="n">ans</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">ans</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 12:</em></p>
 <p>Рассмотрим два HTML-документа A и B.
 Из A можно перейти в B за один переход, если в A есть ссылка на B, т. е. внутри A есть тег <a href="B">, возможно с дополнительными параметрами внутри тега.
@@ -246,22 +128,7 @@ body::before {
 Выведите Yes, если из A в B можно перейти за два перехода, иначе выведите No.</p>
 <p>Обратите внимание на то, что не все ссылки внутри HTML документа могут вести на существующие HTML документы.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
-<span class="kn">import</span> <span class="nn">re</span>
-
-<span class="n">flag</span> <span class="o">=</span> <span class="bp">False</span>
-<span class="n">one_url</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
-<span class="n">two_url</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
-<span class="k">for</span> <span class="n">link</span> <span class="ow">in</span> <span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;&lt;a href=</span><span class="se">\&quot;</span><span class="s2">(.*)</span><span class="se">\&quot;</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">one_url</span><span class="o">.</span><span class="n">text</span><span class="p">):</span>
-    <span class="n">down_one_url</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">link</span><span class="p">)</span>
-    <span class="k">for</span> <span class="n">link2</span> <span class="ow">in</span> <span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;&lt;a href=</span><span class="se">\&quot;</span><span class="s2">(.*)</span><span class="se">\&quot;</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">down_one_url</span><span class="o">.</span><span class="n">text</span><span class="p">):</span>
-        <span class="k">if</span> <span class="n">two_url</span> <span class="o">==</span> <span class="n">link2</span><span class="p">:</span>
-            <span class="n">flag</span> <span class="o">=</span> <span class="bp">True</span>
-            <span class="k">break</span>
-<span class="k">print</span><span class="p">(</span><span class="s2">&quot;Yes&quot;</span> <span class="k">if</span> <span class="n">flag</span> <span class="k">else</span> <span class="s2">&quot;No&quot;</span><span class="p">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 13 - Загадка от Жака Фреско про козлов:</em></p>
 <p>Однажды Жака Фреско спросили:</p>
 <p>"Если ты такой умный, почему не богатый?"</p>
@@ -272,45 +139,16 @@ body::before {
 <p>Вам доступен текстовый файл goats.txt в первой строке которого написано слово COLOURS, далее идет список всех возможных цветов козлов. Затем идет строка со словом GOATS, и далее непосредственно перечисление козлов разных цветов. Перечень козлов включает только строки из первого списка.</p>
 <p>Напишите программу создания файла answer.txt и вывода в него списка козлов, которые удовлетворяют условию загадки от Жака Фреско.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">with</span> <span class="nv">open</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">goats.txt</span><span class="s1">&#39;</span><span class="ss">)</span> <span class="nv">as</span> <span class="nv">fin</span>, <span class="nv">open</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">answer.txt</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">w</span><span class="s1">&#39;</span><span class="ss">)</span> <span class="nv">as</span> <span class="nv">fout</span>:
-    <span class="nv">colors</span>, <span class="nv">total</span> <span class="o">=</span> {}, <span class="mi">0</span>
-    <span class="k">for</span> <span class="nv">line</span> <span class="nv">in</span> <span class="nv">fin</span>:
-        <span class="k">if</span> <span class="nv">line</span> <span class="nv">not</span> <span class="nv">in</span> <span class="ss">(</span><span class="s1">&#39;</span><span class="s">COLOURS</span><span class="se">\n</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">GOATS</span><span class="se">\n</span><span class="s1">&#39;</span><span class="ss">)</span>:
-            <span class="nv">colors</span>[<span class="nv">line</span>] <span class="o">=</span> <span class="nv">colors</span>.<span class="nv">get</span><span class="ss">(</span><span class="nv">line</span>, <span class="o">-</span><span class="mi">1</span><span class="ss">)</span> <span class="o">+</span> <span class="mi">1</span>
-            <span class="nv">total</span> <span class="o">+=</span> <span class="mi">1</span>
-    [<span class="nv">fout</span>.<span class="nv">write</span><span class="ss">(</span><span class="nv">k</span><span class="ss">)</span> <span class="k">for</span> <span class="nv">k</span> <span class="nv">in</span> <span class="nv">colors</span> <span class="k">if</span> <span class="nv">colors</span>[<span class="nv">k</span>] <span class="o">&gt;=</span> <span class="nv">total</span> <span class="o">*</span> .<span class="mi">07</span>]
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 14:</em></p>
 <p>На вход программе подается натуральное число n и n строк с названиями файлов. Напишите программу, которая создает файл output.txt и выводит в него содержимое всех файлов с указанными именами, не меняя их порядка.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">with</span> <span class="nv">open</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">output.txt</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">w</span><span class="s1">&#39;</span><span class="ss">)</span> <span class="nv">as</span> <span class="nv">fout</span>:
-    <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">()))</span>:
-        <span class="nv">with</span> <span class="nv">open</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span> <span class="nv">as</span> <span class="nv">f</span>:
-            <span class="nv">fout</span>.<span class="nv">write</span><span class="ss">(</span><span class="nv">f</span>.<span class="nv">read</span><span class="ss">())</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 15:</em></p>
 <p>Вам доступен текстовый файл logfile.txt с информацией о времени входа пользователя в систему и выхода из нее. Каждая строка файла содержит три значения, разделенные запятыми и символом пробела: имя пользователя, время входа, время выхода, где время указано в 24-часовом формате.</p>
 <p>Напишите программу, которая создает файл output.txt и выводит в него имена всех пользователей (не меняя порядка следования), которые были в сети не менее часа.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">with</span> <span class="nv">open</span><span class="ss">(</span><span class="s2">&quot;</span><span class="s">logfile.txt</span><span class="s2">&quot;</span>, <span class="s2">&quot;</span><span class="s">r</span><span class="s2">&quot;</span>, <span class="nv">encoding</span><span class="o">=</span><span class="s2">&quot;</span><span class="s">utf-8</span><span class="s2">&quot;</span><span class="ss">)</span> <span class="nv">as</span> <span class="nv">file_input</span>, <span class="nv">open</span><span class="ss">(</span><span class="s2">&quot;</span><span class="s">output.txt</span><span class="s2">&quot;</span>, <span class="s2">&quot;</span><span class="s">w</span><span class="s2">&quot;</span>, <span class="nv">encoding</span><span class="o">=</span><span class="s2">&quot;</span><span class="s">utf-8</span><span class="s2">&quot;</span><span class="ss">)</span> <span class="nv">as</span> <span class="nv">file_output</span>:
-    <span class="k">for</span> <span class="nv">line</span> <span class="nv">in</span> <span class="nv">file_input</span>:
-        <span class="nv">user</span>, <span class="nv">start_time</span>, <span class="nv">end_time</span> <span class="o">=</span> <span class="nv">line</span>.<span class="nv">strip</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">(</span><span class="s2">&quot;</span><span class="s">,</span><span class="s2">&quot;</span><span class="ss">)</span>
-
-        <span class="nv">start_time</span> <span class="o">=</span> <span class="nv">start_time</span>.<span class="nv">strip</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">(</span><span class="s2">&quot;</span><span class="s">:</span><span class="s2">&quot;</span><span class="ss">)</span>
-        <span class="nv">end_time</span> <span class="o">=</span> <span class="nv">end_time</span>.<span class="nv">strip</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">(</span><span class="s2">&quot;</span><span class="s">:</span><span class="s2">&quot;</span><span class="ss">)</span>
-
-        <span class="nv">start_time</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">start_time</span>[<span class="mi">0</span>]<span class="ss">)</span> <span class="o">*</span> <span class="mi">60</span> <span class="o">+</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">start_time</span>[<span class="mi">1</span>]<span class="ss">)</span>
-        <span class="nv">end_time</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">end_time</span>[<span class="mi">0</span>]<span class="ss">)</span> <span class="o">*</span> <span class="mi">60</span> <span class="o">+</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">end_time</span>[<span class="mi">1</span>]<span class="ss">)</span>
-
-        <span class="k">if</span> <span class="nv">end_time</span> <span class="o">-</span> <span class="nv">start_time</span> <span class="o">&gt;=</span> <span class="mi">60</span>:
-            <span class="nv">file_output</span>.<span class="nv">write</span><span class="ss">(</span><span class="nv">f</span><span class="s2">&quot;</span><span class="s">{user}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="ss">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 16:</em></p>
 <p>При написании собственных функций рекомендуется в комментарии описывать назначение функции, ее параметры и возвращаемое значение. Часто программисты откладывают написание таких комментариев напоследок, а потом и вовсе забывают о них.</p>
 <p>На вход программе подается строка текста с именем текстового файла, в котором написан код на языке Python. Напишите программу, выводящую на экран имена всех функций для которых отсутствует поясняющий комментарий. Будем считать, что любая строка, начинающаяся со слова def и пробела, является началом определения функции. Функция содержит комментарий, если первый символ предыдущей строки - #.</p>
@@ -319,20 +157,7 @@ body::before {
 <p><strong>Формат выходных данных</strong></p>
 <p>Программа должна вывести названия всех функций (не меняя порядка их следования в исходном файле), каждое на отдельной строке, для которых отсутствует поясняющий комментарий. Если все функции в файле имеют поясняющий комментарий, то следует вывести: Best Programming Team.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">with</span> <span class="nv">open</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span> <span class="nv">as</span> <span class="nv">file</span>:
-    <span class="nv">functions</span> <span class="o">=</span> []
-    <span class="nv">prev_line</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
-    <span class="k">for</span> <span class="nv">line</span> <span class="nv">in</span> <span class="nv">file</span>.<span class="nv">readlines</span><span class="ss">()</span>:
-        <span class="k">if</span> <span class="nv">line</span>.<span class="nv">startswith</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">def </span><span class="s1">&#39;</span><span class="ss">)</span> <span class="nv">and</span> <span class="nv">not</span> <span class="nv">prev_line</span>.<span class="nv">startswith</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">#</span><span class="s1">&#39;</span><span class="ss">)</span>:
-            <span class="nv">functions</span>.<span class="nv">append</span><span class="ss">(</span><span class="nv">line</span>[<span class="mi">4</span>:<span class="nv">line</span>.<span class="nv">index</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">(</span><span class="s1">&#39;</span><span class="ss">)</span>]<span class="ss">)</span>
-        <span class="nv">prev_line</span> <span class="o">=</span> <span class="nv">line</span>
-    <span class="k">if</span> <span class="nv">functions</span>:
-        <span class="nv">print</span><span class="ss">(</span><span class="o">*</span><span class="nv">functions</span>, <span class="nv">sep</span><span class="o">=</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="ss">)</span>
-    <span class="k">else</span>:
-        <span class="nv">print</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">Best Programming Team</span><span class="s1">&#39;</span><span class="ss">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 17:</em></p>
 <p>Транслитерация — передача знаков одной письменности знаками другой письменности, при которой каждый знак (или последовательность знаков) одной системы письма передаётся соответствующим знаком (или последовательностью знаков) другой системы письма.</p>
 <p>Вам доступен текстовый файл cyrillic.txt, содержащий текст. Напишите программу для транслитерации этого файла, то есть замены кириллических символов на латинские в соответствии с предложенной таблицей. Все остальные символы надо оставить без изменений. Результат транслитерации требуется записать в файл transliteration.txt.</p>
@@ -350,18 +175,7 @@ body::before {
 | и          | i        | у         | u        | ю         | ju       |
 | й          | j        | ф         | f        | я         | ya       |</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">with</span> <span class="nv">open</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">cyrillic.txt</span><span class="s1">&#39;</span><span class="ss">)</span> <span class="nv">as</span> <span class="nv">cyrillic</span>, <span class="nv">open</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">transliteration.txt</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">w</span><span class="s1">&#39;</span><span class="ss">)</span> <span class="nv">as</span> <span class="nv">transliteration</span>:
-    <span class="nv">letters</span> <span class="o">=</span> {<span class="s1">&#39;</span><span class="s">а</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">a</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">к</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">k</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">х</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">h</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">б</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">b</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">л</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">l</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">ц</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">c</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">в</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">v</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">м</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">m</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">ч</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">ch</span><span class="s1">&#39;</span>,
-    <span class="s1">&#39;</span><span class="s">г</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">g</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">н</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">n</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">ш</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">sh</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">д</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">d</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">о</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">o</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">щ</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">shh</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">е</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">e</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">п</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">p</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">ъ</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">*</span><span class="s1">&#39;</span>,
-    <span class="s1">&#39;</span><span class="s">ё</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">jo</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">р</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">r</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">ы</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">y</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">ж</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">zh</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">с</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">s</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">ь</span><span class="s1">&#39;</span>: <span class="s2">&quot;</span><span class="s">&#39;</span><span class="s2">&quot;</span>, <span class="s1">&#39;</span><span class="s">з</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">z</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">т</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">t</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">э</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">je</span><span class="s1">&#39;</span>,
-    <span class="s1">&#39;</span><span class="s">и</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">i</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">у</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">u</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">ю</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">ju</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">й</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">j</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">ф</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">f</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">я</span><span class="s1">&#39;</span>: <span class="s1">&#39;</span><span class="s">ya</span><span class="s1">&#39;</span>}
-    <span class="k">for</span> <span class="nv">symbol</span> <span class="nv">in</span> <span class="nv">cyrillic</span>.<span class="nv">read</span><span class="ss">()</span>:
-        <span class="k">if</span> <span class="nv">symbol</span>.<span class="nv">lower</span><span class="ss">()</span> <span class="nv">in</span> <span class="nv">letters</span> <span class="nv">and</span> <span class="nv">symbol</span>.<span class="nv">islower</span><span class="ss">()</span>:
-            <span class="nv">symbol</span> <span class="o">=</span> <span class="nv">letters</span>[<span class="nv">symbol</span>.<span class="nv">lower</span><span class="ss">()</span>]
-        <span class="nv">elif</span> <span class="nv">symbol</span>.<span class="nv">lower</span><span class="ss">()</span> <span class="nv">in</span> <span class="nv">letters</span> <span class="nv">and</span> <span class="nv">symbol</span>.<span class="nv">isupper</span><span class="ss">()</span>:
-            <span class="nv">symbol</span> <span class="o">=</span> <span class="nv">letters</span>[<span class="nv">symbol</span>.<span class="nv">lower</span><span class="ss">()</span>].<span class="nv">title</span><span class="ss">()</span>
-        <span class="nv">transliteration</span>.<span class="nv">write</span><span class="ss">(</span><span class="nv">symbol</span><span class="ss">)</span>
-</pre></div>
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
             </p>
       
           </div>

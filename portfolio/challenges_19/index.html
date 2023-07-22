@@ -56,27 +56,8 @@ body::before {
             <p>
               <p><em>Задача 1:</em></p>
 <p>Напишите функцию draw_triangle(), которая выводит звездный прямоугольный треугольник с катетами, равными 10 в соответствии с образцом:</p>
-<div class="codehilite"><pre><span></span><span class="o">*</span>
-<span class="o">**</span>
-<span class="o">***</span>
-<span class="o">****</span>
-<span class="o">*****</span>
-<span class="o">******</span>
-<span class="o">*******</span>
-<span class="o">********</span>
-<span class="o">*********</span>
-<span class="o">**********</span>
-</pre></div>
-
-
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">def</span> <span class="nv">draw_triangle</span><span class="ss">()</span>:
-    <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="mi">1</span>, <span class="mi">11</span><span class="ss">)</span>:
-        <span class="nv">print</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">*</span><span class="s1">&#39;</span> <span class="o">*</span> <span class="nv">i</span><span class="ss">)</span>
-<span class="nv">draw_triangle</span><span class="ss">()</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 2:</em></p>
 <p>Напишите функцию draw_triangle(fill, base), которая принимает два параметра:</p>
 <ul>
@@ -86,17 +67,7 @@ body::before {
 <p>а затем выводит его.</p>
 <p>Примечание. Гарантируется, что основание треугольника – нечетное число.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">def</span> <span class="nv">draw_triangle</span><span class="ss">(</span><span class="nv">fill</span>, <span class="nv">base</span><span class="ss">)</span>:
-    <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">base</span> <span class="o">//</span> <span class="mi">2</span> <span class="o">+</span> <span class="mi">2</span><span class="ss">)</span>:
-        <span class="nv">print</span><span class="ss">(</span><span class="nv">fill</span> <span class="o">*</span> <span class="nv">i</span><span class="ss">)</span>
-    <span class="k">for</span> <span class="nv">j</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">base</span> <span class="o">//</span> <span class="mi">2</span>, <span class="mi">0</span>, <span class="o">-</span><span class="mi">1</span><span class="ss">)</span>:
-        <span class="nv">print</span><span class="ss">(</span><span class="nv">fill</span> <span class="o">*</span> <span class="nv">j</span><span class="ss">)</span>
-
-<span class="nv">fill</span>, <span class="nv">base</span> <span class="o">=</span> <span class="nv">input</span><span class="ss">()</span>, <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
-<span class="nv">draw_triangle</span><span class="ss">(</span><span class="nv">fill</span>, <span class="nv">base</span><span class="ss">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 3:</em></p>
 <p>Напишите функцию print_fio(name, surname, patronymic), которая принимает три параметра:</p>
 <ul>
@@ -107,152 +78,50 @@ body::before {
 <p>а затем выводит на печать ФИО человека.</p>
 <p>Примечание. Предусмотрите тот факт, что все три буквы в ФИО должны иметь верхний регистр.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="n">def</span> <span class="n">print_fio</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">surname</span><span class="p">,</span> <span class="n">patronymic</span><span class="p">):</span>
-    <span class="n">name</span> <span class="o">=</span> <span class="n">name</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-    <span class="n">surname</span> <span class="o">=</span> <span class="n">surname</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-    <span class="n">patronymic</span> <span class="o">=</span> <span class="n">patronymic</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-    <span class="n">print</span><span class="p">(</span><span class="n">surname</span><span class="p">.</span><span class="k">upper</span><span class="p">(),</span> <span class="n">name</span><span class="p">.</span><span class="k">upper</span><span class="p">(),</span> <span class="n">patronymic</span><span class="p">.</span><span class="k">upper</span><span class="p">(),</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
-
-
-<span class="n">name</span><span class="p">,</span> <span class="n">surname</span><span class="p">,</span> <span class="n">patronymic</span> <span class="o">=</span> <span class="k">input</span><span class="p">(),</span> <span class="k">input</span><span class="p">(),</span> <span class="k">input</span><span class="p">()</span>
-<span class="n">print_fio</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">surname</span><span class="p">,</span> <span class="n">patronymic</span><span class="p">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 4:</em></p>
 <p>Напишите функцию print_digit_sum(), которая принимает одно целое число num и выводит на печать сумму его цифр.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">def</span> <span class="nv">print_digit_sum</span><span class="ss">(</span><span class="nv">num</span><span class="ss">)</span>:
-    <span class="nv">print</span><span class="ss">(</span><span class="nv">sum</span><span class="ss">(</span><span class="nv">int</span><span class="ss">(</span><span class="nv">i</span><span class="ss">)</span> <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">str</span><span class="ss">(</span><span class="nv">num</span><span class="ss">)))</span>
-
-<span class="nv">n</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
-<span class="nv">print_digit_sum</span><span class="ss">(</span><span class="nv">n</span><span class="ss">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 5:</em></p>
 <p>Напишите функцию convert_to_miles(km), которая принимает в качестве аргумента расстояние в километрах и возвращает расстояние в милях. Формула для преобразования: мили = километры * 0.6214.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">def</span> <span class="nv">convert_to_miles</span><span class="ss">(</span><span class="nv">km</span><span class="ss">)</span>:
-    <span class="nb">result</span> <span class="o">=</span> <span class="nv">num</span> <span class="o">*</span> <span class="mi">0</span>.<span class="mi">6214</span>
-    <span class="k">return</span> <span class="nb">result</span>
-
-<span class="nv">num</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
-<span class="nv">print</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">{:g}</span><span class="s1">&#39;</span>.<span class="nv">format</span><span class="ss">(</span><span class="nv">convert_to_miles</span><span class="ss">(</span><span class="nv">num</span><span class="ss">)))</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 6:</em></p>
 <p>Напишите функцию get_days(month), которая принимает в качестве аргумента номер месяца и возвращает количество дней в данном месяце.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">def</span> <span class="nv">get_days</span><span class="ss">(</span><span class="nv">month</span><span class="ss">)</span>:
-    <span class="k">return</span> <span class="ss">(</span><span class="mi">28</span> <span class="k">if</span> <span class="nv">month</span> <span class="o">==</span> <span class="mi">2</span> <span class="k">else</span> <span class="mi">30</span> <span class="k">if</span> <span class="nv">month</span> <span class="nv">in</span> [<span class="mi">4</span>, <span class="mi">6</span>, <span class="mi">9</span>, <span class="mi">11</span>] <span class="k">else</span> <span class="mi">31</span><span class="ss">)</span>
-<span class="nv">num</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span> 
-<span class="nv">print</span><span class="ss">(</span><span class="nv">get_days</span><span class="ss">(</span><span class="nv">num</span><span class="ss">))</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 7:</em></p>
 <p>Напишите функцию get_factors(num), принимающую в качестве аргумента натуральное число и возвращающую список всех делителей данного числа.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">def</span> <span class="nv">get_factors</span><span class="ss">(</span><span class="nv">num</span><span class="ss">)</span>:
-    <span class="nv">div</span> <span class="o">=</span> [<span class="nv">i</span> <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="mi">1</span>, <span class="nv">n</span><span class="o">+</span><span class="mi">1</span><span class="ss">)</span> <span class="k">if</span> <span class="nv">n</span> <span class="o">%</span> <span class="nv">i</span> <span class="o">==</span> <span class="mi">0</span>]
-    <span class="k">return</span> <span class="nv">div</span>
-
-<span class="nv">n</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
-<span class="nv">print</span><span class="ss">(</span><span class="nv">get_factors</span><span class="ss">(</span><span class="nv">n</span><span class="ss">))</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 8:</em></p>
 <p>Напомним, что строковый метод find('a') возвращает местоположение первого вхождения символа a в строке. Проблема заключается в том, что данный метод не находит местоположение всех символов а.</p>
 <p>Напишите функцию с именем find_all(target, symbol), которая принимает два аргумента: строку target и символ symbol и возвращает список, содержащий все местоположения этого символа в строке.</p>
 <p>Примечание. Если указанный символ не встречается в строке, то следует вернуть пустой список.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">def</span> <span class="nv">find_all</span><span class="ss">(</span><span class="nv">target</span>, <span class="nv">symbol</span><span class="ss">)</span>:
-    <span class="nv">spisok</span> <span class="o">=</span> [<span class="nv">i</span> <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">len</span><span class="ss">(</span><span class="nv">s</span><span class="ss">))</span> <span class="k">if</span> <span class="nv">s</span>[<span class="nv">i</span>] <span class="o">==</span> <span class="nv">char</span>]
-    <span class="k">return</span> <span class="nv">spisok</span>
-
-<span class="nv">s</span> <span class="o">=</span> <span class="nv">input</span><span class="ss">()</span>
-<span class="nv">char</span> <span class="o">=</span> <span class="nv">input</span><span class="ss">()</span>
-<span class="nv">print</span><span class="ss">(</span><span class="nv">find_all</span><span class="ss">(</span><span class="nv">s</span>, <span class="nv">char</span><span class="ss">))</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 9:</em></p>
 <p>Напишите функцию merge(list1, list2), которая принимает в качестве аргументов два отсортированных по возрастанию списка, состоящих из целых чисел, и объединяет их в один отсортированный список.</p>
 <p>Примечание. Списки list1 и list2 могут иметь разную длину.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">def</span> <span class="nv">merge</span><span class="ss">(</span><span class="nv">list1</span>, <span class="nv">list2</span><span class="ss">)</span>:
-    <span class="k">return</span> <span class="nv">sorted</span><span class="ss">(</span><span class="nv">list1</span> <span class="o">+</span> <span class="nv">list2</span><span class="ss">)</span>
-<span class="nv">numbers1</span> <span class="o">=</span> [<span class="nv">int</span><span class="ss">(</span><span class="nv">c</span><span class="ss">)</span> <span class="k">for</span> <span class="nv">c</span> <span class="nv">in</span> <span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">()</span>]
-<span class="nv">numbers2</span> <span class="o">=</span> [<span class="nv">int</span><span class="ss">(</span><span class="nv">c</span><span class="ss">)</span> <span class="k">for</span> <span class="nv">c</span> <span class="nv">in</span> <span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">()</span>]
-<span class="nv">print</span><span class="ss">(</span><span class="nv">merge</span><span class="ss">(</span><span class="nv">numbers1</span>, <span class="nv">numbers2</span><span class="ss">))</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 10:</em></p>
 <p>На вход программе подается число nnn, а затем nnn строк, содержащих целые числа в порядке возрастания. Из данных строк формируются списки чисел. Напишите программу, которая объединяет указанные списки в один отсортированный список с помощью функции quick_merge(), а затем выводит его.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">n</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
-<span class="nv">spisok</span> <span class="o">=</span> []
-<span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">n</span><span class="ss">)</span>:
-    <span class="nv">m</span> <span class="o">=</span> <span class="nv">list</span><span class="ss">(</span><span class="nv">map</span><span class="ss">(</span><span class="nv">int</span>, <span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">()))</span>
-    <span class="nv">spisok</span>.<span class="nv">extend</span><span class="ss">(</span><span class="nv">m</span><span class="ss">)</span>
-
-<span class="nv">print</span><span class="ss">(</span><span class="o">*</span><span class="nv">sorted</span><span class="ss">(</span><span class="nv">spisok</span><span class="ss">))</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 11:</em></p>
 <p>Напишите функцию is_valid_triangle(side1, side2, side3), которая принимает в качестве аргументов три натуральных числа, и возвращает значение True если существует невырожденный треугольник со сторонами side1, side2, side3 и False в противном случае.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">def</span> <span class="nv">is_valid_triangle</span><span class="ss">(</span><span class="nv">side1</span>, <span class="nv">side2</span>, <span class="nv">side3</span><span class="ss">)</span>:
-    <span class="k">if</span> <span class="ss">(</span><span class="nv">a</span> <span class="o">&lt;</span> <span class="nv">b</span> <span class="o">+</span> <span class="nv">c</span><span class="ss">)</span> <span class="nv">and</span> <span class="ss">(</span><span class="nv">b</span> <span class="o">&lt;</span> <span class="nv">c</span> <span class="o">+</span> <span class="nv">a</span><span class="ss">)</span> <span class="nv">and</span> <span class="ss">(</span><span class="nv">c</span> <span class="o">&lt;</span> <span class="nv">a</span> <span class="o">+</span> <span class="nv">b</span><span class="ss">)</span>:
-        <span class="k">return</span> <span class="nv">True</span>
-
-    <span class="k">else</span>:
-        <span class="k">return</span> <span class="nv">False</span>
-
-<span class="nv">a</span>, <span class="nv">b</span>, <span class="nv">c</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>, <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>, <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
-
-<span class="nv">print</span><span class="ss">(</span><span class="nv">is_valid_triangle</span><span class="ss">(</span><span class="nv">a</span>, <span class="nv">b</span>, <span class="nv">c</span><span class="ss">))</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 12:</em></p>
 <p>Напишите функцию is_prime(num), которая принимает в качестве аргумента натуральное число и возвращает значение True если число является простым и False в противном случае.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">def</span> <span class="nv">is_prime</span><span class="ss">(</span><span class="nv">n</span><span class="ss">)</span>:
-    <span class="k">if</span> <span class="nv">n</span> <span class="o">==</span> <span class="mi">1</span>:
-        <span class="k">return</span> <span class="nv">False</span>
-    <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="mi">2</span>, <span class="nv">n</span><span class="ss">)</span>:
-        <span class="k">if</span> <span class="nv">n</span> <span class="o">%</span> <span class="nv">i</span> <span class="o">==</span> <span class="mi">0</span>:
-            <span class="k">return</span> <span class="nv">False</span>
-    <span class="k">return</span> <span class="nv">True</span>
-
-<span class="nv">n</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
-<span class="nv">print</span><span class="ss">(</span><span class="nv">is_prime</span><span class="ss">(</span><span class="nv">n</span><span class="ss">))</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 13:</em></p>
 <p>Напишите функцию get_next_prime(num), которая принимает в качестве аргумента натуральное число num и возвращает первое простое число большее числа num.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">def</span> <span class="nv">get_next_prime</span><span class="ss">(</span><span class="nv">num</span><span class="ss">)</span>:
-    <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">num</span> <span class="o">+</span> <span class="mi">1</span>, <span class="ss">(</span><span class="nv">num</span> <span class="o">+</span> <span class="mi">1</span><span class="ss">)</span> <span class="o">*</span> <span class="mi">2</span><span class="ss">)</span>:
-        <span class="nv">k</span> <span class="o">=</span> <span class="mi">0</span>
-        <span class="k">for</span> <span class="nv">j</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="mi">1</span>, <span class="nv">i</span> <span class="o">+</span> <span class="mi">1</span><span class="ss">)</span>:
-            <span class="k">if</span> <span class="nv">i</span> <span class="o">%</span> <span class="nv">j</span> <span class="o">==</span> <span class="mi">0</span>:
-                <span class="nv">k</span> <span class="o">+=</span> <span class="mi">1</span>
-        <span class="k">if</span> <span class="nv">k</span> <span class="o">==</span> <span class="mi">2</span>:
-            <span class="k">return</span> <span class="nv">i</span>
-
-<span class="nv">n</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
-<span class="nv">print</span><span class="ss">(</span><span class="nv">get_next_prime</span><span class="ss">(</span><span class="nv">n</span><span class="ss">))</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 14:</em></p>
 <p>Напишите функцию is_password_good(password), которая принимает в качестве аргумента строковое значение пароля password и возвращает значение True если пароль является надежным и False в противном случае.</p>
 <p>Пароль является надежным, если:</p>
@@ -263,23 +132,7 @@ body::before {
 <li>он содержит хотя бы одну цифру.</li>
 </ul>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">def</span> <span class="nv">is_password_good</span><span class="ss">(</span><span class="nv">password</span><span class="ss">)</span>:
-    <span class="nb">result</span> <span class="o">=</span> <span class="nv">True</span>
-
-    <span class="k">if</span> <span class="nv">len</span><span class="ss">(</span><span class="nv">password</span><span class="ss">)</span> <span class="o">&lt;</span> <span class="mi">8</span>:
-        <span class="nb">result</span> <span class="o">=</span> <span class="nv">False</span>
-    <span class="k">if</span> <span class="nv">password</span>.<span class="nv">lower</span><span class="ss">()</span> <span class="o">==</span> <span class="nv">password</span>:
-        <span class="nb">result</span> <span class="o">=</span> <span class="nv">False</span>
-    <span class="k">if</span> <span class="nv">password</span>.<span class="nv">upper</span><span class="ss">()</span> <span class="o">==</span> <span class="nv">password</span>:
-        <span class="nb">result</span> <span class="o">=</span> <span class="nv">False</span>
-    <span class="k">if</span> <span class="nv">password</span>.<span class="nv">isalpha</span><span class="ss">()</span>:
-        <span class="nb">result</span> <span class="o">=</span> <span class="nv">False</span>
-
-    <span class="k">return</span> <span class="nb">result</span>
-
-<span class="nv">txt</span> <span class="o">=</span> <span class="nv">input</span><span class="ss">()</span>
-<span class="nv">print</span><span class="ss">(</span><span class="nv">is_password_good</span><span class="ss">(</span><span class="nv">txt</span><span class="ss">))</span>
-</pre></div>
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
             </p>
       
           </div>

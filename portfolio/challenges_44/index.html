@@ -57,142 +57,49 @@ body::before {
               <p><em>Задача 1:</em></p>
 <p>На вход программе подается одна строка, состоящая из цифр. Напишите программу, которая считает сумму цифр данной строки.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="n">print</span><span class="p">(</span><span class="k">sum</span><span class="p">(</span><span class="k">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="k">input</span><span class="p">())))</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 2:</em></p>
 <p>На вход программе подается одна строка. Напишите программу, которая выводит сообщение «Цифра» (без кавычек), если строка содержит цифру. В противном случае вывести сообщение «Цифр нет» (без кавычек).</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">print</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">Цифра</span><span class="s1">&#39;</span> <span class="k">if</span> <span class="nv">any</span><span class="ss">(</span><span class="nv">elem</span>.<span class="nv">isdigit</span><span class="ss">()</span> <span class="k">for</span> <span class="nv">elem</span> <span class="nv">in</span> <span class="nv">input</span><span class="ss">())</span> <span class="k">else</span> <span class="s1">&#39;</span><span class="s">Цифр нет</span><span class="s1">&#39;</span><span class="ss">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 3:</em></p>
 <p>На вход программе подается одна строка. Напишите программу, которая определяет, сколько раз в строке встречаются символы + и *.</p>
-<div class="codehilite"><pre><span></span><span class="o">**</span><span class="n">Sample</span> <span class="k">Output</span><span class="p">:</span><span class="o">**</span>
-<span class="err">Символ</span> <span class="o">+</span> <span class="err">встречается</span> <span class="mi">5</span> <span class="err">раз</span>
-<span class="err">Символ</span> <span class="o">*</span> <span class="err">встречается</span> <span class="mi">2</span> <span class="err">раз</span>
-</pre></div>
-
-
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="k">input</span><span class="p">()</span>
-<span class="n">print</span><span class="p">(</span><span class="s1">&#39;Символ + встречается&#39;</span><span class="p">,</span> <span class="n">n</span><span class="p">.</span><span class="k">count</span><span class="p">(</span><span class="s1">&#39;+&#39;</span><span class="p">),</span> <span class="s1">&#39;раз&#39;</span><span class="p">)</span>
-<span class="n">print</span><span class="p">(</span><span class="s1">&#39;Символ * встречается&#39;</span><span class="p">,</span> <span class="n">n</span><span class="p">.</span><span class="k">count</span><span class="p">(</span><span class="s1">&#39;*&#39;</span><span class="p">),</span> <span class="s1">&#39;раз&#39;</span><span class="p">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 4:</em></p>
 <p>На вход программе подается одна строка. Напишите программу, которая определяет сколько в ней одинаковых соседних символов.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">s</span> <span class="o">=</span> <span class="nv">input</span><span class="ss">()</span>
-<span class="nv">print</span><span class="ss">(</span><span class="nv">sum</span><span class="ss">(</span><span class="mi">1</span> <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">len</span><span class="ss">(</span><span class="nv">s</span><span class="ss">)</span> <span class="o">-</span> <span class="mi">1</span><span class="ss">)</span> <span class="k">if</span> <span class="nv">s</span>[<span class="nv">i</span>] <span class="o">==</span> <span class="nv">s</span>[<span class="nv">i</span> <span class="o">+</span> <span class="mi">1</span>]<span class="ss">))</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 5:</em></p>
 <p>На вход программе подается одна строка с буквами русского языка. Напишите программу, которая определяет количество гласных и согласных букв.</p>
 <p>Примечание. В русском языке 10 гласных букв (а, у, о, ы, и, э, я, ю, ё, е) и 21 согласная буква (б, в, г, д, ж, з, й, к, л, м, н, п, р, с, т, ф, х, ц, ч, ш, щ).</p>
-<div class="codehilite"><pre><span></span><span class="o">**</span><span class="n">Sample</span> <span class="k">Output</span><span class="p">:</span><span class="o">**</span>
-
-<span class="err">Количество</span> <span class="err">гласных</span> <span class="err">букв</span> <span class="err">равно</span> <span class="mi">25</span>
-<span class="err">Количество</span> <span class="err">согласных</span> <span class="err">букв</span> <span class="err">равно</span> <span class="mi">24</span>
-</pre></div>
-
-
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">s</span> <span class="o">=</span> <span class="nv">input</span><span class="ss">()</span>.<span class="nv">lower</span><span class="ss">()</span>
-<span class="nv">print</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">Количество гласных букв равно</span><span class="s1">&#39;</span>, <span class="nv">sum</span><span class="ss">(</span><span class="mi">1</span> <span class="k">for</span> <span class="nv">_</span> <span class="nv">in</span> <span class="nv">s</span> <span class="k">if</span> <span class="nv">_</span> <span class="nv">in</span> <span class="s1">&#39;</span><span class="s">ауоыиэяюёе</span><span class="s1">&#39;</span><span class="ss">))</span>
-<span class="nv">print</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">Количество согласных букв равно</span><span class="s1">&#39;</span>, <span class="nv">sum</span><span class="ss">(</span><span class="mi">1</span> <span class="k">for</span> <span class="nv">_</span> <span class="nv">in</span> <span class="nv">s</span> <span class="k">if</span> <span class="nv">_</span> <span class="nv">in</span> <span class="s1">&#39;</span><span class="s">бвгджзйклмнпрстфхцчшщ</span><span class="s1">&#39;</span><span class="ss">))</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 6:</em></p>
 <p>На вход программе подается натуральное число, записанное в десятичной системе счисления. Напишите программу, которая переводит данное число в двоичную систему счисления.</p>
 <p><em>Решение 1:</em></p>
-<div class="codehilite"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="k">input</span><span class="p">())</span>
-<span class="n">print</span><span class="p">(</span><span class="n">bin</span><span class="p">(</span><span class="n">n</span><span class="p">)[</span><span class="mi">2</span><span class="p">:])</span>
-</pre></div>
-
-
 <p><em>Решение 2:</em></p>
-<div class="codehilite"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="k">input</span><span class="p">())</span>
-<span class="n">print</span> <span class="p">(</span><span class="n">f</span><span class="s1">&#39;{n:b}&#39;</span><span class="p">)</span>
-</pre></div>
-
-
 <p><em>Решение 3:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">n</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
-<span class="nv">d</span> <span class="o">=</span> <span class="nv">str</span><span class="ss">()</span>
-<span class="k">while</span> <span class="nv">n</span> <span class="o">!=</span> <span class="mi">0</span>:
-    <span class="nv">d</span> <span class="o">=</span> <span class="nv">str</span><span class="ss">(</span><span class="nv">n</span> <span class="o">%</span> <span class="mi">2</span><span class="ss">)</span> <span class="o">+</span> <span class="nv">d</span> 
-    <span class="nv">n</span> <span class="o">//=</span> <span class="mi">2</span>
-<span class="nv">print</span><span class="ss">(</span><span class="nv">d</span><span class="ss">)</span>
-</pre></div>
-
-
 <p><em>Задача 7:</em></p>
 <p>Джим Хоппер с помощью радиоприемника пытается получить сообщение Оди. На приемник ему поступает n различных последовательностей кода Морзе. Декодировав их, он получает последовательности из цифр и строчного латинского алфавита, при этом во всех сообщениях Оди содержится число 11, причем минимум 3 раза. Помогите определить Джиму количество сообщений от Оди.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">n</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
-<span class="nv">counter</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="k">for</span> <span class="nv">_</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">n</span><span class="ss">)</span>:
-    <span class="nv">stroka</span> <span class="o">=</span> <span class="nv">input</span><span class="ss">()</span>
-    <span class="k">if</span> <span class="nv">stroka</span>.<span class="nv">count</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">11</span><span class="s1">&#39;</span><span class="ss">)</span> <span class="o">&gt;=</span> <span class="mi">3</span>:
-        <span class="nv">counter</span> <span class="o">+=</span> <span class="mi">1</span>
-<span class="nv">print</span><span class="ss">(</span><span class="nv">counter</span><span class="ss">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 8:</em></p>
 <p>На вход программе подается строка текста. Напишите программу, которая подсчитывает количество цифр в данной строке.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">stroka</span> <span class="o">=</span> <span class="nv">input</span><span class="ss">()</span>
-<span class="nv">counter</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">stroka</span>:
-    <span class="k">if</span> <span class="nv">i</span>.<span class="nv">isdigit</span><span class="ss">()</span>:
-        <span class="nv">counter</span> <span class="o">+=</span> <span class="mi">1</span>
-<span class="nv">print</span><span class="ss">(</span><span class="nv">counter</span><span class="ss">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 9:</em></p>
 <p>На вход программе подается строка текста. Напишите программу, которая проверяет, что строка заканчивается подстрокой .com или .ru.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">stroka</span> <span class="o">=</span> <span class="nv">input</span><span class="ss">()</span>
-<span class="k">if</span> <span class="nv">stroka</span>.<span class="nv">endswith</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">.com</span><span class="s1">&#39;</span><span class="ss">)</span> <span class="nv">or</span> <span class="nv">stroka</span>.<span class="nv">endswith</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">.ru</span><span class="s1">&#39;</span><span class="ss">)</span>:
-    <span class="nv">print</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">YES</span><span class="s1">&#39;</span><span class="ss">)</span>
-<span class="k">else</span>:
-    <span class="nv">print</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">NO</span><span class="s1">&#39;</span><span class="ss">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 10:</em></p>
 <p>На вход программе подается строка текста. Напишите программу, которая выводит на экран символ, который появляется наиболее часто.</p>
 <p><em>Решение 1:</em></p>
-<div class="codehilite"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="k">input</span><span class="p">()</span>
-<span class="n">print</span><span class="p">(</span><span class="k">max</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="k">key</span><span class="o">=</span><span class="n">lambda</span> <span class="n">i</span><span class="p">:</span> <span class="p">(</span><span class="n">s</span><span class="p">.</span><span class="k">count</span><span class="p">(</span><span class="n">i</span><span class="p">),</span> <span class="n">i</span><span class="p">)))</span>
-</pre></div>
-
-
 <p><em>Решение 2:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">s</span>, <span class="nv">sim</span> <span class="o">=</span> <span class="nv">input</span><span class="ss">()</span>, <span class="s1">&#39;</span><span class="s">a</span><span class="s1">&#39;</span>
-<span class="k">for</span> <span class="nv">c</span> <span class="nv">in</span> <span class="nv">s</span>:
-    <span class="k">if</span> <span class="nv">s</span>.<span class="nv">count</span><span class="ss">(</span><span class="nv">c</span><span class="ss">)</span> <span class="o">&gt;=</span> <span class="nv">s</span>.<span class="nv">count</span><span class="ss">(</span><span class="nv">sim</span><span class="ss">)</span>:
-        <span class="nv">sim</span> <span class="o">=</span> <span class="nv">c</span>
-<span class="nv">print</span><span class="ss">(</span><span class="nv">sim</span><span class="ss">)</span>
-</pre></div>
-
-
 <p><em>Задача 11 - Палиндром:</em></p>
 <p>На вход программе подается одно слово, записанное в нижнем регистре. Напишите программу, которая определяет является ли оно палиндромом.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="s s-Atom">n</span> <span class="o">=</span> <span class="nf">input</span><span class="p">()</span>
-<span class="nf">print</span><span class="p">(</span><span class="s s-Atom">&#39;YES&#39;</span> <span class="s s-Atom">if</span> <span class="s s-Atom">n</span> <span class="o">==</span> <span class="s s-Atom">n</span><span class="p">[</span><span class="s s-Atom">::-</span><span class="mi">1</span><span class="p">]</span> <span class="s s-Atom">else</span> <span class="s s-Atom">&#39;NO&#39;</span><span class="p">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 12 - Срезы:</em></p>
 <p>На вход программе подается одна строка. Напишите программу, которая выводит:</p>
 <ul>
@@ -205,11 +112,7 @@ body::before {
 <li>строку с удаленным первым и последним символом.</li>
 </ul>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="s s-Atom">s</span> <span class="o">=</span> <span class="nf">input</span><span class="p">()</span>
-<span class="nf">print</span><span class="p">(</span><span class="nf">len</span><span class="p">(</span><span class="s s-Atom">s</span><span class="p">),</span> <span class="p">(</span><span class="s s-Atom">s</span> <span class="o">*</span> <span class="mi">3</span><span class="p">),</span> <span class="s s-Atom">s</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s s-Atom">s</span><span class="p">[</span><span class="s s-Atom">:</span><span class="mi">3</span><span class="p">],</span> <span class="s s-Atom">s</span><span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="s s-Atom">:</span><span class="p">],</span> <span class="s s-Atom">s</span><span class="p">[</span><span class="s s-Atom">::-</span><span class="mi">1</span><span class="p">],</span> <span class="s s-Atom">s</span><span class="p">[</span><span class="mi">1</span><span class="p">:-</span><span class="mi">1</span><span class="p">],</span> <span class="s s-Atom">sep=&#39;\n&#39;</span><span class="p">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 13 - Срезы-2:</em></p>
 <p>На вход программе подается одна строка. Напишите программу, которая выводит:</p>
 <ul>
@@ -223,65 +126,35 @@ body::before {
 <li>все символы строки через один в обратном порядке, начиная с последнего.</li>
 </ul>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="s s-Atom">n</span> <span class="o">=</span> <span class="nf">input</span><span class="p">()</span>
-<span class="nf">print</span><span class="p">(</span><span class="s s-Atom">n</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="s s-Atom">n</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">],</span> <span class="s s-Atom">n</span><span class="p">[</span><span class="s s-Atom">:</span><span class="mi">5</span><span class="p">],</span> <span class="s s-Atom">n</span><span class="p">[</span><span class="mi">0</span><span class="p">:-</span><span class="mi">2</span><span class="p">],</span> <span class="s s-Atom">n</span><span class="p">[</span><span class="s s-Atom">::</span><span class="mi">2</span><span class="p">],</span> <span class="s s-Atom">n</span><span class="p">[</span><span class="mi">1</span><span class="s s-Atom">::</span><span class="mi">2</span><span class="p">],</span> <span class="s s-Atom">n</span><span class="p">[</span><span class="s s-Atom">::-</span><span class="mi">1</span><span class="p">],</span> <span class="s s-Atom">n</span><span class="p">[</span><span class="s s-Atom">::-</span><span class="mi">2</span><span class="p">],</span> <span class="s s-Atom">sep=&#39;\n&#39;</span> <span class="p">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 14:</em></p>
 <p>На вход программе подается строка текста. Напишите программу, которая разрежет ее на две равные части, переставит их местами и выведет на экран.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="s s-Atom">s</span> <span class="o">=</span> <span class="nf">input</span><span class="p">()</span>
-<span class="nf">print</span><span class="p">(</span><span class="s s-Atom">s</span><span class="p">[</span><span class="s s-Atom">-</span><span class="p">(</span><span class="nf">len</span><span class="p">(</span><span class="s s-Atom">s</span><span class="p">)</span><span class="s s-Atom">//-</span><span class="mi">2</span><span class="p">)</span><span class="s s-Atom">:</span><span class="p">]</span><span class="o">+</span><span class="s s-Atom">s</span><span class="p">[:-(</span><span class="nf">len</span><span class="p">(</span><span class="s s-Atom">s</span><span class="p">)</span><span class="s s-Atom">//-</span><span class="mi">2</span><span class="p">)])</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 15:</em></p>
 <p>На вход программе подается строка, состоящая из имени и фамилии человека, разделенных одним пробелом. Напишите программу, которая проверяет, что имя и фамилия начинаются с заглавной буквы.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">s</span> <span class="o">=</span> <span class="nv">input</span><span class="ss">()</span>
-<span class="nv">print</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">YES</span><span class="s1">&#39;</span> <span class="k">if</span> <span class="ss">(</span><span class="nv">s</span> <span class="o">==</span> <span class="nv">s</span>.<span class="nv">title</span><span class="ss">())</span> <span class="k">else</span> <span class="s1">&#39;</span><span class="s">NO</span><span class="s1">&#39;</span><span class="ss">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 16:</em></p>
 <p>На вход программе подается строка. Напишите программу, которая меняет регистр символов, другими словами замените все строчные символы заглавными и наоборот.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="n">print</span><span class="p">(</span><span class="k">input</span><span class="p">().</span><span class="n">swapcase</span><span class="p">())</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 17:</em></p>
 <p>На вход программе подается строка текста. Напишите программу, которая определяет является ли оттенок текста хорошим или нет. Текст имеет хороший оттенок, если содержит подстроку «хорош» во всевозможных регистрах.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">print</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">YES</span><span class="s1">&#39;</span> <span class="k">if</span> <span class="s1">&#39;</span><span class="s">хорош</span><span class="s1">&#39;</span> <span class="nv">in</span> <span class="nv">input</span><span class="ss">()</span>.<span class="nv">lower</span><span class="ss">()</span> <span class="k">else</span> <span class="s1">&#39;</span><span class="s">NO</span><span class="s1">&#39;</span><span class="ss">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 18:</em></p>
 <p>На вход программе подается строка. Напишите программу, которая подсчитывает количество буквенных символов в нижнем регистре.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">print</span><span class="ss">(</span><span class="nv">sum</span><span class="ss">(</span><span class="nv">s</span>.<span class="nv">islower</span><span class="ss">()</span> <span class="k">for</span> <span class="nv">s</span> <span class="nv">in</span> <span class="nv">input</span><span class="ss">()))</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 19:</em></p>
 <p>На вход программе подается строка текста, состоящая из слов, разделенных ровно одним пробелом. Напишите программу, которая подсчитывает количество слов в ней.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="n">stroka</span> <span class="o">=</span> <span class="k">input</span><span class="p">()</span>
-<span class="n">print</span><span class="p">(</span><span class="n">len</span><span class="p">(</span><span class="n">stroka</span><span class="p">.</span><span class="n">split</span><span class="p">()))</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 20:</em></p>
 <p>На вход программе подается строка генетического кода, состоящая из букв А (аденин), Г (гуанин), Ц (цитозин), Т (тимин). Напишите программу, которая подсчитывает сколько аденина, гуанина, цитозина и тимина входит в данную строку генетического кода.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="k">input</span><span class="p">().</span><span class="k">lower</span><span class="p">()</span>
-<span class="n">print</span><span class="p">(</span><span class="s1">&#39;Аденин:&#39;</span><span class="p">,</span> <span class="n">s</span><span class="p">.</span><span class="k">count</span><span class="p">(</span><span class="s1">&#39;а&#39;</span><span class="p">))</span>
-<span class="n">print</span><span class="p">(</span><span class="s1">&#39;Гуанин:&#39;</span><span class="p">,</span> <span class="n">s</span><span class="p">.</span><span class="k">count</span><span class="p">(</span><span class="s1">&#39;г&#39;</span><span class="p">))</span>
-<span class="n">print</span><span class="p">(</span><span class="s1">&#39;Цитозин:&#39;</span><span class="p">,</span> <span class="n">s</span><span class="p">.</span><span class="k">count</span><span class="p">(</span><span class="s1">&#39;ц&#39;</span><span class="p">))</span>
-<span class="n">print</span><span class="p">(</span><span class="s1">&#39;Тимин:&#39;</span><span class="p">,</span> <span class="n">s</span><span class="p">.</span><span class="k">count</span><span class="p">(</span><span class="s1">&#39;т&#39;</span><span class="p">))</span>
-</pre></div>
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
             </p>
       
           </div>

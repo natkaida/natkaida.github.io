@@ -61,6 +61,7 @@ body::before {
 <p><strong>Формат выходных данных</strong></p>
 <p>Программа должна вывести максимальное количество показаний, после удаления которых анализ результатов будет произведен верно.</p>
 <p><em>Решение:</em></p>
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <div class="codehilite"><pre><span></span><span class="n">sputnik</span> <span class="o">=</span> <span class="k">input</span><span class="p">().</span><span class="n">split</span><span class="p">()</span>
 <span class="n">print</span><span class="p">(</span><span class="n">len</span><span class="p">(</span><span class="n">sputnik</span><span class="p">)</span> <span class="o">-</span> <span class="n">len</span><span class="p">(</span><span class="k">set</span><span class="p">(</span><span class="n">sputnik</span><span class="p">)))</span>
 </pre></div>
@@ -74,6 +75,7 @@ body::before {
 <p><strong>Формат выходных данных</strong></p>
 <p>Программа должна вывести OK, если этот город ещё не вспоминали, и REPEAT, если город уже был назван.</p>
 <p><em>Решение:</em></p>
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <div class="codehilite"><pre><span></span><span class="nv">cites</span> <span class="o">=</span> {<span class="nv">input</span><span class="ss">()</span> <span class="k">for</span> <span class="nv">_</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">()))</span>}
 <span class="nv">print</span><span class="ss">((</span><span class="s1">&#39;</span><span class="s">OK</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">REPEAT</span><span class="s1">&#39;</span><span class="ss">)</span>[<span class="nv">input</span><span class="ss">()</span> <span class="nv">in</span> <span class="nv">cites</span>]<span class="ss">)</span>
 </pre></div>
@@ -87,6 +89,7 @@ body::before {
 <p><strong>Формат выходных данных</strong></p>
 <p>Программа должна вывести n строк, в каждой из которых написано слово YES, если книга найдена в библиотеке, и NO, если нет.</p>
 <p><em>Решение:</em></p>
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <div class="codehilite"><pre><span></span><span class="nv">m</span>, <span class="nv">n</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>, <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
 <span class="nv">dom</span> <span class="o">=</span> <span class="nv">set</span><span class="ss">(</span>[<span class="nv">input</span><span class="ss">()</span> <span class="k">for</span> <span class="nv">_</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">m</span><span class="ss">)</span>]<span class="ss">)</span>
 <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">n</span><span class="ss">)</span>:
@@ -98,6 +101,7 @@ body::before {
 <p>Каждый день Тимур решает ровно две сложные математические задачи. Решая первую задачу, он записывает на первом листочке все числа, которые в ней встречаются. Далее он делает паузу и берется за вторую задачу. Затем записывает на втором листочке все числа, которые в ней встречаются. После этого он берет еще один листок и выписывает на него все совпадающие числа из первых двух листочков. Если такие числа есть, день удался, если общих чисел нет, Тимур считает день неудачным.</p>
 <p>Напишите программу, которая находит общие числа двух листочков или сообщает, что день не удался.</p>
 <p><em>Решение:</em></p>
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <div class="codehilite"><pre><span></span><span class="nv">day</span> <span class="o">=</span> <span class="nv">set</span><span class="ss">(</span><span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">())</span> <span class="o">&amp;</span> <span class="nv">set</span><span class="ss">(</span><span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">())</span>
 <span class="nv">print</span><span class="ss">(</span><span class="o">*</span><span class="nv">sorted</span><span class="ss">(</span><span class="nv">day</span>, <span class="nv">key</span><span class="o">=</span><span class="nv">int</span>, <span class="nv">reverse</span><span class="o">=</span><span class="nv">True</span><span class="ss">)</span> <span class="k">if</span> <span class="nv">day</span> <span class="k">else</span> [<span class="s1">&#39;</span><span class="s">BAD DAY</span><span class="s1">&#39;</span>]<span class="ss">)</span>
 </pre></div>
@@ -112,6 +116,7 @@ body::before {
 <p><strong>Формат выходных данных</strong></p>
 <p>Программа должна вывести YES, если кандидат прошел испытание и его можно брать на работу и NO в противном случае.</p>
 <p><em>Решение:</em></p>
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <div class="codehilite"><pre><span></span><span class="n">print</span><span class="p">((</span><span class="s1">&#39;NO&#39;</span><span class="p">,</span> <span class="s1">&#39;YES&#39;</span><span class="p">)[</span><span class="k">set</span><span class="p">(</span><span class="k">input</span><span class="p">().</span><span class="n">split</span><span class="p">())</span> <span class="o">==</span> <span class="k">set</span><span class="p">(</span><span class="k">input</span><span class="p">().</span><span class="n">split</span><span class="p">())])</span>
 </pre></div>
 
@@ -125,6 +130,7 @@ body::before {
 <p>Программа должна вывести количество учеников, которые изучают только математику.</p>
 <p>Примечание. Гарантируется, что среди учеников школы нет однофамильцев.</p>
 <p><em>Решение:</em></p>
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <div class="codehilite"><pre><span></span><span class="nv">m</span>, <span class="nv">n</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>, <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
 <span class="nv">a</span> <span class="o">=</span> <span class="nv">set</span><span class="ss">(</span><span class="nv">input</span><span class="ss">()</span> <span class="k">for</span> <span class="nv">_</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">m</span><span class="ss">))</span>
 <span class="nv">b</span> <span class="o">=</span> <span class="nv">set</span><span class="ss">(</span><span class="nv">input</span><span class="ss">()</span> <span class="k">for</span> <span class="nv">_</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">n</span><span class="ss">))</span>
@@ -141,6 +147,7 @@ body::before {
 <p>Программа должна вывести количество учеников, которые изучают только один предмет. Если таких учеников не окажется, то необходимо вывести NO.</p>
 <p>Примечание. Гарантируется, что среди учеников школы нет однофамильцев.</p>
 <p><em>Решение:</em></p>
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <div class="codehilite"><pre><span></span><span class="nv">m</span>, <span class="nv">n</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>, <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
 <span class="nv">s</span> <span class="o">=</span> {<span class="nv">input</span><span class="ss">()</span> <span class="k">for</span> <span class="nv">_</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">m</span><span class="ss">)</span>} <span class="o">^</span> {<span class="nv">input</span><span class="ss">()</span> <span class="k">for</span> <span class="nv">_</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">n</span><span class="ss">)</span>}
 <span class="nv">print</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">NO</span><span class="s1">&#39;</span> <span class="k">if</span> <span class="nv">len</span><span class="ss">(</span><span class="nv">s</span><span class="ss">)</span> <span class="o">==</span> <span class="mi">0</span> <span class="k">else</span> <span class="nv">len</span><span class="ss">(</span><span class="nv">s</span><span class="ss">))</span>
@@ -156,6 +163,7 @@ body::before {
 <p>Программа должна вывести все фамилии учеников, отсортированных в лексикографическом порядке, записанные руководителем и его помощником.</p>
 <p>Примечание. Гарантируется, что среди учеников школы нет однофамильцев.</p>
 <p><em>Решение:</em></p>
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <div class="codehilite"><pre><span></span><span class="n">print</span><span class="p">(</span><span class="o">*</span><span class="n">sorted</span><span class="p">(</span><span class="k">set</span><span class="p">(</span><span class="k">input</span><span class="p">().</span><span class="n">split</span><span class="p">())</span> <span class="o">|</span><span class="k">set</span><span class="p">(</span><span class="k">input</span><span class="p">().</span><span class="n">split</span><span class="p">())))</span>
 </pre></div>
 
@@ -169,6 +177,7 @@ body::before {
 <p>Программа должна вывести количество учеников, которые изучают только один предмет. Если таких учеников не окажется, то необходимо вывести NO.</p>
 <p>Примечание. Гарантируется, что среди учеников школы нет однофамильцев.</p>
 <p><em>Решение:</em></p>
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <div class="codehilite"><pre><span></span><span class="nv">n</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span> <span class="o">+</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
 <span class="nv">print</span><span class="ss">(</span><span class="mi">2</span> <span class="o">*</span> <span class="nv">len</span><span class="ss">(</span><span class="nv">set</span><span class="ss">(</span>[<span class="nv">input</span><span class="ss">()</span> <span class="k">for</span> <span class="nv">_</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">n</span><span class="ss">)</span>]<span class="ss">))</span> <span class="o">-</span> <span class="nv">n</span> <span class="nv">or</span> <span class="s1">&#39;</span><span class="s">NO</span><span class="s1">&#39;</span><span class="ss">)</span>
 </pre></div>
@@ -184,6 +193,7 @@ body::before {
 <p>Примечание 1. Гарантируется, что среди учеников школы нет однофамильцев.</p>
 <p>Примечание 2. Гарантируется, что хотя бы один ученик был на всех уроках.</p>
 <p><em>Решение:</em></p>
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <div class="codehilite"><pre><span></span><span class="nv">m</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
 <span class="nv">a</span> <span class="o">=</span> <span class="nv">set</span><span class="ss">(</span>[<span class="nv">input</span><span class="ss">()</span> <span class="k">for</span> <span class="nv">_</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">()))</span>]<span class="ss">)</span>
 <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">m</span> <span class="o">-</span> <span class="mi">1</span><span class="ss">)</span>:
@@ -210,6 +220,7 @@ body::before {
 <p><strong>Формат выходных данных</strong></p>
 <p>Программа должна вывести три числа в соответствии с условием задачи, каждое на отдельной строке.</p>
 <p><em>Решение:</em></p>
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <div class="codehilite"><pre><span></span><span class="nv">n</span>, <span class="nv">m</span>, <span class="nv">k</span>, <span class="nv">x</span>, <span class="nv">y</span>, <span class="nv">z</span>, <span class="nv">t</span>, <span class="nv">a</span> <span class="o">=</span> <span class="ss">(</span><span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span> <span class="k">for</span> <span class="nv">_</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="mi">8</span><span class="ss">))</span>
 <span class="nv">one</span> <span class="o">=</span> <span class="nv">n</span> <span class="o">+</span> <span class="nv">m</span> <span class="o">-</span> <span class="nv">x</span> <span class="o">-</span> <span class="nv">t</span>
 <span class="nv">two</span> <span class="o">=</span> <span class="nv">n</span> <span class="o">+</span> <span class="nv">k</span> <span class="o">-</span> <span class="nv">z</span> <span class="o">-</span> <span class="nv">t</span>
@@ -229,6 +240,7 @@ body::before {
 <p><strong>Формат выходных данных</strong></p>
 <p>Программа должна вывести одно число в соответствии с условием задачи.</p>
 <p><em>Решение:</em></p>
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <div class="codehilite"><pre><span></span><span class="nv">n</span>, <span class="nv">m</span>, <span class="nv">k</span>, <span class="nv">x</span>, <span class="nv">y</span>, <span class="nv">z</span> <span class="o">=</span> [<span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span> <span class="k">for</span> <span class="nv">_</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="mi">6</span><span class="ss">)</span>]
 <span class="nb">result</span> <span class="o">=</span> <span class="nv">n</span> <span class="o">+</span> <span class="nv">m</span> <span class="o">+</span> <span class="nv">k</span> <span class="o">-</span> <span class="nv">x</span> <span class="o">-</span> <span class="nv">y</span> <span class="o">+</span> <span class="nv">z</span>
 <span class="nv">print</span><span class="ss">(</span><span class="nv">f</span><span class="s1">&#39;</span><span class="s">{result}</span><span class="s1">&#39;</span><span class="ss">)</span>
@@ -238,6 +250,7 @@ body::before {
 <p><em>Задача 13:</em></p>
 <p>На вход программе подаются две строки текста, содержащие числа. Напишите программу, которая выводит все числа в порядке возрастания, которые есть как в первой строке, так и во второй.</p>
 <p><em>Решение:</em></p>
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <div class="codehilite"><pre><span></span><span class="nv">print</span><span class="ss">(</span><span class="o">*</span><span class="nv">sorted</span><span class="ss">(</span><span class="nv">set</span><span class="ss">(</span>[<span class="nv">int</span><span class="ss">(</span><span class="nv">i</span><span class="ss">)</span> <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">()</span>]<span class="ss">)</span>.<span class="nv">intersection</span><span class="ss">(</span><span class="nv">set</span><span class="ss">(</span>[<span class="nv">int</span><span class="ss">(</span><span class="nv">i</span><span class="ss">)</span> <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">()</span>]<span class="ss">))))</span>
 </pre></div>
 
@@ -245,6 +258,7 @@ body::before {
 <p><em>Задача 14:</em></p>
 <p>Используя генератор множеств, дополните приведенный код, так чтобы получить множество, содержащее уникальные значения списка items. Результат вывести на одной строке, в упорядоченном виде, разделяя элементы одним символом пробела. Обратите внимание, некоторые элементы списка – числа, а некоторые – строки, при этом строки необходимо трактовать как числа.</p>
 <p><em>Решение:</em></p>
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <div class="codehilite"><pre><span></span><span class="nv">items</span> <span class="o">=</span> [<span class="mi">10</span>, <span class="s1">&#39;</span><span class="s">30</span><span class="s1">&#39;</span>, <span class="mi">30</span>, <span class="mi">10</span>, <span class="s1">&#39;</span><span class="s">56</span><span class="s1">&#39;</span>, <span class="mi">34</span>, <span class="s1">&#39;</span><span class="s">12</span><span class="s1">&#39;</span>, <span class="mi">90</span>, <span class="mi">89</span>, <span class="mi">34</span>, <span class="mi">45</span>, <span class="s1">&#39;</span><span class="s">67</span><span class="s1">&#39;</span>, <span class="mi">12</span>, <span class="mi">10</span>, <span class="mi">90</span>, <span class="mi">23</span>, <span class="s1">&#39;</span><span class="s">45</span><span class="s1">&#39;</span>, <span class="mi">56</span>, <span class="s1">&#39;</span><span class="s">56</span><span class="s1">&#39;</span>, <span class="mi">1</span>, <span class="mi">5</span>, <span class="s1">&#39;</span><span class="s">6</span><span class="s1">&#39;</span>, <span class="mi">5</span>]
 <span class="nv">myset</span> <span class="o">=</span> {<span class="nv">int</span><span class="ss">(</span><span class="nv">c</span><span class="ss">)</span> <span class="k">for</span> <span class="nv">c</span> <span class="nv">in</span> <span class="nv">items</span>}
 <span class="nv">print</span><span class="ss">(</span><span class="o">*</span><span class="nv">sorted</span><span class="ss">(</span><span class="nv">myset</span><span class="ss">))</span>
@@ -254,6 +268,7 @@ body::before {
 <p><em>Задача 15:</em></p>
 <p>Вводятся вещественные числа в одну строчку через пробел. Необходимо на их основе сформировать множество s. Вывести на экран значения множества s в порядке возрастания в одну строчку через пробел.</p>
 <p><em>Решение:</em></p>
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <div class="codehilite"><pre><span></span><span class="n">print</span><span class="p">(</span><span class="o">*</span><span class="n">sorted</span><span class="p">(</span><span class="k">set</span><span class="p">(</span><span class="k">map</span><span class="p">(</span><span class="nb">float</span><span class="p">,</span> <span class="k">input</span><span class="p">().</span><span class="n">split</span><span class="p">()))))</span>
 </pre></div>
 
@@ -261,21 +276,18 @@ body::before {
 <p><em>Задача 16:</em></p>
 <p>Вводится текст в одну строку, слова разделены пробелом. Необходимо подсчитать число уникальных слов (без учета регистра) в этом тексте. Результат (число уникальных слов) вывести на экран.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="n">print</span><span class="p">(</span><span class="n">len</span><span class="p">(</span><span class="k">set</span><span class="p">(</span><span class="k">input</span><span class="p">().</span><span class="k">lower</span><span class="p">().</span><span class="n">split</span><span class="p">())))</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a>
+    print(len(set(input().lower().split())))</p>
 <p><em>Задача 17:</em></p>
 <p>Вводится строка, содержащая латинские символы, пробелы и цифры. Необходимо выделить из нее все неповторяющиеся цифры (символы от 0 до 9) и вывести на экран в одну строку через пробел их в порядке возрастания значений. Если цифры отсутствуют, то вывести слово НЕТ.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">res</span> <span class="o">=</span> <span class="nv">sorted</span><span class="ss">(</span><span class="nv">set</span><span class="ss">(</span>[<span class="nv">i</span> <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">input</span><span class="ss">()</span> <span class="k">if</span> <span class="nv">i</span>.<span class="nv">isdigit</span><span class="ss">()</span>]<span class="ss">))</span>
-<span class="nv">print</span><span class="ss">(</span><span class="o">*</span><span class="nv">res</span> <span class="k">if</span> <span class="nv">len</span><span class="ss">(</span><span class="nv">res</span><span class="ss">)</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="k">else</span> [<span class="s1">&#39;</span><span class="s">НЕТ</span><span class="s1">&#39;</span>]<span class="ss">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a>
+    res = sorted(set([i for i in input() if i.isdigit()]))
+    print(*res if len(res) &gt; 0 else ['НЕТ'])</p>
 <p><em>Задача 18:</em></p>
 <p>В ночном клубе фиксируется список гостей. Причем гости могут выходить из помещения, а затем, снова заходить. Тогда их имена фиксируются повторно. На вход программы поступает такой список (каждое имя записано с новой строки). Требуется подсчитать общее число гостей, которые посетили ночной клуб. Полагается, что гости имеют уникальные имена. На экран вывести общее число гостей клуба.</p>
 <p><em>Решение:</em></p>
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">sys</span>
 <span class="n">lst_in</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">str</span><span class="o">.</span><span class="n">strip</span><span class="p">,</span> <span class="n">sys</span><span class="o">.</span><span class="n">stdin</span><span class="o">.</span><span class="n">readlines</span><span class="p">()))</span>
 <span class="k">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">lst_in</span><span class="p">)))</span>
@@ -290,6 +302,7 @@ body::before {
 имя N: комментарий N</p>
 <p>Также полагается, что имена у разных комментаторов не совпадают. Вывести на экран общее число уникальных комментаторов.</p>
 <p><em>Решение:</em></p>
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">sys</span>
 <span class="k">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">i</span><span class="p">:</span> <span class="n">i</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;:&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">],</span> <span class="n">sys</span><span class="o">.</span><span class="n">stdin</span><span class="o">.</span><span class="n">readlines</span><span class="p">()))))</span>
 </pre></div>
@@ -298,12 +311,12 @@ body::before {
 <p><em>Задача 20:</em></p>
 <p>Пользователь с клавиатуры вводит названия городов, пока не введет букву q. Определить общее уникальное число городов, которые вводил пользователь. На экран вывести это число. Из коллекций при реализации программы использовать только множества.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">a</span>, <span class="nv">s</span> <span class="o">=</span> <span class="nv">input</span><span class="ss">()</span>, <span class="nv">set</span><span class="ss">()</span>
-<span class="k">while</span> <span class="nv">a</span> <span class="o">!=</span> <span class="s2">&quot;</span><span class="s">q</span><span class="s2">&quot;</span>:
-    <span class="nv">s</span>.<span class="nv">add</span><span class="ss">(</span><span class="nv">a</span><span class="ss">)</span>
-    <span class="nv">a</span> <span class="o">=</span> <span class="nv">input</span><span class="ss">()</span>
-<span class="nv">print</span><span class="ss">(</span><span class="nv">len</span><span class="ss">(</span><span class="nv">s</span><span class="ss">))</span>
-</pre></div>
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a>
+    a, s = input(), set()
+    while a != "q":
+        s.add(a)
+        a = input()
+    print(len(s))   </p>
             </p>
       
           </div>

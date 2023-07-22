@@ -58,105 +58,44 @@ body::before {
 <p>На вход программе подается строка натуральных чисел. Из элементов строки формируется список чисел.</p>
 <p>Напишите программу сортировки списка чисел в порядке неубывания суммы их цифр. При этом, если два числа имеют одинаковую сумму цифр, следует сохранить их взаиморасположение в начальном списке.</p>
 <p><em>Решение:</em></p>
-<p>def digit_sum(n):
-      return sum(map(int,str(n)))</p>
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
+<p>def digit_sum(n):</p>
 <p>spisok = list(map(int, input().split()))
   print(*sorted(spisok, key=digit_sum))</p>
 <p><em>Задача 2:</em></p>
 <p>На вход программе подается строка натуральных чисел. Из элементов строки формируется список чисел.</p>
 <p>Напишите программу сортировки списка чисел в порядке неубывания суммы их цифр. При этом, если у двух чисел одинаковая сумма цифр, их следует вывести в порядке неубывания.</p>
 <p><em>Решение:</em></p>
-<p>def digit_sum(n):
-      return sum(map(int,str(n)))</p>
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
+<p>def digit_sum(n):</p>
 <p>spisok = list(map(int, input().split()))
   sp = sorted(spisok)
   print(*sorted(sp, key=digit_sum))</p>
 <p><em>Задача 3:</em></p>
 <p>Напишите программу, которая с помощью функции map() округляет все элементы списка numbers до 222 десятичных знаков, а затем выводит их, каждый на отдельной строке.</p>
 <p><em>Решение:</em></p>
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p>def map(function, items):
-      result = []
-      for item in items:
-          result.append(function(item))
-      return result</p>
-<p>def round_two(a):
-    return round(a, 2)</p>
+  def round_two(a):</p>
 <p>numbers = [3.56773, 5.57668, 4.00914, 56.24241, 9.01344, 32.12013, 23.22222, 90.09873, 45.45, 314.1528, 2.71828, 1.41546]</p>
 <p>print(*map(round_two, numbers), sep = '\n')</p>
 <p><em>Задача 4:</em></p>
 <p>Напишите программу, которая с помощью функций filter() и map() отбирает из заданного списка numbers трёхзначные числа, дающие при делении на 5 остаток 2, и выводит их кубы, каждый в отдельной строке.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">def</span> <span class="nv">numb</span><span class="ss">(</span><span class="nv">num</span><span class="ss">)</span>:
-    <span class="k">return</span> <span class="mi">99</span> <span class="o">&lt;</span> <span class="nv">num</span> <span class="o">&lt;</span> <span class="mi">1000</span> <span class="nv">and</span> <span class="nv">num</span> <span class="o">%</span> <span class="mi">5</span> <span class="o">==</span> <span class="mi">2</span>
-
-<span class="nv">def</span> <span class="nv">cube</span><span class="ss">(</span><span class="nv">num</span><span class="ss">)</span>:
-    <span class="k">return</span> <span class="nv">num</span><span class="o">**</span><span class="mi">3</span>
-
-<span class="nv">numbers</span> <span class="o">=</span> [<span class="mi">1014</span>, <span class="mi">1321</span>, <span class="mi">675</span>, <span class="mi">1215</span>, <span class="mi">56</span>, <span class="mi">1386</span>, <span class="mi">1385</span>, <span class="mi">431</span>, <span class="mi">1058</span>, <span class="mi">486</span>, <span class="mi">1434</span>, <span class="mi">696</span>, <span class="mi">1016</span>, <span class="mi">1084</span>, <span class="mi">424</span>, <span class="mi">1189</span>, <span class="mi">475</span>, <span class="mi">95</span>, <span class="mi">1434</span>, <span class="mi">1462</span>, <span class="mi">815</span>, <span class="mi">776</span>, <span class="mi">657</span>, <span class="mi">1225</span>, <span class="mi">912</span>, <span class="mi">537</span>, <span class="mi">1478</span>, <span class="mi">1176</span>, <span class="mi">544</span>, <span class="mi">488</span>, <span class="mi">668</span>, <span class="mi">944</span>, <span class="mi">207</span>, <span class="mi">266</span>, <span class="mi">1309</span>, <span class="mi">1027</span>, <span class="mi">257</span>, <span class="mi">1374</span>, <span class="mi">1289</span>, <span class="mi">1155</span>, <span class="mi">230</span>, <span class="mi">866</span>, <span class="mi">708</span>, <span class="mi">144</span>, <span class="mi">1434</span>, <span class="mi">1163</span>, <span class="mi">345</span>, <span class="mi">394</span>, <span class="mi">560</span>, <span class="mi">338</span>, <span class="mi">232</span>, <span class="mi">182</span>, <span class="mi">1438</span>, <span class="mi">1127</span>, <span class="mi">928</span>, <span class="mi">1309</span>, <span class="mi">98</span>, <span class="mi">530</span>, <span class="mi">1013</span>, <span class="mi">898</span>, <span class="mi">669</span>, <span class="mi">105</span>, <span class="mi">130</span>, <span class="mi">1363</span>, <span class="mi">947</span>, <span class="mi">72</span>, <span class="mi">1278</span>, <span class="mi">166</span>, <span class="mi">904</span>, <span class="mi">349</span>, <span class="mi">831</span>, <span class="mi">1207</span>, <span class="mi">1496</span>, <span class="mi">370</span>, <span class="mi">725</span>, <span class="mi">926</span>, <span class="mi">175</span>, <span class="mi">959</span>, <span class="mi">1282</span>, <span class="mi">336</span>, <span class="mi">1268</span>, <span class="mi">351</span>, <span class="mi">1439</span>, <span class="mi">186</span>, <span class="mi">273</span>, <span class="mi">1008</span>, <span class="mi">231</span>, <span class="mi">138</span>, <span class="mi">142</span>, <span class="mi">433</span>, <span class="mi">456</span>, <span class="mi">1268</span>, <span class="mi">1018</span>, <span class="mi">1274</span>, <span class="mi">387</span>, <span class="mi">120</span>, <span class="mi">340</span>, <span class="mi">963</span>, <span class="mi">832</span>, <span class="mi">1127</span>]
-
-<span class="nv">print</span><span class="ss">(</span><span class="o">*</span><span class="nv">map</span><span class="ss">(</span><span class="nv">cube</span>, <span class="nv">filter</span><span class="ss">(</span><span class="nv">numb</span>, <span class="nv">numbers</span><span class="ss">))</span>, <span class="nv">sep</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="ss">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 5:</em></p>
 <p>Напишите программу для вычисления и вывода суммы квадратов элементов списка numbers. Решите задачу двумя способами: с помощью функции reduce(), и с помощью функций map() и sum().</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">def</span> <span class="nv">reduce</span><span class="ss">(</span><span class="nv">operation</span>, <span class="nv">items</span>, <span class="nv">initial_value</span><span class="ss">)</span>:
-    <span class="nv">acc</span> <span class="o">=</span> <span class="nv">initial_value</span>
-    <span class="k">for</span> <span class="nv">item</span> <span class="nv">in</span> <span class="nv">items</span>:
-        <span class="nv">acc</span> <span class="o">=</span> <span class="nv">operation</span><span class="ss">(</span><span class="nv">acc</span>, <span class="nv">item</span><span class="ss">)</span>
-    <span class="k">return</span> <span class="nv">acc</span>
-
-<span class="nv">def</span> <span class="nv">x_on_x</span><span class="ss">(</span><span class="nv">element</span><span class="ss">)</span>:
-    <span class="k">return</span> <span class="nv">element</span><span class="o">**</span><span class="mi">2</span>
-
-<span class="nv">def</span> <span class="nv">add</span><span class="ss">(</span><span class="nv">one</span>, <span class="nv">two</span><span class="ss">)</span>:
-    <span class="k">return</span> <span class="nv">one</span> <span class="o">+</span> <span class="nv">two</span><span class="o">**</span><span class="mi">2</span>
-
-<span class="nv">numbers</span> <span class="o">=</span> [<span class="mi">97</span>, <span class="mi">42</span>, <span class="mi">9</span>, <span class="mi">32</span>, <span class="mi">3</span>, <span class="mi">45</span>, <span class="mi">31</span>, <span class="mi">77</span>, <span class="o">-</span><span class="mi">1</span>, <span class="mi">11</span>, <span class="o">-</span><span class="mi">2</span>, <span class="mi">75</span>, <span class="mi">5</span>, <span class="mi">51</span>, <span class="mi">34</span>, <span class="mi">28</span>, <span class="mi">46</span>, <span class="mi">1</span>, <span class="o">-</span><span class="mi">8</span>, <span class="mi">84</span>, <span class="mi">16</span>, <span class="mi">51</span>, <span class="mi">90</span>, <span class="mi">56</span>, <span class="mi">65</span>, <span class="mi">90</span>, <span class="mi">23</span>, <span class="mi">35</span>, <span class="mi">11</span>, <span class="o">-</span><span class="mi">10</span>, <span class="mi">70</span>, <span class="mi">90</span>, <span class="mi">90</span>, <span class="mi">12</span>, <span class="mi">96</span>, <span class="mi">58</span>, <span class="o">-</span><span class="mi">8</span>, <span class="o">-</span><span class="mi">4</span>, <span class="mi">91</span>, <span class="mi">76</span>, <span class="mi">94</span>, <span class="mi">60</span>, <span class="mi">72</span>, <span class="mi">43</span>, <span class="mi">4</span>, <span class="o">-</span><span class="mi">6</span>, <span class="o">-</span><span class="mi">5</span>, <span class="mi">51</span>, <span class="mi">58</span>, <span class="mi">60</span>, <span class="mi">30</span>, <span class="mi">38</span>, <span class="mi">67</span>, <span class="mi">62</span>, <span class="mi">36</span>, <span class="mi">72</span>, <span class="mi">34</span>, <span class="mi">82</span>, <span class="mi">62</span>, <span class="o">-</span><span class="mi">1</span>, <span class="mi">60</span>, <span class="mi">82</span>, <span class="mi">87</span>, <span class="mi">81</span>, <span class="o">-</span><span class="mi">7</span>, <span class="mi">57</span>, <span class="mi">26</span>, <span class="mi">36</span>, <span class="mi">17</span>, <span class="mi">43</span>, <span class="mi">80</span>, <span class="mi">40</span>, <span class="mi">75</span>, <span class="mi">94</span>, <span class="mi">91</span>, <span class="mi">64</span>, <span class="mi">38</span>, <span class="mi">72</span>, <span class="mi">29</span>, <span class="mi">84</span>, <span class="mi">38</span>, <span class="mi">35</span>, <span class="mi">7</span>, <span class="mi">54</span>, <span class="mi">31</span>, <span class="mi">95</span>, <span class="mi">78</span>, <span class="mi">27</span>, <span class="mi">82</span>, <span class="mi">1</span>, <span class="mi">64</span>, <span class="mi">94</span>, <span class="mi">31</span>, <span class="mi">29</span>, <span class="o">-</span><span class="mi">8</span>, <span class="mi">98</span>, <span class="mi">24</span>, <span class="mi">61</span>, <span class="mi">7</span>, <span class="mi">73</span>]
-
-<span class="nv">print</span><span class="ss">(</span><span class="nv">reduce</span><span class="ss">(</span><span class="nv">add</span>, <span class="nv">numbers</span>, <span class="mi">0</span><span class="ss">))</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 6:</em></p>
 <p>Напишите программу для вычисления и вывода суммы квадратов двузначных чисел, которые делятся на 7 без остатка.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">def</span> <span class="nv">map</span><span class="ss">(</span><span class="nv">function</span>, <span class="nv">items</span><span class="ss">)</span>:
-    <span class="nb">result</span> <span class="o">=</span> []
-    <span class="k">for</span> <span class="nv">item</span> <span class="nv">in</span> <span class="nv">items</span>:
-        <span class="nb">result</span>.<span class="nv">append</span><span class="ss">(</span><span class="nv">function</span><span class="ss">(</span><span class="nv">item</span><span class="ss">))</span>
-    <span class="k">return</span> <span class="nb">result</span>
-
-
-<span class="nv">def</span> <span class="nv">filter</span><span class="ss">(</span><span class="nv">function</span>, <span class="nv">items</span><span class="ss">)</span>:
-    <span class="nb">result</span> <span class="o">=</span> []
-    <span class="k">for</span> <span class="nv">item</span> <span class="nv">in</span> <span class="nv">items</span>:
-        <span class="k">if</span> <span class="nv">function</span><span class="ss">(</span><span class="nv">item</span><span class="ss">)</span>:
-            <span class="nb">result</span>.<span class="nv">append</span><span class="ss">(</span><span class="nv">item</span><span class="ss">)</span>
-    <span class="k">return</span> <span class="nb">result</span>
-
-
-<span class="nv">def</span> <span class="nv">xx</span><span class="ss">(</span><span class="nv">item</span><span class="ss">)</span>:
-    <span class="k">return</span> <span class="nv">item</span> <span class="o">**</span> <span class="mi">2</span>
-
-
-<span class="nv">def</span> <span class="nv">fil</span><span class="ss">(</span><span class="nv">item</span><span class="ss">)</span>:
-    <span class="k">return</span> <span class="mi">9</span> <span class="o">&lt;</span> <span class="nv">abs</span><span class="ss">(</span><span class="nv">item</span><span class="ss">)</span> <span class="o">&lt;</span> <span class="mi">100</span> <span class="nv">and</span> <span class="nv">not</span> <span class="nv">item</span> <span class="o">%</span> <span class="mi">7</span>
-
-
-<span class="nv">numbers</span> <span class="o">=</span> [<span class="mi">77</span>, <span class="mi">293</span>, <span class="mi">28</span>, <span class="mi">242</span>, <span class="mi">213</span>, <span class="mi">285</span>, <span class="mi">71</span>, <span class="mi">286</span>, <span class="mi">144</span>, <span class="mi">276</span>, <span class="mi">61</span>, <span class="mi">298</span>, <span class="mi">280</span>, <span class="mi">214</span>, <span class="mi">156</span>, <span class="mi">227</span>, <span class="mi">228</span>, <span class="mi">51</span>, <span class="o">-</span><span class="mi">4</span>, <span class="mi">202</span>, <span class="mi">58</span>, <span class="mi">99</span>, <span class="mi">270</span>, <span class="mi">219</span>, <span class="mi">94</span>, <span class="mi">253</span>, <span class="mi">53</span>, <span class="mi">235</span>, <span class="mi">9</span>, <span class="mi">158</span>, <span class="mi">49</span>, <span class="mi">183</span>, <span class="mi">166</span>, <span class="mi">205</span>, <span class="mi">183</span>, <span class="mi">266</span>, <span class="mi">180</span>, <span class="mi">6</span>, <span class="mi">279</span>, <span class="mi">200</span>, <span class="mi">208</span>, <span class="mi">231</span>, <span class="mi">178</span>, <span class="mi">201</span>, <span class="mi">260</span>, <span class="o">-</span><span class="mi">35</span>, <span class="mi">152</span>, <span class="mi">115</span>, <span class="mi">79</span>, <span class="mi">284</span>, <span class="mi">181</span>, <span class="mi">92</span>, <span class="mi">286</span>, <span class="mi">98</span>, <span class="mi">271</span>, <span class="mi">259</span>, <span class="mi">258</span>, <span class="mi">196</span>, <span class="o">-</span><span class="mi">8</span>, <span class="mi">43</span>, <span class="mi">2</span>, <span class="mi">128</span>, <span class="mi">143</span>, <span class="mi">43</span>, <span class="mi">297</span>, <span class="mi">229</span>, <span class="mi">60</span>, <span class="mi">254</span>, <span class="o">-</span><span class="mi">9</span>, <span class="mi">5</span>, <span class="mi">187</span>, <span class="mi">220</span>, <span class="o">-</span><span class="mi">8</span>, <span class="mi">111</span>, <span class="mi">285</span>, <span class="mi">5</span>, <span class="mi">263</span>, <span class="mi">187</span>, <span class="mi">192</span>, <span class="o">-</span><span class="mi">9</span>, <span class="mi">268</span>, <span class="o">-</span><span class="mi">9</span>, <span class="mi">23</span>, <span class="mi">71</span>, <span class="mi">135</span>, <span class="mi">7</span>, <span class="o">-</span><span class="mi">161</span>, <span class="mi">65</span>, <span class="mi">135</span>, <span class="mi">29</span>, <span class="mi">148</span>, <span class="mi">242</span>, <span class="mi">33</span>, <span class="mi">35</span>, <span class="mi">211</span>, <span class="mi">5</span>, <span class="mi">161</span>, <span class="mi">46</span>, <span class="mi">159</span>, <span class="mi">23</span>, <span class="mi">169</span>, <span class="mi">23</span>, <span class="mi">172</span>, <span class="mi">184</span>, <span class="o">-</span><span class="mi">7</span>, <span class="mi">228</span>, <span class="mi">129</span>, <span class="mi">274</span>, <span class="mi">73</span>, <span class="mi">197</span>, <span class="mi">272</span>, <span class="mi">54</span>, <span class="mi">278</span>, <span class="mi">26</span>, <span class="mi">280</span>, <span class="mi">13</span>, <span class="mi">171</span>, <span class="mi">2</span>, <span class="mi">79</span>, <span class="o">-</span><span class="mi">2</span>, <span class="mi">183</span>, <span class="mi">10</span>, <span class="mi">236</span>, <span class="mi">276</span>, <span class="mi">4</span>, <span class="mi">29</span>, <span class="o">-</span><span class="mi">10</span>, <span class="mi">41</span>, <span class="mi">269</span>, <span class="mi">94</span>, <span class="mi">279</span>, <span class="mi">129</span>, <span class="mi">39</span>, <span class="mi">92</span>, <span class="o">-</span><span class="mi">63</span>, <span class="mi">263</span>, <span class="mi">219</span>, <span class="mi">57</span>, <span class="mi">18</span>, <span class="mi">236</span>, <span class="mi">291</span>, <span class="mi">234</span>, <span class="mi">10</span>, <span class="mi">250</span>, <span class="mi">0</span>, <span class="mi">64</span>, <span class="mi">172</span>, <span class="mi">216</span>, <span class="mi">30</span>, <span class="mi">15</span>, <span class="mi">229</span>, <span class="mi">205</span>, <span class="mi">123</span>, <span class="o">-</span><span class="mi">105</span>]
-
-
-<span class="nv">print</span><span class="ss">(</span><span class="nv">sum</span><span class="ss">(</span><span class="nv">map</span><span class="ss">(</span><span class="nv">xx</span>, <span class="nv">filter</span><span class="ss">(</span><span class="nv">fil</span>, <span class="nv">numbers</span><span class="ss">))))</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 7:</em></p>
 <p>Напишите функцию func_apply(), принимающую на вход функцию и список значений и возвращающую список, в котором каждое значение будет результатом применения переданной функции к переданному списку.</p>
 <p><em>Решение:</em></p>
-<p>def func_apply(func, arr):
-      return [func(x) for x in arr]</p>
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
+<p>def func_apply(func, arr):</p>
 <p><em>Задача 8:</em></p>
 <p>Требовалось написать программу, которая:</p>
 <ul>
@@ -166,77 +105,24 @@ body::before {
 </ul>
 <p>Программист торопился и написал программу неправильно. Доработайте его программу.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="s s-Atom">from</span> <span class="s s-Atom">functools</span> <span class="s s-Atom">import</span> <span class="s s-Atom">reduce</span>
-
-<span class="s s-Atom">floats</span> <span class="o">=</span> <span class="p">[</span><span class="mf">4.35</span><span class="p">,</span> <span class="mf">6.09</span><span class="p">,</span> <span class="mf">3.25</span><span class="p">,</span> <span class="mf">9.77</span><span class="p">,</span> <span class="mf">2.16</span><span class="p">,</span> <span class="mf">8.88</span><span class="p">,</span> <span class="mf">4.59</span><span class="p">,</span> <span class="mf">34.23</span><span class="p">,</span> <span class="mf">12.12</span><span class="p">,</span> <span class="mf">4.67</span><span class="p">,</span> <span class="mf">2.45</span><span class="p">,</span> <span class="mf">9.32</span><span class="p">]</span>
-<span class="s s-Atom">words</span> <span class="o">=</span> <span class="p">[</span><span class="s s-Atom">&#39;racecar&#39;</span><span class="p">,</span> <span class="s s-Atom">&#39;akinremi&#39;</span><span class="p">,</span> <span class="s s-Atom">&#39;deed&#39;</span><span class="p">,</span> <span class="s s-Atom">&#39;temidayo&#39;</span><span class="p">,</span> <span class="s s-Atom">&#39;omoseun&#39;</span><span class="p">,</span> <span class="s s-Atom">&#39;civic&#39;</span><span class="p">,</span> <span class="s s-Atom">&#39;TATTARRATTAT&#39;</span><span class="p">,</span> <span class="s s-Atom">&#39;malayalam&#39;</span><span class="p">,</span> <span class="s s-Atom">&#39;nun&#39;</span><span class="p">]</span>
-<span class="s s-Atom">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
-
-<span class="s s-Atom">map_result</span> <span class="o">=</span> <span class="nf">list</span><span class="p">(</span><span class="nf">map</span><span class="p">(</span><span class="s s-Atom">lambda</span> <span class="nn">num</span><span class="p">:</span> <span class="nf">round</span><span class="p">(</span><span class="s s-Atom">num**</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="s s-Atom">floats</span><span class="p">))</span>
-<span class="s s-Atom">filter_result</span> <span class="o">=</span> <span class="nf">list</span><span class="p">(</span><span class="nf">filter</span><span class="p">(</span><span class="s s-Atom">lambda</span> <span class="nn">name</span><span class="p">:</span> <span class="nf">len</span><span class="p">(</span><span class="s s-Atom">name</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">4</span> <span class="s s-Atom">and</span> <span class="s s-Atom">name</span> <span class="o">==</span> <span class="s s-Atom">name</span><span class="p">[</span><span class="s s-Atom">::-</span><span class="mi">1</span><span class="p">],</span> <span class="s s-Atom">words</span><span class="p">))</span>
-<span class="s s-Atom">reduce_result</span> <span class="o">=</span> <span class="nf">reduce</span><span class="p">(</span><span class="s s-Atom">lambda</span> <span class="s s-Atom">num1</span><span class="p">,</span> <span class="s s-Atom">num2:</span> <span class="s s-Atom">num1</span> <span class="o">*</span> <span class="s s-Atom">num2</span><span class="p">,</span> <span class="s s-Atom">numbers</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
-
-<span class="nf">print</span><span class="p">(</span><span class="s s-Atom">map_result</span><span class="p">)</span>
-<span class="nf">print</span><span class="p">(</span><span class="s s-Atom">filter_result</span><span class="p">)</span>
-<span class="nf">print</span><span class="p">(</span><span class="s s-Atom">reduce_result</span><span class="p">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 9:</em></p>
 <p>Напишите программу, которая с помощью встроенных функций filter(), map(), sorted() и reduce() выводит в алфавитном порядке список primary городов с населением более 10 000 000 человек, в формате:</p>
 <p>Cities: Beijing, Buenos Aires, ...</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="kn">from</span> <span class="nn">functools</span> <span class="kn">import</span> <span class="nb">reduce</span>
-
-<span class="n">data</span><span class="o">=</span><span class="p">[[</span><span class="s1">&#39;Tokyo&#39;</span><span class="p">,</span> <span class="mi">35676000</span><span class="p">,</span> <span class="s1">&#39;primary&#39;</span><span class="p">],</span>
-      <span class="p">[</span><span class="s1">&#39;New York&#39;</span><span class="p">,</span> <span class="mi">19354922</span><span class="p">,</span> <span class="s1">&#39;nan&#39;</span><span class="p">],</span>
-      <span class="p">[</span><span class="s1">&#39;Mexico City&#39;</span><span class="p">,</span> <span class="mi">19028000</span><span class="p">,</span> <span class="s1">&#39;primary&#39;</span><span class="p">],</span>
-      <span class="p">[</span><span class="s1">&#39;Mumbai&#39;</span><span class="p">,</span> <span class="mi">18978000</span><span class="p">,</span> <span class="s1">&#39;admin&#39;</span><span class="p">],</span>
-      <span class="p">[</span><span class="s1">&#39;Sao Paulo&#39;</span><span class="p">,</span> <span class="mi">18845000</span><span class="p">,</span> <span class="s1">&#39;admin&#39;</span><span class="p">],</span>
-      <span class="p">[</span><span class="s1">&#39;Delhi&#39;</span><span class="p">,</span> <span class="mi">15926000</span><span class="p">,</span> <span class="s1">&#39;admin&#39;</span><span class="p">],</span>
-      <span class="p">[</span><span class="s1">&#39;Shanghai&#39;</span><span class="p">,</span> <span class="mi">14987000</span><span class="p">,</span> <span class="s1">&#39;admin&#39;</span><span class="p">],</span>
-      <span class="p">[</span><span class="s1">&#39;Kolkata&#39;</span><span class="p">,</span> <span class="mi">14787000</span><span class="p">,</span> <span class="s1">&#39;admin&#39;</span><span class="p">],</span>
-      <span class="p">[</span><span class="s1">&#39;Los Angeles&#39;</span><span class="p">,</span> <span class="mi">12815475</span><span class="p">,</span> <span class="s1">&#39;nan&#39;</span><span class="p">],</span>
-      <span class="p">[</span><span class="s1">&#39;Dhaka&#39;</span><span class="p">,</span> <span class="mi">12797394</span><span class="p">,</span> <span class="s1">&#39;primary&#39;</span><span class="p">],</span>
-      <span class="p">[</span><span class="s1">&#39;Buenos Aires&#39;</span><span class="p">,</span> <span class="mi">12795000</span><span class="p">,</span> <span class="s1">&#39;primary&#39;</span><span class="p">],</span>
-      <span class="p">[</span><span class="s1">&#39;Karachi&#39;</span><span class="p">,</span> <span class="mi">12130000</span><span class="p">,</span> <span class="s1">&#39;admin&#39;</span><span class="p">],</span>
-      <span class="p">[</span><span class="s1">&#39;Cairo&#39;</span><span class="p">,</span> <span class="mi">11893000</span><span class="p">,</span> <span class="s1">&#39;primary&#39;</span><span class="p">],</span>
-      <span class="p">[</span><span class="s1">&#39;Rio de Janeiro&#39;</span><span class="p">,</span> <span class="mi">11748000</span><span class="p">,</span> <span class="s1">&#39;admin&#39;</span><span class="p">],</span>
-      <span class="p">[</span><span class="s1">&#39;Osaka&#39;</span><span class="p">,</span> <span class="mi">11294000</span><span class="p">,</span> <span class="s1">&#39;admin&#39;</span><span class="p">],</span>
-      <span class="p">[</span><span class="s1">&#39;Beijing&#39;</span><span class="p">,</span> <span class="mi">11106000</span><span class="p">,</span> <span class="s1">&#39;primary&#39;</span><span class="p">],</span>
-      <span class="p">[</span><span class="s1">&#39;Manila&#39;</span><span class="p">,</span> <span class="mi">11100000</span><span class="p">,</span> <span class="s1">&#39;primary&#39;</span><span class="p">],</span>
-      <span class="p">[</span><span class="s1">&#39;Moscow&#39;</span><span class="p">,</span> <span class="mi">10452000</span><span class="p">,</span> <span class="s1">&#39;primary&#39;</span><span class="p">],</span>
-      <span class="p">[</span><span class="s1">&#39;Istanbul&#39;</span><span class="p">,</span> <span class="mi">10061000</span><span class="p">,</span> <span class="s1">&#39;admin&#39;</span><span class="p">],</span>
-      <span class="p">[</span><span class="s1">&#39;Paris&#39;</span><span class="p">,</span> <span class="mi">9904000</span><span class="p">,</span> <span class="s1">&#39;primary&#39;</span><span class="p">]]</span>
-
-<span class="n">cities</span> <span class="o">=</span> <span class="nb">filter</span><span class="p">(</span><span class="k">lambda</span> <span class="n">city</span><span class="p">:</span> <span class="n">city</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">10</span> <span class="o">**</span> <span class="mi">7</span> <span class="ow">and</span> <span class="n">city</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;primary&#39;</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
-<span class="n">cities</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">city</span><span class="p">:</span> <span class="n">city</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">cities</span><span class="p">)</span>
-<span class="n">cities</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">cities</span><span class="p">)</span>
-<span class="n">cities</span> <span class="o">=</span> <span class="s1">&#39;Cities: &#39;</span> <span class="o">+</span> <span class="nb">reduce</span><span class="p">(</span><span class="k">lambda</span> <span class="n">city1</span><span class="p">,</span> <span class="n">city2</span><span class="p">:</span> <span class="n">f</span><span class="s1">&#39;{city1}, {city2}&#39;</span><span class="p">,</span> <span class="n">cities</span><span class="p">)</span>
-
-<span class="k">print</span><span class="p">(</span><span class="n">cities</span><span class="p">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 10:</em></p>
 <p>Напишите функцию func, используя синтаксис анонимных функций, которая принимает целочисленный аргумент и возвращает значение True, если он делится без остатка на 19 или на 13 и False в противном случае.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">func</span> <span class="o">=</span> <span class="nv">lambda</span> <span class="nv">x</span>: <span class="nv">True</span> <span class="k">if</span> <span class="nv">x</span> <span class="o">%</span> <span class="mi">19</span> <span class="o">==</span> <span class="mi">0</span> <span class="nv">or</span> <span class="nv">x</span> <span class="o">%</span> <span class="mi">13</span> <span class="o">==</span> <span class="mi">0</span> <span class="k">else</span> <span class="nv">False</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 11:</em></p>
 <p>Напишите функцию func, используя синтаксис анонимных функций, которая принимает строковый аргумент и возвращает значение True, если переданный аргумент начинается и заканчивается на английскую букву a (регистр буквы неважен) и False в противном случае.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">func</span> <span class="o">=</span> <span class="nv">lambda</span> <span class="nv">x</span>: <span class="nv">True</span> <span class="k">if</span> <span class="nv">x</span>[<span class="mi">0</span>].<span class="nv">lower</span><span class="ss">()</span> <span class="o">==</span> <span class="s1">&#39;</span><span class="s">a</span><span class="s1">&#39;</span> <span class="nv">and</span> <span class="nv">x</span>[<span class="o">-</span><span class="mi">1</span>].<span class="nv">lower</span><span class="ss">()</span> <span class="o">==</span> <span class="s1">&#39;</span><span class="s">a</span><span class="s1">&#39;</span> <span class="k">else</span> <span class="nv">False</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 12:</em></p>
 <p>Напишите функцию is_non_negative_num, используя синтаксис анонимных функций, которая принимает строковый аргумент и возвращает значение True, если переданный аргумент является неотрицательным числом (целым или вещественным) и False в противном случае.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="n">is_non_negative_num</span> <span class="o">=</span> <span class="n">lambda</span> <span class="n">q</span><span class="p">:</span> <span class="n">q</span><span class="p">.</span><span class="k">replace</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">).</span><span class="n">isdigit</span><span class="p">()</span>
-</pre></div>
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
             </p>
       
           </div>

@@ -57,100 +57,43 @@ body::before {
               <p><em>Задача 1:</em></p>
 <p>На вход программе подается строка текста. Если в этой строке буква «f» встречается только один раз, выведите её индекс. Если она встречается два и более раз, выведите индекс её первого и последнего вхождения на одной строке, разделенных символом пробела. Если буква «f» в данной строке не встречается, следует вывести «NO».</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">stroka</span> <span class="o">=</span> <span class="nv">input</span><span class="ss">()</span>
-<span class="k">if</span> <span class="s1">&#39;</span><span class="s">f</span><span class="s1">&#39;</span> <span class="nv">not</span> <span class="nv">in</span> <span class="nv">stroka</span>:
-    <span class="nv">print</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">NO</span><span class="s1">&#39;</span><span class="ss">)</span>
-<span class="k">if</span> <span class="nv">stroka</span>.<span class="nv">count</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">f</span><span class="s1">&#39;</span><span class="ss">)</span> <span class="o">==</span> <span class="mi">1</span>:
-     <span class="nv">print</span><span class="ss">(</span><span class="nv">stroka</span>.<span class="nv">find</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">f</span><span class="s1">&#39;</span><span class="ss">))</span>
-<span class="k">if</span> <span class="nv">stroka</span>.<span class="nv">count</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">f</span><span class="s1">&#39;</span><span class="ss">)</span> <span class="o">&gt;=</span> <span class="mi">2</span>:
-     <span class="nv">print</span><span class="ss">(</span><span class="nv">stroka</span>.<span class="nv">find</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">f</span><span class="s1">&#39;</span><span class="ss">)</span>, <span class="nv">stroka</span>.<span class="nv">rfind</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">f</span><span class="s1">&#39;</span><span class="ss">))</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 2:</em></p>
 <p>На вход программе подается строка текста, в которой буква «h» встречается минимум два раза. Напишите программу, которая удаляет из этой строки первое и последнее вхождение буквы «h», а также все символы, находящиеся между ними.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nb">text</span> <span class="o">=</span> <span class="k">input</span><span class="p">()</span>
-<span class="n">print</span><span class="p">(</span><span class="nb">text</span><span class="p">[:</span><span class="nb">text</span><span class="p">.</span><span class="n">find</span><span class="p">(</span><span class="ss">&quot;h&quot;</span><span class="p">)]</span> <span class="o">+</span> <span class="nb">text</span><span class="p">[</span><span class="nb">text</span><span class="p">.</span><span class="n">rfind</span><span class="p">(</span><span class="ss">&quot;h&quot;</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">:])</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 3:</em></p>
 <p>На вход программе подаются два числа a и b. Напишите программу, которая для каждого кодового значения в диапазоне от a до b (включительно), выводит соответствующий ему символ из таблицы символов Unicode.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">a</span>, <span class="nv">b</span>, <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>, <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
-<span class="nv">bukv</span> <span class="o">=</span> []
-<span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">a</span>, <span class="nv">b</span> <span class="o">+</span> <span class="mi">1</span><span class="ss">)</span>:
-    <span class="nv">bukv</span>.<span class="nv">append</span><span class="ss">(</span><span class="nv">chr</span><span class="ss">(</span><span class="nv">i</span><span class="ss">))</span>
-<span class="nv">print</span><span class="ss">(</span><span class="o">*</span><span class="nv">bukv</span><span class="ss">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 4:</em></p>
 <p>На вход программе подается строка текста. Напишите программу, которая переводит каждый ее символ в соответствующий ему код из таблицы символов Unicode.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">s</span> <span class="o">=</span> <span class="nv">input</span><span class="ss">()</span>
-<span class="k">for</span> <span class="nv">c</span> <span class="nv">in</span> <span class="nv">s</span>:
-    <span class="nv">print</span><span class="ss">(</span><span class="nv">ord</span><span class="ss">(</span><span class="nv">c</span><span class="ss">)</span>, <span class="k">end</span><span class="o">=</span><span class="s1">&#39;</span><span class="s"> </span><span class="s1">&#39;</span><span class="ss">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 5 - Шифр Цезаря:</em></p>
 <p>В первой строке дается число n  (1 ≤ n≤ 25) – сдвиг, во второй строке даётся закодированное сообщение в виде строки со строчными латинскими буквами. Программа должна вывести одну строку – декодированное сообщение. Обратите внимание, что нужно декодировать сообщение, а не закодировать.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">sdvig</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
-<span class="nv">stroka</span> <span class="o">=</span> <span class="nv">input</span><span class="ss">()</span>
-<span class="nb">result</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
-<span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">stroka</span>:
-    <span class="nv">res</span> <span class="o">=</span> <span class="nv">chr</span><span class="ss">(</span><span class="nv">ord</span><span class="ss">(</span><span class="nv">i</span><span class="ss">)</span> <span class="o">-</span> <span class="nv">sdvig</span><span class="ss">)</span>
-    <span class="k">if</span> <span class="nv">ord</span><span class="ss">(</span><span class="nv">res</span><span class="ss">)</span> <span class="o">&lt;</span> <span class="mi">97</span>:
-        <span class="nv">res</span> <span class="o">=</span> <span class="nv">chr</span><span class="ss">(</span><span class="nv">ord</span><span class="ss">(</span><span class="nv">i</span><span class="ss">)</span> <span class="o">-</span> <span class="nv">sdvig</span> <span class="o">+</span> <span class="mi">26</span><span class="ss">)</span>
-    <span class="nv">print</span><span class="ss">(</span><span class="nv">res</span>, <span class="k">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="ss">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 6:</em></p>
 <p>На вход программе подается строка текста. Напишите программу, которая удаляет из нее все символы с индексами кратными 3, то есть символы с индексами 0, 3, 6, ....</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">s</span> <span class="o">=</span> <span class="nv">input</span><span class="ss">()</span>
-<span class="nv">new</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
-<span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">len</span><span class="ss">(</span><span class="nv">s</span><span class="ss">))</span>:
-    <span class="k">if</span> <span class="nv">i</span><span class="o">%</span><span class="mi">3</span> <span class="o">!=</span> <span class="mi">0</span>:
-        <span class="nv">new</span> <span class="o">+=</span> <span class="nv">s</span>[<span class="nv">i</span>]
-<span class="nv">print</span><span class="ss">(</span><span class="nv">new</span><span class="ss">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 7:</em></p>
 <p>На вход программе подается строка текста. Напишите программу, которая заменяет все вхождения цифры 1 на слово «one».</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="n">print</span><span class="p">(</span><span class="k">input</span><span class="p">().</span><span class="k">replace</span><span class="p">(</span><span class="s1">&#39;1&#39;</span><span class="p">,</span> <span class="s1">&#39;one&#39;</span><span class="p">))</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 8:</em></p>
 <p>На вход программе подается строка текста. Напишите программу, которая удаляет все вхождения символа «@».</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="n">print</span><span class="p">(</span><span class="k">input</span><span class="p">().</span><span class="k">replace</span><span class="p">(</span><span class="s1">&#39;@&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">))</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 9:</em></p>
 <p>На вход программе подается строка текста. Напишите программу, которая выводит индекс второго вхождения буквы «f». Если буква «f» встречается только один раз, выведите число -1, а если не встречается ни разу, выведите число -2.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">s</span> <span class="o">=</span> <span class="nv">input</span><span class="ss">()</span>
-<span class="nv">l</span> <span class="o">=</span> <span class="nv">s</span>.<span class="nv">find</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">f</span><span class="s1">&#39;</span><span class="ss">)</span>
-<span class="nv">print</span><span class="ss">(</span><span class="nv">s</span>.<span class="nv">find</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">f</span><span class="s1">&#39;</span>, <span class="nv">l</span><span class="o">+</span><span class="mi">1</span><span class="ss">)</span> <span class="k">if</span> <span class="nv">l</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span> <span class="k">else</span> <span class="o">-</span><span class="mi">2</span><span class="ss">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 10:</em></p>
 <p>На вход программе подается строка текста в которой буква «h» встречается как минимум два раза. Напишите программу, которая возвращает исходную строку и переворачивает последовательность символов, заключенную между первым и последним вхождением буквы «h».</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="s s-Atom">n</span> <span class="o">=</span> <span class="nf">input</span><span class="p">()</span> 
-<span class="s s-Atom">l</span><span class="p">,</span> <span class="s s-Atom">r</span> <span class="o">=</span> <span class="s s-Atom">n</span><span class="p">.</span><span class="nf">find</span><span class="p">(</span><span class="s s-Atom">&#39;h&#39;</span><span class="p">),</span> <span class="s s-Atom">n</span><span class="p">.</span><span class="nf">rfind</span><span class="p">(</span><span class="s s-Atom">&#39;h&#39;</span><span class="p">)</span>
-<span class="nf">print</span><span class="p">(</span><span class="s s-Atom">n</span><span class="p">[</span><span class="s s-Atom">:l</span><span class="p">]</span><span class="o">+</span><span class="s s-Atom">n</span><span class="p">[</span><span class="nn">r</span><span class="p">:</span><span class="nn">l</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">+</span><span class="s s-Atom">n</span><span class="p">[</span><span class="nn">r</span><span class="p">:])</span>
-</pre></div>
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
             </p>
       
           </div>

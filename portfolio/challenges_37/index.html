@@ -57,61 +57,26 @@ body::before {
               <p><em>Задача 1:</em></p>
 <p>Напишите программу, которая с помощью модуля random моделирует броски монеты. Программа принимает на вход количество попыток и выводит результаты бросков: Орел или Решка (каждое на отдельной строке).</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
-<span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
-<span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
-    <span class="n">a</span> <span class="o">=</span> <span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10000</span><span class="p">))</span>
-    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;Орел&#39;</span> <span class="k">if</span> <span class="n">a</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span> <span class="k">else</span> <span class="s1">&#39;Решка&#39;</span><span class="p">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 2:</em></p>
 <p>Напишите программу, которая с помощью модуля random моделирует броски игрального кубика c 6 гранями. Программа принимает на вход количество попыток и выводит результаты бросков — выпавшее число, которое написано на грани кубика (каждое на отдельной строке).</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
-<span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
-<span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
-    <span class="n">a</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 3:</em></p>
 <p>Напишите программу, которая с помощью модуля random генерирует случайный пароль. Программа принимает на вход длину пароля и выводит случайный пароль, содержащий только символы английского алфавита a..z, A..Z (в нижнем и верхнем регистре).</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
-<span class="n">length</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>   
-<span class="n">password</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">length</span><span class="p">):</span>
-    <span class="n">password</span> <span class="o">+=</span> <span class="p">[</span><span class="nb">chr</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">65</span><span class="p">,</span> <span class="mi">90</span><span class="p">)),</span> <span class="nb">chr</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">97</span><span class="p">,</span> <span class="mi">122</span><span class="p">))][</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)]</span>
-<span class="k">print</span><span class="p">(</span><span class="n">password</span><span class="p">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 4:</em></p>
 <p>Лотерейный билет содержит 7 чисел из диапазона от 1 до 49 (включительно).</p>
 <p>Напишите программу, которая с помощью модуля random генерирует 7 различных случайных чисел для лотерейного билета. Программа должна вывести числа в порядке возрастания на одной строке через один символ пробела.</p>
 <p>Примечание. Убедитесь, что сгенерированные числа не содержат дубликатов.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
-<span class="n">s</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
-<span class="k">while</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">7</span><span class="p">:</span>
-    <span class="n">s</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">49</span><span class="p">))</span>
-<span class="k">print</span><span class="p">(</span><span class="o">*</span><span class="nb">sorted</span><span class="p">(</span><span class="n">s</span><span class="p">))</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 5:</em></p>
 <p>IP адрес состоит из четырех чисел из диапазона от 0 до 255 (включительно), разделенных точкой.</p>
 <p>Напишите функцию generate_ip(), которая с помощью модуля random  генерирует и возвращает случайный корректный IP адрес.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="k">def</span> <span class="nf">generate_ip</span><span class="p">():</span>
-    <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
-        <span class="k">return</span> <span class="n">f</span><span class="s1">&#39;{randint(1,255)}.{randint(0,255)}.{randint(0,255)}.{randint(0,255)}&#39;</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 6:</em></p>
 <p>Почтовый индекс в Латверии имеет вид: LetterLetterNumber_NumberLetterLetter, где Letter – заглавная буква английского алфавита, Number – число от 0 до 99 (включительно).</p>
 <p>Напишите функцию generate_index(), которая с помощью модуля randomгенерирует и возвращает случайный корректный почтовый индекс Латверии.</p>
@@ -121,26 +86,11 @@ V3F_231GT          # неправильный</p>
 <p>Примечание 2. Обратите внимание на символ _ в почтовом индексе.</p>
 <p>Примечание 3. Вызывать функцию generate_index() не нужно, требуется только реализовать.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">choice</span><span class="p">,</span> <span class="n">randint</span>
-<span class="kn">from</span> <span class="nn">string</span> <span class="kn">import</span> <span class="n">ascii_uppercase</span> <span class="k">as</span> <span class="n">letter</span>
-
-<span class="k">def</span> <span class="nf">generate_index</span><span class="p">():</span>
-    <span class="k">return</span> <span class="n">f</span><span class="s1">&#39;{choice(letter)}{choice(letter)}{randint(0, 99)}_{randint(0, 99)}{choice(letter)}{choice(letter)}&#39;</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 7:</em></p>
 <p>Напишите программу, которая с помощью модуля random перемешивает случайным образом содержимое матрицы (двумерного списка).</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
-<span class="n">matrix</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span>
-          <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">],</span>
-          <span class="p">[</span><span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">12</span><span class="p">],</span>
-          <span class="p">[</span><span class="mi">13</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">16</span><span class="p">]]</span>
-<span class="n">random</span><span class="o">.</span><span class="n">shuffle</span><span class="p">(</span><span class="n">matrix</span><span class="p">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 8:</em></p>
 <p>Напишите программу, которая с помощью модуля random генерирует 100 случайных номеров лотерейных билетов и выводит их каждый на отдельной строке. Обратите внимание, вы должны придерживаться следующих условий:</p>
 <ul>
@@ -149,38 +99,19 @@ V3F_231GT          # неправильный</p>
 <li>все 100 лотерейных билетов должны быть различными.</li>
 </ul>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">sample</span>
-<span class="k">print</span><span class="p">(</span><span class="o">*</span><span class="n">sample</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">10</span> <span class="o">**</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">10</span> <span class="o">**</span> <span class="mi">7</span><span class="p">),</span> <span class="n">k</span><span class="o">=</span><span class="mi">100</span><span class="p">),</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 9:</em></p>
 <p>Анаграмма – это слово образованное путём перестановки букв, составляющих другое слово.</p>
 <p>Например, слова пила и липа или пост и стоп – анаграммы.</p>
 <p>Напишите программу, которая считывает одно слово и выводит с помощью модуля random его случайную анаграмму.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">random</span> <span class="kn">as</span> <span class="nn">r</span>
-<span class="n">w</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
-<span class="n">r</span><span class="o">.</span><span class="n">shuffle</span><span class="p">(</span><span class="n">w</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="o">*</span><span class="n">w</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 10 - Бинго:</em></p>
 <p>Для игры в бинго требуется карточка размером 5 × 5, содержащая различные (уникальные) целые числа от 1 до 75 (включительно), при этом центральная клетка является пустой (она заполняется числом 0).</p>
 <p>Напишите программу, которая с помощью модуля random генерирует и выводит случайную карточку для игры в бинго.</p>
 <p>Примечание 1. Для наглядности рекомендуем отводить на вывод каждого числа ровно 3 символа. Для этого используйте строковый метод ljust().</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">sample</span>
-<span class="n">line</span> <span class="o">=</span> <span class="n">sample</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">76</span><span class="p">),</span> <span class="mi">25</span><span class="p">)</span>
-<span class="n">card</span> <span class="o">=</span> <span class="p">[</span><span class="n">line</span><span class="p">[</span><span class="n">i</span><span class="p">:</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">5</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">20</span><span class="p">)]</span>
-<span class="n">card</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">card</span><span class="p">:</span>
-    <span class="n">line</span> <span class="o">=</span> <span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">ljust</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="s1">&#39; &#39;</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">line</span><span class="p">]</span>
-    <span class="k">print</span><span class="p">(</span><span class="o">*</span><span class="n">line</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 11:</em></p>
 <p>Напишите программу, которая случайным образом назначает каждому ученику его тайного друга, который будет вместе с ним решать задачи по программированию.</p>
 <p><strong>Формат входных данных</strong></p>
@@ -188,22 +119,7 @@ V3F_231GT          # неправильный</p>
 <p><strong>Формат выходных данных</strong></p>
 <p>Программа должна вывести имя и фамилию ученика (в соответствии с исходным порядком) и имя и фамилию его тайного друга, разделённые дефисом.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
-<span class="n">friends</span> <span class="o">=</span>  <span class="p">[</span><span class="nb">input</span><span class="p">()</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">()))]</span>
-<span class="n">secret</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="n">counter</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="n">index</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="k">while</span> <span class="n">counter</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">friends</span><span class="p">):</span>
-    <span class="n">temp</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">friends</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">temp</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">secret</span> <span class="ow">and</span> <span class="n">temp</span> <span class="o">!=</span> <span class="n">friends</span><span class="p">[</span><span class="n">index</span><span class="p">]:</span>
-        <span class="n">secret</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">temp</span><span class="p">)</span>
-        <span class="n">counter</span> <span class="o">+=</span> <span class="mi">1</span>
-        <span class="n">index</span> <span class="o">+=</span> <span class="mi">1</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">friends</span><span class="p">)):</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">friends</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="s1">&#39;-&#39;</span><span class="p">,</span> <span class="n">secret</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 12:</em></p>
 <p>Напишите программу, которая с помощью модуля random генерирует n паролей длиной m символов, состоящих из строчных и прописных английских букв и цифр, кроме тех, которые легко перепутать между собой:</p>
 <ul>
@@ -218,36 +134,11 @@ V3F_231GT          # неправильный</p>
 <p><strong>Формат выходных данных</strong></p>
 <p>Программа должна вывести n паролей длиной m символов в соответствии с условием задачи, каждый на отдельной строке.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">string</span><span class="o">,</span> <span class="nn">random</span>
-
-<span class="k">def</span> <span class="nf">generate_password</span><span class="p">(</span><span class="n">length</span><span class="p">):</span>
-    <span class="n">symbols</span> <span class="o">=</span> <span class="n">string</span><span class="o">.</span><span class="n">ascii_uppercase</span> <span class="o">+</span> <span class="n">string</span><span class="o">.</span><span class="n">ascii_lowercase</span> <span class="o">+</span> <span class="n">string</span><span class="o">.</span><span class="n">digits</span><span class="p">[</span><span class="mi">2</span><span class="p">:]</span>
-    <span class="n">symbols</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">symbol</span> <span class="k">for</span> <span class="n">symbol</span> <span class="ow">in</span> <span class="n">symbols</span> <span class="k">if</span> <span class="n">symbol</span> <span class="ow">not</span> <span class="ow">in</span> <span class="s2">&quot;lIoO&quot;</span><span class="p">])</span>
-    <span class="k">return</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">symbols</span><span class="p">,</span> <span class="n">length</span><span class="p">))</span>
-
-<span class="k">def</span> <span class="nf">generate_passwords</span><span class="p">(</span><span class="n">count</span><span class="p">,</span> <span class="n">length</span><span class="p">):</span>
-    <span class="k">return</span> <span class="p">[</span><span class="n">generate_password</span><span class="p">(</span><span class="n">length</span><span class="p">)</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">count</span><span class="p">)]</span>
-
-<span class="n">n</span><span class="p">,</span> <span class="n">m</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">()),</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
-<span class="k">print</span><span class="p">(</span><span class="o">*</span><span class="n">generate_passwords</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">m</span><span class="p">),</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 13 - генератор паролей из задачи 12 с дополнительным условием:</em></p>
 <p>В каждом пароле обязательно должна присутствовать хотя бы одна цифра и как минимум по одной букве в верхнем и нижнем регистре.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">string</span>
-<span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">sample</span><span class="p">,</span> <span class="n">shuffle</span>
-
-<span class="n">set1</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="s1">&#39;23456789&#39;</span><span class="p">)</span>
-<span class="n">set2</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">string</span><span class="o">.</span><span class="n">ascii_uppercase</span><span class="p">)</span> <span class="o">-</span> <span class="nb">set</span><span class="p">(</span><span class="s1">&#39;IO&#39;</span><span class="p">)</span>
-<span class="n">set3</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">string</span><span class="o">.</span><span class="n">ascii_lowercase</span><span class="p">)</span> <span class="o">-</span> <span class="nb">set</span><span class="p">(</span><span class="s1">&#39;lo&#39;</span><span class="p">)</span>
-<span class="n">n</span><span class="p">,</span> <span class="n">m</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">()),</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
-<span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
-    <span class="n">password</span> <span class="o">=</span> <span class="n">sample</span><span class="p">(</span><span class="n">set1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">sample</span><span class="p">(</span><span class="n">set2</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">sample</span><span class="p">(</span><span class="n">set3</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">sample</span><span class="p">(</span><span class="n">set1</span><span class="o">|</span><span class="n">set2</span><span class="o">|</span><span class="n">set3</span><span class="p">,</span> <span class="n">m</span><span class="o">-</span><span class="mi">3</span><span class="p">)</span>
-    <span class="n">shuffle</span><span class="p">(</span><span class="n">password</span><span class="p">)</span>
-    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">password</span><span class="p">))</span>
-</pre></div>
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
             </p>
       
           </div>

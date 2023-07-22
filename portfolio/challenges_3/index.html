@@ -57,55 +57,23 @@ body::before {
               <p><em>Задача Иосифа Флавия:</em></p>
 <p>n человек, пронумерованных числами от 1 до n, стоят в кругу. Они начинают считаться, каждый k-й по счету человек выбывает из круга, после чего счет продолжается со следующего за ним человека. Напишите программу, определяющую номер человека, который останется в кругу последним.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">n</span>, <span class="nv">k</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>, <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
-<span class="nv">s</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="mi">1</span>, <span class="nv">n</span> <span class="o">+</span> <span class="mi">1</span><span class="ss">)</span>:
-    <span class="nv">s</span> <span class="o">=</span> <span class="ss">(</span><span class="nv">s</span> <span class="o">+</span> <span class="nv">k</span><span class="ss">)</span> <span class="o">%</span> <span class="nv">i</span>
-<span class="nv">print</span><span class="ss">(</span><span class="nv">s</span> <span class="o">+</span> <span class="mi">1</span><span class="ss">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 2:</em></p>
 <p>Дана строка, состоящая из слов, разделенных пробелами. Напишите программу, которая подсчитывает количество слов в этой строке.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="n">print</span><span class="p">(</span><span class="n">len</span><span class="p">(</span><span class="k">input</span><span class="p">().</span><span class="n">split</span><span class="p">()))</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 3:</em></p>
 <p>Дана строка текста. Напишите программу для подсчета стоимости строки, исходя из того, что один любой символ (в том числе пробел) стоит 60 копеек. Ответ дайте в рублях и копейках в соответствии с примерами.</p>
-<div class="codehilite"><pre><span></span><span class="o">**</span><span class="n">Sample</span> <span class="k">Input</span> <span class="mi">1</span><span class="p">:</span><span class="o">**</span>
-
-<span class="err">Привет</span><span class="p">,</span> <span class="err">как</span> <span class="err">дела</span><span class="o">?!</span>
-
-<span class="o">**</span><span class="n">Sample</span> <span class="k">Output</span> <span class="mi">1</span><span class="p">:</span><span class="o">**</span>
-
-<span class="mi">10</span> <span class="err">р</span><span class="p">.</span> <span class="mi">80</span> <span class="err">коп</span><span class="p">.</span>
-</pre></div>
-
-
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span>  <span class="n">x</span> <span class="o">=</span> <span class="n">len</span><span class="p">(</span><span class="k">input</span><span class="p">())</span> <span class="o">*</span> <span class="mi">60</span>
-  <span class="n">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;{x // 100}р. {x % 100}коп.&#39;</span><span class="p">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 4:</em></p>
 <p>Дано пятизначное или шестизначное натуральное число. Напишите программу, которая изменит порядок его последних пяти цифр на обратный.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="s s-Atom">s</span> <span class="o">=</span> <span class="nf">input</span><span class="p">()</span>
-<span class="nf">print</span><span class="p">(</span><span class="nf">int</span><span class="p">(</span><span class="s s-Atom">s</span><span class="p">[:-</span><span class="mi">5</span><span class="p">]</span> <span class="o">+</span> <span class="s s-Atom">s</span><span class="p">[</span><span class="o">-</span><span class="mi">5</span><span class="s s-Atom">:</span><span class="p">][</span><span class="s s-Atom">::-</span><span class="mi">1</span><span class="p">]))</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 5:</em></p>
 <p>На вход программе подаётся натуральное число. Напишите программу, которая вставляет в заданное число запятые в соответствии со стандартным американским соглашением о запятых в больших числах.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="n">num</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="k">input</span><span class="p">())</span>
-<span class="n">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;{num:,}&#39;</span><span class="p">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 6:</em></p>
 <p>Китайский гороскоп назначает животным годы в 12-летнем цикле. Один 12-летний цикл показан в таблице ниже. Таким образом, 2012 год будет очередным годом Дракона.</p>
 <p>| Год  | Животное|
@@ -124,99 +92,42 @@ body::before {
 | 2011 | Заяц    |</p>
 <p>Напишите программу, которая считывает год и отображает название связанного с ним животного. Ваша программа должна корректно работать с любым годом, не только теми, что перечислены в таблице.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="n">print</span><span class="p">((</span><span class="s1">&#39;Обезьяна&#39;</span><span class="p">,</span> <span class="s1">&#39;Петух&#39;</span><span class="p">,</span> <span class="s1">&#39;Собака&#39;</span><span class="p">,</span> <span class="s1">&#39;Свинья&#39;</span><span class="p">,</span> <span class="s1">&#39;Крыса&#39;</span><span class="p">,</span> <span class="s1">&#39;Бык&#39;</span><span class="p">,</span> <span class="s1">&#39;Тигр&#39;</span><span class="p">,</span> <span class="s1">&#39;Заяц&#39;</span><span class="p">,</span> <span class="s1">&#39;Дракон&#39;</span><span class="p">,</span> <span class="s1">&#39;Змея&#39;</span><span class="p">,</span> <span class="s1">&#39;Лошадь&#39;</span><span class="p">,</span> <span class="s1">&#39;Овца&#39;</span><span class="p">)[</span><span class="nb">int</span><span class="p">(</span><span class="k">input</span><span class="p">())</span> <span class="o">%</span> <span class="mi">12</span><span class="p">])</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 7:</em></p>
 <p>Дан набор точек на координатной плоскости. Необходимо подсчитать и вывести количество точек, лежащих в каждой координатной четверти.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">c</span> <span class="o">=</span> <span class="mi">4</span> <span class="o">*</span> [<span class="mi">0</span>] <span class="o">+</span> [<span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>]
-<span class="k">for</span> <span class="nv">_</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">c</span>[<span class="mi">4</span>]<span class="ss">)</span>:
-    <span class="nv">x</span>, <span class="nv">y</span> <span class="o">=</span> <span class="nv">map</span><span class="ss">(</span><span class="nv">int</span>, <span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">())</span>
-    <span class="nv">c</span>[<span class="nv">x</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="k">if</span> <span class="nv">y</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="k">else</span> <span class="mi">2</span> <span class="o">+</span> <span class="ss">(</span><span class="nv">x</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="ss">)</span>] <span class="o">+=</span> <span class="nv">not</span> <span class="mi">0</span> <span class="nv">in</span> [<span class="nv">x</span>, <span class="nv">y</span>]
-[<span class="nv">print</span><span class="ss">(</span><span class="nv">f</span><span class="s2">&quot;</span><span class="s">{[&#39;Первая&#39;, &#39;Вторая&#39;, &#39;Третья&#39;, &#39;Четвертая&#39;][i]} четверть: {c[i]}</span><span class="s2">&quot;</span><span class="ss">)</span> <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="mi">4</span><span class="ss">)</span>]
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 8:</em></p>
 <p>На вход программе подается строка текста из натуральных чисел. Из неё формируется список чисел. Напишите программу подсчета количества чисел, которые больше предшествующего им в этом списке числа, то есть, стоят вслед за меньшим числом. </p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">nums</span> <span class="o">=</span> <span class="nv">tuple</span><span class="ss">(</span><span class="nv">map</span><span class="ss">(</span><span class="nv">int</span>, <span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">()))</span>
-<span class="nv">print</span><span class="ss">(</span><span class="nv">sum</span><span class="ss">(</span><span class="mi">1</span> <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="mi">1</span>, <span class="nv">len</span><span class="ss">(</span><span class="nv">nums</span><span class="ss">))</span> <span class="k">if</span> <span class="nv">nums</span>[<span class="nv">i</span><span class="o">-</span><span class="mi">1</span>] <span class="o">&lt;</span> <span class="nv">nums</span>[<span class="nv">i</span>]<span class="ss">))</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 9:</em></p>
 <p>На вход программе подается строка текста из натуральных чисел. Из элементов строки формируется список чисел. Напишите программу, которая меняет местами соседние элементы списка (a[0] c a[1], a[2] c a[3] и т.д.). Если в списке нечетное количество элементов, то последний остается на своем месте.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">digits</span> <span class="o">=</span> <span class="nv">list</span><span class="ss">(</span><span class="nv">map</span><span class="ss">(</span><span class="nv">int</span>, <span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">()))</span>
-<span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="mi">1</span>, <span class="nv">len</span><span class="ss">(</span><span class="nv">digits</span><span class="ss">)</span>, <span class="mi">2</span><span class="ss">)</span>:
-    <span class="nv">digits</span>[<span class="nv">i</span> <span class="o">-</span> <span class="mi">1</span>], <span class="nv">digits</span>[<span class="nv">i</span>] <span class="o">=</span> <span class="nv">digits</span>[<span class="nv">i</span>], <span class="nv">digits</span>[<span class="nv">i</span> <span class="o">-</span> <span class="mi">1</span>]
-
-<span class="nv">print</span><span class="ss">(</span><span class="o">*</span><span class="nv">digits</span><span class="ss">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 10:</em></p>
 <p>На вход программе подается строка текста из натуральных чисел. Из элементов строки формируется список чисел. Напишите программу циклического сдвига элементов списка направо, когда последний элемент становится первым, а остальные сдвигаются на одну позицию вперед, в сторону увеличения индексов.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="n">spisok</span> <span class="o">=</span> <span class="n">list</span><span class="p">(</span><span class="k">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="k">input</span><span class="p">().</span><span class="n">split</span><span class="p">()))</span>
-<span class="n">temp</span> <span class="o">=</span> <span class="n">spisok</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-<span class="n">spisok</span><span class="p">.</span><span class="k">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">temp</span><span class="p">)</span>
-<span class="n">del</span> <span class="n">spisok</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-<span class="n">print</span><span class="p">(</span><span class="o">*</span><span class="n">spisok</span><span class="p">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 11:</em></p>
 <p>На вход программе подается строка текста, содержащая натуральные числа, расположенные по неубыванию. Из строки формируется список чисел. Напишите программу для подсчета количества разных элементов в списке.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="n">print</span><span class="p">(</span><span class="n">len</span><span class="p">(</span><span class="k">set</span><span class="p">(</span><span class="k">input</span><span class="p">().</span><span class="n">split</span><span class="p">())))</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 12:</em></p>
 <p>Напишите программу для определения, является ли число произведением двух чисел из данного набора, выводящую результат в виде ответа «ДА» или «НЕТ».</p>
 <p>Формат входных данных
 В первой строке подаётся число n (0 &lt; n &lt; 1000) – количество чисел в наборе. В последующих n строках вводятся целые числа, составляющие набор (могут повторяться). Затем следует целое число, которое является или не является произведением двух каких-то чисел из набора.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">n</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span> 
-<span class="nv">lst</span> <span class="o">=</span> [<span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span> <span class="k">for</span> <span class="nv">x</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">n</span><span class="ss">)</span>]
-<span class="nv">k</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
-<span class="nb">result</span> <span class="o">=</span> <span class="nv">False</span>
-<span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">len</span><span class="ss">(</span><span class="nv">lst</span><span class="ss">))</span>:
-  <span class="k">for</span> <span class="nv">j</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">i</span><span class="o">+</span><span class="mi">1</span>, <span class="nv">len</span><span class="ss">(</span><span class="nv">lst</span><span class="ss">))</span>:
-    <span class="k">if</span> <span class="nv">lst</span>[<span class="nv">i</span>]<span class="o">*</span><span class="nv">lst</span>[<span class="nv">j</span>] <span class="o">==</span> <span class="nv">k</span>:
-      <span class="nb">result</span> <span class="o">=</span> <span class="nv">True</span>
-<span class="k">if</span> <span class="nb">result</span> <span class="o">==</span> <span class="nv">True</span>:
-  <span class="nv">print</span><span class="ss">(</span><span class="s2">&quot;</span><span class="s">ДА</span><span class="s2">&quot;</span><span class="ss">)</span>
-<span class="k">else</span>:
-  <span class="nv">print</span><span class="ss">(</span><span class="s2">&quot;</span><span class="s">НЕТ</span><span class="s2">&quot;</span><span class="ss">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 12:</em></p>
 <p>Дана строка текста, состоящая из букв русского алфавита "О" и "Р". Буква "О" – соответствует выпадению Орла, а буква "Р" – соответствует выпадению Решки. Напишите программу, которая подсчитывает наибольшее количество подряд выпавших Решек.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="n">stroka</span> <span class="o">=</span> <span class="k">input</span><span class="p">().</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;О&#39;</span><span class="p">)</span>
-<span class="n">res</span> <span class="o">=</span> <span class="k">max</span><span class="p">(</span><span class="n">stroka</span><span class="p">,</span> <span class="k">key</span><span class="o">=</span><span class="n">len</span><span class="p">)</span>
-<span class="n">print</span><span class="p">(</span><span class="n">len</span><span class="p">(</span><span class="n">res</span><span class="p">))</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 13:</em></p>
 <p>Искусственный интеллект Антон, созданный Гилфойлом, взломал сеть умных холодильников. Теперь он использует их в качестве серверов "Пегого дудочника". Помогите владельцу фирмы отыскать все зараженные холодильники.</p>
 <p>Для каждого холодильника существует строка с данными, состоящая из строчных букв и цифр, и если в ней присутствует слово "anton" (необязательно рядом стоящие буквы, главное наличие последовательности букв), то холодильник заражен и нужно вывести номер холодильника, нумерация начинается с единицы</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">re</span>
-<span class="n">num</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
-    <span class="k">if</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;.*a.*n.*t.*o.*n&#39;</span><span class="p">,</span> <span class="nb">input</span><span class="p">()):</span>
-        <span class="k">print</span><span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 14 - Роскомнадзор запретил букву а:</em></p>
 <p>Необходимо написать программу, реализующую алгоритм написания этой песни. Алгоритм выводит в конце предложения следующую в алфавитном порядке букву, если она встречается в строке текста, а очередную строку отображает уже без этой буквы.</p>
 <p><strong>Формат входных данных</strong>
@@ -224,21 +135,11 @@ body::before {
 <p><strong>Формат выходных данных</strong>
 Программа должна вывести в соответствии с указанным алгоритмом строки, количество которых равно количеству разных букв в строке, которая получается путем конкатенации введенного слова и строки "запретил букву".</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">word</span> <span class="o">=</span> <span class="nv">input</span><span class="ss">()</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="s"> запретил букву</span><span class="s1">&#39;</span>
-<span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="mi">1072</span>, <span class="mi">1104</span><span class="ss">)</span>:
-    <span class="k">if</span> <span class="nv">chr</span><span class="ss">(</span><span class="nv">i</span><span class="ss">)</span> <span class="nv">in</span> <span class="nv">word</span>:
-        <span class="nv">print</span><span class="ss">(</span><span class="nv">word</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="s"> </span><span class="s1">&#39;</span> <span class="o">+</span> <span class="nv">chr</span><span class="ss">(</span><span class="nv">i</span><span class="ss">))</span>
-        <span class="nv">word</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="s"> </span><span class="s1">&#39;</span>.<span class="nv">join</span><span class="ss">(</span><span class="nv">word</span>.<span class="nv">replace</span><span class="ss">(</span><span class="nv">chr</span><span class="ss">(</span><span class="nv">i</span><span class="ss">)</span>, <span class="s1">&#39;&#39;</span><span class="ss">)</span>.<span class="nv">split</span><span class="ss">())</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 15:</em></p>
 <p>На вход программе подается число n. Напишите программу, которая создает и выводит построчно список, состоящий из n списков [[1, 2, ..., n], [1, 2, ..., n], ..., [1, 2, ..., n]].</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">n</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
-<span class="nv">matrix</span> <span class="o">=</span> [[<span class="nv">j</span> <span class="k">for</span> <span class="nv">j</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="mi">1</span>, <span class="nv">n</span> <span class="o">+</span> <span class="mi">1</span><span class="ss">)</span>] <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="mi">1</span>, <span class="nv">n</span> <span class="o">+</span> <span class="mi">1</span><span class="ss">)</span>]
-<span class="nv">print</span><span class="ss">(</span><span class="o">*</span><span class="nv">matrix</span>, <span class="nv">sep</span><span class="o">=</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="ss">)</span>
-</pre></div>
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
             </p>
       
           </div>

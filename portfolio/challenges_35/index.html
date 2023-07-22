@@ -57,98 +57,31 @@ body::before {
               <p><em>Задача 1:</em></p>
 <p>Вводится натуральное число N (то есть, положительное, целое). Требуется создать двумерный (вложенный) список размером N x N элементов, состоящий из всех единиц, а затем, в последний столбец записать пятерки. Вывести этот список на экран в виде таблицы чисел, как показано в примере ниже.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">n</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
-<span class="nv">sp</span> <span class="o">=</span> [[<span class="mi">1</span> <span class="k">for</span> <span class="nv">j</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="mi">1</span>, <span class="nv">n</span> <span class="o">+</span> <span class="mi">1</span><span class="ss">)</span>] <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="mi">1</span>, <span class="nv">n</span> <span class="o">+</span> <span class="mi">1</span><span class="ss">)</span>]
-<span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">len</span><span class="ss">(</span><span class="nv">sp</span><span class="ss">))</span>:
-    <span class="k">for</span> <span class="nv">j</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">len</span><span class="ss">(</span><span class="nv">sp</span><span class="ss">))</span>:
-        <span class="k">if</span> <span class="nv">j</span> <span class="o">==</span> <span class="nv">n</span> <span class="o">-</span> <span class="mi">1</span>:
-            <span class="nv">sp</span>[<span class="nv">i</span>][<span class="nv">j</span>] <span class="o">=</span> <span class="mi">5</span>
-<span class="k">for</span> <span class="nv">line</span> <span class="nv">in</span> <span class="nv">sp</span>:
-    <span class="nv">print</span><span class="ss">(</span><span class="o">*</span><span class="nv">line</span><span class="ss">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 2:</em></p>
 <p>Вводится список из URL-адресов (каждый с новой строки). Требуется в них заменить все пробелы на символ дефиса (-). Следует учесть, что может быть несколько подряд идущих пробелов. Результат преобразования вывести на экран в виде строк из URL-адресов.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">sys</span>
-<span class="n">lst_in</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">str</span><span class="o">.</span><span class="n">strip</span><span class="p">,</span> <span class="n">sys</span><span class="o">.</span><span class="n">stdin</span><span class="o">.</span><span class="n">readlines</span><span class="p">()))</span>
-
-<span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">lst_in</span><span class="p">:</span>
-    <span class="n">line</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
-    <span class="n">line</span> <span class="o">=</span> <span class="s1">&#39;-&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 3:</em></p>
 <p>Вводится натуральное число n. Необходимо найти все простые числа, которые меньше этого числа n, то есть, в диапазоне [2; n). Результат вывести на экран в строчку через пробел.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">print</span><span class="ss">(</span><span class="o">*</span>[<span class="nv">i</span> <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="mi">2</span>, <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">()))</span> <span class="k">if</span> <span class="nv">not</span> [<span class="nv">j</span> <span class="k">for</span> <span class="nv">j</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="mi">2</span>, <span class="nv">i</span><span class="ss">)</span> <span class="k">if</span> <span class="nv">not</span> <span class="nv">i</span> <span class="o">%</span> <span class="nv">j</span>]]<span class="ss">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 4:</em></p>
 <p>Вводится двумерный список размерностью 5 х 5 элементов, состоящий из целых чисел. Проверьте, является ли этот двумерный список симметричным относительно главной диагонали. Главная диагональ — та, которая идёт из левого верхнего угла двумерного массива в правый нижний. Выведите на экран ДА, если матрица симметрична и НЕТ - в противном случае.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">sys</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
-<span class="n">s</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">stdin</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
-<span class="n">lst_in</span> <span class="o">=</span> <span class="p">[</span><span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="n">x</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="kp">split</span><span class="p">()))</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">s</span><span class="p">]</span>
-<span class="n">lst_inT</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="kp">transpose</span><span class="p">(</span><span class="n">lst_in</span><span class="p">)</span>
-<span class="k">def</span> <span class="nf">check_symmetric</span><span class="p">(</span><span class="n">lst_in</span><span class="p">,</span> <span class="n">tol</span><span class="o">=</span><span class="mf">1e-8</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="kp">all</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="kp">abs</span><span class="p">(</span><span class="n">lst_in</span><span class="o">-</span><span class="n">lst_inT</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">tol</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="s1">&#39;ДА&#39;</span> <span class="k">if</span> <span class="n">check_symmetric</span><span class="p">(</span><span class="n">lst_in</span><span class="p">)</span> <span class="o">==</span> <span class="bp">True</span> <span class="k">else</span> <span class="s1">&#39;НЕТ&#39;</span><span class="p">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 5:</em></p>
 <p>Вводится список целых чисел в одну строку через пробел. Необходимо выполнить его сортировку выбором по возрастанию (неубыванию).</p>
 <p><em>Решение 1:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">matrix</span> <span class="o">=</span> <span class="nv">list</span><span class="ss">(</span><span class="nv">map</span><span class="ss">(</span><span class="nv">int</span>, <span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">()))</span>
-<span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">len</span><span class="ss">(</span><span class="nv">matrix</span><span class="ss">))</span>:
-    <span class="k">for</span> <span class="nv">j</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">len</span><span class="ss">(</span><span class="nv">matrix</span><span class="ss">))</span>:
-        <span class="k">if</span> <span class="nv">matrix</span>[<span class="nv">i</span>] <span class="o">&lt;</span> <span class="nv">matrix</span>[<span class="nv">j</span>]:
-            <span class="nv">matrix</span>[<span class="nv">i</span>], <span class="nv">matrix</span>[<span class="nv">j</span>] <span class="o">=</span> <span class="nv">matrix</span>[<span class="nv">j</span>], <span class="nv">matrix</span>[<span class="nv">i</span>]
-<span class="nv">print</span><span class="ss">(</span><span class="o">*</span><span class="nv">matrix</span><span class="ss">)</span>
-</pre></div>
-
-
 <p><em>Решение 2:</em></p>
-<div class="codehilite"><pre><span></span><span class="n">print</span><span class="p">(</span><span class="o">*</span><span class="n">sorted</span><span class="p">(</span><span class="n">list</span><span class="p">(</span><span class="k">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="k">input</span><span class="p">().</span><span class="n">split</span><span class="p">()))))</span>
-</pre></div>
-
-
 <p><em>Задача 6:</em></p>
 <p>Вводится список целых чисел в одну строку через пробел. Необходимо выполнить его сортировку по возрастанию (неубыванию) методом всплывающего пузырька. </p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">sp</span> <span class="o">=</span> <span class="nv">list</span><span class="ss">(</span><span class="nv">map</span><span class="ss">(</span><span class="nv">int</span>, <span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">()))</span>
-<span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">len</span><span class="ss">(</span><span class="nv">sp</span><span class="ss">))</span>:
-    <span class="k">for</span> <span class="nv">j</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">i</span> <span class="o">+</span> <span class="mi">1</span>, <span class="nv">len</span><span class="ss">(</span><span class="nv">sp</span><span class="ss">))</span>:
-        <span class="k">if</span> <span class="nv">sp</span>[<span class="nv">j</span>] <span class="o">&lt;</span> <span class="nv">sp</span>[<span class="nv">i</span>]:
-            <span class="nv">sp</span>[<span class="nv">j</span>], <span class="nv">sp</span>[<span class="nv">i</span>] <span class="o">=</span> <span class="nv">sp</span>[<span class="nv">i</span>], <span class="nv">sp</span>[<span class="nv">j</span>]
-<span class="nv">print</span><span class="ss">(</span><span class="o">*</span><span class="nv">sp</span><span class="ss">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 7:</em></p>
 <p>В некоторой стране используются денежные купюры достоинством в 1, 2, 4, 8, 16, 32 и 64. Вводится натуральное число n. Как наименьшим количеством таких денежных купюр можно выплатить сумму n? Вывести на экран список купюр для формирования суммы n (в одну строчку через пробел, начиная с наибольшей и заканчивая наименьшей). Предполагается, что имеется достаточно большое количество купюр всех достоинств.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">money</span> <span class="o">=</span> [<span class="mi">64</span>, <span class="mi">32</span>, <span class="mi">16</span>, <span class="mi">8</span>, <span class="mi">4</span>, <span class="mi">2</span>, <span class="mi">1</span>]
-<span class="nv">summa</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
-<span class="nv">res</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
-<span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">len</span><span class="ss">(</span><span class="nv">money</span><span class="ss">))</span>:
-    <span class="k">for</span> <span class="nv">j</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">len</span><span class="ss">(</span><span class="nv">money</span><span class="ss">))</span>:
-        <span class="nv">kol</span> <span class="o">=</span> [<span class="nv">summa</span><span class="o">//</span><span class="nv">x</span> <span class="k">for</span> <span class="nv">x</span> <span class="nv">in</span> <span class="nv">money</span>]
-        <span class="k">if</span> <span class="nv">kol</span>[<span class="nv">i</span>] <span class="o">&gt;=</span> <span class="mi">1</span>:
-            <span class="nv">res</span> <span class="o">+=</span> <span class="ss">(</span><span class="nv">str</span><span class="ss">(</span><span class="nv">money</span>[<span class="nv">i</span>]<span class="ss">)</span><span class="o">+</span><span class="s1">&#39;</span><span class="s"> </span><span class="s1">&#39;</span><span class="ss">)</span> <span class="o">*</span><span class="nv">kol</span>[<span class="nv">i</span>]
-            <span class="nv">temp</span> <span class="o">=</span> <span class="nv">kol</span>[<span class="nv">i</span>]<span class="o">*</span><span class="nv">money</span>[<span class="nv">i</span>]
-            <span class="nv">summa</span> <span class="o">=</span> <span class="nv">summa</span> <span class="o">-</span> <span class="nv">temp</span>
-
-<span class="nv">print</span><span class="ss">(</span><span class="nv">res</span><span class="ss">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 8:</em> </p>
 <p>Даны <strong>n</strong> точек на плоскости, найти центр и минимальный радиус круга, куда попадут все эти точки.</p>
 <p><strong>Пояснение:</strong></p>
@@ -171,25 +104,7 @@ body::before {
 <p>Для вывода используйте следующий шаблон:</p>
 <p>"центр в точке (%6.3f, %6.3f), r = %6.3f"</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">def</span> <span class="nv">radius</span><span class="ss">(</span><span class="nv">array</span><span class="ss">)</span>:
-    <span class="nv">n</span> <span class="o">=</span> <span class="nv">len</span><span class="ss">(</span><span class="nv">array</span><span class="ss">)</span>
-    <span class="nv">koor_x</span> <span class="o">=</span> <span class="nv">array</span>[<span class="mi">0</span>:<span class="nv">n</span>:<span class="mi">2</span>]
-    <span class="nv">koor_y</span> <span class="o">=</span> <span class="nv">array</span>[<span class="mi">1</span>:<span class="nv">n</span>:<span class="mi">2</span>]
-    <span class="nv">xc</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="nv">sum</span><span class="ss">(</span><span class="nv">koor_x</span><span class="ss">)</span> <span class="o">/</span> <span class="nv">n</span>
-    <span class="nv">yc</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="nv">sum</span><span class="ss">(</span><span class="nv">koor_y</span><span class="ss">)</span> <span class="o">/</span> <span class="nv">n</span>
-    <span class="k">return</span> <span class="nv">xc</span>, <span class="nv">yc</span>, <span class="nv">max</span><span class="ss">(</span><span class="nv">map</span><span class="ss">(</span><span class="nv">lambda</span> <span class="nv">xy</span>: <span class="ss">((</span><span class="nv">xy</span>[<span class="mi">0</span>] <span class="o">-</span> <span class="nv">xc</span><span class="ss">)</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="ss">(</span><span class="nv">xy</span>[<span class="mi">1</span>] <span class="o">-</span> <span class="nv">yc</span><span class="ss">)</span><span class="o">**</span><span class="mi">2</span><span class="ss">)</span><span class="o">**</span><span class="mi">0</span>.<span class="mi">5</span>, <span class="nv">zip</span><span class="ss">(</span><span class="nv">koor_x</span>, <span class="nv">koor_y</span><span class="ss">)))</span>
-<span class="nv">n</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
-<span class="nv">massiv</span> <span class="o">=</span> []
-<span class="nv">i</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="k">while</span> <span class="nv">i</span> <span class="o">&lt;</span> <span class="nv">n</span>:
-    <span class="nv">a</span> <span class="o">=</span> [<span class="nv">float</span><span class="ss">(</span><span class="nv">i</span><span class="ss">)</span> <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">()</span>]
-    <span class="nv">massiv</span>.<span class="nv">append</span><span class="ss">(</span><span class="nv">a</span><span class="ss">)</span>
-    <span class="nv">i</span> <span class="o">+=</span> <span class="mi">1</span>
-<span class="nv">array</span> <span class="o">=</span> [<span class="nv">j</span> <span class="k">for</span> <span class="nv">sub</span> <span class="nv">in</span> <span class="nv">massiv</span> <span class="k">for</span> <span class="nv">j</span> <span class="nv">in</span> <span class="nv">sub</span>]
-<span class="nv">print</span><span class="ss">(</span><span class="s2">&quot;</span><span class="s">центр в точке (%6.3f, %6.3f), r = %6.3f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="nv">radius</span><span class="ss">(</span><span class="nv">array</span><span class="ss">))</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 9:</em></p>
 <p>Даны точки на плоскости, координаты которых занесены в массивы <strong>x_array</strong> и <strong>y_array</strong>. Постройте по этим точкам наиболее подходящий тренд: линейный (полином первой степени)  или квадратичный (полином второй степени). Для этого для каждого типа тренда:</p>
 <ul>
@@ -212,222 +127,22 @@ body::before {
 <p>или</p>
 <p>"%5.3f %5.3f %5.3f"</p>
 <p><em>Решение 1:</em></p>
-<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
-<span class="k">def</span> <span class="nf">lin</span><span class="p">(</span> <span class="n">koeff</span><span class="p">,</span> <span class="n">x</span> <span class="p">):</span>
-    <span class="k">return</span> <span class="n">koeff</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="n">x</span> <span class="o">+</span> <span class="n">koeff</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
-
-<span class="k">def</span> <span class="nf">quad</span><span class="p">(</span> <span class="n">koeff</span><span class="p">,</span> <span class="n">x</span> <span class="p">):</span>
-    <span class="k">return</span> <span class="n">koeff</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">koeff</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="n">x</span> <span class="o">+</span> <span class="n">koeff</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
-
-<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="kp">array</span><span class="p">(</span><span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="kp">split</span><span class="p">(),</span> <span class="kp">dtype</span><span class="o">=</span><span class="s1">&#39;float&#39;</span><span class="p">)</span>
-<span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="kp">array</span><span class="p">(</span><span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="kp">split</span><span class="p">(),</span> <span class="kp">dtype</span><span class="o">=</span><span class="s1">&#39;float&#39;</span><span class="p">)</span>
-
-<span class="n">p1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="kp">polyfit</span><span class="p">(</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="mi">1</span> <span class="p">)</span>
-<span class="n">rel_error</span> <span class="o">=</span> <span class="nb">abs</span><span class="p">(</span><span class="mf">1.0</span> <span class="o">-</span> <span class="n">y</span> <span class="o">/</span> <span class="n">lin</span><span class="p">(</span> <span class="n">p1</span><span class="p">,</span> <span class="n">x</span> <span class="p">))</span>   
-<span class="n">avg_lin_error</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span> <span class="n">rel_error</span> <span class="p">)</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span> <span class="n">y</span> <span class="p">)</span>
-
-<span class="n">p2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="kp">polyfit</span><span class="p">(</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="mi">2</span> <span class="p">)</span>
-<span class="n">rel_error</span> <span class="o">=</span> <span class="nb">abs</span><span class="p">(</span> <span class="mf">1.0</span> <span class="o">-</span> <span class="n">y</span> <span class="o">/</span> <span class="n">quad</span><span class="p">(</span> <span class="n">p2</span><span class="p">,</span> <span class="n">x</span> <span class="p">)</span> <span class="p">)</span>   
-<span class="n">avg_sqr_error</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span> <span class="n">rel_error</span> <span class="p">)</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span> <span class="n">y</span> <span class="p">)</span>
-
-<span class="k">if</span> <span class="n">avg_lin_error</span> <span class="o">&lt;</span> <span class="n">avg_sqr_error</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%5.3f</span><span class="s2"> </span><span class="si">%5.3f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">p1</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">p1</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%5.3f</span><span class="s2"> </span><span class="si">%5.3f</span><span class="s2"> </span><span class="si">%5.3f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">p2</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">p2</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">p2</span><span class="p">[</span><span class="mi">2</span><span class="p">]))</span>
-</pre></div>
-
-
 <p><em>Решение 2:</em></p>
-<div class="codehilite"><pre><span></span><span class="kn">import</span>  <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
-
-<span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">(),</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">float</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">(),</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">float</span><span class="p">)</span>
-<span class="n">f1</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">,</span> <span class="n">a</span><span class="p">:</span> <span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">x</span> <span class="o">+</span> <span class="n">a</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
-<span class="n">f2</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">,</span> <span class="n">a</span><span class="p">:</span> <span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">x</span> <span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">a</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span> <span class="n">x</span> <span class="o">+</span> <span class="n">a</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
-
-<span class="n">p</span> <span class="o">=</span> <span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">polyfit</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">)]</span>
-<span class="k">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%5.3f</span><span class="s2"> </span><span class="si">%5.3f</span><span class="s2">&quot;</span><span class="o">%</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">p</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="k">if</span> <span class="nb">abs</span><span class="p">((</span><span class="n">f2</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">p</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="o">-</span> <span class="n">y</span><span class="p">)</span> <span class="o">/</span> <span class="n">y</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span> <span class="o">&gt;</span> <span class="nb">abs</span><span class="p">((</span><span class="n">f1</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">p</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="o">-</span> <span class="n">y</span><span class="p">)</span> <span class="o">/</span> <span class="n">y</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
-      <span class="k">else</span> <span class="s2">&quot;</span><span class="si">%5.3f</span><span class="s2"> </span><span class="si">%5.3f</span><span class="s2"> </span><span class="si">%5.3f</span><span class="s2">&quot;</span><span class="o">%</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">p</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span>
-</pre></div>
-
-
 <p><em>Задача 10:</em></p>
 <p>Выведите таблицу размером n × n, заполненную числами от 1 до n<sup>2</sup> по спирали, выходящей из левого верхнего угла и закрученной по часовой стрелке.</p>
 <p><em>Решение 1:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">n</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
-<span class="nv">matrix</span> <span class="o">=</span> [[<span class="mi">0</span>] <span class="o">*</span> <span class="nv">n</span> <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">n</span><span class="ss">)</span>]
-<span class="nv">vx</span>, <span class="nv">vy</span> <span class="o">=</span> [<span class="mi">0</span>, <span class="mi">1</span>, <span class="mi">0</span>, <span class="o">-</span><span class="mi">1</span>], [<span class="mi">1</span>, <span class="mi">0</span>, <span class="o">-</span><span class="mi">1</span>, <span class="mi">0</span>]
-<span class="nv">x</span>, <span class="nv">y</span>, <span class="nv">z</span> <span class="o">=</span> <span class="mi">0</span>, <span class="o">-</span><span class="mi">1</span>, <span class="mi">1</span>
-<span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">n</span> <span class="o">+</span> <span class="nv">n</span> <span class="o">-</span> <span class="mi">1</span><span class="ss">)</span>:
-    <span class="k">for</span> <span class="nv">j</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">((</span><span class="nv">n</span> <span class="o">+</span> <span class="nv">n</span> <span class="o">-</span> <span class="nv">i</span><span class="ss">)</span> <span class="o">//</span> <span class="mi">2</span><span class="ss">)</span>:
-        <span class="nv">x</span> <span class="o">+=</span> <span class="nv">vx</span>[<span class="nv">i</span> <span class="o">%</span> <span class="mi">4</span>]
-        <span class="nv">y</span> <span class="o">+=</span> <span class="nv">vy</span>[<span class="nv">i</span> <span class="o">%</span> <span class="mi">4</span>]
-        <span class="nv">matrix</span>[<span class="nv">x</span>][<span class="nv">y</span>] <span class="o">=</span> <span class="nv">z</span>
-        <span class="nv">z</span> <span class="o">+=</span> <span class="mi">1</span>
-<span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">len</span><span class="ss">(</span><span class="nv">matrix</span><span class="ss">))</span>:
-    <span class="k">for</span> <span class="nv">j</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">len</span><span class="ss">(</span><span class="nv">matrix</span>[<span class="nv">i</span>]<span class="ss">))</span>:
-        <span class="nv">print</span><span class="ss">(</span><span class="nv">str</span><span class="ss">(</span><span class="nv">matrix</span>[<span class="nv">i</span>][<span class="nv">j</span>]<span class="ss">)</span>.<span class="nv">ljust</span><span class="ss">(</span><span class="mi">3</span><span class="ss">)</span>, <span class="k">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="ss">)</span>  
-    <span class="nv">print</span><span class="ss">()</span>
-</pre></div>
-
-
 <p><em>Результат:</em></p>
-<div class="codehilite"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="o">%</span><span class="n">Run</span> <span class="n">spiral_matrix</span><span class="p">.</span><span class="n">py</span>
-<span class="mi">6</span>
-<span class="mi">1</span>  <span class="mi">2</span>  <span class="mi">3</span>  <span class="mi">4</span>  <span class="mi">5</span>  <span class="mi">6</span>  
-<span class="mi">20</span> <span class="mi">21</span> <span class="mi">22</span> <span class="mi">23</span> <span class="mi">24</span> <span class="mi">7</span>  
-<span class="mi">19</span> <span class="mi">32</span> <span class="mi">33</span> <span class="mi">34</span> <span class="mi">25</span> <span class="mi">8</span>  
-<span class="mi">18</span> <span class="mi">31</span> <span class="mi">36</span> <span class="mi">35</span> <span class="mi">26</span> <span class="mi">9</span>  
-<span class="mi">17</span> <span class="mi">30</span> <span class="mi">29</span> <span class="mi">28</span> <span class="mi">27</span> <span class="mi">10</span> 
-<span class="mi">16</span> <span class="mi">15</span> <span class="mi">14</span> <span class="mi">13</span> <span class="mi">12</span> <span class="mi">11</span> 
-<span class="o">&gt;&gt;&gt;</span>
-</pre></div>
-
-
 <p><em>Решение 2:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">n</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
-<span class="nv">dx</span>, <span class="nv">dy</span>, <span class="nv">x</span>, <span class="nv">y</span> <span class="o">=</span> <span class="mi">1</span>, <span class="mi">0</span>, <span class="mi">0</span>, <span class="mi">0</span>           
-<span class="nv">matrix</span> <span class="o">=</span> [[<span class="nv">None</span>]<span class="o">*</span> <span class="nv">n</span> <span class="k">for</span> <span class="nv">j</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">n</span><span class="ss">)</span>]
-<span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="mi">1</span>, <span class="nv">n</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">1</span><span class="ss">)</span>:
-    <span class="nv">matrix</span>[<span class="nv">x</span>][<span class="nv">y</span>] <span class="o">=</span> <span class="nv">i</span>
-    <span class="nv">new_x</span>, <span class="nv">new_y</span> <span class="o">=</span> <span class="nv">x</span> <span class="o">+</span> <span class="nv">dx</span>, <span class="nv">y</span> <span class="o">+</span> <span class="nv">dy</span>
-    <span class="k">if</span> <span class="mi">0</span> <span class="o">&lt;=</span> <span class="nv">new_x</span> <span class="o">&lt;</span> <span class="nv">n</span> <span class="nv">and</span> <span class="mi">0</span> <span class="o">&lt;=</span> <span class="nv">new_y</span> <span class="o">&lt;</span> <span class="nv">n</span> <span class="nv">and</span> <span class="nv">matrix</span>[<span class="nv">new_x</span>][<span class="nv">new_y</span>] <span class="o">==</span> <span class="nv">None</span>:
-        <span class="nv">x</span>, <span class="nv">y</span> <span class="o">=</span> <span class="nv">new_x</span>, <span class="nv">new_y</span>
-    <span class="k">else</span>:
-        <span class="nv">dx</span>, <span class="nv">dy</span> <span class="o">=</span> <span class="o">-</span><span class="nv">dy</span>, <span class="nv">dx</span>
-        <span class="nv">x</span>, <span class="nv">y</span> <span class="o">=</span> <span class="nv">x</span> <span class="o">+</span> <span class="nv">dx</span>, <span class="nv">y</span> <span class="o">+</span> <span class="nv">dy</span>
-
-<span class="k">for</span> <span class="nv">y</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">len</span><span class="ss">(</span><span class="nv">matrix</span><span class="ss">))</span>:
-        <span class="k">for</span> <span class="nv">x</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">len</span><span class="ss">(</span><span class="nv">matrix</span><span class="ss">))</span>:
-            <span class="nv">print</span> <span class="ss">(</span><span class="nv">matrix</span>[<span class="nv">x</span>][<span class="nv">y</span>], <span class="k">end</span><span class="o">=</span><span class="s1">&#39;</span><span class="s"> </span><span class="s1">&#39;</span><span class="ss">)</span>
-        <span class="nv">print</span><span class="ss">()</span>
-</pre></div>
-
-
 <p><em>Результат:</em></p>
-<div class="codehilite"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="o">%</span><span class="n">Run</span> <span class="n">spiral_matrix</span><span class="p">.</span><span class="n">py</span>
-<span class="mi">5</span>
-<span class="mi">1</span> <span class="mi">2</span> <span class="mi">3</span> <span class="mi">4</span> <span class="mi">5</span> 
-<span class="mi">16</span> <span class="mi">17</span> <span class="mi">18</span> <span class="mi">19</span> <span class="mi">6</span> 
-<span class="mi">15</span> <span class="mi">24</span> <span class="mi">25</span> <span class="mi">20</span> <span class="mi">7</span> 
-<span class="mi">14</span> <span class="mi">23</span> <span class="mi">22</span> <span class="mi">21</span> <span class="mi">8</span> 
-<span class="mi">13</span> <span class="mi">12</span> <span class="mi">11</span> <span class="mi">10</span> <span class="mi">9</span> 
-<span class="o">&gt;&gt;&gt;</span>
-</pre></div>
-
-
 <p><em>Решение 3:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">n</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
-<span class="nv">matrix</span> <span class="o">=</span> [[<span class="mi">0</span> <span class="k">for</span> <span class="nv">j</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">n</span><span class="ss">)</span>] <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">n</span><span class="ss">)</span>]
-<span class="nv">number</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="k">for</span> <span class="nv">num</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">n</span> <span class="o">//</span> <span class="mi">2</span><span class="ss">)</span>: 
-    <span class="nv">i</span> <span class="o">=</span> <span class="nv">num</span>
-    <span class="k">for</span> <span class="nv">j</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">num</span>, <span class="nv">n</span> <span class="o">-</span> <span class="mi">1</span> <span class="o">-</span> <span class="nv">num</span><span class="ss">)</span>: 
-        <span class="nv">number</span> <span class="o">+=</span> <span class="mi">1</span>
-        <span class="nv">matrix</span>[<span class="nv">i</span>][<span class="nv">j</span>] <span class="o">=</span> <span class="nv">number</span>
-    <span class="nv">j</span> <span class="o">=</span> <span class="nv">n</span> <span class="o">-</span> <span class="mi">1</span> <span class="o">-</span> <span class="nv">num</span>
-    <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">num</span>, <span class="nv">n</span> <span class="o">-</span> <span class="mi">1</span> <span class="o">-</span> <span class="nv">num</span><span class="ss">)</span>: 
-        <span class="nv">number</span> <span class="o">+=</span> <span class="mi">1</span>
-        <span class="nv">matrix</span>[<span class="nv">i</span>][<span class="nv">j</span>] <span class="o">=</span> <span class="nv">number</span>
-    <span class="nv">i</span> <span class="o">=</span> <span class="nv">n</span> <span class="o">-</span> <span class="mi">1</span> <span class="o">-</span> <span class="nv">num</span>
-    <span class="k">for</span> <span class="nv">j</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">n</span> <span class="o">-</span> <span class="mi">1</span> <span class="o">-</span> <span class="nv">num</span>, <span class="nv">num</span>, <span class="o">-</span><span class="mi">1</span><span class="ss">)</span>:
-        <span class="nv">number</span> <span class="o">+=</span> <span class="mi">1</span>
-        <span class="nv">matrix</span>[<span class="nv">i</span>][<span class="nv">j</span>] <span class="o">=</span> <span class="nv">number</span>
-    <span class="nv">j</span> <span class="o">=</span> <span class="nv">num</span>
-    <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">n</span> <span class="o">-</span> <span class="mi">1</span> <span class="o">-</span> <span class="nv">num</span>, <span class="nv">num</span>, <span class="o">-</span><span class="mi">1</span><span class="ss">)</span>: 
-        <span class="nv">number</span> <span class="o">+=</span> <span class="mi">1</span>
-        <span class="nv">matrix</span>[<span class="nv">i</span>][<span class="nv">j</span>] <span class="o">=</span> <span class="nv">number</span>
-<span class="k">if</span> <span class="nv">n</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">1</span>: 
-    <span class="nv">matrix</span>[<span class="nv">n</span> <span class="o">//</span> <span class="mi">2</span>][<span class="nv">n</span> <span class="o">//</span> <span class="mi">2</span>] <span class="o">=</span> <span class="nv">n</span> <span class="o">*</span> <span class="nv">n</span> 
-<span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">n</span><span class="ss">)</span>:
-    <span class="k">for</span> <span class="nv">j</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">n</span><span class="ss">)</span>:
-        <span class="nv">print</span><span class="ss">(</span><span class="nv">str</span><span class="ss">(</span><span class="nv">matrix</span>[<span class="nv">i</span>][<span class="nv">j</span>]<span class="ss">)</span>.<span class="nv">ljust</span><span class="ss">(</span><span class="mi">3</span><span class="ss">)</span>, <span class="k">end</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="s"> </span><span class="s1">&#39;</span><span class="ss">)</span>
-    <span class="nv">print</span><span class="ss">()</span>
-</pre></div>
-
-
 <p><em>Результат:</em></p>
-<div class="codehilite"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="o">%</span><span class="n">Run</span> <span class="n">spiral_matrix</span><span class="p">.</span><span class="n">py</span>
-<span class="mi">7</span>
-<span class="mi">1</span>   <span class="mi">2</span>   <span class="mi">3</span>   <span class="mi">4</span>   <span class="mi">5</span>   <span class="mi">6</span>   <span class="mi">7</span>   
-<span class="mi">24</span>  <span class="mi">25</span>  <span class="mi">26</span>  <span class="mi">27</span>  <span class="mi">28</span>  <span class="mi">29</span>  <span class="mi">8</span>   
-<span class="mi">23</span>  <span class="mi">40</span>  <span class="mi">41</span>  <span class="mi">42</span>  <span class="mi">43</span>  <span class="mi">30</span>  <span class="mi">9</span>   
-<span class="mi">22</span>  <span class="mi">39</span>  <span class="mi">48</span>  <span class="mi">49</span>  <span class="mi">44</span>  <span class="mi">31</span>  <span class="mi">10</span>  
-<span class="mi">21</span>  <span class="mi">38</span>  <span class="mi">47</span>  <span class="mi">46</span>  <span class="mi">45</span>  <span class="mi">32</span>  <span class="mi">11</span>  
-<span class="mi">20</span>  <span class="mi">37</span>  <span class="mi">36</span>  <span class="mi">35</span>  <span class="mi">34</span>  <span class="mi">33</span>  <span class="mi">12</span>  
-<span class="mi">19</span>  <span class="mi">18</span>  <span class="mi">17</span>  <span class="mi">16</span>  <span class="mi">15</span>  <span class="mi">14</span>  <span class="mi">13</span>  
-<span class="o">&gt;&gt;&gt;</span>
-</pre></div>
-
-
 <p>Перейдем к чуть более сложному варианту задачи - заполним прямоугольную матрицу.</p>
 <p><em>Задача 2:</em></p>
 <p>На вход программе подаются два натуральных числа n и m. Напишите программу, которая создает матрицу размером n × m, заполнив её "спиралью" в соответствии с образцом.</p>
 <p><em>Решение 1:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">n</span>, <span class="nv">m</span> <span class="o">=</span> <span class="nv">map</span><span class="ss">(</span><span class="nv">int</span>, <span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">())</span>
-<span class="nv">matrix</span> <span class="o">=</span> [[<span class="mi">0</span>] <span class="o">*</span> <span class="nv">m</span> <span class="k">for</span> <span class="nv">_</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">n</span><span class="ss">)</span>]
-<span class="nv">dx</span>, <span class="nv">dy</span>, <span class="nv">x</span>, <span class="nv">y</span> <span class="o">=</span> <span class="mi">0</span>, <span class="mi">1</span>, <span class="mi">0</span>, <span class="mi">0</span>
-
-<span class="k">for</span> <span class="nv">digit</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="mi">1</span>, <span class="nv">n</span> <span class="o">*</span> <span class="nv">m</span> <span class="o">+</span> <span class="mi">1</span><span class="ss">)</span>:
-    <span class="nv">matrix</span>[<span class="nv">x</span>][<span class="nv">y</span>] <span class="o">=</span> <span class="nv">digit</span>
-
-    <span class="k">if</span> <span class="nv">matrix</span>[<span class="ss">(</span><span class="nv">x</span> <span class="o">+</span> <span class="nv">dx</span><span class="ss">)</span> <span class="o">%</span> <span class="nv">n</span>][<span class="ss">(</span><span class="nv">y</span> <span class="o">+</span> <span class="nv">dy</span><span class="ss">)</span> <span class="o">%</span> <span class="nv">m</span>]:
-        <span class="nv">dx</span>, <span class="nv">dy</span> <span class="o">=</span> <span class="nv">dy</span>, <span class="o">-</span><span class="nv">dx</span>
-
-    <span class="nv">x</span> <span class="o">+=</span> <span class="nv">dx</span>
-    <span class="nv">y</span> <span class="o">+=</span> <span class="nv">dy</span>
-
-<span class="k">for</span> <span class="nv">line</span> <span class="nv">in</span> <span class="nv">matrix</span>:
-    <span class="nv">print</span><span class="ss">(</span><span class="o">*</span><span class="ss">(</span><span class="nv">f</span><span class="s1">&#39;</span><span class="s">{i:&lt;3}</span><span class="s1">&#39;</span> <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">line</span><span class="ss">)</span>, <span class="nv">sep</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="ss">)</span>
-</pre></div>
-
-
 <p><em>Результат:</em></p>
-<div class="codehilite"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="o">%</span><span class="n">Run</span> <span class="n">spiral_matrix</span><span class="p">.</span><span class="n">py</span>
-<span class="mi">8</span> <span class="mi">10</span>
-<span class="mi">1</span>  <span class="mi">2</span>  <span class="mi">3</span>  <span class="mi">4</span>  <span class="mi">5</span>  <span class="mi">6</span>  <span class="mi">7</span>  <span class="mi">8</span>  <span class="mi">9</span>  <span class="mi">10</span> 
-<span class="mi">32</span> <span class="mi">33</span> <span class="mi">34</span> <span class="mi">35</span> <span class="mi">36</span> <span class="mi">37</span> <span class="mi">38</span> <span class="mi">39</span> <span class="mi">40</span> <span class="mi">11</span> 
-<span class="mi">31</span> <span class="mi">56</span> <span class="mi">57</span> <span class="mi">58</span> <span class="mi">59</span> <span class="mi">60</span> <span class="mi">61</span> <span class="mi">62</span> <span class="mi">41</span> <span class="mi">12</span> 
-<span class="mi">30</span> <span class="mi">55</span> <span class="mi">72</span> <span class="mi">73</span> <span class="mi">74</span> <span class="mi">75</span> <span class="mi">76</span> <span class="mi">63</span> <span class="mi">42</span> <span class="mi">13</span> 
-<span class="mi">29</span> <span class="mi">54</span> <span class="mi">71</span> <span class="mi">80</span> <span class="mi">79</span> <span class="mi">78</span> <span class="mi">77</span> <span class="mi">64</span> <span class="mi">43</span> <span class="mi">14</span> 
-<span class="mi">28</span> <span class="mi">53</span> <span class="mi">70</span> <span class="mi">69</span> <span class="mi">68</span> <span class="mi">67</span> <span class="mi">66</span> <span class="mi">65</span> <span class="mi">44</span> <span class="mi">15</span> 
-<span class="mi">27</span> <span class="mi">52</span> <span class="mi">51</span> <span class="mi">50</span> <span class="mi">49</span> <span class="mi">48</span> <span class="mi">47</span> <span class="mi">46</span> <span class="mi">45</span> <span class="mi">16</span> 
-<span class="mi">26</span> <span class="mi">25</span> <span class="mi">24</span> <span class="mi">23</span> <span class="mi">22</span> <span class="mi">21</span> <span class="mi">20</span> <span class="mi">19</span> <span class="mi">18</span> <span class="mi">17</span> 
-<span class="o">&gt;&gt;&gt;</span>
-</pre></div>
-
-
 <p><em>Решение 2:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">n</span>, <span class="nv">m</span> <span class="o">=</span> <span class="ss">(</span><span class="nv">int</span><span class="ss">(</span><span class="nv">i</span><span class="ss">)</span> <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">())</span>
-<span class="nv">x</span>, <span class="nv">y</span> <span class="o">=</span> <span class="mi">0</span>, <span class="mi">0</span>
-<span class="nv">dx</span>, <span class="nv">dy</span> <span class="o">=</span> <span class="mi">0</span>, <span class="mi">1</span>
-<span class="nv">matrix</span> <span class="o">=</span> [[<span class="mi">0</span>]<span class="o">*</span> <span class="nv">m</span> <span class="k">for</span> <span class="nv">_</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">n</span><span class="ss">)</span>]
-<span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="mi">1</span>, <span class="nv">n</span> <span class="o">*</span> <span class="nv">m</span> <span class="o">+</span> <span class="mi">1</span><span class="ss">)</span>:
-    <span class="nv">matrix</span>[<span class="nv">x</span>][<span class="nv">y</span>] <span class="o">=</span> <span class="nv">i</span>
-    <span class="nv">nx</span>, <span class="nv">ny</span> <span class="o">=</span> <span class="nv">x</span> <span class="o">+</span> <span class="nv">dx</span>, <span class="nv">y</span> <span class="o">+</span> <span class="nv">dy</span>
-    <span class="k">if</span> <span class="mi">0</span> <span class="o">&lt;=</span> <span class="nv">nx</span> <span class="o">&lt;</span> <span class="nv">n</span> <span class="nv">and</span> <span class="mi">0</span> <span class="o">&lt;=</span> <span class="nv">ny</span> <span class="o">&lt;</span> <span class="nv">m</span> <span class="nv">and</span> <span class="nv">matrix</span>[<span class="nv">nx</span>][<span class="nv">ny</span>] <span class="o">==</span> <span class="mi">0</span>:
-        <span class="nv">x</span>, <span class="nv">y</span> <span class="o">=</span> <span class="nv">nx</span>, <span class="nv">ny</span>
-    <span class="k">else</span>:
-        <span class="nv">dx</span>, <span class="nv">dy</span> <span class="o">=</span> <span class="nv">dy</span>, <span class="o">-</span><span class="nv">dx</span>
-        <span class="nv">x</span>, <span class="nv">y</span> <span class="o">=</span> <span class="nv">x</span> <span class="o">+</span> <span class="nv">dx</span>, <span class="nv">y</span> <span class="o">+</span> <span class="nv">dy</span>
-<span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">n</span><span class="ss">)</span>:
-    <span class="k">for</span> <span class="nv">j</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">m</span><span class="ss">)</span>:
-        <span class="nv">print</span><span class="ss">(</span><span class="nv">str</span><span class="ss">(</span><span class="nv">matrix</span>[<span class="nv">i</span>][<span class="nv">j</span>]<span class="ss">)</span>.<span class="nv">ljust</span><span class="ss">(</span><span class="mi">3</span><span class="ss">)</span>, <span class="k">end</span><span class="o">=</span><span class="s1">&#39;</span><span class="s"> </span><span class="s1">&#39;</span><span class="ss">)</span>
-
-    <span class="nv">print</span><span class="ss">()</span>
-</pre></div>
-
-
 <p><em>Результат:</em></p>
-<div class="codehilite"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="o">%</span><span class="n">Run</span> <span class="n">spiral_matrix</span><span class="p">.</span><span class="n">py</span>
-<span class="mi">6</span> <span class="mi">8</span>
-<span class="mi">1</span>   <span class="mi">2</span>   <span class="mi">3</span>   <span class="mi">4</span>   <span class="mi">5</span>   <span class="mi">6</span>   <span class="mi">7</span>   <span class="mi">8</span>   
-<span class="mi">24</span>  <span class="mi">25</span>  <span class="mi">26</span>  <span class="mi">27</span>  <span class="mi">28</span>  <span class="mi">29</span>  <span class="mi">30</span>  <span class="mi">9</span>   
-<span class="mi">23</span>  <span class="mi">40</span>  <span class="mi">41</span>  <span class="mi">42</span>  <span class="mi">43</span>  <span class="mi">44</span>  <span class="mi">31</span>  <span class="mi">10</span>  
-<span class="mi">22</span>  <span class="mi">39</span>  <span class="mi">48</span>  <span class="mi">47</span>  <span class="mi">46</span>  <span class="mi">45</span>  <span class="mi">32</span>  <span class="mi">11</span>  
-<span class="mi">21</span>  <span class="mi">38</span>  <span class="mi">37</span>  <span class="mi">36</span>  <span class="mi">35</span>  <span class="mi">34</span>  <span class="mi">33</span>  <span class="mi">12</span>  
-<span class="mi">20</span>  <span class="mi">19</span>  <span class="mi">18</span>  <span class="mi">17</span>  <span class="mi">16</span>  <span class="mi">15</span>  <span class="mi">14</span>  <span class="mi">13</span>  
-<span class="o">&gt;&gt;&gt;</span>
-</pre></div>
             </p>
       
           </div>

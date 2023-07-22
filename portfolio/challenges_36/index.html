@@ -57,242 +57,51 @@ body::before {
               <p><em>Задача 1:</em></p>
 <p>Одноклеточная амеба каждые 3 часа делится на 2 клетки. Определить, сколько клеток будет через n часов (n - целое положительное число, вводимое с клавиатуры). Считать, что изначально была одна амеба. Результат вывести на экран. Задачу необходимо решить с использованием цикла while.</p>
 <p><em>Решение 1 - по условию:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">n</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
-<span class="nv">a</span> <span class="o">=</span> <span class="mi">1</span>
-<span class="nv">i</span> <span class="o">=</span> <span class="mi">3</span>
-<span class="k">while</span> <span class="nv">i</span> <span class="o">&lt;=</span> <span class="nv">n</span>:
-    <span class="nv">a</span> <span class="o">=</span> <span class="nv">a</span> <span class="o">*</span> <span class="mi">2</span>
-    <span class="nv">i</span> <span class="o">=</span> <span class="nv">i</span> <span class="o">+</span> <span class="mi">3</span>
-<span class="nv">print</span><span class="ss">(</span><span class="nv">a</span><span class="ss">)</span>
-</pre></div>
-
-
 <p><em>Решение 2:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">n</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
-<span class="nv">res</span> <span class="o">=</span> [<span class="mi">1</span>]
-<span class="nv">num</span> <span class="o">=</span> <span class="mi">1</span>
-<span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="mi">1</span>, <span class="nv">n</span> <span class="o">//</span> <span class="mi">3</span> <span class="o">+</span> <span class="mi">1</span><span class="ss">)</span>:
-    <span class="nv">num</span> <span class="o">=</span> <span class="nv">num</span> <span class="o">*</span> <span class="mi">2</span>
-    <span class="nv">res</span>.<span class="nv">append</span><span class="ss">(</span><span class="nv">num</span><span class="ss">)</span>
-<span class="nv">print</span><span class="ss">(</span><span class="nv">res</span>[<span class="o">-</span><span class="mi">1</span>]<span class="ss">)</span>
-</pre></div>
-
-
 <p><em>Задача 2:</em></p>
 <p>Гражданин 1 января открыл счет в банке, вложив 1000 руб. Каждый год размер вклада увеличивается на 5% от имеющейся суммы. Определить сумму вклада через n лет (n - целое положительное число, вводимое с клавиатуры). Результат округлить до сотых и вывести на экран. Программу реализовать при помощи цикла while.</p>
 <p><em>Решение 1:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">n</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
-<span class="nv">i</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="nv">s</span> <span class="o">=</span> <span class="mi">1000</span>
-
-<span class="k">while</span> <span class="nv">i</span> <span class="o">&lt;</span> <span class="nv">n</span>:
-    <span class="nv">s</span> <span class="o">+=</span> <span class="ss">(</span><span class="nv">s</span> <span class="o">*</span> <span class="mi">0</span>.<span class="mi">05</span><span class="ss">)</span>
-    <span class="nv">i</span> <span class="o">+=</span> <span class="mi">1</span>
-<span class="nv">print</span><span class="ss">(</span><span class="nv">round</span><span class="ss">(</span><span class="nv">s</span>, <span class="mi">2</span><span class="ss">))</span>
-</pre></div>
-
-
 <p><em>Решение 2 - сложный процент:</em></p>
-<div class="codehilite"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="k">input</span><span class="p">())</span>
-<span class="n">res</span> <span class="o">=</span> <span class="mi">1000</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="mi">0</span><span class="p">.</span><span class="mi">05</span><span class="p">)</span><span class="o">**</span><span class="n">n</span>
-<span class="n">print</span><span class="p">(</span><span class="n">round</span><span class="p">(</span><span class="n">res</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
-</pre></div>
-
-
 <p><em>Задача 3:</em></p>
 <p>Вводятся два натуральных четных числа n и m в одну строчку через пробел, причем n &lt; m. Напечатать все нечетные числа из интервала [n, m]. Задачу решить без применения условного оператора. Результат вывести на экран в виде строки чисел, записанных через пробел. Программу реализовать при помощи цикла while.</p>
 <p><em>Решение 1:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">n</span>, <span class="nv">m</span> <span class="o">=</span> <span class="nv">map</span><span class="ss">(</span><span class="nv">int</span>, <span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">())</span>
-<span class="nv">n</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="ss">(</span><span class="nv">n</span> <span class="o">//</span> <span class="mi">2</span><span class="ss">)</span> <span class="o">+</span> <span class="mi">1</span>
-<span class="k">while</span> <span class="nv">n</span> <span class="o">&lt;</span> <span class="nv">m</span>:
-    <span class="nv">print</span><span class="ss">(</span><span class="nv">n</span>, <span class="k">end</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="s"> </span><span class="s1">&#39;</span><span class="ss">)</span>
-    <span class="nv">n</span> <span class="o">+=</span> <span class="mi">2</span>
-</pre></div>
-
-
 <p><em>Решение 2:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">n</span>, <span class="nv">m</span> <span class="o">=</span> <span class="nv">map</span><span class="ss">(</span><span class="nv">int</span>, <span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">())</span>
-<span class="nv">print</span><span class="ss">(</span><span class="o">*</span>[<span class="nv">i</span> <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">n</span>, <span class="nv">m</span> <span class="o">+</span> <span class="mi">1</span><span class="ss">)</span> <span class="k">if</span> <span class="nv">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">!=</span> <span class="mi">0</span>]<span class="ss">)</span>
-</pre></div>
-
-
 <p><em>Задача 4:</em></p>
 <p>Составить программу поиска всех трехзначных чисел, которые при делении на 47 дают в остатке 43 и кратны 3. Вывести найденные числа в строчку через пробел. Программу реализовать при помощи цикла while.</p>
 <p><em>Решение 1:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">i</span> <span class="o">=</span> <span class="mi">100</span>
-<span class="k">while</span> <span class="nv">i</span> <span class="o">&lt;</span> <span class="mi">1000</span>:
-    <span class="k">if</span> <span class="nv">i</span> <span class="o">%</span> <span class="mi">47</span> <span class="o">==</span> <span class="mi">43</span> <span class="nv">and</span> <span class="nv">i</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">==</span> <span class="mi">0</span>:
-        <span class="nv">print</span><span class="ss">(</span><span class="nv">i</span>, <span class="k">end</span><span class="o">=</span><span class="s2">&quot;</span><span class="s"> </span><span class="s2">&quot;</span><span class="ss">)</span>
-    <span class="nv">i</span> <span class="o">+=</span> <span class="mi">1</span>
-</pre></div>
-
-
 <p><em>Решение 2:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">print</span><span class="ss">(</span><span class="o">*</span>[<span class="nv">i</span> <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="mi">200</span>, <span class="mi">999</span><span class="ss">)</span> <span class="k">if</span> <span class="nv">i</span> <span class="o">%</span> <span class="mi">47</span> <span class="o">==</span> <span class="mi">43</span> <span class="nv">and</span> <span class="nv">i</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">==</span> <span class="mi">0</span>]<span class="ss">)</span>
-</pre></div>
-
-
 <p><em>Задача 5:</em></p>
 <p>Имеется одномерный список длиной 10 элементов, состоящий из нулей:</p>
-<div class="codehilite"><pre><span></span><span class="n">p</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="mi">10</span>
-</pre></div>
-
-
 <p>На каждой итерации цикла пользователь вводит целое число - индекс элемента списка p, по которому записывается значение 1, если ее там еще нет. Если же 1 уже проставлена, то список не менять и снова запросить у пользователя очередное число. Необходимо расставить так пять единиц в список. (После этого цикл прерывается).</p>
 <p>Программу реализовать с помощью цикла while и с использованием оператора continue, когда 1 не может быть добавлена в список. Результат вывести на экран в виде последовательности чисел, записанных через пробел.</p>
 <p><em>Решение 1:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">p</span> <span class="o">=</span> [<span class="mi">0</span>] <span class="o">*</span> <span class="mi">10</span>
-<span class="nv">i</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="k">while</span> <span class="nv">sum</span><span class="ss">(</span><span class="nv">p</span><span class="ss">)</span> <span class="o">&lt;</span> <span class="mi">5</span>:
-    <span class="nv">i</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
-    <span class="k">if</span> <span class="nv">p</span>[<span class="nv">i</span>] <span class="o">==</span> <span class="mi">1</span>:
-        <span class="k">continue</span>
-    <span class="nv">p</span>[<span class="nv">i</span>] <span class="o">+=</span> <span class="mi">1</span>
-<span class="nv">print</span><span class="ss">(</span><span class="o">*</span><span class="nv">p</span><span class="ss">)</span>
-</pre></div>
-
-
 <p><em>Решение 2:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">p</span> <span class="o">=</span> [<span class="mi">0</span>] <span class="o">*</span> <span class="mi">10</span>
-<span class="k">while</span> <span class="nv">sum</span><span class="ss">(</span><span class="nv">p</span><span class="ss">)</span> <span class="o">&lt;</span> <span class="mi">5</span>:
-    <span class="nv">n</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
-    <span class="k">if</span> <span class="nv">p</span>[<span class="nv">n</span>] <span class="o">!=</span> <span class="mi">1</span>:
-        <span class="nv">p</span>[<span class="nv">n</span>] <span class="o">=</span> <span class="mi">1</span>
-<span class="nv">print</span><span class="ss">(</span><span class="o">*</span><span class="nv">p</span><span class="ss">)</span>
-</pre></div>
-
-
 <p><em>Задача 6:</em></p>
 <p>На каждой итерации цикла вводится целое число. Необходимо подсчитать произведение только положительных чисел, до тех пор, пока не будет введено значение 0. Реализовать пропуск вычислений с помощью оператора continue, а также использовать цикл while. Результат произведения вывести на экран.</p>
 <p><em>Решение 1:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">p</span> <span class="o">=</span> <span class="mi">1</span>
-<span class="nv">d</span> <span class="o">=</span> <span class="mi">1</span>
-<span class="k">while</span> <span class="nv">d</span> <span class="o">!=</span> <span class="mi">0</span>:
-    <span class="nv">d</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
-    <span class="k">if</span> <span class="nv">d</span> <span class="o">&lt;=</span> <span class="mi">0</span>:
-        <span class="k">continue</span>
-    <span class="nv">p</span> <span class="o">*=</span> <span class="nv">d</span>
-<span class="nv">print</span> <span class="ss">(</span><span class="nv">p</span><span class="ss">)</span>
-</pre></div>
-
-
 <p><em>Решение 2:</em></p>
-<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span>
-<span class="kp">prod</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
-    <span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
-    <span class="k">if</span> <span class="n">n</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="kp">prod</span><span class="o">.</span><span class="kp">append</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="k">break</span>
-<span class="k">print</span><span class="p">(</span><span class="n">numpy</span><span class="o">.</span><span class="kp">prod</span><span class="p">(</span><span class="kp">prod</span><span class="p">))</span>
-</pre></div>
-
-
 <p><em>Задача 7:</em></p>
 <p>Вводится список названий городов в одну строчку через пробел. Определить, что в этом списке все города имеют длину более 5 символов. Реализовать программу с использованием цикла while и оператора break. Вывести ДА, если условие выполняется и НЕТ - в противном случае.</p>
 <p><em>Решение 1:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">s</span> <span class="o">=</span> <span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">()</span>
-<span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">s</span>:
-    <span class="k">if</span> <span class="nv">len</span><span class="ss">(</span><span class="nv">i</span><span class="ss">)</span> <span class="o">&lt;</span> <span class="mi">6</span>:
-        <span class="nv">print</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">НЕТ</span><span class="s1">&#39;</span><span class="ss">)</span>
-        <span class="k">break</span> 
-<span class="k">else</span>:
-    <span class="nv">print</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">ДА</span><span class="s1">&#39;</span><span class="ss">)</span>
-</pre></div>
-
-
 <p><em>Решение 2:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">spisok</span> <span class="o">=</span> <span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">()</span>
-<span class="nv">dlina5</span> <span class="o">=</span> [<span class="nv">i</span> <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">spisok</span> <span class="k">if</span> <span class="nv">len</span><span class="ss">(</span><span class="nv">i</span><span class="ss">)</span> <span class="o">&gt;</span> <span class="mi">5</span>]
-<span class="nv">print</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">ДА</span><span class="s1">&#39;</span> <span class="k">if</span> <span class="nv">len</span><span class="ss">(</span><span class="nv">spisok</span><span class="ss">)</span> <span class="o">==</span> <span class="nv">len</span><span class="ss">(</span><span class="nv">dlina5</span><span class="ss">)</span> <span class="k">else</span> <span class="s1">&#39;</span><span class="s">НЕТ</span><span class="s1">&#39;</span><span class="ss">)</span>
-</pre></div>
-
-
 <p><em>Задача 8:</em></p>
 <p>Вводится список имен студентов в одну строчку через пробел. Определить, что хотя бы одно имя в этом списке начинается и заканчивается на ту же самую букву (без учета регистра). Реализовать программу с использованием цикла while и оператора break. Вывести ДА, если условие выполняется и НЕТ - в противном случае.</p>
 <p><em>Решение 1:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">lst</span> <span class="o">=</span> <span class="nv">input</span><span class="ss">()</span>.<span class="nv">lower</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">()</span>
-<span class="nv">i</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="k">while</span> <span class="nv">i</span> <span class="o">&lt;</span> <span class="nv">len</span><span class="ss">(</span><span class="nv">lst</span><span class="ss">)</span>:
-    <span class="k">if</span> <span class="nv">lst</span>[<span class="nv">i</span>][<span class="mi">0</span>] <span class="o">==</span> <span class="nv">lst</span>[<span class="nv">i</span>][<span class="o">-</span><span class="mi">1</span>]:
-        <span class="nv">print</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">ДА</span><span class="s1">&#39;</span><span class="ss">)</span>
-        <span class="k">break</span>
-    <span class="nv">i</span> <span class="o">+=</span> <span class="mi">1</span>
-<span class="k">else</span>: <span class="nv">print</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">НЕТ</span><span class="s1">&#39;</span><span class="ss">)</span>
-</pre></div>
-
-
 <p><em>Решение 2:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">spisok</span> <span class="o">=</span> <span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">()</span>
-<span class="nv">dlina5</span> <span class="o">=</span> [<span class="nv">i</span> <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">spisok</span> <span class="k">if</span> <span class="nv">i</span>[<span class="mi">0</span>].<span class="nv">lower</span><span class="ss">()</span> <span class="o">==</span> <span class="nv">i</span>[<span class="o">-</span><span class="mi">1</span>]]
-<span class="nv">print</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">ДА</span><span class="s1">&#39;</span> <span class="k">if</span> <span class="nv">len</span><span class="ss">(</span><span class="nv">dlina5</span><span class="ss">)</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="k">else</span> <span class="s1">&#39;</span><span class="s">НЕТ</span><span class="s1">&#39;</span><span class="ss">)</span>
-</pre></div>
-
-
 <p><em>Задача 9:</em></p>
 <p>Вводится натуральное число n (то есть, целое положительное). В цикле перебрать все целые числа в интервале [1; n] и сформировать список из чисел, кратных 3 и 5 одновременно. Вывести полученную последовательность чисел в виде строки через пробел, если значение n меньше 100. Иначе вывести на экран сообщение "слишком большое значение n" (без кавычек). Использовать в программе оператор else после цикла while.</p>
 <p><em>Решение 1:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">n</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
-<span class="nv">i</span> <span class="o">=</span> <span class="mi">1</span>
-<span class="k">if</span> <span class="nv">n</span> <span class="o">&lt;</span> <span class="mi">100</span>:
-    <span class="k">while</span> <span class="nv">i</span> <span class="o">&lt;</span> <span class="nv">n</span>:
-        <span class="k">if</span> <span class="nv">i</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">==</span> <span class="mi">0</span> <span class="nv">and</span> <span class="nv">i</span> <span class="o">%</span> <span class="mi">5</span> <span class="o">==</span> <span class="mi">0</span>:
-            <span class="nv">print</span><span class="ss">(</span><span class="nv">i</span>, <span class="k">end</span><span class="o">=</span><span class="s2">&quot;</span><span class="s"> </span><span class="s2">&quot;</span><span class="ss">)</span>
-        <span class="nv">i</span> <span class="o">+=</span> <span class="mi">1</span>
-<span class="k">else</span>:
-    <span class="nv">print</span><span class="ss">(</span><span class="s2">&quot;</span><span class="s">слишком большое значение n</span><span class="s2">&quot;</span><span class="ss">)</span>
-</pre></div>
-
-
 <p><em>Решение 2:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">n</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
-<span class="k">if</span> <span class="nv">n</span> <span class="o">&lt;</span> <span class="mi">100</span>:
-    <span class="nv">print</span><span class="ss">(</span><span class="o">*</span>[<span class="nv">i</span> <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="mi">1</span>, <span class="nv">n</span> <span class="o">+</span> <span class="mi">1</span><span class="ss">)</span> <span class="k">if</span> <span class="nv">i</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">==</span> <span class="mi">0</span> <span class="nv">and</span> <span class="nv">i</span> <span class="o">%</span> <span class="mi">5</span> <span class="o">==</span> <span class="mi">0</span>]<span class="ss">)</span>
-<span class="k">else</span>:
-    <span class="nv">print</span><span class="ss">(</span><span class="s2">&quot;</span><span class="s">слишком большое значение n</span><span class="s2">&quot;</span><span class="ss">)</span>
-</pre></div>
-
-
 <p><em>Задача 10:</em></p>
 <p>Вводится натуральное число n. Вывести первое найденное натуральное число (то есть, перебирать числа, начиная с 1), квадрат которого больше значения n. Реализовать программу с использованием цикла while.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">n</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
-<span class="nv">i</span> <span class="o">=</span> <span class="mi">1</span>
-<span class="k">while</span> <span class="nv">True</span>:
-    <span class="k">if</span> <span class="nv">i</span><span class="o">**</span><span class="mi">2</span> <span class="o">&gt;</span> <span class="nv">n</span>:
-        <span class="k">break</span>
-    <span class="nv">i</span> <span class="o">+=</span> <span class="mi">1</span>
-<span class="nv">print</span><span class="ss">(</span><span class="nv">i</span><span class="ss">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 11:</em></p>
 <p>Напишите программу, которая считывает список чисел lst из первой строки и число x из второй строки, которая выводит все позиции, на которых встречается число x в переданном списке lst.</p>
 <p>Позиции нумеруются с нуля, если число x не встречается в списке, вывести строку "Отсутствует" (без кавычек, с большой буквы).</p>
 <p>Позиции должны быть выведены в одну строку, по возрастанию абсолютного значения.</p>
 <p><em>Решение 1:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">my_dict</span> <span class="o">=</span> {<span class="nv">k</span>:<span class="nv">v</span> <span class="k">for</span> <span class="nv">k</span>, <span class="nv">v</span> <span class="nv">in</span> <span class="nv">enumerate</span><span class="ss">(</span><span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">())</span>}
-<span class="nv">n</span> <span class="o">=</span> <span class="nv">input</span><span class="ss">()</span>
-<span class="nv">res</span> <span class="o">=</span> [<span class="nv">k</span> <span class="k">for</span> <span class="nv">k</span>, <span class="nv">v</span> <span class="nv">in</span> <span class="nv">my_dict</span>.<span class="nv">items</span><span class="ss">()</span> <span class="k">if</span> <span class="nv">v</span> <span class="o">==</span> <span class="nv">n</span>]
-<span class="nv">print</span><span class="ss">(</span><span class="o">*</span><span class="nv">res</span> <span class="k">if</span> <span class="nv">len</span><span class="ss">(</span><span class="nv">res</span><span class="ss">)</span> <span class="o">&gt;</span> <span class="mi">0</span>  <span class="k">else</span> [<span class="s1">&#39;</span><span class="s">Отсутствует</span><span class="s1">&#39;</span>]<span class="ss">)</span>
-</pre></div>
-
-
 <p><em>Решение 2:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">spisok</span> <span class="o">=</span> <span class="nv">list</span><span class="ss">(</span><span class="nv">map</span><span class="ss">(</span><span class="nv">int</span>, <span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">()))</span>
-<span class="nv">n</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
-<span class="nv">i</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="nb">result</span> <span class="o">=</span> []
-<span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">len</span><span class="ss">(</span><span class="nv">spisok</span><span class="ss">))</span>:
-    <span class="k">if</span> <span class="nv">spisok</span>[<span class="nv">i</span>] <span class="o">==</span> <span class="nv">n</span>:
-        <span class="nv">print</span><span class="ss">(</span><span class="nv">i</span>, <span class="s1">&#39;&#39;</span>, <span class="k">end</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="ss">)</span>
-        <span class="nv">i</span> <span class="o">+=</span> <span class="mi">1</span>
-<span class="k">if</span> <span class="nv">n</span> <span class="nv">not</span> <span class="nv">in</span> <span class="nv">spisok</span>:
-    <span class="nv">print</span><span class="ss">(</span><span class="s2">&quot;</span><span class="s">Отсутствует</span><span class="s2">&quot;</span><span class="ss">)</span>
-</pre></div>
-
-
 <p><em>Задача 12:</em></p>
 <p>На основе данных о количестве  туристов в некоторой стране с 2005 по 2017 год спрогнозировать количество туристов в 2018 году. Затем сравнить полученный результат с известным значением этого показателя для страны, вычислить  относительную погрешность в процентах.</p>
 <p><strong>Входные данные:</strong></p>
@@ -311,20 +120,7 @@ body::before {
 <p>Для вывода значений использовать строку формата:</p>
 <p>"Страна:%6s, прогноз:%6.3fмлн чел, относительная погрешность:%4.2fпроц." </p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
-<span class="n">strana</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
-<span class="n">tur</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="kp">array</span><span class="p">(</span><span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="kp">split</span><span class="p">(),</span> <span class="kp">dtype</span><span class="o">=</span><span class="s1">&#39;float&#39;</span><span class="p">)</span>
-<span class="n">years</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2005</span><span class="p">,</span> <span class="mi">2018</span><span class="p">)]</span>
-<span class="n">st</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
-<span class="n">kol</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
-
-<span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="kp">polyfit</span><span class="p">(</span><span class="n">years</span><span class="p">,</span> <span class="n">tur</span><span class="p">,</span> <span class="n">st</span><span class="p">)</span>
-
-<span class="n">trend</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="kp">polyval</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="mi">2018</span><span class="p">)</span>
-<span class="n">pogr</span> <span class="o">=</span> <span class="nb">abs</span><span class="p">(((</span><span class="n">trend</span> <span class="o">-</span> <span class="n">kol</span><span class="p">))</span> <span class="o">/</span> <span class="n">kol</span> <span class="o">*</span> <span class="mi">100</span><span class="p">)</span>
-
-<span class="k">print</span><span class="p">(</span><span class="s2">&quot;Страна:</span><span class="si">%6s</span><span class="s2">, прогноз:</span><span class="si">%6.3f</span><span class="s2">млн чел, относительная погрешность:</span><span class="si">%4.2f</span><span class="s2">проц.&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">strana</span><span class="p">,</span> <span class="n">trend</span><span class="p">,</span> <span class="n">pogr</span><span class="p">))</span>
-</pre></div>
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
             </p>
       
           </div>

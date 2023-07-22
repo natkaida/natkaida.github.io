@@ -57,6 +57,7 @@ body::before {
               <p><em>Задача 1:</em></p>
 <p>На вход программе подается строка текста, содержащая различные натуральные числа. Из данной строки формируется список чисел. Напишите программу, которая меняет местами минимальный и максимальный элемент этого списка.</p>
 <p><em>Решение:</em></p>
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <div class="codehilite"><pre><span></span><span class="nv">l</span> <span class="o">=</span> [<span class="nv">int</span><span class="ss">(</span><span class="nv">i</span><span class="ss">)</span> <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">()</span>]
 <span class="nv">x</span> <span class="o">=</span> <span class="nv">l</span>.<span class="nv">index</span><span class="ss">(</span><span class="nv">min</span><span class="ss">(</span><span class="nv">l</span><span class="ss">))</span>
 <span class="nv">y</span> <span class="o">=</span> <span class="nv">l</span>.<span class="nv">index</span><span class="ss">(</span><span class="nv">max</span><span class="ss">(</span><span class="nv">l</span><span class="ss">))</span>
@@ -68,6 +69,7 @@ body::before {
 <p><em>Задача 2:</em></p>
 <p>На вход программе подается строка, содержащая английский текст. Напишите программу, которая подсчитывает общее количество артиклей: 'a', 'an', 'the'.</p>
 <p><em>Решение:</em></p>
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <div class="codehilite"><pre><span></span><span class="k">c</span> <span class="o">=</span> <span class="n">list</span><span class="p">(</span><span class="k">map</span><span class="p">(</span><span class="n">str</span><span class="p">,</span> <span class="k">input</span><span class="p">().</span><span class="k">lower</span><span class="p">().</span><span class="n">split</span><span class="p">()))</span>
 <span class="n">a</span><span class="p">,</span> <span class="n">an</span><span class="p">,</span> <span class="n">the</span> <span class="o">=</span> <span class="k">c</span><span class="p">.</span><span class="k">count</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">),</span> <span class="k">c</span><span class="p">.</span><span class="k">count</span><span class="p">(</span><span class="s1">&#39;an&#39;</span><span class="p">),</span> <span class="k">c</span><span class="p">.</span><span class="k">count</span><span class="p">(</span><span class="s1">&#39;the&#39;</span><span class="p">)</span>
 <span class="n">print</span><span class="p">(</span><span class="s1">&#39;Общее количество артиклей:&#39;</span><span class="p">,</span> <span class="n">a</span> <span class="o">+</span> <span class="n">an</span> <span class="o">+</span> <span class="n">the</span><span class="p">)</span>
@@ -77,6 +79,7 @@ body::before {
 <p><em>Задача 3:</em></p>
 <p>Немалоизвестный в пустошах Мохаве Курьер забрел в Хидден-Вэли – секретный бункер Братства Стали, и любезно соглашается помочь им в решении их проблем. Одной из такой проблем являлся странный компьютерный вирус, который проявлялся в виде появления комментариев к программам на терминалах Братства Стали. Известно, что программисты Братства никогда не оставляют комментарии к коду, и пишут программы на Python, поэтому удаление всех этих комментариев никак не навредит им. Помогите писцу Ибсену удалить все комментарии из программы.</p>
 <p><em>Решение:</em></p>
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <div class="codehilite"><pre><span></span><span class="nv">n</span> <span class="o">=</span> <span class="nv">input</span><span class="ss">()</span>
 <span class="k">for</span> <span class="nv">_</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">int</span><span class="ss">(</span><span class="nv">n</span>[<span class="mi">1</span>:]<span class="ss">))</span>:
     <span class="nv">s</span> <span class="o">=</span> <span class="nv">input</span><span class="ss">()</span>
@@ -89,6 +92,7 @@ body::before {
 <p><em>Задача 4:</em></p>
 <p>На вход программе подается строка текста, содержащая целые числа. Из данной строки формируется список чисел. Напишите программу, которая сортирует и выводит данный список сначала по возрастанию, а затем по убыванию. </p>
 <p><em>Решение:</em></p>
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <div class="codehilite"><pre><span></span><span class="s s-Atom">s</span> <span class="o">=</span> <span class="nf">sorted</span><span class="p">(</span><span class="nf">int</span><span class="p">(</span><span class="s s-Atom">i</span><span class="p">)</span> <span class="s s-Atom">for</span> <span class="s s-Atom">i</span> <span class="s s-Atom">in</span> <span class="nf">input</span><span class="p">().</span><span class="nf">split</span><span class="p">())</span>
 <span class="nf">print</span><span class="p">(</span><span class="o">*</span><span class="s s-Atom">s</span><span class="p">)</span>
 <span class="nf">print</span><span class="p">(</span><span class="o">*</span><span class="s s-Atom">s</span><span class="p">[</span><span class="s s-Atom">::-</span><span class="mi">1</span><span class="p">])</span>
@@ -98,6 +102,7 @@ body::before {
 <p><em>Задача 5:</em></p>
 <p>На вход программе подается натуральное число n. Напишите программу, использующую списочное выражение, которая создает список, содержащий квадраты чисел от 1 до n, а затем выводит его элементы построчно, то есть каждый на отдельной строке.</p>
 <p><em>Решение:</em></p>
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <div class="codehilite"><pre><span></span><span class="nv">n</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
 <span class="nv">spisok</span> <span class="o">=</span> [<span class="nv">i</span><span class="o">**</span><span class="mi">2</span> <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="mi">1</span>, <span class="nv">n</span><span class="o">+</span><span class="mi">1</span><span class="ss">)</span>]
 <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">spisok</span>:
@@ -108,6 +113,7 @@ body::before {
 <p><em>Задача 6:</em></p>
 <p>На вход программе подается строка текста, содержащая слова. Напишите программу, которая выводит слова введенной строки в столбик.</p>
 <p><em>Решение:</em></p>
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <div class="codehilite"><pre><span></span><span class="n">print</span> <span class="p">(</span><span class="o">*</span><span class="k">input</span><span class="p">().</span><span class="n">split</span><span class="p">(),</span><span class="n">sep</span><span class="o">=</span><span class="s1">&#39;\n&#39;</span><span class="p">)</span>
 </pre></div>
 
@@ -115,6 +121,7 @@ body::before {
 <p><em>Задача 7:</em></p>
 <p>На вход программе подается строка текста. Напишите программу, использующую списочное выражение, которая выводит все цифровые символы данной строки.</p>
 <p><em>Решение:</em></p>
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <div class="codehilite"><pre><span></span><span class="nv">print</span><span class="ss">(</span><span class="o">*</span><span class="ss">(</span><span class="nv">i</span> <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">input</span><span class="ss">()</span> <span class="k">if</span> <span class="nv">i</span>.<span class="nv">isdigit</span><span class="ss">())</span>, <span class="nv">sep</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="ss">)</span>
 </pre></div>
 
@@ -122,6 +129,7 @@ body::before {
 <p><em>Задача 8:</em></p>
 <p>На вход программе подается строка текста, содержащая целые числа. Напишите программу, использующую списочное выражение, которая выведет квадраты четных чисел, которые не оканчиваются на цифру 4.</p>
 <p><em>Решение:</em></p>
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <div class="codehilite"><pre><span></span><span class="nv">print</span><span class="ss">(</span><span class="o">*</span>[<span class="nv">i</span><span class="o">**</span><span class="mi">2</span> <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">list</span><span class="ss">(</span><span class="nv">map</span><span class="ss">(</span><span class="nv">int</span>, <span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">()))</span> <span class="k">if</span> <span class="nv">i</span><span class="o">%</span><span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span> <span class="nv">and</span> <span class="ss">(</span><span class="nv">i</span><span class="o">**</span><span class="mi">2</span><span class="ss">)</span><span class="o">%</span><span class="mi">10</span> <span class="o">!=</span> <span class="mi">4</span>], <span class="k">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="ss">)</span>
 </pre></div>
 
@@ -129,6 +137,7 @@ body::before {
 <p><em>Задача 9:</em></p>
 <p>На вход программе подается четное число n ≥ 2. Напишите программу, которая выводит список четных чисел [2, 4, 6, ..., n].</p>
 <p><em>Решение:</em></p>
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <div class="codehilite"><pre><span></span><span class="nv">print</span><span class="ss">(</span>[<span class="nv">i</span> <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="mi">2</span>, <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span><span class="o">+</span><span class="mi">1</span>, <span class="mi">2</span><span class="ss">)</span>]<span class="ss">)</span>
 </pre></div>
 
@@ -136,6 +145,7 @@ body::before {
 <p><em>Задача 10:</em></p>
 <p>На вход программе подаются две строки текста, содержащие целые числа. Из данных строк формируются списки чисел L и M. Напишите программу, которая создает третий список, элементами которого являются суммы соответствующих элементов списков L и M. Далее программа должна вывести каждый элемент полученного списка на одной строке через 1 пробел.</p>
 <p><em>Решение:</em></p>
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <div class="codehilite"><pre><span></span><span class="nv">print</span><span class="ss">(</span><span class="o">*</span>[<span class="nv">int</span><span class="ss">(</span><span class="nv">i</span><span class="ss">)</span> <span class="o">+</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">j</span><span class="ss">)</span> <span class="k">for</span> <span class="nv">i</span>, <span class="nv">j</span> <span class="nv">in</span> <span class="nv">zip</span><span class="ss">(</span><span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">()</span>, <span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">())</span>]<span class="ss">)</span>
 </pre></div>
 
@@ -143,6 +153,7 @@ body::before {
 <p><em>Задача 11:</em></p>
 <p>На вход программе подается строка текста, содержащая натуральные числа. Напишите программу, которая вставляет между каждым числом знак +, а затем вычисляет сумму полученных чисел.</p>
 <p><em>Решение:</em></p>
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <div class="codehilite"><pre><span></span><span class="nv">n</span> <span class="o">=</span> <span class="nv">list</span><span class="ss">(</span><span class="nv">map</span><span class="ss">(</span><span class="nv">str</span>, <span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">()))</span>
 <span class="nv">m</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="s">+</span><span class="s1">&#39;</span>.<span class="nv">join</span><span class="ss">(</span><span class="nv">n</span><span class="ss">)</span>
 <span class="nv">n</span> <span class="o">=</span> [<span class="nv">int</span><span class="ss">(</span><span class="nv">i</span><span class="ss">)</span> <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">n</span>]
@@ -158,6 +169,7 @@ body::before {
 </ul>
 <p>где a, b, c, d, e, f, h, i, j, k – цифры от 0 до 9.</p>
 <p><em>Решение:</em></p>
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <div class="codehilite"><pre><span></span><span class="nv">n</span> <span class="o">=</span> <span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">(</span><span class="s2">&quot;</span><span class="s">-</span><span class="s2">&quot;</span><span class="ss">)</span>
 <span class="nv">c</span> <span class="o">=</span> [<span class="nv">len</span><span class="ss">(</span><span class="nv">i</span><span class="ss">)</span> <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">n</span>] 
 <span class="k">if</span> <span class="nv">c</span> <span class="o">==</span> [<span class="mi">3</span>, <span class="mi">3</span>, <span class="mi">4</span>] <span class="nv">and</span> <span class="s1">&#39;&#39;</span>.<span class="nv">join</span><span class="ss">(</span><span class="nv">n</span><span class="ss">)</span>.<span class="nv">isdigit</span><span class="ss">()</span>: 
@@ -172,6 +184,7 @@ body::before {
 <p><em>Задача 13:</em></p>
 <p>На вход программе подается строка текста. Напишите программу, использующую списочное выражение, которая находит длину самого длинного слова.</p>
 <p><em>Решение:</em></p>
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <div class="codehilite"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="k">input</span><span class="p">().</span><span class="n">split</span><span class="p">()</span>
 <span class="n">m</span> <span class="o">=</span> <span class="k">max</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="k">key</span><span class="o">=</span><span class="n">len</span><span class="p">)</span>
 <span class="n">print</span><span class="p">(</span><span class="n">len</span><span class="p">(</span><span class="n">m</span><span class="p">))</span>
@@ -185,6 +198,7 @@ body::before {
 <li>затем в конец слова добавляется слог "ки".</li>
 </ul>
 <p><em>Решение:</em></p>
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <div class="codehilite"><pre><span></span><span class="nv">n</span> <span class="o">=</span> <span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">()</span>
 <span class="nv">new</span> <span class="o">=</span> [<span class="nv">i</span>[<span class="mi">1</span>:] <span class="o">+</span> <span class="nv">i</span>[<span class="mi">0</span>] <span class="o">+</span> <span class="s1">&#39;</span><span class="s">ки</span><span class="s1">&#39;</span> <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">n</span>]
 <span class="nv">print</span><span class="ss">(</span><span class="o">*</span><span class="nv">new</span><span class="ss">)</span>

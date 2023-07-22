@@ -57,6 +57,7 @@ body::before {
               <p><em>Задача 1:</em></p>
 <p>Вводятся два списка целых чисел одинаковой длины каждый с новой строки. С помощью list comprehension сформировать третий список, состоящий из суммы соответствующих пар чисел введенных списков. Результат вывести на экран в одну строку через пробел.</p>
 <p><em>Решение:</em></p>
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <div class="codehilite"><pre><span></span><span class="nv">print</span><span class="ss">(</span><span class="o">*</span>[<span class="ss">(</span><span class="nv">int</span><span class="ss">(</span><span class="nv">i</span><span class="ss">)</span> <span class="o">+</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">j</span><span class="ss">))</span> <span class="k">for</span> <span class="nv">i</span>, <span class="nv">j</span> <span class="nv">in</span> <span class="nv">zip</span><span class="ss">(</span><span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">()</span>, <span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">())</span>]<span class="ss">)</span>
 </pre></div>
 
@@ -64,6 +65,7 @@ body::before {
 <p><em>Задача 2:</em></p>
 <p>Вводятся целые числа в одну строчку через пробел. Необходимо преобразовать эти данные в список целых чисел. Затем, перебрать этот список в цикле for и просуммировать все нечетные значения. Результат вывести на экран.</p>
 <p><em>Решение:</em></p>
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <div class="codehilite"><pre><span></span><span class="nv">print</span><span class="ss">(</span><span class="nv">sum</span><span class="ss">(</span>[<span class="nv">int</span><span class="ss">(</span><span class="nv">i</span><span class="ss">)</span> <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">()</span> <span class="k">if</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">i</span><span class="ss">)</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">!=</span> <span class="mi">0</span>]<span class="ss">))</span>
 </pre></div>
 
@@ -71,6 +73,7 @@ body::before {
 <p><em>Задача 3:</em></p>
 <p>Вводятся названия городов в одну строчку через пробел. Необходимо преобразовать входные данные в список. Затем, перебрать его циклом for и заменить значения элементов на длину названия соответствующего города. Результат вывести на экран в виде последовательности чисел через пробел в одну строчку.</p>
 <p><em>Решение:</em></p>
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <div class="codehilite"><pre><span></span><span class="nv">print</span><span class="ss">(</span><span class="o">*</span>[<span class="nv">len</span><span class="ss">(</span><span class="nv">i</span><span class="ss">)</span> <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">()</span>]<span class="ss">)</span>
 </pre></div>
 
@@ -78,6 +81,7 @@ body::before {
 <p><em>Задача 4:</em></p>
 <p>Вводится натуральное число n. С помощью цикла for найти все делители этого числа. Найденные делители выводить сразу в столбик без формирования списка.</p>
 <p><em>Решение:</em></p>
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <div class="codehilite"><pre><span></span><span class="nv">n</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
 <span class="nv">print</span><span class="ss">(</span><span class="o">*</span>[<span class="nv">i</span> <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="mi">1</span>, <span class="nv">n</span><span class="o">+</span><span class="mi">1</span><span class="ss">)</span> <span class="k">if</span> <span class="nv">n</span> <span class="o">%</span> <span class="nv">i</span> <span class="o">==</span> <span class="mi">0</span>], <span class="nv">sep</span><span class="o">=</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="ss">)</span>
 </pre></div>
@@ -86,6 +90,7 @@ body::before {
 <p><em>Задача 5:</em></p>
 <p>Вводится натуральное число n. С помощью цикла for определить, является ли оно простым (то есть, делится нацело только на само себя и на 1). Вывести на экран ДА, если n простое и НЕТ - в противном случае.</p>
 <p><em>Решение:</em></p>
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <div class="codehilite"><pre><span></span><span class="nv">n</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
 <span class="nv">d</span> <span class="o">=</span> []
 <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="mi">1</span>, <span class="nv">n</span><span class="o">+</span><span class="mi">1</span><span class="ss">)</span>:
@@ -98,6 +103,7 @@ body::before {
 <p><em>Задача 6:</em></p>
 <p>Вводится список названий городов в одну строчку через пробел. Перебрать все эти названия с помощью цикла for и определить, начинается ли название следующего города на последнюю букву предыдущего города в списке. Если последними встречаются буквы 'ь', 'ъ', 'ы', то берется следующая с конца буква. Вывести на экран ДА, если последовательность удовлетворяет этому правилу и НЕТ - в противном случае.</p>
 <p><em>Решение:</em></p>
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <div class="codehilite"><pre><span></span><span class="nv">g</span> <span class="o">=</span> <span class="nv">input</span><span class="ss">()</span>.<span class="nv">lower</span><span class="ss">()</span>.<span class="nv">replace</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">ь</span><span class="s1">&#39;</span>, <span class="s1">&#39;&#39;</span><span class="ss">)</span>.<span class="nv">replace</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">ъ</span><span class="s1">&#39;</span>, <span class="s1">&#39;&#39;</span><span class="ss">)</span>.<span class="nv">replace</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">ы</span><span class="s1">&#39;</span>, <span class="s1">&#39;&#39;</span><span class="ss">)</span>.<span class="nv">split</span><span class="ss">()</span>
 <span class="nv">c</span> <span class="o">=</span> []
 <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="mi">1</span>, <span class="nv">len</span><span class="ss">(</span><span class="nv">g</span><span class="ss">))</span>:
@@ -110,6 +116,7 @@ body::before {
 <p><em>Задача 7:</em></p>
 <p>Вводится натуральное число n. Вычислить сумму всех натуральных чисел меньше n, которые кратны или 3 или 5. Результат (сумму) вывести на экран. Пример: n = 10, имеем числа: 3, 5, 6, 9. Их сумма равна 23.</p>
 <p><em>Решение:</em></p>
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <div class="codehilite"><pre><span></span><span class="nv">n</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
 <span class="nv">print</span><span class="ss">(</span><span class="nv">sum</span><span class="ss">(</span>[<span class="nv">i</span> <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">n</span><span class="ss">)</span> <span class="k">if</span> <span class="nv">i</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">==</span> <span class="mi">0</span> <span class="nv">or</span> <span class="nv">i</span> <span class="o">%</span> <span class="mi">5</span> <span class="o">==</span> <span class="mi">0</span>]<span class="ss">))</span>
 </pre></div>
@@ -118,6 +125,7 @@ body::before {
 <p><em>Задача 8:</em></p>
 <p>Вводятся вещественные числа в строку через пробел. Необходимо на их основе сформировать список lst с помощью list comprehension (генератора списков) из модулей введенных чисел (в списке должны храниться именно числа, а не строки). Результат вывести на экран в виде списка командой print(lst).</p>
 <p><em>Решение:</em></p>
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <div class="codehilite"><pre><span></span><span class="nv">print</span><span class="ss">(</span>[<span class="nv">abs</span><span class="ss">(</span><span class="nv">i</span><span class="ss">)</span> <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">map</span><span class="ss">(</span><span class="nv">float</span>, <span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">())</span>]<span class="ss">)</span>
 </pre></div>
 
@@ -125,6 +133,7 @@ body::before {
 <p><em>Задача 9:</em></p>
 <p>Вводится семизначное целое положительное число. С помощью list comprehension сформировать список lst, содержащий цифры этого числа (в списке должны быть записаны числа, а не строки). Результат вывести на экран список командой print(lst).</p>
 <p><em>Решение:</em></p>
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <div class="codehilite"><pre><span></span><span class="n">print</span><span class="p">(</span><span class="n">list</span><span class="p">(</span><span class="k">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="k">input</span><span class="p">())))</span>
 </pre></div>
 
@@ -132,6 +141,7 @@ body::before {
 <p><em>Задача 10:</em></p>
 <p>Вводится натуральное число N. С помощью list comprehension сформировать двумерный список размером N x N, состоящий из нулей, а по главной диагонали - единицы. (Главная диагональ - это элементы, идущие по диагонали от верхнего левого угла матрицы до ее нижнего правого угла). Результат вывести в виде таблицы чисел как показано в примере ниже.</p>
 <p><em>Решение:</em></p>
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <div class="codehilite"><pre><span></span><span class="nv">n</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
 <span class="nv">m</span> <span class="o">=</span> [[<span class="mi">0</span> <span class="o">*</span> <span class="nv">i</span> <span class="o">+</span> <span class="mi">1</span> <span class="k">if</span> <span class="nv">i</span> <span class="o">==</span> <span class="nv">j</span> <span class="k">else</span> <span class="mi">0</span> <span class="k">for</span> <span class="nv">j</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">n</span><span class="ss">)</span>] <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">n</span><span class="ss">)</span>]
 <span class="k">for</span> <span class="nv">line</span> <span class="nv">in</span> <span class="nv">m</span>:
@@ -142,6 +152,7 @@ body::before {
 <p><em>Задача 11:</em></p>
 <p>Вводятся названия городов в строку через пробел. Необходимо сформировать список с помощью list comprehension, содержащий названия длиной более пяти символов. Результат вывести в строчку через пробел.</p>
 <p><em>Решение:</em></p>
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <div class="codehilite"><pre><span></span><span class="nv">print</span><span class="ss">(</span><span class="o">*</span>[<span class="nv">i</span> <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">()</span> <span class="k">if</span> <span class="nv">len</span><span class="ss">(</span><span class="nv">i</span><span class="ss">)</span> <span class="o">&gt;</span> <span class="mi">5</span>]<span class="ss">)</span>
 </pre></div>
 
@@ -159,6 +170,7 @@ body::before {
 
 
 <p><em>Решение:</em></p>
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <div class="codehilite"><pre><span></span><span class="nv">n</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
 [<span class="nv">print</span><span class="ss">(</span><span class="o">*</span>[<span class="nv">i</span>]<span class="o">*</span><span class="nv">n</span><span class="ss">)</span> <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">n</span><span class="ss">)</span>]
 </pre></div>
@@ -167,6 +179,7 @@ body::before {
 <p><em>Задача 13:</em></p>
 <p>Вводится список вещественных чисел. С помощью list comprehension сформировать список, состоящий из элементов введенного списка, имеющих четные индексы (то есть, выбрать все элементы с четными индексами). Результат вывести на экран в одну строку через пробел.</p>
 <p><em>Решение:</em></p>
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <div class="codehilite"><pre><span></span><span class="nv">print</span><span class="ss">(</span><span class="o">*</span>[<span class="nv">j</span> <span class="k">for</span> <span class="nv">i</span>, <span class="nv">j</span> <span class="nv">in</span> <span class="nv">enumerate</span><span class="ss">(</span><span class="nv">list</span><span class="ss">(</span><span class="nv">map</span><span class="ss">(</span><span class="nv">float</span>, <span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">())))</span> <span class="k">if</span> <span class="nv">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span>]<span class="ss">)</span>
 </pre></div>
 
@@ -174,6 +187,7 @@ body::before {
 <p><em>Задача 14:</em></p>
 <p>В одну строчку через пробел вводятся: имя, отчество и фамилия. Необходимо представить эти данные в виде новой строки в формате: Фамилия И.О. </p>
 <p><em>Решение:</em></p>
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <div class="codehilite"><pre><span></span><span class="n">n</span><span class="p">,</span> <span class="n">p</span><span class="p">,</span> <span class="n">f</span> <span class="o">=</span> <span class="k">input</span><span class="p">().</span><span class="n">split</span><span class="p">()</span>
 <span class="n">print</span><span class="p">(</span><span class="n">f</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span> <span class="o">+</span> <span class="n">n</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39;.&#39;</span> <span class="o">+</span> <span class="n">p</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39;.&#39;</span><span class="p">)</span>
 </pre></div>
@@ -192,6 +206,7 @@ body::before {
 
 <p>Численность населения - целое число в тыс. человек. Вывести результат на экран в виде списка командой print(lst).</p>
 <p><em>Решение:</em></p>
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <div class="codehilite"><pre><span></span><span class="nv">st</span> <span class="o">=</span> <span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">()</span>
 <span class="nv">print</span><span class="ss">(</span>[[<span class="nv">i</span>, <span class="nv">int</span><span class="ss">(</span><span class="nv">j</span><span class="ss">)</span>] <span class="k">for</span> <span class="nv">i</span>, <span class="nv">j</span> <span class="nv">in</span> <span class="nv">zip</span><span class="ss">(</span><span class="nv">st</span>[::<span class="mi">2</span>], <span class="nv">st</span>[<span class="mi">1</span>::<span class="mi">2</span>]<span class="ss">)</span>]<span class="ss">)</span>
 </pre></div>

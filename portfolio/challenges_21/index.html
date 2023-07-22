@@ -64,104 +64,43 @@ body::before {
 </ul>
 <p>При создании функции пользуйтесь аргументами по умолчанию.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">def</span> <span class="nv">matrix</span><span class="ss">(</span><span class="nv">n</span><span class="o">=</span><span class="mi">1</span>, <span class="nv">m</span><span class="o">=</span><span class="nv">None</span>, <span class="nv">value</span><span class="o">=</span><span class="mi">0</span><span class="ss">)</span>:
-    <span class="k">if</span> <span class="nv">m</span> <span class="nv">is</span> <span class="nv">None</span>:
-        <span class="nv">m</span> <span class="o">=</span> <span class="nv">n</span>
-    <span class="k">return</span> [[<span class="nv">value</span>] <span class="o">*</span> <span class="nv">m</span> <span class="k">for</span> <span class="nv">_</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">n</span><span class="ss">)</span>]
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 2:</em></p>
 <p>Напишите функцию count_args(), которая принимает произвольное количество аргументов и возвращает количество переданных в нее аргументов.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">def</span> <span class="nv">count_args</span><span class="ss">(</span><span class="o">*</span><span class="nv">args</span><span class="ss">)</span>:
-    <span class="k">return</span> <span class="nv">len</span><span class="ss">(</span><span class="nv">args</span><span class="ss">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 3:</em></p>
 <p>Напишите функцию sq_sum(), которая принимает произвольное количество числовых аргументов и возвращает сумму их квадратов.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">def</span> <span class="nv">sq_sum</span><span class="ss">(</span><span class="o">*</span><span class="nv">args</span><span class="ss">)</span>:
-    <span class="k">return</span> <span class="nv">sum</span><span class="ss">(</span><span class="nv">i</span><span class="o">**</span><span class="mi">2</span> <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">args</span><span class="ss">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 4:</em></p>
 <p>Напишите функцию mean(), которая принимает произвольное количество аргументов и возвращает среднее арифметическое переданных в нее числовых (int или float) аргументов.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">def</span> <span class="nv">mean</span><span class="ss">(</span><span class="o">*</span><span class="nv">args</span><span class="ss">)</span>:
-    <span class="nv">s</span> <span class="o">=</span> [<span class="nv">float</span><span class="ss">(</span><span class="nv">i</span><span class="ss">)</span> <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">args</span> <span class="k">if</span> <span class="nv">type</span><span class="ss">(</span><span class="nv">i</span><span class="ss">)</span> <span class="nv">in</span> <span class="ss">(</span><span class="nv">int</span>, <span class="nv">float</span><span class="ss">)</span>]
-    <span class="k">if</span> <span class="nv">len</span><span class="ss">(</span><span class="nv">s</span><span class="ss">)</span> <span class="o">&gt;</span> <span class="mi">0</span>:
-        <span class="k">return</span> <span class="nv">sum</span><span class="ss">(</span><span class="nv">s</span><span class="ss">)</span><span class="o">/</span><span class="nv">len</span><span class="ss">(</span><span class="nv">s</span><span class="ss">)</span>
-    <span class="k">else</span>:
-        <span class="k">return</span> <span class="mi">0</span>.<span class="mi">0</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 5:</em></p>
 <p>Напишите функцию greet(), которая принимает произвольное количество аргументов строк имен (как минимум одно) и возвращает приветствие в соответствии с образцом.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">def</span> <span class="nv">greet</span><span class="ss">(</span><span class="nv">name</span>, <span class="o">*</span><span class="nv">args</span><span class="ss">)</span>:
-    <span class="k">return</span> <span class="nv">f</span><span class="s1">&#39;</span><span class="s">Hello, {&quot; and &quot;.join((name,) + args)}!</span><span class="s1">&#39;</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 6:</em></p>
 <p>Напишите функцию print_products(), которая принимает произвольное количество аргументов и выводит список продуктов (любая непустая строка) по образцу: &lt;номер продукта&gt;) &lt;название продукта&gt; (нумерация продуктов начинается с единицы). Если среди переданных аргументов нет ни одного продукта, необходимо вывести текст Нет продуктов.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">def</span> <span class="nv">print_products</span><span class="ss">(</span><span class="o">*</span><span class="nv">args</span><span class="ss">)</span>:
-    <span class="nv">ls</span> <span class="o">=</span> [<span class="nv">i</span> <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">args</span> <span class="k">if</span> <span class="nv">type</span><span class="ss">(</span><span class="nv">i</span><span class="ss">)</span> <span class="o">==</span> <span class="nv">str</span> <span class="nv">and</span> <span class="nv">i</span> <span class="nv">not</span> <span class="nv">in</span> <span class="ss">(</span><span class="s1">&#39;&#39;</span>, <span class="s1">&#39;</span><span class="s"> </span><span class="s1">&#39;</span><span class="ss">)</span>]
-    <span class="nv">print</span><span class="ss">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span>.<span class="nv">join</span><span class="ss">(</span>[<span class="nv">f</span><span class="s1">&#39;</span><span class="s">{num}) {i}</span><span class="s1">&#39;</span> <span class="k">for</span> <span class="nv">num</span>, <span class="nv">i</span> <span class="nv">in</span> <span class="nv">enumerate</span><span class="ss">(</span><span class="nv">ls</span>, <span class="mi">1</span><span class="ss">)</span>]<span class="ss">)</span> <span class="k">if</span> <span class="nv">ls</span> <span class="k">else</span> <span class="s1">&#39;</span><span class="s">Нет продуктов</span><span class="s1">&#39;</span><span class="ss">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 7:</em></p>
 <p>Напишите функцию info_kwargs(), которая принимает произвольное количество именованных аргументов и печатает именованные аргументы в соответствии с образцом: &lt;имя аргумента&gt;: &lt;значение аргумента&gt;, при этом имена аргументов следуют в алфавитном порядке (по возрастанию).</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">def</span> <span class="nv">info_kwargs</span><span class="ss">(</span><span class="o">**</span><span class="nv">kwargs</span><span class="ss">)</span>:
-    <span class="k">for</span> <span class="nv">k</span>, <span class="nv">v</span> <span class="nv">in</span> <span class="nv">sorted</span><span class="ss">(</span><span class="nv">kwargs</span>.<span class="nv">items</span><span class="ss">())</span>:
-        <span class="nv">print</span><span class="ss">(</span><span class="nv">f</span><span class="s1">&#39;</span><span class="s">{k}: {v}</span><span class="s1">&#39;</span><span class="ss">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 8:</em></p>
 <p>Дан список numbers, содержащий кортежи чисел. Напишите программу, которая с помощью встроенных функций min() и max() выводит те кортежи (каждый на отдельной строке), которые имеют минимальное и максимальное среднее арифметическое значение элементов.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">def</span> <span class="nv">mean</span><span class="ss">(</span><span class="nv">args</span><span class="ss">)</span>:
-    <span class="k">return</span> <span class="nv">sum</span><span class="ss">(</span><span class="nv">args</span><span class="ss">)</span><span class="o">/</span><span class="nv">len</span><span class="ss">(</span><span class="nv">args</span><span class="ss">)</span>
-
-<span class="nv">numbers</span> <span class="o">=</span> [<span class="ss">(</span><span class="mi">10</span>, <span class="mi">10</span>, <span class="mi">10</span><span class="ss">)</span>, <span class="ss">(</span><span class="mi">30</span>, <span class="mi">45</span>, <span class="mi">56</span><span class="ss">)</span>, <span class="ss">(</span><span class="mi">81</span>, <span class="mi">39</span><span class="ss">)</span>, <span class="ss">(</span><span class="mi">1</span>, <span class="mi">2</span>, <span class="mi">3</span><span class="ss">)</span>, <span class="ss">(</span><span class="mi">12</span>,<span class="ss">)</span>, <span class="ss">(</span><span class="o">-</span><span class="mi">2</span>, <span class="o">-</span><span class="mi">4</span>, <span class="mi">100</span><span class="ss">)</span>, <span class="ss">(</span><span class="mi">1</span>, <span class="mi">2</span>, <span class="mi">99</span><span class="ss">)</span>, <span class="ss">(</span><span class="mi">89</span>, <span class="mi">9</span>, <span class="mi">34</span><span class="ss">)</span>, <span class="ss">(</span><span class="mi">10</span>, <span class="mi">20</span>, <span class="mi">30</span>, <span class="o">-</span><span class="mi">2</span><span class="ss">)</span>, <span class="ss">(</span><span class="mi">50</span>, <span class="mi">40</span>, <span class="mi">50</span><span class="ss">)</span>, <span class="ss">(</span><span class="mi">34</span>, <span class="mi">78</span>, <span class="mi">65</span><span class="ss">)</span>, <span class="ss">(</span><span class="o">-</span><span class="mi">5</span>, <span class="mi">90</span>, <span class="o">-</span><span class="mi">1</span>, <span class="o">-</span><span class="mi">5</span><span class="ss">)</span>, <span class="ss">(</span><span class="mi">1</span>, <span class="mi">2</span>, <span class="mi">3</span>, <span class="mi">4</span>, <span class="mi">5</span>, <span class="mi">6</span><span class="ss">)</span>, <span class="ss">(</span><span class="o">-</span><span class="mi">9</span>, <span class="mi">8</span>, <span class="mi">4</span><span class="ss">)</span>, <span class="ss">(</span><span class="mi">90</span>, <span class="mi">1</span>, <span class="o">-</span><span class="mi">45</span>, <span class="o">-</span><span class="mi">21</span><span class="ss">)</span>]
-
-<span class="nv">print</span><span class="ss">(</span><span class="nv">min</span><span class="ss">(</span><span class="nv">numbers</span>, <span class="nv">key</span><span class="o">=</span><span class="nv">mean</span><span class="ss">)</span>, <span class="nv">max</span><span class="ss">(</span><span class="nv">numbers</span>, <span class="nv">key</span><span class="o">=</span><span class="nv">mean</span><span class="ss">)</span>, <span class="nv">sep</span><span class="o">=</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="ss">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 9:</em></p>
 <p>Напишите программу, которая сортирует список points координат точек плоскости в соответствии с расстоянием от начала координат (точки (0; 0)). Программа должна вывести отсортированный список.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">points</span> <span class="o">=</span> [<span class="ss">(</span><span class="o">-</span><span class="mi">1</span>, <span class="mi">1</span><span class="ss">)</span>, <span class="ss">(</span><span class="mi">5</span>, <span class="mi">6</span><span class="ss">)</span>, <span class="ss">(</span><span class="mi">12</span>, <span class="mi">0</span><span class="ss">)</span>, <span class="ss">(</span><span class="mi">4</span>, <span class="mi">3</span><span class="ss">)</span>, <span class="ss">(</span><span class="mi">0</span>, <span class="mi">1</span><span class="ss">)</span>, <span class="ss">(</span><span class="o">-</span><span class="mi">3</span>, <span class="mi">2</span><span class="ss">)</span>, <span class="ss">(</span><span class="mi">0</span>, <span class="mi">0</span><span class="ss">)</span>, <span class="ss">(</span><span class="o">-</span><span class="mi">1</span>, <span class="mi">3</span><span class="ss">)</span>, <span class="ss">(</span><span class="mi">2</span>, <span class="mi">0</span><span class="ss">)</span>, <span class="ss">(</span><span class="mi">3</span>, <span class="mi">0</span><span class="ss">)</span>, <span class="ss">(</span><span class="o">-</span><span class="mi">9</span>, <span class="mi">1</span><span class="ss">)</span>, <span class="ss">(</span><span class="mi">3</span>, <span class="mi">6</span><span class="ss">)</span>, <span class="ss">(</span><span class="mi">8</span>, <span class="mi">8</span><span class="ss">)</span>]
-
-<span class="nv">def</span> <span class="nv">distance</span><span class="ss">(</span><span class="nv">point</span><span class="ss">)</span>:
-    <span class="k">return</span> <span class="ss">(</span><span class="nv">point</span>[<span class="mi">0</span>]<span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="nv">point</span>[<span class="mi">1</span>]<span class="o">**</span><span class="mi">2</span><span class="ss">)</span><span class="o">**</span><span class="mi">0</span>.<span class="mi">5</span>
-
-<span class="nv">points</span>.<span class="nv">sort</span><span class="ss">(</span><span class="nv">key</span><span class="o">=</span><span class="nv">distance</span><span class="ss">)</span>
-<span class="nv">print</span><span class="ss">(</span><span class="nv">points</span><span class="ss">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 10:</em></p>
 <p>Дан список numbers, содержащий кортежи чисел. Напишите программу, которая сортирует и выводит список numbers в соответствии с суммой минимального и максимального элемента кортежа.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">def</span> <span class="nv">comparator</span><span class="ss">(</span><span class="nv">pair</span><span class="ss">)</span>:
-    <span class="k">return</span> <span class="nv">min</span><span class="ss">(</span><span class="nv">pair</span><span class="ss">)</span> <span class="o">+</span> <span class="nv">max</span><span class="ss">(</span><span class="nv">pair</span><span class="ss">)</span>
-
-<span class="nv">numbers</span> <span class="o">=</span> [<span class="ss">(</span><span class="mi">10</span>, <span class="mi">10</span>, <span class="mi">10</span><span class="ss">)</span>, <span class="ss">(</span><span class="mi">30</span>, <span class="mi">45</span>, <span class="mi">56</span><span class="ss">)</span>, <span class="ss">(</span><span class="mi">81</span>, <span class="mi">80</span>, <span class="mi">39</span><span class="ss">)</span>, <span class="ss">(</span><span class="mi">1</span>, <span class="mi">2</span>, <span class="mi">3</span><span class="ss">)</span>, <span class="ss">(</span><span class="mi">12</span>, <span class="mi">45</span>, <span class="mi">67</span><span class="ss">)</span>, <span class="ss">(</span><span class="o">-</span><span class="mi">2</span>, <span class="o">-</span><span class="mi">4</span>, <span class="mi">100</span><span class="ss">)</span>, <span class="ss">(</span><span class="mi">1</span>, <span class="mi">2</span>, <span class="mi">99</span><span class="ss">)</span>, <span class="ss">(</span><span class="mi">89</span>, <span class="mi">90</span>, <span class="mi">34</span><span class="ss">)</span>, <span class="ss">(</span><span class="mi">10</span>, <span class="mi">20</span>, <span class="mi">30</span><span class="ss">)</span>, <span class="ss">(</span><span class="mi">50</span>, <span class="mi">40</span>, <span class="mi">50</span><span class="ss">)</span>, <span class="ss">(</span><span class="mi">34</span>, <span class="mi">78</span>, <span class="mi">65</span><span class="ss">)</span>, <span class="ss">(</span><span class="o">-</span><span class="mi">5</span>, <span class="mi">90</span>, <span class="o">-</span><span class="mi">1</span><span class="ss">)</span>]
-
-<span class="nv">print</span><span class="ss">(</span><span class="nv">sorted</span><span class="ss">(</span><span class="nv">numbers</span>, <span class="nv">key</span><span class="o">=</span><span class="nv">comparator</span><span class="ss">))</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 11:</em></p>
 <p>Список athletes содержит сведения о спортсменах в виде кортежей: (имя, возраст, рост, вес).</p>
 <p>Напишите программу сортировки списка спортсменов по указанному полю:</p>
@@ -176,15 +115,7 @@ body::before {
 <p><strong>Формат выходных данных</strong></p>
 <p>Программа должна вывести отсортированный по заданному полю список в соответствии с примерами.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">operator</span>
-<span class="n">athletes</span> <span class="o">=</span> <span class="p">[(</span><span class="s1">&#39;Дима&#39;</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">130</span><span class="p">,</span> <span class="mi">35</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;Тимур&#39;</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">135</span><span class="p">,</span> <span class="mi">39</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;Руслан&#39;</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">140</span><span class="p">,</span> <span class="mi">33</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;Рустам&#39;</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">128</span><span class="p">,</span> <span class="mi">30</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;Амир&#39;</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">170</span><span class="p">,</span> <span class="mi">70</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;Рома&#39;</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">188</span><span class="p">,</span> <span class="mi">100</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;Матвей&#39;</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">168</span><span class="p">,</span> <span class="mi">68</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;Петя&#39;</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">190</span><span class="p">,</span> <span class="mi">90</span><span class="p">)]</span>
-<span class="n">i</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
-<span class="n">res</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">athletes</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="n">operator</span><span class="o">.</span><span class="n">itemgetter</span><span class="p">(</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span>
-<span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">res</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="o">*</span><span class="n">line</span><span class="p">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 12:</em></p>
 <p>Напишите программу, которая принимает число и название функции, а выводит результат применения функции к данному числу.</p>
 <p>Список возможных функций:</p>
@@ -200,17 +131,7 @@ body::before {
 <p><strong>Формат выходных данных</strong></p>
 <p>Программа должна выдать результат применения функции к числу.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="n">x</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
-<span class="n">op</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
-<span class="n">d</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;квадрат&#39;</span><span class="p">:</span> <span class="n">x</span> <span class="o">**</span> <span class="mi">2</span><span class="p">,</span>
-     <span class="s1">&#39;куб&#39;</span><span class="p">:</span> <span class="n">x</span> <span class="o">**</span> <span class="mi">3</span><span class="p">,</span>
-     <span class="s1">&#39;корень&#39;</span><span class="p">:</span> <span class="n">x</span> <span class="o">**</span> <span class="mf">0.5</span><span class="p">,</span>
-     <span class="s1">&#39;модуль&#39;</span><span class="p">:</span> <span class="nb">abs</span><span class="p">(</span><span class="n">x</span><span class="p">),</span>
-     <span class="s1">&#39;синус&#39;</span><span class="p">:</span> <span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="p">)}</span>
-
-<span class="k">print</span><span class="p">(</span><span class="n">d</span><span class="p">[</span><span class="n">op</span><span class="p">])</span>
-</pre></div>
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
             </p>
       
           </div>

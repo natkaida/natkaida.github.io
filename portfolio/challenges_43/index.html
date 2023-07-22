@@ -57,131 +57,48 @@ body::before {
               <p><em>Задача 1:</em></p>
 <p>Вводится два вещественных числа, каждое с новой строки. Необходимо с помощью тернарного условного оператора наибольшее значение присвоить переменной d и вывести ее на экран.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">a</span>, <span class="nv">b</span> <span class="o">=</span> <span class="nv">float</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>, <span class="nv">float</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
-<span class="nv">d</span> <span class="o">=</span> <span class="nv">a</span> <span class="k">if</span> <span class="nv">a</span> <span class="o">&gt;</span> <span class="nv">b</span> <span class="k">else</span> <span class="nv">b</span>
-<span class="nv">print</span><span class="ss">(</span><span class="nv">d</span><span class="ss">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 2:</em></p>
 <p>Вводится целое число. Необходимо переменной msg присвоить строку "кратно 3", если введенное число кратно 3, а иначе присвоить строку "не кратно 3". Реализовать программу с использованием тернарного оператора. Переменную msg отобразить на экране.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">n</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
-<span class="nv">msg</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="s">кратно 3</span><span class="s1">&#39;</span> <span class="k">if</span> <span class="nv">n</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">==</span> <span class="mi">0</span> <span class="k">else</span> <span class="s1">&#39;</span><span class="s">не кратно 3</span><span class="s1">&#39;</span>
-<span class="nv">print</span><span class="ss">(</span><span class="nv">msg</span><span class="ss">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 3:</em></p>
 <p>Вводится слово. Переменной msg присвоить строку "палиндром", если введенное слово является палиндромом (одинаково читается и вперед и назад), а иначе присвоить строку "не палиндром". Проверку проводить без учета регистра. Программу реализовать с помощью тернарного условного оператора. Значение переменной msg отобразить на экране.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="s s-Atom">word</span> <span class="o">=</span> <span class="nf">input</span><span class="p">().</span><span class="nf">lower</span><span class="p">()</span>
-<span class="s s-Atom">msg</span> <span class="o">=</span> <span class="s s-Atom">&#39;палиндром&#39;</span> <span class="s s-Atom">if</span> <span class="s s-Atom">word</span> <span class="o">==</span> <span class="s s-Atom">word</span><span class="p">[</span><span class="s s-Atom">::-</span><span class="mi">1</span><span class="p">]</span> <span class="s s-Atom">else</span> <span class="s s-Atom">&#39;не палиндром&#39;</span>
-<span class="nf">print</span><span class="p">(</span><span class="s s-Atom">msg</span><span class="p">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 4:</em></p>
 <p>Вводится целое число 0 или 1. Необходимо преобразовать их в строки: 0 - в "False", 1 - в "True". Реализовать это с помощью тернарного условного оператора. Результат отобразить на экране.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">n</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
-<span class="nv">msg</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="s">False</span><span class="s1">&#39;</span> <span class="k">if</span> <span class="nv">n</span> <span class="o">==</span> <span class="mi">0</span> <span class="k">else</span> <span class="s1">&#39;</span><span class="s">True</span><span class="s1">&#39;</span>
-<span class="nv">print</span><span class="ss">(</span><span class="nv">msg</span><span class="ss">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 5:</em></p>
 <p>Вводится текущее время (секунды) в диапазоне [0; 59]. Если значение равно 59, то следующее должно быть 0. И так по кругу. Необходимо  вычислить следующее значение с проверкой граничного значения 59. Реализуйте это с помощью тернарного условного оператора. Результат отобразите на экране.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">time</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
-<span class="nv">next_time</span> <span class="o">=</span> <span class="nv">time</span> <span class="o">+</span> <span class="mi">1</span> <span class="k">if</span> <span class="nv">time</span> <span class="o">&lt;</span> <span class="mi">59</span> <span class="k">else</span> <span class="mi">0</span>
-<span class="nv">print</span><span class="ss">(</span><span class="nv">next_time</span><span class="ss">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 6:</em></p>
 <p>Имеется список базовых нот:</p>
-<div class="codehilite"><pre><span></span><span class="n">m</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;до&#39;</span><span class="p">,</span> <span class="s1">&#39;ре&#39;</span><span class="p">,</span> <span class="s1">&#39;ми&#39;</span><span class="p">,</span> <span class="s1">&#39;фа&#39;</span><span class="p">,</span> <span class="s1">&#39;соль&#39;</span><span class="p">,</span> <span class="s1">&#39;ля&#39;</span><span class="p">,</span> <span class="s1">&#39;си&#39;</span><span class="p">]</span>
-</pre></div>
-
-
 <p>Вводятся три целых числа в диапазоне от 1 до 7 - номера нот, в одну строчку через пробел. Необходимо отобразить указанные ноты в виде строки через пробел, но перед нотами до и фа дополнительно ставить символ диеза '#'. Реализовать эту программу с использованием тернарного условного оператора.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">m</span> <span class="o">=</span> [<span class="s1">&#39;</span><span class="s">до</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">ре</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">ми</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">фа</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">соль</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">ля</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">си</span><span class="s1">&#39;</span>]
-<span class="nv">print</span><span class="ss">(</span><span class="o">*</span>[<span class="s1">&#39;</span><span class="s">#</span><span class="s1">&#39;</span> <span class="o">+</span> <span class="nv">m</span>[<span class="nv">n</span> <span class="o">-</span> <span class="mi">1</span>] <span class="k">if</span> <span class="nv">n</span> <span class="o">==</span> <span class="mi">1</span> <span class="nv">or</span> <span class="nv">n</span> <span class="o">==</span> <span class="mi">4</span> <span class="k">else</span> <span class="nv">m</span>[<span class="nv">n</span> <span class="o">-</span> <span class="mi">1</span>] <span class="k">for</span> <span class="nv">n</span> <span class="nv">in</span> <span class="nv">map</span><span class="ss">(</span><span class="nv">int</span>, <span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">())</span>]<span class="ss">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 7:</em></p>
 <p>Дополните приведенный код, так чтобы получить список, содержащий только непустые кортежи исходного списка tuples, не меняя порядка их следования.</p>
-<div class="codehilite"><pre><span></span><span class="n">tuples</span> <span class="o">=</span> <span class="p">[(),</span> <span class="p">(),</span> <span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,),</span> <span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">),</span> <span class="p">(),</span> <span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="p">,),</span> <span class="p">(),</span> <span class="p">(),</span> <span class="p">(</span><span class="s1">&#39;d&#39;</span><span class="p">,),</span> <span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">),</span> <span class="p">()]</span>
-</pre></div>
-
-
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">tuples</span> <span class="o">=</span> [<span class="ss">()</span>, <span class="ss">()</span>, <span class="ss">(</span><span class="s1">&#39;&#39;</span>,<span class="ss">)</span>, <span class="ss">(</span><span class="s1">&#39;</span><span class="s">a</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">b</span><span class="s1">&#39;</span><span class="ss">)</span>, <span class="ss">()</span>, <span class="ss">(</span><span class="s1">&#39;</span><span class="s">a</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">b</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">c</span><span class="s1">&#39;</span><span class="ss">)</span>, <span class="ss">(</span><span class="mi">1</span>,<span class="ss">)</span>, <span class="ss">()</span>, <span class="ss">()</span>, <span class="ss">(</span><span class="s1">&#39;</span><span class="s">d</span><span class="s1">&#39;</span>,<span class="ss">)</span>, <span class="ss">(</span><span class="s1">&#39;&#39;</span>, <span class="s1">&#39;&#39;</span><span class="ss">)</span>, <span class="ss">()</span>]
-<span class="nv">non_empty_tuples</span> <span class="o">=</span> [<span class="nv">i</span> <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">tuples</span> <span class="k">if</span> <span class="nv">len</span><span class="ss">(</span><span class="nv">i</span><span class="ss">)</span> <span class="o">&gt;</span> <span class="mi">0</span>]
-
-<span class="nv">print</span><span class="ss">(</span><span class="nv">list</span><span class="ss">(</span><span class="nv">non_empty_tuples</span><span class="ss">))</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 8:</em></p>
 <p>Дополните приведенный код так, чтобы переменная new_tuples, содержала список кортежей на основе списка tuples с последним элементом каждого кортежа, замененным на численное значение 100.</p>
-<div class="codehilite"><pre><span></span><span class="n">tuples</span> <span class="o">=</span> <span class="p">[(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">40</span><span class="p">),</span> <span class="p">(</span><span class="mi">40</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">60</span><span class="p">),</span> <span class="p">(</span><span class="mi">70</span><span class="p">,</span> <span class="mi">80</span><span class="p">,</span> <span class="mi">90</span><span class="p">),</span> <span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">90</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">77</span><span class="p">)]</span>
-<span class="n">tuple100</span> <span class="o">=</span> <span class="p">(</span><span class="mi">100</span><span class="p">,)</span>
-</pre></div>
-
-
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="s s-Atom">tuples</span> <span class="o">=</span> <span class="p">[(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">40</span><span class="p">),</span> <span class="p">(</span><span class="mi">40</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">60</span><span class="p">),</span> <span class="p">(</span><span class="mi">70</span><span class="p">,</span> <span class="mi">80</span><span class="p">,</span> <span class="mi">90</span><span class="p">),</span> <span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">90</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">77</span><span class="p">)]</span>
-<span class="s s-Atom">tuple100</span> <span class="o">=</span> <span class="p">(</span><span class="mi">100</span><span class="p">,)</span>
-<span class="s s-Atom">new_tuples</span> <span class="o">=</span> <span class="p">[</span><span class="s s-Atom">i</span><span class="p">[:-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="s s-Atom">tuple100</span> <span class="s s-Atom">for</span> <span class="s s-Atom">i</span> <span class="s s-Atom">in</span> <span class="s s-Atom">tuples</span><span class="p">]</span>
-<span class="nf">print</span><span class="p">(</span><span class="s s-Atom">new_tuples</span><span class="p">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 9:</em></p>
 <p>Дополните приведенный код так, чтобы он вывел произведение элементов кортежа numbers.</p>
-<div class="codehilite"><pre><span></span><span class="n">numbers</span> <span class="o">=</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="o">-</span><span class="mi">11</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">19</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span> <span class="mi">29</span><span class="p">,</span> <span class="mi">31</span><span class="p">,</span> <span class="o">-</span><span class="mi">6</span><span class="p">,</span> <span class="mi">41</span><span class="p">,</span> <span class="mi">43</span><span class="p">,</span> <span class="mi">47</span><span class="p">,</span> <span class="mi">53</span><span class="p">,</span> <span class="mi">59</span><span class="p">,</span> <span class="mi">61</span><span class="p">,</span> <span class="o">-</span><span class="mi">96</span><span class="p">,</span> <span class="mi">71</span><span class="p">,</span> <span class="mi">1000</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
-</pre></div>
-
-
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">numbers</span> <span class="o">=</span> <span class="ss">(</span><span class="mi">2</span>, <span class="mi">3</span>, <span class="mi">5</span>, <span class="mi">7</span>, <span class="o">-</span><span class="mi">11</span>, <span class="mi">13</span>, <span class="mi">17</span>, <span class="mi">19</span>, <span class="mi">23</span>, <span class="mi">29</span>, <span class="mi">31</span>, <span class="o">-</span><span class="mi">6</span>, <span class="mi">41</span>, <span class="mi">43</span>, <span class="mi">47</span>, <span class="mi">53</span>, <span class="mi">59</span>, <span class="mi">61</span>, <span class="o">-</span><span class="mi">96</span>, <span class="mi">71</span>, <span class="mi">1000</span>, <span class="o">-</span><span class="mi">1</span><span class="ss">)</span>
-<span class="nv">prod</span> <span class="o">=</span> <span class="mi">1</span>
-<span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">numbers</span>:
-    <span class="nv">prod</span> <span class="o">=</span> <span class="nv">prod</span> <span class="o">*</span> <span class="nv">i</span>
-<span class="nv">print</span><span class="ss">(</span><span class="nv">prod</span><span class="ss">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 10:</em></p>
 <p>Дополните приведенный код так, чтобы он вывел список, содержащий средние арифметические значения чисел каждого вложенного кортежа в заданном кортеже кортежей numbers.</p>
-<div class="codehilite"><pre><span></span><span class="n">numbers</span> <span class="o">=</span> <span class="p">((</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">12</span><span class="p">),</span> <span class="p">(</span><span class="mi">30</span><span class="p">,</span> <span class="mi">45</span><span class="p">,</span> <span class="mi">56</span><span class="p">,</span> <span class="mi">45</span><span class="p">),</span> <span class="p">(</span><span class="mi">81</span><span class="p">,</span> <span class="mi">80</span><span class="p">,</span> <span class="mi">39</span><span class="p">,</span> <span class="mi">32</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="p">(</span><span class="mi">90</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span>
-</pre></div>
-
-
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">numbers</span> <span class="o">=</span> <span class="ss">((</span><span class="mi">10</span>, <span class="mi">10</span>, <span class="mi">10</span>, <span class="mi">12</span><span class="ss">)</span>, <span class="ss">(</span><span class="mi">30</span>, <span class="mi">45</span>, <span class="mi">56</span>, <span class="mi">45</span><span class="ss">)</span>, <span class="ss">(</span><span class="mi">81</span>, <span class="mi">80</span>, <span class="mi">39</span>, <span class="mi">32</span><span class="ss">)</span>, <span class="ss">(</span><span class="mi">1</span>, <span class="mi">2</span>, <span class="mi">3</span>, <span class="mi">4</span><span class="ss">)</span>, <span class="ss">(</span><span class="mi">90</span>, <span class="mi">10</span><span class="ss">))</span>
-<span class="nv">sred</span> <span class="o">=</span> [<span class="nv">sum</span><span class="ss">(</span><span class="nv">i</span><span class="ss">)</span><span class="o">/</span><span class="nv">len</span><span class="ss">(</span><span class="nv">i</span><span class="ss">)</span> <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">numbers</span>]
-<span class="nv">print</span><span class="ss">(</span><span class="nv">sred</span><span class="ss">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 11:</em></p>
 <p>Уравнение параболы имеет вид y = ax<sup>2</sup>+ bx + c, где a ≠ 0. Напишите программу, которая по введенным значениям a, b, c определяет и выводит вершину параболы.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">def</span> <span class="nv">parabola</span><span class="ss">(</span><span class="nv">a</span>, <span class="nv">b</span>, <span class="nv">c</span><span class="ss">)</span>:
-    <span class="nv">x</span> <span class="o">=</span> <span class="o">-</span> <span class="nv">b</span> <span class="o">/</span> <span class="ss">(</span><span class="mi">2</span> <span class="o">*</span> <span class="nv">a</span><span class="ss">)</span>
-    <span class="nv">y</span> <span class="o">=</span> <span class="ss">(</span><span class="mi">4</span> <span class="o">*</span> <span class="nv">a</span> <span class="o">*</span> <span class="nv">c</span> <span class="o">-</span> <span class="nv">b</span> <span class="o">**</span> <span class="mi">2</span><span class="ss">)</span> <span class="o">/</span> <span class="ss">(</span><span class="mi">4</span> <span class="o">*</span> <span class="nv">a</span><span class="ss">)</span>
-
-    <span class="k">return</span> <span class="nv">x</span>, <span class="nv">y</span>
-<span class="nv">a</span>, <span class="nv">b</span>, <span class="nv">c</span> <span class="o">=</span> <span class="ss">(</span><span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span> <span class="k">for</span> <span class="nv">_</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="mi">3</span><span class="ss">))</span>
-<span class="nv">print</span><span class="ss">(</span><span class="nv">parabola</span><span class="ss">(</span><span class="nv">a</span>, <span class="nv">b</span>, <span class="nv">c</span><span class="ss">))</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 12:</em></p>
 <p>Напишите программу, которая выводит список хорошистов и отличников в классе.</p>
 <p><strong>Формат входных данных</strong>
@@ -189,88 +106,31 @@ body::before {
 <p><strong>Формат выходных данных</strong>
 Программа должна вывести сначала все введённые строки с фамилиями и оценками учеников в том же порядке. Затем следует пустая строка, а затем выводятся строки с фамилиями и оценками хорошистов и отличников (в том же порядке).</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">n</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
-<span class="nv">spisok</span> <span class="o">=</span> []
-<span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">n</span><span class="ss">)</span>:
-    <span class="nv">x</span> <span class="o">=</span> <span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">()</span>
-    <span class="nv">spisok</span>.<span class="nv">append</span><span class="ss">(</span><span class="nv">x</span><span class="ss">)</span>
-<span class="nv">xo</span> <span class="o">=</span> [<span class="nv">i</span> <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">spisok</span> <span class="k">if</span> <span class="s1">&#39;</span><span class="s">4</span><span class="s1">&#39;</span> <span class="nv">in</span> <span class="nv">i</span> <span class="nv">or</span> <span class="s1">&#39;</span><span class="s">5</span><span class="s1">&#39;</span> <span class="nv">in</span> <span class="nv">i</span>]
-<span class="k">for</span> <span class="nv">line</span> <span class="nv">in</span> <span class="nv">spisok</span>:
-    <span class="nv">print</span><span class="ss">(</span><span class="o">*</span><span class="nv">line</span><span class="ss">)</span>
-<span class="nv">print</span><span class="ss">()</span>
-<span class="k">for</span> <span class="nv">line</span> <span class="nv">in</span> <span class="nv">xo</span>:
-    <span class="nv">print</span><span class="ss">(</span><span class="o">*</span><span class="nv">line</span><span class="ss">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 13 - Последовательность Трибоначчи:</em></p>
 <p>Напишите программу, которая считывает натуральное число n и выводит первые n чисел последовательности Трибоначчи.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">n</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
-<span class="nv">f1</span>, <span class="nv">f2</span>, <span class="nv">f3</span> <span class="o">=</span> <span class="mi">1</span>, <span class="mi">1</span>, <span class="mi">1</span>
-<span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">n</span><span class="ss">)</span>:
-    <span class="nv">print</span><span class="ss">(</span><span class="nv">f1</span>, <span class="k">end</span><span class="o">=</span><span class="s1">&#39;</span><span class="s"> </span><span class="s1">&#39;</span>, <span class="nv">sep</span><span class="o">=</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="ss">)</span>
-    <span class="nv">f1</span>, <span class="nv">f2</span>, <span class="nv">f3</span> <span class="o">=</span> <span class="nv">f2</span>, <span class="nv">f3</span>, <span class="nv">f1</span> <span class="o">+</span> <span class="nv">f2</span> <span class="o">+</span> <span class="nv">f3</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 14:</em></p>
 <p>Дополните приведенный код, используя срезы, чтобы он вывел все элементы кортежа countries, кроме двух последних и трех первых.</p>
-<div class="codehilite"><pre><span></span><span class="n">countries</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;Russia&#39;</span><span class="p">,</span> <span class="s1">&#39;Argentina&#39;</span><span class="p">,</span> <span class="s1">&#39;Slovakia&#39;</span><span class="p">,</span> <span class="s1">&#39;Canada&#39;</span><span class="p">,</span> <span class="s1">&#39;Slovenia&#39;</span><span class="p">,</span> <span class="s1">&#39;Italy&#39;</span><span class="p">,</span> <span class="s1">&#39;Spain&#39;</span><span class="p">,</span> <span class="s1">&#39;Ukraine&#39;</span><span class="p">,</span> <span class="s1">&#39;Chile&#39;</span><span class="p">,</span> <span class="s1">&#39;Cameroon&#39;</span><span class="p">)</span>
-</pre></div>
-
-
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="s s-Atom">countries</span> <span class="o">=</span> <span class="p">(</span><span class="s s-Atom">&#39;Russia&#39;</span><span class="p">,</span> <span class="s s-Atom">&#39;Argentina&#39;</span><span class="p">,</span> <span class="s s-Atom">&#39;Slovakia&#39;</span><span class="p">,</span> <span class="s s-Atom">&#39;Canada&#39;</span><span class="p">,</span> <span class="s s-Atom">&#39;Slovenia&#39;</span><span class="p">,</span> <span class="s s-Atom">&#39;Italy&#39;</span><span class="p">,</span> <span class="s s-Atom">&#39;Spain&#39;</span><span class="p">,</span> <span class="s s-Atom">&#39;Ukraine&#39;</span><span class="p">,</span> <span class="s s-Atom">&#39;Chile&#39;</span><span class="p">,</span> <span class="s s-Atom">&#39;Cameroon&#39;</span><span class="p">)</span>
-<span class="nf">print</span><span class="p">(</span><span class="s s-Atom">countries</span><span class="p">[</span><span class="mi">3</span><span class="p">:-</span><span class="mi">2</span><span class="p">])</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 15:</em></p>
 <p>Дополните приведенный код так, чтобы он вывел сумму минимального и максимального элементов кортежа numbers.</p>
-<div class="codehilite"><pre><span></span><span class="n">numbers</span> <span class="o">=</span> <span class="p">(</span><span class="mi">12</span><span class="p">.</span><span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">.</span><span class="mi">1415</span><span class="p">,</span> <span class="mi">2</span><span class="p">.</span><span class="mi">718</span><span class="p">,</span> <span class="mi">9</span><span class="p">.</span><span class="mi">8</span><span class="p">,</span> <span class="mi">1</span><span class="p">.</span><span class="mi">414</span><span class="p">,</span> <span class="mi">1</span><span class="p">.</span><span class="mi">1618</span><span class="p">,</span> <span class="mi">1</span><span class="p">.</span><span class="mi">324</span><span class="p">)</span>
-</pre></div>
-
-
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="n">print</span><span class="p">(</span><span class="k">min</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span> <span class="o">+</span> <span class="k">max</span><span class="p">(</span><span class="n">numbers</span><span class="p">))</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 16:</em></p>
 <p>Дополните приведенный код так, чтобы переменная index содержала индекс элемента «Slovenia» в кортеже countries.</p>
-<div class="codehilite"><pre><span></span><span class="n">countries</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;Russia&#39;</span><span class="p">,</span> <span class="s1">&#39;Argentina&#39;</span><span class="p">,</span> <span class="s1">&#39;Spain&#39;</span><span class="p">,</span> <span class="s1">&#39;Slovakia&#39;</span><span class="p">,</span> <span class="s1">&#39;Canada&#39;</span><span class="p">,</span> <span class="s1">&#39;Slovenia&#39;</span><span class="p">,</span> <span class="s1">&#39;Italy&#39;</span><span class="p">)</span>
-</pre></div>
-
-
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="k">index</span> <span class="o">=</span> <span class="n">countries</span><span class="p">.</span><span class="k">index</span><span class="p">(</span><span class="s1">&#39;Slovenia&#39;</span><span class="p">)</span>
-<span class="n">print</span><span class="p">(</span><span class="k">index</span><span class="p">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 17:</em></p>
 <p>Дополните приведенный код так, чтобы переменная number содержала количество вхождений «Spain» в кортеж countries.</p>
-<div class="codehilite"><pre><span></span><span class="n">countries</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;Russia&#39;</span><span class="p">,</span> <span class="s1">&#39;Argentina&#39;</span><span class="p">,</span> <span class="s1">&#39;Spain&#39;</span><span class="p">,</span> <span class="s1">&#39;Slovakia&#39;</span><span class="p">,</span> <span class="s1">&#39;Canada&#39;</span><span class="p">,</span> <span class="s1">&#39;Slovenia&#39;</span><span class="p">,</span> <span class="s1">&#39;Italy&#39;</span><span class="p">,</span> <span class="s1">&#39;Spain&#39;</span><span class="p">,</span> <span class="s1">&#39;Ukraine&#39;</span><span class="p">,</span> <span class="s1">&#39;Chile&#39;</span><span class="p">,</span> <span class="s1">&#39;Spain&#39;</span><span class="p">,</span> <span class="s1">&#39;Cameroon&#39;</span><span class="p">)</span>
-</pre></div>
-
-
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nb">number</span> <span class="o">=</span> <span class="n">countries</span><span class="p">.</span><span class="k">count</span><span class="p">(</span><span class="s1">&#39;Spain&#39;</span><span class="p">)</span>
-<span class="n">print</span><span class="p">(</span><span class="nb">number</span><span class="p">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 18:</em></p>
 <p>В переменную city_name вводится название города (например, Москва), а в переменную city_year – год его основания (например, 1147). Заполните пропущенную строку таким образом, чтобы в переменной city оказался кортеж из значений этих двух переменных (сначала название города, затем год основания).</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="n">city_name</span> <span class="o">=</span> <span class="k">input</span><span class="p">()</span>
-<span class="n">city_year</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="k">input</span><span class="p">())</span>
-<span class="n">city</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="n">city</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">city_name</span><span class="p">)</span>
-<span class="n">city</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">city_year</span><span class="p">)</span>
-<span class="n">print</span><span class="p">(</span><span class="n">tuple</span><span class="p">(</span><span class="n">city</span><span class="p">))</span>
-</pre></div>
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
             </p>
       
           </div>

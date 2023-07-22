@@ -57,41 +57,23 @@ body::before {
               <p><em>Задача 1:</em></p>
 <p>Напишите программу, на вход которой подается одна строка с целыми числами. Программа должна вывести сумму этих чисел.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="n">print</span><span class="p">(</span><span class="k">sum</span><span class="p">(</span><span class="n">list</span><span class="p">(</span><span class="k">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="k">input</span><span class="p">().</span><span class="n">split</span><span class="p">()))))</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 2:</em></p>
 <p>Напишите программу, на вход которой подаётся список чисел одной строкой. Программа должна для каждого элемента этого списка вывести сумму двух его соседей. Для элементов списка, являющихся крайними, одним из соседей считается элемент, находящий на противоположном конце этого списка. Например, если на вход подаётся список "1 3 5 6 10", то на выход ожидается список "13 6 9 15 7" (без кавычек).</p>
 <p>Если на вход пришло только одно число, надо вывести его же.</p>
 <p>Вывод должен содержать одну строку с числами нового списка, разделёнными пробелом.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">arr</span> <span class="o">=</span> <span class="nv">list</span><span class="ss">(</span><span class="nv">map</span><span class="ss">(</span><span class="nv">int</span>, <span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">()))</span>
-<span class="nv">print</span><span class="ss">(</span><span class="o">*</span><span class="nv">arr</span> <span class="k">if</span> <span class="nv">len</span><span class="ss">(</span><span class="nv">arr</span><span class="ss">)</span> <span class="o">==</span> <span class="mi">1</span> <span class="k">else</span> [<span class="nv">arr</span>[<span class="nv">i</span> <span class="o">-</span> <span class="mi">1</span>] <span class="o">+</span> <span class="nv">arr</span>[<span class="ss">(</span><span class="nv">i</span> <span class="o">+</span> <span class="mi">1</span><span class="ss">)</span> <span class="o">%</span> <span class="nv">len</span><span class="ss">(</span><span class="nv">arr</span><span class="ss">)</span>] <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">len</span><span class="ss">(</span><span class="nv">arr</span><span class="ss">))</span>]<span class="ss">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 3:</em></p>
 <p>Напишите программу, которая принимает на вход список чисел в одной строке и выводит на экран в одну строку значения, которые встречаются в нём более одного раза.</p>
 <p>Для решения задачи может пригодиться метод sort списка.</p>
 <p>Выводимые числа не должны повторяться, порядок их вывода может быть произвольным.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">a</span>, <span class="nv">c</span> <span class="o">=</span> [<span class="nv">str</span><span class="ss">(</span><span class="nv">i</span><span class="ss">)</span> <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">input</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">()</span>], []
-<span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">a</span>:
-    <span class="k">if</span> <span class="nv">i</span> <span class="nv">not</span> <span class="nv">in</span> <span class="nv">c</span> <span class="nv">and</span> <span class="nv">a</span>.<span class="nv">count</span><span class="ss">(</span><span class="nv">i</span><span class="ss">)</span> <span class="o">&gt;</span> <span class="mi">1</span>:
-        <span class="nv">c</span>.<span class="nv">append</span><span class="ss">(</span><span class="nv">i</span><span class="ss">)</span>
-        <span class="nv">print</span><span class="ss">(</span><span class="nv">i</span>, <span class="k">end</span><span class="o">=</span><span class="s1">&#39;</span><span class="s"> </span><span class="s1">&#39;</span><span class="ss">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 4:</em></p>
 <p>Напишите функцию modify_list(l), которая принимает на вход список целых чисел, удаляет из него все нечётные значения, а чётные нацело делит на два. Функция не должна ничего возвращать, требуется только изменение переданного списка.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">def</span> <span class="nv">modify_list</span><span class="ss">(</span><span class="nv">l</span><span class="ss">)</span>:
-    <span class="nv">l</span>[:] <span class="o">=</span> [<span class="nv">i</span> <span class="o">//</span> <span class="mi">2</span> <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">l</span> <span class="k">if</span> <span class="nv">not</span> <span class="nv">i</span> <span class="o">%</span> <span class="mi">2</span>]
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 5:</em></p>
 <p>Напишите функцию update_dictionary(d, key, value), которая принимает на вход словарь d и два числа: key и value.</p>
 <p>Если ключ key есть в словаре d, то добавьте значение value в список, который хранится по этому ключу.
@@ -99,100 +81,32 @@ body::before {
 <p>Требуется реализовать только эту функцию, кода вне её не должно быть.
 Функция не должна вызывать внутри себя функции input и print.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">def</span> <span class="nv">update_dictionary</span><span class="ss">(</span><span class="nv">d</span>, <span class="nv">key</span>, <span class="nv">value</span><span class="ss">)</span>:
-    <span class="k">if</span> <span class="nv">key</span> <span class="nv">not</span> <span class="nv">in</span> <span class="nv">d</span>:
-        <span class="nv">key</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="nv">key</span>
-    <span class="k">if</span> <span class="nv">key</span> <span class="nv">not</span> <span class="nv">in</span> <span class="nv">d</span>:
-        <span class="nv">d</span>[<span class="nv">key</span>] <span class="o">=</span> <span class="nv">list</span><span class="ss">()</span>
-    <span class="nv">d</span>[<span class="nv">key</span>].<span class="nv">append</span><span class="ss">(</span><span class="nv">value</span><span class="ss">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 6:</em></p>
 <p>Когда Антон прочитал «Войну и мир», ему стало интересно, сколько слов и в каком количестве используется в этой книге.</p>
 <p>Помогите Антону написать упрощённую версию такой программы, которая сможет подсчитать слова, разделённые пробелом и вывести получившуюся статистику.</p>
 <p>Программа должна считывать одну строку со стандартного ввода и выводить для каждого уникального слова в этой строке число его повторений (без учёта регистра) в формате "слово количество" (см. пример вывода).
 Порядок вывода слов может быть произвольным, каждое уникальное слово﻿ должно выводиться только один раз.</p>
 <p><em>Решение 1:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">s</span> <span class="o">=</span> <span class="nv">input</span><span class="ss">()</span>.<span class="nv">lower</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">()</span>
-<span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">set</span><span class="ss">(</span><span class="nv">s</span><span class="ss">)</span>:
-    <span class="nv">print</span><span class="ss">(</span><span class="nv">i</span>, <span class="nv">s</span>.<span class="nv">count</span><span class="ss">(</span><span class="nv">i</span><span class="ss">))</span>
-</pre></div>
-
-
 <p><em>Решение 2:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">lst</span>, <span class="nv">dct</span> <span class="o">=</span> <span class="nv">input</span><span class="ss">()</span>.<span class="nv">lower</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">()</span>, {}
-<span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">lst</span>:
-    <span class="nv">dct</span>.<span class="nv">setdefault</span><span class="ss">(</span><span class="nv">i</span>, <span class="mi">0</span><span class="ss">)</span>
-    <span class="nv">dct</span>[<span class="nv">i</span>] <span class="o">+=</span> <span class="mi">1</span>
-[<span class="nv">print</span><span class="ss">(</span><span class="nv">i</span>, <span class="nv">j</span><span class="ss">)</span> <span class="k">for</span> <span class="nv">i</span>, <span class="nv">j</span> <span class="nv">in</span> <span class="nv">dct</span>.<span class="nv">items</span><span class="ss">()</span>]
-</pre></div>
-
-
 <p><em>Задача 7:</em></p>
 <p>Напишите программу, которая считывает строку с числом nnn, которое задаёт количество чисел, которые нужно считать. Далее считывает n строк с числами x<sub>i</sub>, по одному числу в каждой строке. Итого будет n + 1 строк.</p>
 <p>При считывании числа x<sub>i</sub> программа должна на отдельной строке вывести значение f(x<sub>i</sub>). Функция f(x) уже реализована и доступна для вызова. </p>
 <p>Функция вычисляется достаточно долго и зависит только от переданного аргумента x. Для того, чтобы уложиться в ограничение по времени, нужно избежать повторного вычисления значений.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">d</span> <span class="o">=</span> {}
-<span class="k">for</span> <span class="nv">_</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">()))</span>:
-    <span class="nv">x</span> <span class="o">=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">input</span><span class="ss">())</span>
-    <span class="k">if</span> <span class="nv">x</span> <span class="nv">not</span> <span class="nv">in</span> <span class="nv">d</span>:
-        <span class="nv">d</span>[<span class="nv">x</span>] <span class="o">=</span> <span class="nv">f</span><span class="ss">(</span><span class="nv">x</span><span class="ss">)</span>
-    <span class="nv">print</span><span class="ss">(</span><span class="nv">d</span>[<span class="nv">x</span>]<span class="ss">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 8:</em></p>
 <p>Напишите программу, которая считывает из файла строку, соответствующую тексту, сжатому с помощью кодирования повторов, и производит обратную операцию, получая исходный текст.</p>
 <p>Запишите полученный текст в файл и прикрепите его, как ответ на это задание.</p>
 <p>В исходном тексте не встречаются цифры, так что код однозначно интерпретируем.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">with</span> <span class="nv">open</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">dataset_3363_2.txt</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">r</span><span class="s1">&#39;</span><span class="ss">)</span> <span class="nv">as</span> <span class="nv">file</span>:
-    <span class="nv">s</span> <span class="o">=</span> <span class="nv">file</span>.<span class="nv">read</span><span class="ss">()</span>.<span class="nv">strip</span><span class="ss">()</span>
-<span class="nv">alfa</span> <span class="o">=</span> []
-<span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">s</span>:
-    <span class="k">if</span> <span class="nv">i</span>.<span class="nv">isalpha</span><span class="ss">()</span>:
-        <span class="nv">alfa</span>.<span class="nv">append</span><span class="ss">(</span><span class="nv">i</span><span class="ss">)</span>
-        <span class="nv">s</span> <span class="o">=</span> <span class="nv">s</span>.<span class="nv">replace</span><span class="ss">(</span><span class="nv">i</span>, <span class="s2">&quot;</span><span class="s"> </span><span class="s2">&quot;</span><span class="ss">)</span>
-<span class="nv">num</span> <span class="o">=</span> <span class="nv">s</span>.<span class="nv">strip</span><span class="ss">()</span>.<span class="nv">split</span><span class="ss">(</span><span class="s2">&quot;</span><span class="s"> </span><span class="s2">&quot;</span><span class="ss">)</span>
-<span class="nb">result</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
-<span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">len</span><span class="ss">(</span><span class="nv">alfa</span><span class="ss">))</span>:
-    <span class="nb">result</span> <span class="o">+=</span> <span class="nv">alfa</span>[<span class="nv">i</span>] <span class="o">*</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">num</span>[<span class="nv">i</span>]<span class="ss">)</span>
-<span class="nv">with</span> <span class="nv">open</span> <span class="ss">(</span><span class="s2">&quot;</span><span class="s">new</span><span class="s2">&quot;</span>, <span class="s2">&quot;</span><span class="s">w</span><span class="s2">&quot;</span><span class="ss">)</span> <span class="nv">as</span> <span class="nv">file</span>:
-    <span class="nv">file</span>.<span class="nv">write</span><span class="ss">(</span><span class="nb">result</span><span class="ss">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 9:</em></p>
 <p>Напишите программу, которая считывает текст из файла (в файле может быть больше одной строки) и выводит самое частое слово в этом тексте и через пробел то, сколько раз оно встретилось. Если таких слов несколько, вывести лексикографически первое (можно использовать оператор &lt; для строк).</p>
 <p>В качестве ответа укажите вывод программы, а не саму программу.</p>
 <p>Слова, написанные в разных регистрах, считаются одинаковыми.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">word</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
-<span class="nv">d</span> <span class="o">=</span> {}
-<span class="nv">l</span> <span class="o">=</span> []
-<span class="nv">with</span> <span class="nv">open</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">dataset_3363_3.txt</span><span class="s1">&#39;</span>, <span class="s1">&#39;</span><span class="s">r</span><span class="s1">&#39;</span><span class="ss">)</span> <span class="nv">as</span> <span class="nv">my_file</span>:
-    <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">my_file</span>:
-        <span class="k">for</span> <span class="nv">j</span> <span class="nv">in</span> <span class="nv">i</span>:
-            <span class="k">if</span> <span class="nv">j</span>.<span class="nv">isalpha</span><span class="ss">()</span>:
-                <span class="nv">word</span> <span class="o">+=</span> <span class="nv">j</span>
-            <span class="k">else</span>:
-                <span class="nv">word</span> <span class="o">=</span> <span class="nv">word</span>.<span class="nv">lower</span><span class="ss">()</span>
-                <span class="k">if</span> <span class="nv">word</span> <span class="nv">in</span> <span class="nv">d</span>:
-                    <span class="nv">d</span>[<span class="nv">word</span>] <span class="o">+=</span> <span class="mi">1</span>
-                <span class="k">else</span>:
-                    <span class="nv">d</span>[<span class="nv">word</span>] <span class="o">=</span> <span class="mi">1</span>
-                <span class="nv">word</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
-
-<span class="k">for</span> <span class="nv">key</span> <span class="nv">in</span> <span class="nv">d</span>.<span class="nv">keys</span><span class="ss">()</span>:
-    <span class="k">if</span> <span class="nv">d</span>[<span class="nv">key</span>] <span class="o">==</span> <span class="nv">max</span><span class="ss">(</span><span class="nv">d</span>.<span class="nv">values</span><span class="ss">())</span>:
-        <span class="nv">l</span>.<span class="nv">append</span><span class="ss">(</span><span class="nv">key</span><span class="ss">)</span>
-
-<span class="nv">print</span><span class="ss">(</span><span class="nv">min</span><span class="ss">(</span><span class="nv">l</span><span class="ss">)</span>, <span class="nv">max</span><span class="ss">(</span><span class="nv">d</span>.<span class="nv">values</span><span class="ss">()))</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 10:</em></p>
 <p>Имеется файл с данными по успеваемости абитуриентов. Он представляет из себя набор строк, где в каждой строке записана следующая информация:</p>
 <p>Фамилия;Оценка_по_математике;Оценка_по_физике;Оценка_по_русскому_языку</p>
@@ -201,43 +115,18 @@ body::before {
 <p>Также вычислите средние баллы по математике, физике и русскому языку по всем абитуриентам и добавьте полученные значения, разделённые пробелом, последней строкой в файл с ответом.</p>
 <p>В качестве ответа на задание прикрепите полученный файл со средними оценками по каждому ученику и одной строкой со средними оценками по трём предметам.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="nv">with</span> <span class="nv">open</span><span class="ss">(</span><span class="s2">&quot;</span><span class="s">dataset_3363_4.txt</span><span class="s2">&quot;</span>, <span class="s2">&quot;</span><span class="s">r</span><span class="s2">&quot;</span>, <span class="nv">encoding</span><span class="o">=</span><span class="s2">&quot;</span><span class="s">utf8</span><span class="s2">&quot;</span><span class="ss">)</span> <span class="nv">as</span> <span class="nv">myfile</span>:
-    <span class="nv">content</span> <span class="o">=</span> <span class="nv">myfile</span>.<span class="nv">readlines</span><span class="ss">()</span>
-<span class="nv">s</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="nv">a</span> <span class="o">=</span> [<span class="mi">0</span>, <span class="mi">0</span>, <span class="mi">0</span>]
-<span class="nv">with</span> <span class="nv">open</span><span class="ss">(</span><span class="s2">&quot;</span><span class="s">res.txt</span><span class="s2">&quot;</span>, <span class="s2">&quot;</span><span class="s">w</span><span class="s2">&quot;</span><span class="ss">)</span> <span class="nv">as</span> <span class="nv">res</span>:
-    <span class="k">for</span> <span class="nv">student</span> <span class="nv">in</span> <span class="nv">content</span>:
-        <span class="nv">student</span> <span class="o">=</span> <span class="nv">student</span>.<span class="nv">split</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">;</span><span class="s1">&#39;</span><span class="ss">)</span>
-        <span class="nv">s</span> <span class="o">=</span> <span class="ss">(</span><span class="nv">int</span><span class="ss">(</span><span class="nv">student</span>[<span class="mi">1</span>]<span class="ss">)</span> <span class="o">+</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">student</span>[<span class="mi">2</span>]<span class="ss">)</span> <span class="o">+</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">student</span>[<span class="mi">3</span>]<span class="ss">))</span> <span class="o">/</span> <span class="mi">3</span>
-        <span class="nv">a</span>[<span class="mi">0</span>] <span class="o">+=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">student</span>[<span class="mi">1</span>]<span class="ss">)</span>
-        <span class="nv">a</span>[<span class="mi">1</span>] <span class="o">+=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">student</span>[<span class="mi">2</span>]<span class="ss">)</span>
-        <span class="nv">a</span>[<span class="mi">2</span>] <span class="o">+=</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">student</span>[<span class="mi">3</span>]<span class="ss">)</span>
-        <span class="nv">res</span>.<span class="nv">write</span><span class="ss">(</span><span class="nv">str</span><span class="ss">(</span><span class="nv">s</span><span class="ss">)</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="ss">)</span>
-    <span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">a</span>:
-        <span class="nv">res</span>.<span class="nv">write</span><span class="ss">(</span><span class="nv">str</span><span class="ss">(</span><span class="nv">i</span> <span class="o">/</span> <span class="nv">len</span><span class="ss">(</span><span class="nv">content</span><span class="ss">))</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="s"> </span><span class="s1">&#39;</span><span class="ss">)</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 11:</em></p>
 <p>Напишите программу, которая запускается из консоли и печатает значения всех переданных аргументов на экран (имя скрипта выводить не нужно). Не изменяйте порядок аргументов при выводе.</p>
 <p>Для доступа к аргументам командной строки программы подключите модуль sys и используйте переменную argv из этого модуля.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">sys</span>
-<span class="k">print</span><span class="p">(</span><span class="o">*</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">:])</span>
-</pre></div>
-
-
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
 <p><em>Задача 12:</em></p>
 <p>Скачайте файл. В нём указан адрес другого файла, который нужно скачать с использованием модуля requests и посчитать число строк в нём.</p>
 <p>Используйте функцию get для получения файла (имеет смысл вызвать метод strip к передаваемому параметру, чтобы убрать пробельные символы по краям).</p>
 <p>После получения файла вы можете проверить результат, обратившись к полю text. Если результат работы скрипта не принимается, проверьте поле url на правильность. Для подсчёта количества строк разбейте текст с помощью метода splitlines.</p>
 <p><em>Решение:</em></p>
-<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
-<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;dataset_3378_2.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">test_file</span><span class="p">:</span>
-    <span class="n">s</span> <span class="o">=</span> <span class="n">test_file</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
-<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">s</span><span class="p">)</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">splitlines</span><span class="p">()</span>
-<span class="k">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">response</span><span class="p">))</span>
-</pre></div>
+<p>Все решения теперь можно найти в <a href="https://vk.com/it_entry">сообществе Как войти в IT</a></p>
             </p>
       
           </div>
